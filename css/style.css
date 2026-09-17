@@ -514,6 +514,51 @@ button { font: inherit; color: inherit; }
   100% { transform: scale(1.14); opacity: 0; }
 }
 
+/* ── The ESG diagram ──────────────────────────────────────────────
+   The three domains drift apart and back together. When they are
+   closest the overlap is deepest, so the shared centre brightens and
+   sends a ripple out. Everything moves on one 10s breath. */
+
+.esg-e, .esg-s, .esg-g { transform-box: view-box; }
+.esg-core, .esg-ripple { transform-box: fill-box; transform-origin: center; }
+.esg-ripple { opacity: 0; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .esg-e      { animation: esgDriftE 10s ease-in-out infinite; }
+  .esg-s      { animation: esgDriftS 10s ease-in-out infinite; }
+  .esg-g      { animation: esgDriftG 10s ease-in-out infinite; }
+  .esg-core   { animation: esgCore   10s ease-in-out infinite; }
+  .esg-ripple { animation: esgRipple 10s ease-out     infinite; }
+}
+
+/* each lobe moves along its own radius, away from the shared centre */
+@keyframes esgDriftE {
+  0%, 100% { transform: translate(0, 0); }
+  50%      { transform: translate(0, -6.5px); }
+}
+@keyframes esgDriftS {
+  0%, 100% { transform: translate(0, 0); }
+  50%      { transform: translate(-5.7px, 3.1px); }
+}
+@keyframes esgDriftG {
+  0%, 100% { transform: translate(0, 0); }
+  50%      { transform: translate(5.7px, 3.1px); }
+}
+
+/* brightest when the lobes are closest */
+@keyframes esgCore {
+  0%, 100% { transform: scale(1.4); opacity: 1; }
+  50%      { transform: scale(.85); opacity: .45; }
+}
+
+/* a single ring leaves the intersection each time they converge */
+@keyframes esgRipple {
+  0%   { transform: scale(1);  opacity: .5; }
+  34%  { transform: scale(17); opacity: 0; }
+  100% { transform: scale(17); opacity: 0; }
+}
+
+
 
 /* --------------------------------------------------------------------------
    9. Belief — full-width statement

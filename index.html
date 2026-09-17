@@ -268,33 +268,45 @@
       </div>
 
       <div class="figure reveal" data-d="1" aria-hidden="true">
-        <svg viewBox="0 0 400 340" fill="none">
-          <circle cx="200" cy="128" r="94" fill="#E9E5F9" fill-opacity=".62"/>
-          <circle cx="146" cy="216" r="94" fill="#EDEAF6" fill-opacity=".8"/>
-          <circle cx="254" cy="216" r="94" fill="#E7E0FA" fill-opacity=".6"/>
+        <svg viewBox="0 0 400 340" fill="none" class="esg-fig">
+          <!-- fills first, so no lobe paints over another's label -->
+          <circle class="esg-e" cx="200" cy="128" r="94" fill="#E9E5F9" fill-opacity=".62"/>
+          <circle class="esg-s" cx="146" cy="216" r="94" fill="#EDEAF6" fill-opacity=".8"/>
+          <circle class="esg-g" cx="254" cy="216" r="94" fill="#E7E0FA" fill-opacity=".6"/>
+
           <g stroke="#D5D2E4" stroke-width="1" fill="none">
-            <circle cx="200" cy="128" r="94"/><circle cx="146" cy="216" r="94"/><circle cx="254" cy="216" r="94"/>
+            <circle class="esg-e" cx="200" cy="128" r="94"/>
+            <circle class="esg-s" cx="146" cy="216" r="94"/>
+            <circle class="esg-g" cx="254" cy="216" r="94"/>
           </g>
-          <circle cx="200" cy="187" r="2.6" fill="#6532E8"/>
+
+          <!-- where the three meet -->
+          <circle class="esg-ripple" cx="200" cy="187" r="3" fill="none"
+                  stroke="#6532E8" stroke-width="1"/>
+          <circle class="esg-core" cx="200" cy="187" r="2.6" fill="#6532E8"/>
 
           <g text-anchor="middle" font-family="Onest, sans-serif">
-            <text x="200" y="86"  font-size="19" font-weight="600" fill="#6532E8">E</text>
-            <text x="200" y="106" font-size="11" font-weight="500" fill="#3E4147">Environment</text>
-            <text x="200" y="124" font-size="9.5" fill="#8A8D93">Resources</text>
-            <text x="200" y="138" font-size="9.5" fill="#8A8D93">Climate</text>
-            <text x="200" y="152" font-size="9.5" fill="#8A8D93">Circularity</text>
-
-            <text x="140" y="212" font-size="19" font-weight="600" fill="#8B63F0">S</text>
-            <text x="140" y="232" font-size="11" font-weight="500" fill="#3E4147">Social</text>
-            <text x="140" y="250" font-size="9.5" fill="#8A8D93">People</text>
-            <text x="140" y="264" font-size="9.5" fill="#8A8D93">Communities</text>
-            <text x="140" y="278" font-size="9.5" fill="#8A8D93">Fairness</text>
-
-            <text x="262" y="212" font-size="19" font-weight="600" fill="#4A1FC0">G</text>
-            <text x="262" y="232" font-size="11" font-weight="500" fill="#3E4147">Governance</text>
-            <text x="262" y="250" font-size="9.5" fill="#8A8D93">Integrity</text>
-            <text x="262" y="264" font-size="9.5" fill="#8A8D93">Compliance</text>
-            <text x="262" y="278" font-size="9.5" fill="#8A8D93">Accountability</text>
+            <g class="esg-e">
+              <text x="200" y="86"  font-size="19" font-weight="600" fill="#6532E8">E</text>
+              <text x="200" y="106" font-size="11" font-weight="500" fill="#3E4147">Environment</text>
+              <text x="200" y="124" font-size="9.5" fill="#8A8D93">Resources</text>
+              <text x="200" y="138" font-size="9.5" fill="#8A8D93">Climate</text>
+              <text x="200" y="152" font-size="9.5" fill="#8A8D93">Circularity</text>
+            </g>
+            <g class="esg-s">
+              <text x="140" y="212" font-size="19" font-weight="600" fill="#8B63F0">S</text>
+              <text x="140" y="232" font-size="11" font-weight="500" fill="#3E4147">Social</text>
+              <text x="140" y="250" font-size="9.5" fill="#8A8D93">People</text>
+              <text x="140" y="264" font-size="9.5" fill="#8A8D93">Communities</text>
+              <text x="140" y="278" font-size="9.5" fill="#8A8D93">Fairness</text>
+            </g>
+            <g class="esg-g">
+              <text x="262" y="212" font-size="19" font-weight="600" fill="#4A1FC0">G</text>
+              <text x="262" y="232" font-size="11" font-weight="500" fill="#3E4147">Governance</text>
+              <text x="262" y="250" font-size="9.5" fill="#8A8D93">Integrity</text>
+              <text x="262" y="264" font-size="9.5" fill="#8A8D93">Compliance</text>
+              <text x="262" y="278" font-size="9.5" fill="#8A8D93">Accountability</text>
+            </g>
           </g>
         </svg>
       </div>
