@@ -370,10 +370,12 @@
       setErr('ctEmail', 'We need a valid email to reply to.'); ok = false; first = first || mail;
     }
 
-    // deliberately permissive: any international format, 7+ digits
+    // the country supplies the code, so only the local number is checked
     var tel = document.getElementById('ctPhone');
     var digits = tel.value.replace(/\D/g, '');
-    if (digits.length < 7 || digits.length > 15 || /[^\d\s+()\-]/.test(tel.value.trim())) {
+    if (!digits) {
+      setErr('ctPhone', 'Please enter your mobile number.'); ok = false; first = first || tel;
+    } else if (digits.length < 6 || digits.length > 13 || /[^\d\s()\-]/.test(tel.value.trim())) {
       setErr('ctPhone', 'Please check the number.'); ok = false; first = first || tel;
     }
 
@@ -388,7 +390,10 @@
     var data = {
       name:    document.getElementById('ctName').value.trim(),
       email:   document.getElementById('ctEmail').value.trim(),
-      phone:   document.getElementById('ctPhone').value.trim(),
+      phone:   document.getElementById('ctCode').value + ' ' +
+               document.getElementById('ctPhone').value.trim(),
+      country: document.getElementById('ctCode')
+                 .selectedOptions[0].text.replace(/\s*\+\d+$/, ''),
       message: document.getElementById('ctMsg').value.trim()
     };
 
@@ -401,7 +406,7 @@
       done.hidden = false;
       btn.disabled = false;
       txt.textContent = 'Send';
-      form.reset();
+      form.reset();   // restores India as the default country
     }
 
     if (CONTACT_ENDPOINT) {
@@ -421,7 +426,7 @@
       var body =
         'Name: '   + data.name  + '\n' +
         'Email: '  + data.email + '\n' +
-        'Mobile: ' + data.phone + '\n\n' +
+        'Mobile: ' + data.phone + '  (' + data.country + ')\n\n' +
         (data.message || '');
       var a = document.createElement('a');
       a.href = 'mailto:' + CONTACT_EMAIL +
