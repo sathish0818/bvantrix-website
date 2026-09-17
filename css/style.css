@@ -731,8 +731,6 @@ button { font: inherit; color: inherit; }
   .nav-cta { display: none; }
   .nav-toggle { display: flex; }
 
-  .nav.is-open + .nav-drawer { display: block; }
-
   .hero-grid { grid-template-columns: minmax(0, 1fr); gap: 40px 0; }
   .hero-art { order: -1; max-width: 340px; margin: 0 auto; }
   .hero-copy .lede { max-width: none; }
@@ -761,14 +759,15 @@ button { font: inherit; color: inherit; }
    -------------------------------------------------------------------------- */
 
 .nav-drawer {
-  display: none;
   position: sticky;
-  top: 78px;
+  top: var(--nav-h, 82px);
   z-index: 49;
   background: var(--shell);
   border-bottom: 1px solid var(--line);
   padding: 8px var(--edge) 22px;
 }
+
+.nav-drawer[hidden] { display: none; }
 
 .nav-drawer a {
   display: block;
@@ -778,7 +777,17 @@ button { font: inherit; color: inherit; }
   border-bottom: 1px solid var(--line);
 }
 
-.nav-drawer .btn { margin-top: 20px; width: 100%; justify-content: center; }
+/* .nav-drawer a sets display:block, which would flatten the button —
+   restore the flex row so the label and arrow sit together, centred. */
+.nav-drawer .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 22px;
+  padding: 15px 24px;
+  border-bottom: 0;
+}
 
 @media (min-width: 861px) {
   .nav-drawer { display: none !important; }

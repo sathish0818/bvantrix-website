@@ -73,6 +73,15 @@
   var toggle = document.getElementById('navToggle');
   var drawer = document.getElementById('navDrawer');
 
+  // keep the drawer pinned directly under the nav, whatever its height
+  function syncNavHeight() {
+    document.documentElement.style.setProperty(
+      '--nav-h', Math.round(nav.getBoundingClientRect().height) + 'px'
+    );
+  }
+  syncNavHeight();
+  window.addEventListener('resize', syncNavHeight);
+
   function setDrawer(open) {
     toggle.setAttribute('aria-expanded', String(open));
     drawer.hidden = !open;
