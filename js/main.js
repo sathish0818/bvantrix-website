@@ -119,7 +119,7 @@
      a Google Apps Script, your own API — and it posts JSON instead.
      ────────────────────────────────────────────────────────────── */
   var BOOKING_ENDPOINT = '';
-  var BOOKING_EMAIL    = 'hello@bvantrix.com';
+  var BOOKING_EMAIL    = 'info@bvantrix.com';
 
   var DAYS_AHEAD = 12;                                    // weekdays offered
   var SLOTS = ['10:00', '11:00', '12:00', '15:00', '16:00', '17:00'];
