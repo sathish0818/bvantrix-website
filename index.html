@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BVantrix — Decisions for a more human tomorrow</title>
+<meta name="description" content="We are exploring a more human way to build intelligence into the decisions that shape business, people and the world around us.">
+<meta name="theme-color" content="#D7D9DD">
+
+<meta property="og:title" content="BVantrix — Decisions for a more human tomorrow">
+<meta property="og:description" content="What if every important decision could understand its consequences?">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/images/og/og-cover.jpg">
+
+<link rel="icon" href="assets/vectors/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="shell">
+
+  <!-- ══ Navigation ══════════════════════════════════════════════════════ -->
+  <header class="nav" id="nav">
+    <a class="brand" href="#top" aria-label="BVantrix, home">
+      <svg class="mark" viewBox="0 0 28 28" aria-hidden="true">
+        <path d="M2 5 L15 14 M2 10 L15 14 M2 18 L15 14 M2 23 L15 14"
+              stroke="currentColor" stroke-width="1.5" fill="none"
+              opacity=".5" stroke-linecap="round"/>
+        <circle cx="20" cy="14" r="4.6" fill="currentColor"/>
+      </svg>
+      <span>
+        <span class="wordmark">BVANTRIX</span>
+        <span class="tag">Decisions for a more human tomorrow</span>
+      </span>
+    </a>
+
+    <nav class="nav-pill" aria-label="Primary">
+      <a href="#why">Why</a>
+      <a href="#idea">The Idea</a>
+      <a href="#esg">ESG</a>
+      <a href="#people">People</a>
+      <a href="#thinking">Thinking</a>
+    </nav>
+
+    <a class="nav-cta" href="#conversation">
+      Book a call
+      <svg class="arw" width="13" height="10" viewBox="0 0 13 10" fill="none" aria-hidden="true">
+        <path d="M1 5h10M8 1.5 11.5 5 8 8.5" stroke="currentColor" stroke-width="1.4"
+              stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navDrawer" aria-label="Menu">
+      <span></span>
+    </button>
+  </header>
+
+  <div class="nav-drawer" id="navDrawer" hidden>
+    <a href="#why">Why</a>
+    <a href="#idea">The Idea</a>
+    <a href="#esg">ESG</a>
+    <a href="#people">People</a>
+    <a href="#thinking">Thinking</a>
+    <a class="btn btn--solid" href="#conversation">
+      Book a call
+      <svg class="arw" width="13" height="10" viewBox="0 0 13 10" fill="none" aria-hidden="true">
+        <path d="M1 5h10M8 1.5 11.5 5 8 8.5" stroke="currentColor" stroke-width="1.4"
+              stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- ══ Hero ═══════════════════════════════════════════════════════════ -->
+  <section class="hero bleed" id="top">
+    <div class="hero-grid">
+
+      <div class="hero-copy">
+        <p class="label">A more connected tomorrow</p>
+        <h1 class="display">
+          What if every important decision could <span class="dim">understand its consequences?</span>
+        </h1>
+        <p class="lede">
+          We are exploring a more human way to build intelligence into the decisions
+          that shape business, people and the world around us.
+        </p>
+        <a class="btn btn--solid" href="#idea">
+          The idea
+          <svg class="arw" width="13" height="10" viewBox="0 0 13 10" fill="none" aria-hidden="true">
+            <path d="M1 5h10M8 1.5 11.5 5 8 8.5" stroke="currentColor" stroke-width="1.4"
+                  stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="hero-art" id="orbStage">
+        <svg viewBox="0 0 400 400" fill="none" aria-hidden="true">
+          <defs>
+            <!-- body: white core through lavender to a deep violet limb -->
+            <radialGradient id="orbBody" cx="37%" cy="29%" r="80%">
+              <stop offset="0%"   stop-color="#FFFFFF" stop-opacity="1"/>
+              <stop offset="16%"  stop-color="#F0EBFE" stop-opacity=".98"/>
+              <stop offset="40%"  stop-color="#CBB6F9" stop-opacity=".92"/>
+              <stop offset="68%"  stop-color="#9A6CF2" stop-opacity=".82"/>
+              <stop offset="88%"  stop-color="#7139E4" stop-opacity=".70"/>
+              <stop offset="100%" stop-color="#5A26CE" stop-opacity=".42"/>
+            </radialGradient>
+
+            <!-- halo bleeding past the limb -->
+            <radialGradient id="orbBloom" cx="50%" cy="50%" r="50%">
+              <stop offset="52%"  stop-color="#7C4DEC" stop-opacity="0"/>
+              <stop offset="80%"  stop-color="#7C4DEC" stop-opacity=".13"/>
+              <stop offset="100%" stop-color="#7C4DEC" stop-opacity="0"/>
+            </radialGradient>
+
+            <!-- specular -->
+            <radialGradient id="orbSpec" cx="50%" cy="50%" r="50%">
+              <stop offset="0%"   stop-color="#FFFFFF" stop-opacity=".9"/>
+              <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+            </radialGradient>
+
+            <!-- light catching the far edge -->
+            <linearGradient id="orbRim" x1="20%" y1="10%" x2="85%" y2="95%">
+              <stop offset="0%"   stop-color="#FFFFFF" stop-opacity="0"/>
+              <stop offset="72%"  stop-color="#C9AEFB" stop-opacity="0"/>
+              <stop offset="100%" stop-color="#E4D6FE" stop-opacity=".75"/>
+            </linearGradient>
+          </defs>
+
+          <g class="orb-drift">
+            <circle cx="200" cy="200" r="186" fill="url(#orbBloom)"/>
+
+            <!-- outer field + its point -->
+            <g class="orb-spin-a">
+              <circle cx="200" cy="200" r="150" stroke="#DCD3F4" stroke-width="1"/>
+              <circle cx="306" cy="94" r="3.2" fill="#6532E8"/>
+            </g>
+
+            <g class="orb-body">
+              <circle cx="200" cy="200" r="134" fill="url(#orbBody)"/>
+              <circle cx="200" cy="200" r="134" fill="url(#orbRim)"/>
+              <ellipse class="orb-spec" cx="160" cy="146" rx="42" ry="30"
+                       fill="url(#orbSpec)" transform="rotate(-24 160 146)"/>
+            </g>
+
+            <!-- inner orbit + its points -->
+            <g class="orb-spin-b">
+              <circle cx="200" cy="200" r="88" stroke="#FFFFFF" stroke-width="1" stroke-opacity=".55"/>
+              <circle cx="200" cy="112" r="2.6" fill="#FFFFFF" fill-opacity=".9"/>
+              <circle cx="262" cy="262" r="2.2" fill="#FFFFFF" fill-opacity=".65"/>
+            </g>
+
+            <circle cx="200" cy="200" r="4.2" fill="#FFFFFF"/>
+            <circle cx="200" cy="200" r="2.4" fill="#3A1C8C"/>
+          </g>
+        </svg>
+      </div>
+
+      <aside class="rail hero-rail">
+        <ul class="rail-list">
+          <li>People</li>
+          <li>Business</li>
+          <li>Environment</li>
+          <li>Risk</li>
+          <li>Resources</li>
+        </ul>
+        <hr class="rail-rule">
+        <p class="label rail-foot" style="line-height:1.7">A more<br>balanced<br>tomorrow</p>
+      </aside>
+
+    </div>
+  </section>
+
+  <!-- ══ 01 · The Idea ══════════════════════════════════════════════════ -->
+  <section class="section bleed" id="idea">
+    <div class="eyebrow reveal">
+      <span class="num">01</span><span class="dash"></span><span class="label">The idea</span>
+    </div>
+
+    <div class="triad">
+      <div class="reveal">
+        <h2 class="h2">A decision is <span class="dim">never isolated.</span></h2>
+        <p class="lede" style="margin-top:24px">
+          Every decision sits within a web of people, systems, resources and
+          real-world consequences. We're exploring what happens when intelligence
+          begins with the decision instead.
+        </p>
+      </div>
+
+      <div class="figure reveal" data-d="1" aria-hidden="true">
+        <svg viewBox="-34 -8 468 346" fill="none">
+          <g stroke="#DDDEE2" stroke-width="1">
+            <path d="M200 160 V74"/><path d="M200 160 L306 116"/>
+            <path d="M200 160 L282 244"/><path d="M200 160 L118 244"/>
+            <path d="M200 160 L94 116"/>
+          </g>
+          <circle cx="200" cy="160" r="52" fill="#FBFBFC" stroke="#D3D5DA" stroke-width="1"/>
+          <text x="200" y="164" text-anchor="middle"
+                font-family="Onest, sans-serif" font-size="12.5" font-weight="600"
+                letter-spacing="1.6" fill="#08090B">DECISION</text>
+
+          <g fill="#6532E8">
+            <circle cx="200" cy="70"  r="3"/><circle cx="310" cy="114" r="3"/>
+            <circle cx="284" cy="248" r="3"/><circle cx="116" cy="248" r="3"/>
+            <circle cx="90"  cy="114" r="3"/>
+          </g>
+          <g font-family="Onest, sans-serif" font-size="10.5" font-weight="500"
+             letter-spacing="1.5" fill="#6E7278">
+            <text x="200" y="50"  text-anchor="middle">PEOPLE</text>
+            <text x="326" y="110" text-anchor="start">BUSINESS</text>
+            <text x="300" y="272" text-anchor="start">RISK</text>
+            <text x="100" y="272" text-anchor="end">RESOURCES</text>
+            <text x="74"  y="110" text-anchor="end">ENVIRONMENT</text>
+          </g>
+        </svg>
+      </div>
+
+      <aside class="rail reveal" data-d="2">
+        <p class="micro">Most systems manage functions.</p>
+        <p class="micro">The world doesn't work in functions.</p>
+        <p class="micro">We're exploring a more connected way.</p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ══ 02 · ESG ═══════════════════════════════════════════════════════ -->
+  <section class="section bleed" id="esg">
+    <div class="eyebrow reveal">
+      <span class="num">02</span><span class="dash"></span><span class="label">ESG as the first step</span>
+    </div>
+
+    <div class="triad">
+      <div class="reveal">
+        <h2 class="h2">ESG is where <span class="dim">we begin.</span></h2>
+        <div style="margin-top:24px;display:grid;gap:15px">
+          <p class="lede">Not because the world can be reduced to three letters.</p>
+          <p class="lede">
+            Because ESG brings some of the most consequential relationships
+            between business, people and the environment into view.
+          </p>
+          <p class="lede">
+            It gives us a place to prove whether a connected decision layer
+            can actually work.
+          </p>
+        </div>
+        <p style="margin:30px 0 0">
+          <a class="link-arrow" href="#conversation">
+            Explore the ESG journey
+            <svg class="arw" width="13" height="10" viewBox="0 0 13 10" fill="none" aria-hidden="true">
+              <path d="M1 5h10M8 1.5 11.5 5 8 8.5" stroke="currentColor" stroke-width="1.4"
+                    stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </p>
+      </div>
+
+      <div class="figure reveal" data-d="1" aria-hidden="true">
+        <svg viewBox="0 0 400 340" fill="none">
+          <circle cx="200" cy="128" r="94" fill="#E9E5F9" fill-opacity=".62"/>
+          <circle cx="146" cy="216" r="94" fill="#EDEAF6" fill-opacity=".8"/>
+          <circle cx="254" cy="216" r="94" fill="#E7E0FA" fill-opacity=".6"/>
+          <g stroke="#D5D2E4" stroke-width="1" fill="none">
+            <circle cx="200" cy="128" r="94"/><circle cx="146" cy="216" r="94"/><circle cx="254" cy="216" r="94"/>
+          </g>
+          <circle cx="200" cy="187" r="2.6" fill="#6532E8"/>
+
+          <g text-anchor="middle" font-family="Onest, sans-serif">
+            <text x="200" y="86"  font-size="19" font-weight="600" fill="#6532E8">E</text>
+            <text x="200" y="106" font-size="11" font-weight="500" fill="#3E4147">Environment</text>
+            <text x="200" y="124" font-size="9.5" fill="#8A8D93">Resources</text>
+            <text x="200" y="138" font-size="9.5" fill="#8A8D93">Climate</text>
+            <text x="200" y="152" font-size="9.5" fill="#8A8D93">Circularity</text>
+
+            <text x="140" y="212" font-size="19" font-weight="600" fill="#8B63F0">S</text>
+            <text x="140" y="232" font-size="11" font-weight="500" fill="#3E4147">Social</text>
+            <text x="140" y="250" font-size="9.5" fill="#8A8D93">People</text>
+            <text x="140" y="264" font-size="9.5" fill="#8A8D93">Communities</text>
+            <text x="140" y="278" font-size="9.5" fill="#8A8D93">Fairness</text>
+
+            <text x="262" y="212" font-size="19" font-weight="600" fill="#4A1FC0">G</text>
+            <text x="262" y="232" font-size="11" font-weight="500" fill="#3E4147">Governance</text>
+            <text x="262" y="250" font-size="9.5" fill="#8A8D93">Integrity</text>
+            <text x="262" y="264" font-size="9.5" fill="#8A8D93">Compliance</text>
+            <text x="262" y="278" font-size="9.5" fill="#8A8D93">Accountability</text>
+          </g>
+        </svg>
+      </div>
+
+      <aside class="rail reveal" data-d="2">
+        <p class="h3" style="font-size:1.0625rem;line-height:1.4">Real decisions.<br>Broader impact.</p>
+        <hr class="rail-rule">
+        <ul class="rail-list" style="text-transform:none;letter-spacing:0">
+          <li style="text-transform:none;letter-spacing:0;font-weight:400;font-size:.8125rem;color:var(--ink-2)">People</li>
+          <li style="text-transform:none;letter-spacing:0;font-weight:400;font-size:.8125rem;color:var(--ink-2)">Planet</li>
+          <li style="text-transform:none;letter-spacing:0;font-weight:400;font-size:.8125rem;color:var(--ink-2)">Prosperity</li>
+          <li style="text-transform:none;letter-spacing:0;font-weight:400;font-size:.8125rem;color:var(--ink-2)">Governance</li>
+          <li style="text-transform:none;letter-spacing:0;font-weight:400;font-size:.8125rem;color:var(--ink-2)">A more resilient tomorrow</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ══ 03 · Our belief ════════════════════════════════════════════════ -->
+  <section class="section bleed" id="why">
+    <div class="eyebrow reveal">
+      <span class="num">03</span><span class="dash"></span><span class="label">Our belief</span>
+    </div>
+
+    <div class="belief-grid">
+      <h2 class="h2 reveal">
+        Technology should amplify human judgement.
+        <span style="color:var(--violet)">Not replace it.</span>
+      </h2>
+
+      <div class="belief-note reveal" data-d="1">
+        <p>We don't believe better technology means removing people from the decision.</p>
+        <p>We believe it means giving people better context for exercising their
+           judgement — and more room to focus on what only they can do.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 04 · The people ════════════════════════════════════════════════ -->
+  <section class="section bleed" id="people">
+    <div class="eyebrow reveal">
+      <span class="num">04</span><span class="dash"></span><span class="label">The people</span>
+    </div>
+
+    <div class="people-grid">
+      <div class="reveal">
+        <h2 class="h2">Built by people who have lived <span class="dim">inside complexity.</span></h2>
+        <p class="lede" style="margin-top:24px">
+          We bring together experience across people, organisations, sustainability
+          and technology — because this problem sits across all of them.
+        </p>
+        <p style="margin:28px 0 0">
+          <a class="link-arrow" href="#conversation">
+            Meet the team
+            <svg class="arw" width="13" height="10" viewBox="0 0 13 10" fill="none" aria-hidden="true">
+              <path d="M1 5h10M8 1.5 11.5 5 8 8.5" stroke="currentColor" stroke-width="1.4"
+                    stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </p>
+      </div>
+
+      <div class="roster reveal" data-d="1">
+        <article class="person">
+          <img class="avatar" src="assets/images/team/bhuvana.svg" alt="Bhuvana" width="78" height="78" loading="lazy">
+          <h3>Bhuvana</h3>
+          <p class="role">Founder</p>
+          <p class="bio">People, organisations and the human side of transformation.</p>
+        </article>
+        <article class="person">
+          <img class="avatar" src="assets/images/team/patrick.svg" alt="Patrick" width="78" height="78" loading="lazy">
+          <h3>Patrick</h3>
+          <p class="role">EA — Founder Office</p>
+          <p class="bio">Operations, strategy and building what endures.</p>
+        </article>
+        <article class="person">
+          <img class="avatar" src="assets/images/team/sathish.svg" alt="Sathish" width="78" height="78" loading="lazy">
+          <h3>Sathish</h3>
+          <p class="role">Creative Head</p>
+          <p class="bio">Narrative, design and human-centred expression.</p>
+        </article>
+        <article class="person">
+          <img class="avatar" src="assets/images/team/rakesh.svg" alt="Rakesh" width="78" height="78" loading="lazy">
+          <h3>Rakesh</h3>
+          <p class="role">Head — R&amp;D</p>
+          <p class="bio">Technology, intelligence and what's next.</p>
+        </article>
+      </div>
+
+      <aside class="rail reveal" data-d="2">
+        <ul class="rail-list">
+          <li>Different<br>experiences.</li>
+          <li>A shared<br>belief.</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ══ 05 · Conversation ══════════════════════════════════════════════ -->
+  <section class="section bleed" id="conversation">
+    <div class="eyebrow reveal">
+      <span class="num">05</span><span class="dash"></span><span class="label">Stay in the conversation</span>
+    </div>
+
+    <div class="talk-grid" id="thinking">
+      <div class="reveal">
+        <h2 class="h2">We are still <span class="dim">asking questions.</span></h2>
+        <p class="lede" style="margin-top:22px">And building carefully toward better ones.</p>
+        <p style="margin:34px 0 0">
+          <a class="btn btn--ghost" href="mailto:hello@bvantrix.com?subject=A%20perspective%20for%20BVantrix">
+            Share your perspective
+            <svg class="arw" width="13" height="10" viewBox="0 0 13 10" fill="none" aria-hidden="true">
+              <path d="M1 5h10M8 1.5 11.5 5 8 8.5" stroke="currentColor" stroke-width="1.4"
+                    stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </p>
+      </div>
+
+      <div class="talk-body reveal" data-d="1">
+        <p>
+          BVANTRIX is being built deliberately. We're talking to people who make
+          consequential decisions every day — to understand the real problem,
+          challenge our assumptions and learn what belongs in the system.
+        </p>
+      </div>
+
+      <aside class="rail reveal" data-d="2">
+        <ul class="rail-list">
+          <li>Better<br>questions.</li>
+          <li>A more<br>human tomorrow.</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ══ Footer ═════════════════════════════════════════════════════════ -->
+  <footer class="foot">
+    <a class="brand" href="#top" aria-label="BVantrix, home">
+      <svg class="mark" viewBox="0 0 28 28" aria-hidden="true" style="width:22px;height:22px">
+        <path d="M2 5 L15 14 M2 10 L15 14 M2 18 L15 14 M2 23 L15 14"
+              stroke="currentColor" stroke-width="1.5" fill="none" opacity=".5" stroke-linecap="round"/>
+        <circle cx="20" cy="14" r="4.6" fill="currentColor"/>
+      </svg>
+      <span class="wordmark">BVANTRIX</span>
+    </a>
+    <span class="foot-tag">Decisions for a more human tomorrow.</span>
+
+    <div class="foot-links">
+      <a href="#">Privacy</a>
+      <a href="mailto:hello@bvantrix.com">Contact</a>
+      <div class="social">
+        <a href="#" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95C21.4 8.75 22 11 22 14.1V21h-4v-6.1c0-1.45-.03-3.32-2.05-3.32-2.05 0-2.37 1.58-2.37 3.21V21h-3.99V9Z"/>
+          </svg>
+        </a>
+        <a href="#" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M23 12s0-3.6-.46-5.33a2.78 2.78 0 0 0-1.95-1.96C18.86 4.25 12 4.25 12 4.25s-6.86 0-8.59.46A2.78 2.78 0 0 0 1.46 6.67C1 8.4 1 12 1 12s0 3.6.46 5.33a2.78 2.78 0 0 0 1.95 1.96c1.73.46 8.59.46 8.59.46s6.86 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96C23 15.6 23 12 23 12ZM9.8 15.3V8.7l5.7 3.3-5.7 3.3Z"/>
+          </svg>
+        </a>
+      </div>
+      <span class="copyright">© 2026 BVANTRIX</span>
+    </div>
+  </footer>
+
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
