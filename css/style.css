@@ -254,24 +254,12 @@ button { font: inherit; color: inherit; }
 .brand .mark { width: 26px; height: 26px; color: var(--violet); flex: none; }
 
 .brand .wordmark {
-  font-size: 0.9375rem;
+  font-size: 1rem;
   font-weight: 700;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.16em;
   line-height: 1;
 }
 
-.brand .tag {
-  display: block;
-  font-size: 0.5625rem;
-  font-weight: 500;
-  letter-spacing: 0.11em;
-  text-transform: uppercase;
-  color: var(--ink-3);
-  margin-top: 5px;
-  line-height: 1.4;
-  max-width: 19ch;
-  white-space: normal;
-}
 
 .nav-pill {
   margin-left: auto;
@@ -461,7 +449,6 @@ button { font: inherit; color: inherit; }
   0%, 100% { opacity: .82; transform: translate(0, 0); }
   50%      { opacity: 1;   transform: translate(5px, -4px); }
 }
-
 
 .hero-rail { align-self: center; }
 
