@@ -801,3 +801,161 @@ button { font: inherit; color: inherit; }
   body { background: #fff; }
   .nav, .nav-drawer { display: none; }
 }
+
+/* --------------------------------------------------------------------------
+   14. Booking panel
+   The call is booked here rather than on a third-party page, so the
+   moment of highest intent never leaves BVANTRIX.
+   -------------------------------------------------------------------------- */
+
+.book { position: fixed; inset: 0; z-index: 90; display: grid; place-items: center; padding: var(--pad); }
+.book[hidden] { display: none; }
+
+.book-scrim {
+  position: absolute; inset: 0;
+  background: rgba(8, 9, 11, .42);
+  -webkit-backdrop-filter: saturate(140%) blur(6px);
+  backdrop-filter: saturate(140%) blur(6px);
+  opacity: 0;
+  transition: opacity .34s ease;
+}
+.book.is-open .book-scrim { opacity: 1; }
+
+.book-panel {
+  position: relative;
+  width: min(940px, 100%);
+  max-height: min(88vh, 860px);
+  overflow: auto;
+  overscroll-behavior: contain;
+  background: var(--shell);
+  border: 1px solid var(--line);
+  border-radius: var(--r-card);
+  box-shadow: 0 1px 2px rgba(8,9,11,.05), 0 28px 70px -22px rgba(8,9,11,.32);
+  opacity: 0;
+  transform: translateY(14px) scale(.985);
+  transition: opacity .34s ease, transform .42s cubic-bezier(.2,.7,.3,1);
+}
+.book.is-open .book-panel { opacity: 1; transform: none; }
+
+.book-x {
+  position: absolute; top: 16px; right: 16px; z-index: 2;
+  width: 34px; height: 34px; display: grid; place-items: center;
+  border: 1px solid var(--line); border-radius: var(--r-pill);
+  background: var(--shell); color: var(--ink-3); cursor: pointer;
+  transition: color .2s ease, border-color .2s ease, transform .2s ease;
+}
+.book-x svg { width: 15px; height: 15px; }
+.book-x:hover { color: var(--ink); border-color: var(--line-2); transform: rotate(90deg); }
+
+.book-grid { display: grid; grid-template-columns: 0.85fr 1.15fr; }
+.book-grid[hidden] { display: none; }
+
+.book-aside {
+  padding: clamp(28px, 3.4vw, 44px);
+  background: var(--violet-soft);
+  border-right: 1px solid var(--line);
+  border-radius: var(--r-card) 0 0 var(--r-card);
+}
+.book-aside .eyebrow { margin-bottom: 20px; }
+.book-aside .h3 { letter-spacing: -0.028em; }
+
+.book-note { margin-top: 16px; color: var(--ink-2); font-size: 0.9375rem; line-height: 1.6; }
+
+.book-facts { list-style: none; margin: 26px 0 0; padding: 0; display: grid; gap: 10px; }
+.book-facts li {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 0.8125rem; color: var(--ink-2);
+}
+.book-facts li::before {
+  content: ""; width: 5px; height: 5px; flex: none;
+  border-radius: 50%; background: var(--violet);
+}
+
+.book-form { padding: clamp(28px, 3.4vw, 44px); display: grid; gap: 20px; align-content: start; }
+
+.fld { display: grid; gap: 8px; min-width: 0; }
+.fld-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+.fld label {
+  font-size: 0.75rem; font-weight: 500; letter-spacing: .01em;
+  color: var(--ink-2);
+}
+.fld label em { font-style: normal; color: var(--muted); font-weight: 400; }
+
+.fld input,
+.fld textarea {
+  width: 100%; font: inherit; font-size: 0.9375rem; color: var(--ink);
+  background: var(--shell);
+  border: 1px solid var(--line-2); border-radius: 10px;
+  padding: 12px 14px;
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+.fld textarea { resize: vertical; min-height: 78px; line-height: 1.55; }
+.fld input::placeholder,
+.fld textarea::placeholder { color: var(--muted); }
+.fld input:focus,
+.fld textarea:focus {
+  outline: none;
+  border-color: var(--violet);
+  box-shadow: 0 0 0 3px var(--violet-soft);
+}
+.fld.is-bad input,
+.fld.is-bad textarea { border-color: #C4362F; }
+
+.err { margin: 0; font-size: 0.75rem; color: #C4362F; min-height: 0; }
+.err:empty { display: none; }
+
+/* day / time chips */
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chips--day { gap: 8px; }
+
+.chip {
+  font: inherit; cursor: pointer;
+  background: var(--shell);
+  border: 1px solid var(--line-2); border-radius: 10px;
+  color: var(--ink-2);
+  padding: 9px 13px;
+  line-height: 1.2;
+  transition: border-color .18s ease, color .18s ease, background .18s ease, transform .18s ease;
+}
+.chip:hover { border-color: var(--violet); color: var(--violet); }
+.chip[aria-checked="true"] {
+  background: var(--violet); border-color: var(--violet); color: #fff;
+}
+.chip[aria-checked="true"] .chip-dow { color: rgba(255,255,255,.72); }
+.chip:focus-visible { outline: 2px solid var(--violet); outline-offset: 2px; }
+
+.chips--day .chip { display: grid; gap: 3px; text-align: center; min-width: 62px; padding: 9px 10px; }
+.chip-dow { font-size: 0.6875rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.chip-day { font-size: 0.9375rem; font-weight: 500; }
+.chips--time .chip { font-size: 0.875rem; font-variant-numeric: tabular-nums; }
+
+.book-submit { justify-self: start; margin-top: 4px; }
+.book-submit[disabled] { opacity: .55; pointer-events: none; }
+.book-fine { margin: 0; font-size: 0.75rem; color: var(--muted); line-height: 1.55; }
+
+/* confirmation */
+.book-done {
+  padding: clamp(40px, 5vw, 64px);
+  display: grid; justify-items: start; gap: 18px;
+  max-width: 520px;
+}
+.book-done[hidden] { display: none; }
+.book-tick { color: var(--violet); }
+.book-tick svg { width: 44px; height: 44px; display: block; }
+.bt-ring, .bt-check { stroke-dasharray: 100; stroke-dashoffset: 100; }
+.book-done:not([hidden]) .bt-ring  { animation: btDraw .72s cubic-bezier(.2,.7,.3,1) forwards; }
+.book-done:not([hidden]) .bt-check { animation: btDraw .44s cubic-bezier(.2,.7,.3,1) .38s forwards; }
+@keyframes btDraw { to { stroke-dashoffset: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  .bt-ring, .bt-check { stroke-dashoffset: 0; animation: none !important; }
+  .book-scrim, .book-panel { transition: none; }
+}
+
+@media (max-width: 800px) {
+  .book { padding: 0; place-items: stretch; }
+  .book-panel { width: 100%; max-height: 100vh; height: 100%; border: 0; border-radius: 0; }
+  .book-grid { grid-template-columns: 1fr; }
+  .book-aside { border-right: 0; border-bottom: 1px solid var(--line); border-radius: 0; padding-right: 64px; }
+  .fld-row { grid-template-columns: 1fr; }
+}
