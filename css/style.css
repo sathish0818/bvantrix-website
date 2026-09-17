@@ -1037,3 +1037,56 @@ button { font: inherit; color: inherit; }
   .book-aside { border-right: 0; border-bottom: 1px solid var(--line); border-radius: 0; padding-right: 64px; }
   .fld-row { grid-template-columns: 1fr; }
 }
+
+/* --------------------------------------------------------------------------
+   15. Contact
+   Shares .fld / .err with the booking panel, so the two forms cannot
+   drift apart.
+   -------------------------------------------------------------------------- */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+  gap: clamp(36px, 5vw, 92px);
+  align-items: start;
+}
+
+.contact-meta { list-style: none; margin: 38px 0 0; padding: 0; display: grid; gap: 0; }
+.contact-meta li {
+  display: flex; align-items: baseline; gap: 16px;
+  padding: 14px 0;
+  border-top: 1px solid var(--line);
+  font-size: 0.9375rem;
+  color: var(--ink-2);
+}
+.contact-meta li:last-child { border-bottom: 1px solid var(--line); }
+.contact-meta .k {
+  flex: none; width: 104px;
+  font-size: 0.6875rem; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--muted); font-weight: 500;
+}
+.contact-meta a { color: var(--violet); }
+.contact-meta a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+.contact-form {
+  display: grid; gap: 20px; align-content: start;
+  background: var(--shell);
+  border: 1px solid var(--line);
+  border-radius: var(--r-card);
+  padding: clamp(24px, 3vw, 40px);
+}
+.contact-submit { justify-self: start; margin-top: 2px; }
+.contact-submit[disabled] { opacity: .55; pointer-events: none; }
+
+.contact-done {
+  display: flex; align-items: center; gap: 10px;
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--violet-ink);
+}
+.contact-done[hidden] { display: none; }
+.contact-done svg { flex: none; }
+
+@media (max-width: 860px) {
+  .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+}

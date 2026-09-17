@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600;700&display=swap">
-<link rel="stylesheet" href="css/style.css?v=2.2">
+<link rel="stylesheet" href="css/style.css?v=2.3">
 </head>
 <body>
 
@@ -39,7 +39,7 @@
       <a href="#idea">The Idea</a>
       <a href="#esg">ESG</a>
       <a href="#people">People</a>
-      <a href="#thinking">Thinking</a>
+      <a href="#contact">Contact</a>
     </nav>
 
     <!-- Opens the on-page booking panel (see #book at the bottom of this file) -->
@@ -61,7 +61,7 @@
     <a href="#idea">The Idea</a>
     <a href="#esg">ESG</a>
     <a href="#people">People</a>
-    <a href="#thinking">Thinking</a>
+    <a href="#contact">Contact</a>
     <button class="btn btn--solid" type="button" data-book-open aria-haspopup="dialog">
       Book a call
       <svg class="arw" width="13" height="10" viewBox="0 0 13 10" fill="none" aria-hidden="true">
@@ -229,6 +229,15 @@
           Every decision sits within a web of people, systems, resources and
           real-world consequences. We're exploring what happens when intelligence
           begins with the decision instead.
+        </p>
+        <p style="margin:32px 0 0">
+          <a class="link-arrow" href="#contact">
+            Contact us
+            <svg class="arw" width="13" height="10" viewBox="0 0 13 10" fill="none" aria-hidden="true">
+              <path d="M1 5h10M8 1.5 11.5 5 8 8.5" stroke="currentColor" stroke-width="1.4"
+                    stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
         </p>
       </div>
 
@@ -543,6 +552,79 @@
     </div>
   </section>
 
+
+  <!-- ══ 06 · Contact ═══════════════════════════════════════════════════
+       Where the request goes is one constant — CONTACT_ENDPOINT in
+       js/main.js. Empty for now, so it hands off to email. -->
+  <section class="section bleed" id="contact">
+    <div class="eyebrow reveal">
+      <span class="num">06</span><span class="dash"></span><span class="label">Contact us</span>
+    </div>
+
+    <div class="contact-grid">
+      <div class="reveal">
+        <h2 class="h2">Tell us where <span class="dim">your decisions hurt.</span></h2>
+        <p class="lede" style="margin-top:22px">
+          Leave your details and we will come back to you ourselves — not a
+          sequence, not a newsletter.
+        </p>
+        <ul class="contact-meta">
+          <li>
+            <span class="k">Email</span>
+            <a href="mailto:info@bvantrix.com">info@bvantrix.com</a>
+          </li>
+          <li>
+            <span class="k">Reply time</span>
+            <span>Within one working day</span>
+          </li>
+        </ul>
+      </div>
+
+      <form class="contact-form reveal" data-d="1" id="contactForm" novalidate>
+        <div class="fld">
+          <label for="ctName">Your name</label>
+          <input id="ctName" name="name" type="text" autocomplete="name" required placeholder="Full name">
+          <p class="err" data-err-for="ctName"></p>
+        </div>
+
+        <div class="fld-row">
+          <div class="fld">
+            <label for="ctEmail">Email</label>
+            <input id="ctEmail" name="email" type="email" autocomplete="email" required placeholder="you@company.com">
+            <p class="err" data-err-for="ctEmail"></p>
+          </div>
+          <div class="fld">
+            <label for="ctPhone">Mobile number</label>
+            <input id="ctPhone" name="phone" type="tel" autocomplete="tel" required
+                   inputmode="tel" placeholder="+91 98765 43210">
+            <p class="err" data-err-for="ctPhone"></p>
+          </div>
+        </div>
+
+        <div class="fld">
+          <label for="ctMsg">What would you like to tell us? <em>optional</em></label>
+          <textarea id="ctMsg" name="message" rows="3" placeholder="A sentence is plenty."></textarea>
+        </div>
+
+        <button class="btn btn--solid contact-submit" type="submit">
+          <span class="contact-submit-txt">Send</span>
+          <svg class="arw" width="13" height="10" viewBox="0 0 13 10" fill="none" aria-hidden="true">
+            <path d="M1 5h10M8 1.5 11.5 5 8 8.5" stroke="currentColor" stroke-width="1.4"
+                  stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <p class="contact-done" id="contactDone" hidden>
+          <svg viewBox="0 0 16 16" width="15" height="15" fill="none" aria-hidden="true">
+            <path d="M3 8.5 6.5 12 13 4.5" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>Thank you — we have your details and will be in touch.</span>
+        </p>
+      </form>
+    </div>
+  </section>
+
   <!-- ══ Footer ═════════════════════════════════════════════════════════ -->
   <footer class="foot">
     <a class="brand" href="#top" aria-label="BVantrix, home">
@@ -557,7 +639,7 @@
 
     <div class="foot-links">
       <a href="#">Privacy</a>
-      <a href="mailto:info@bvantrix.com">Contact</a>
+      <a href="#contact">Contact</a>
       <div class="social">
         <a href="#" aria-label="LinkedIn">
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -680,6 +762,6 @@
   </div>
 </div>
 
-<script src="js/main.js?v=2.2"></script>
+<script src="js/main.js?v=2.3"></script>
 </body>
 </html>

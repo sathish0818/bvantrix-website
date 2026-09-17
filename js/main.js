@@ -329,3 +329,106 @@
   buildDays();
   buildTimes();
 })();
+
+/* BVANTRIX — contact form.
+   Same validation vocabulary as the booking panel. */
+(function () {
+  'use strict';
+
+  /* Leave empty and the form hands off to email. Set it to a POST
+     endpoint and it posts JSON instead. See BOOKING_ENDPOINT above. */
+  var CONTACT_ENDPOINT = '';
+  var CONTACT_EMAIL    = 'info@bvantrix.com';
+
+  var form = document.getElementById('contactForm');
+  if (!form) return;
+
+  var done = document.getElementById('contactDone');
+
+  function setErr(id, msg) {
+    var p = form.querySelector('[data-err-for="' + id + '"]');
+    if (p) p.textContent = msg;
+    var f = document.getElementById(id);
+    if (f && f.closest('.fld')) f.closest('.fld').classList.add('is-bad');
+  }
+  function clearErr(id) {
+    var p = form.querySelector('[data-err-for="' + id + '"]');
+    if (p) p.textContent = '';
+    var f = document.getElementById(id);
+    if (f && f.closest('.fld')) f.closest('.fld').classList.remove('is-bad');
+  }
+
+  function validate() {
+    ['ctName', 'ctEmail', 'ctPhone'].forEach(clearErr);
+    var ok = true, first = null;
+
+    var name = document.getElementById('ctName');
+    if (!name.value.trim()) { setErr('ctName', 'Please tell us your name.'); ok = false; first = first || name; }
+
+    var mail = document.getElementById('ctEmail');
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(mail.value.trim())) {
+      setErr('ctEmail', 'We need a valid email to reply to.'); ok = false; first = first || mail;
+    }
+
+    // deliberately permissive: any international format, 7+ digits
+    var tel = document.getElementById('ctPhone');
+    var digits = tel.value.replace(/\D/g, '');
+    if (digits.length < 7 || digits.length > 15 || /[^\d\s+()\-]/.test(tel.value.trim())) {
+      setErr('ctPhone', 'Please check the number.'); ok = false; first = first || tel;
+    }
+
+    if (first) first.focus();
+    return ok;
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (!validate()) return;
+
+    var data = {
+      name:    document.getElementById('ctName').value.trim(),
+      email:   document.getElementById('ctEmail').value.trim(),
+      phone:   document.getElementById('ctPhone').value.trim(),
+      message: document.getElementById('ctMsg').value.trim()
+    };
+
+    var btn = form.querySelector('.contact-submit');
+    var txt = form.querySelector('.contact-submit-txt');
+    btn.disabled = true;
+    txt.textContent = 'Sending…';
+
+    function settled() {
+      done.hidden = false;
+      btn.disabled = false;
+      txt.textContent = 'Send';
+      form.reset();
+    }
+
+    if (CONTACT_ENDPOINT) {
+      fetch(CONTACT_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(data)
+      }).then(function (r) {
+        if (!r.ok) throw new Error(r.status);
+        settled();
+      }).catch(function () {
+        btn.disabled = false;
+        txt.textContent = 'Send';
+        setErr('ctEmail', 'That did not go through. Please try again, or write to ' + CONTACT_EMAIL + '.');
+      });
+    } else {
+      var body =
+        'Name: '   + data.name  + '\n' +
+        'Email: '  + data.email + '\n' +
+        'Mobile: ' + data.phone + '\n\n' +
+        (data.message || '');
+      var a = document.createElement('a');
+      a.href = 'mailto:' + CONTACT_EMAIL +
+               '?subject=' + encodeURIComponent('Website enquiry — ' + data.name) +
+               '&body=' + encodeURIComponent(body);
+      a.click();
+      settled();
+    }
+  });
+})();
