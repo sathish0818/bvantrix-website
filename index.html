@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600;700&display=swap">
-<link rel="stylesheet" href="css/style.css?v=1.9">
+<link rel="stylesheet" href="css/style.css?v=2.2">
 </head>
 <body>
 
@@ -119,6 +119,23 @@
               <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
             </radialGradient>
 
+            <!-- signals: faint out at the edge of the world, deep violet by
+                 the time they reach the decision -->
+            <radialGradient id="orbSignal" gradientUnits="userSpaceOnUse"
+                            cx="200" cy="200" r="186">
+              <stop offset="0%"   stop-color="#4A1FC0" stop-opacity="1"/>
+              <stop offset="52%"  stop-color="#6532E8" stop-opacity=".95"/>
+              <stop offset="80%"  stop-color="#7C4DEC" stop-opacity=".72"/>
+              <stop offset="100%" stop-color="#9A6CF2" stop-opacity=".38"/>
+            </radialGradient>
+
+            <!-- consequence: bright as it leaves, spent by the time it lands -->
+            <radialGradient id="orbWake" gradientUnits="userSpaceOnUse"
+                            cx="200" cy="200" r="200">
+              <stop offset="60%"  stop-color="#6532E8" stop-opacity=".55"/>
+              <stop offset="100%" stop-color="#9A6CF2" stop-opacity="0"/>
+            </radialGradient>
+
             <!-- light catching the far edge -->
             <linearGradient id="orbRim" x1="20%" y1="10%" x2="85%" y2="95%">
               <stop offset="0%"   stop-color="#FFFFFF" stop-opacity="0"/>
@@ -136,12 +153,42 @@
               <circle cx="306" cy="94" r="3.2" fill="#6532E8"/>
             </g>
 
+
+            <!-- ── what the orb is saying ────────────────────────────────
+                 Signals arrive from every direction — people, business, the
+                 environment, risk. They reach the decision, it registers
+                 them, and the consequence travels back out into the world.
+                 One breath, on repeat. -->
+            <g class="orb-signal" stroke="url(#orbSignal)" stroke-width="2"
+               stroke-linecap="round" fill="none">
+              <path style="--i:0" pathLength="100" d="M200.0 16.0 L200.0 63.0"/>
+              <path style="--i:1" pathLength="100" d="M375.0 143.1 L330.3 157.7"/>
+              <path style="--i:2" pathLength="100" d="M308.2 348.9 L280.5 310.8"/>
+              <path style="--i:3" pathLength="100" d="M91.8 348.9 L119.5 310.8"/>
+              <path style="--i:4" pathLength="100" d="M25.0 143.1 L69.7 157.7"/>
+            </g>
+
             <g class="orb-body">
               <circle cx="200" cy="200" r="134" fill="url(#orbBody)"/>
               <circle cx="200" cy="200" r="134" fill="url(#orbRim)"/>
               <ellipse class="orb-spec" cx="160" cy="146" rx="42" ry="30"
                        fill="url(#orbSpec)" transform="rotate(-24 160 146)"/>
             </g>
+
+            <!-- each signal landing on the surface -->
+            <g class="orb-land" fill="#FFFFFF">
+              <circle style="--i:0" cx="200.0" cy="63.0" r="2.6"/>
+              <circle style="--i:1" cx="330.3" cy="157.7" r="2.6"/>
+              <circle style="--i:2" cx="280.5" cy="310.8" r="2.6"/>
+              <circle style="--i:3" cx="119.5" cy="310.8" r="2.6"/>
+              <circle style="--i:4" cx="69.7" cy="157.7" r="2.6"/>
+            </g>
+
+            <!-- the consequence leaving -->
+            <circle class="orb-wake" cx="200" cy="200" r="134"
+                    stroke="url(#orbWake)" stroke-width="1.5" fill="none"/>
+            <circle class="orb-wake orb-wake--2" cx="200" cy="200" r="134"
+                    stroke="url(#orbWake)" stroke-width="1" fill="none"/>
 
             <!-- inner orbit + its points -->
             <g class="orb-spin-b">
@@ -633,6 +680,6 @@
   </div>
 </div>
 
-<script src="js/main.js?v=1.9"></script>
+<script src="js/main.js?v=2.2"></script>
 </body>
 </html>

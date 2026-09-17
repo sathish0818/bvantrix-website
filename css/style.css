@@ -426,13 +426,63 @@ button { font: inherit; color: inherit; }
 .orb-body,
 .orb-spec,
 .orb-spin-a,
-.orb-spin-b { transform-box: view-box; transform-origin: 200px 200px; }
+.orb-spin-b,
+.orb-wake { transform-box: view-box; transform-origin: 200px 200px; }
+
+/* ── The orb's argument ───────────────────────────────────────────
+   Signals arrive from every direction, the decision registers them,
+   and the consequence travels back out. One 9s breath, on repeat.
+   Nothing here is load-bearing: with motion reduced the orb simply
+   sits still and none of this shows. */
+
+.orb-signal path { stroke-dasharray: 13 100; stroke-dashoffset: 0; opacity: 0; }
+.orb-land circle { opacity: 0; transform-box: fill-box; transform-origin: center; }
+.orb-wake        { opacity: 0; }
 
 @media (prefers-reduced-motion: no-preference) {
   .orb-body   { animation: orbBreathe 11s ease-in-out infinite; }
   .orb-spin-a { animation: orbSpin 78s linear infinite; }
   .orb-spin-b { animation: orbSpin 52s linear infinite reverse; }
   .orb-spec   { animation: orbShine 11s ease-in-out infinite; transform-origin: 160px 146px; }
+
+  /* inbound: staggered so they arrive as a sequence, not a salvo */
+  .orb-signal path {
+    animation: orbArrive 9s cubic-bezier(.36, 0, .5, 1) infinite;
+    animation-delay: calc(var(--i) * 0.54s);
+  }
+  .orb-land circle {
+    animation: orbRegister 9s ease-out infinite;
+    animation-delay: calc(var(--i) * 0.54s + 1.9s);
+  }
+  /* outbound: only once all five have landed */
+  .orb-wake      { animation: orbWake 9s cubic-bezier(.22, .7, .3, 1) infinite; animation-delay: 4.4s; }
+  .orb-wake--2   { animation-delay: 4.85s; }
+}
+
+/* the signal travels inward and is absorbed at the surface */
+@keyframes orbArrive {
+  0%   { stroke-dashoffset: 0;    opacity: 0; }
+  4%   { opacity: .85; }
+  17%  { opacity: .85; }
+  24%  { stroke-dashoffset: -108; opacity: 0; }
+  100% { stroke-dashoffset: -108; opacity: 0; }
+}
+
+/* the decision registering it */
+@keyframes orbRegister {
+  0%   { transform: scale(.4); opacity: 0; }
+  3%   { transform: scale(1.5); opacity: .95; }
+  12%  { transform: scale(1);   opacity: .5; }
+  30%  { transform: scale(1);   opacity: 0; }
+  100% { transform: scale(1);   opacity: 0; }
+}
+
+/* the consequence reaching back out into the world */
+@keyframes orbWake {
+  0%   { transform: scale(1);    opacity: 0; }
+  6%   { opacity: .8; }
+  38%  { transform: scale(1.38); opacity: 0; }
+  100% { transform: scale(1.38); opacity: 0; }
 }
 
 @keyframes orbBreathe {
