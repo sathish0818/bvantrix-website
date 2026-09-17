@@ -535,13 +535,14 @@ button { font: inherit; color: inherit; }
    sends a ripple out. Everything moves on one 10s breath. */
 
 .esg-e, .esg-s, .esg-g { transform-box: view-box; }
-.esg-core, .esg-ripple { transform-box: fill-box; transform-origin: center; }
+.esg-core, .esg-ripple, .esg-glow { transform-box: fill-box; transform-origin: center; }
 .esg-ripple { opacity: 0; }
 
 @media (prefers-reduced-motion: no-preference) {
   .esg-e      { animation: esgDriftE 10s ease-in-out infinite; }
   .esg-s      { animation: esgDriftS 10s ease-in-out infinite; }
   .esg-g      { animation: esgDriftG 10s ease-in-out infinite; }
+  .esg-glow   { animation: esgGlow   10s ease-in-out infinite; }
   .esg-core   { animation: esgCore   10s ease-in-out infinite; }
   .esg-ripple { animation: esgRipple 10s ease-out     infinite; }
 }
@@ -558,6 +559,12 @@ button { font: inherit; color: inherit; }
 @keyframes esgDriftG {
   0%, 100% { transform: translate(0, 0); }
   50%      { transform: translate(5.7px, 3.1px); }
+}
+
+/* the overlap glow swells as the lobes close in */
+@keyframes esgGlow {
+  0%, 100% { transform: scale(1);   opacity: 1; }
+  50%      { transform: scale(.72); opacity: .35; }
 }
 
 /* brightest when the lobes are closest */

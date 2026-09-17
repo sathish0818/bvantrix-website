@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600;700&display=swap">
-<link rel="stylesheet" href="css/style.css?v=1.7">
+<link rel="stylesheet" href="css/style.css?v=1.8">
 </head>
 <body>
 
@@ -290,21 +290,53 @@
 
       <div class="figure reveal" data-d="1" aria-hidden="true">
         <svg viewBox="0 0 400 340" fill="none" class="esg-fig">
-          <!-- fills first, so no lobe paints over another's label -->
-          <circle class="esg-e" cx="200" cy="128" r="94" fill="#E9E5F9" fill-opacity=".62"/>
-          <circle class="esg-s" cx="146" cy="216" r="94" fill="#EDEAF6" fill-opacity=".8"/>
-          <circle class="esg-g" cx="254" cy="216" r="94" fill="#E7E0FA" fill-opacity=".6"/>
+          <defs>
+            <!-- every lobe is lit from the point where the three meet, so the
+                 colour is deepest in the overlap and thins toward each rim -->
+            <radialGradient id="esgE" gradientUnits="userSpaceOnUse" cx="200" cy="187" r="168">
+              <stop offset="0%"   stop-color="#6532E8" stop-opacity=".30"/>
+              <stop offset="46%"  stop-color="#9A6CF2" stop-opacity=".16"/>
+              <stop offset="100%" stop-color="#E9E5F9" stop-opacity=".05"/>
+            </radialGradient>
+            <radialGradient id="esgS" gradientUnits="userSpaceOnUse" cx="200" cy="187" r="168">
+              <stop offset="0%"   stop-color="#8B63F0" stop-opacity=".28"/>
+              <stop offset="46%"  stop-color="#B197F5" stop-opacity=".15"/>
+              <stop offset="100%" stop-color="#EDEAF6" stop-opacity=".05"/>
+            </radialGradient>
+            <radialGradient id="esgG" gradientUnits="userSpaceOnUse" cx="200" cy="187" r="168">
+              <stop offset="0%"   stop-color="#4A1FC0" stop-opacity=".30"/>
+              <stop offset="46%"  stop-color="#8556EE" stop-opacity=".16"/>
+              <stop offset="100%" stop-color="#E7E0FA" stop-opacity=".05"/>
+            </radialGradient>
+            <!-- the outlines follow the same law: violet in, grey out -->
+            <radialGradient id="esgRim" gradientUnits="userSpaceOnUse" cx="200" cy="187" r="168">
+              <stop offset="0%"   stop-color="#6532E8" stop-opacity=".55"/>
+              <stop offset="55%"  stop-color="#A78BF3" stop-opacity=".45"/>
+              <stop offset="100%" stop-color="#D5D2E4" stop-opacity=".6"/>
+            </radialGradient>
+            <radialGradient id="esgGlow" gradientUnits="userSpaceOnUse" cx="200" cy="187" r="46">
+              <stop offset="0%"   stop-color="#6532E8" stop-opacity=".2"/>
+              <stop offset="55%"  stop-color="#8B63F0" stop-opacity=".07"/>
+              <stop offset="100%" stop-color="#8B63F0" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
 
-          <g stroke="#D5D2E4" stroke-width="1" fill="none">
+          <!-- fills first, so no lobe paints over another's label -->
+          <circle class="esg-e" cx="200" cy="128" r="94" fill="url(#esgE)"/>
+          <circle class="esg-s" cx="146" cy="216" r="94" fill="url(#esgS)"/>
+          <circle class="esg-g" cx="254" cy="216" r="94" fill="url(#esgG)"/>
+
+          <g stroke="url(#esgRim)" stroke-width="1" fill="none">
             <circle class="esg-e" cx="200" cy="128" r="94"/>
             <circle class="esg-s" cx="146" cy="216" r="94"/>
             <circle class="esg-g" cx="254" cy="216" r="94"/>
           </g>
 
           <!-- where the three meet -->
+          <circle class="esg-glow" cx="200" cy="187" r="46" fill="url(#esgGlow)"/>
           <circle class="esg-ripple" cx="200" cy="187" r="3" fill="none"
-                  stroke="#6532E8" stroke-width="1"/>
-          <circle class="esg-core" cx="200" cy="187" r="2.6" fill="#6532E8"/>
+                  stroke="url(#esgRim)" stroke-width="1"/>
+          <circle class="esg-core" cx="200" cy="187" r="2.6" fill="#4A1FC0"/>
 
           <g text-anchor="middle" font-family="Onest, sans-serif">
             <g class="esg-e">
@@ -601,6 +633,6 @@
   </div>
 </div>
 
-<script src="js/main.js?v=1.7"></script>
+<script src="js/main.js?v=1.8"></script>
 </body>
 </html>
