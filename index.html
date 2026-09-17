@@ -185,22 +185,38 @@
       </div>
 
       <div class="figure reveal" data-d="1" aria-hidden="true">
-        <svg viewBox="-34 -8 468 346" fill="none">
+        <svg viewBox="-34 -8 468 346" fill="none" class="idea-fig">
+          <!-- the web -->
           <g stroke="#DDDEE2" stroke-width="1">
             <path d="M200 160 V74"/><path d="M200 160 L306 116"/>
             <path d="M200 160 L282 244"/><path d="M200 160 L118 244"/>
             <path d="M200 160 L94 116"/>
           </g>
+
+          <!-- consequence travelling outward -->
+          <g class="idea-pulse" stroke="#6532E8" stroke-width="1.75"
+             stroke-linecap="round" fill="none">
+            <path style="--i:0" pathLength="100" d="M200 160 V74"/>
+            <path style="--i:1" pathLength="100" d="M200 160 L306 116"/>
+            <path style="--i:2" pathLength="100" d="M200 160 L282 244"/>
+            <path style="--i:3" pathLength="100" d="M200 160 L118 244"/>
+            <path style="--i:4" pathLength="100" d="M200 160 L94 116"/>
+          </g>
+
           <circle cx="200" cy="160" r="52" fill="#FBFBFC" stroke="#D3D5DA" stroke-width="1"/>
+          <circle class="idea-halo" cx="200" cy="160" r="52" stroke="#6532E8" stroke-width="1" fill="none"/>
           <text x="200" y="164" text-anchor="middle"
                 font-family="Onest, sans-serif" font-size="12.5" font-weight="600"
                 letter-spacing="1.6" fill="#08090B">DECISION</text>
 
-          <g fill="#6532E8">
-            <circle cx="200" cy="70"  r="3"/><circle cx="310" cy="114" r="3"/>
-            <circle cx="284" cy="248" r="3"/><circle cx="116" cy="248" r="3"/>
-            <circle cx="90"  cy="114" r="3"/>
+          <g class="idea-node" fill="#6532E8">
+            <circle style="--i:0" cx="200" cy="70"  r="3"/>
+            <circle style="--i:1" cx="310" cy="114" r="3"/>
+            <circle style="--i:2" cx="284" cy="248" r="3"/>
+            <circle style="--i:3" cx="116" cy="248" r="3"/>
+            <circle style="--i:4" cx="90"  cy="114" r="3"/>
           </g>
+
           <g font-family="Onest, sans-serif" font-size="10.5" font-weight="500"
              letter-spacing="1.5" fill="#6E7278">
             <text x="200" y="50"  text-anchor="middle">PEOPLE</text>

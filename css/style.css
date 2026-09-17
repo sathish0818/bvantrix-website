@@ -464,6 +464,57 @@ button { font: inherit; color: inherit; }
 
 .figure svg { width: 100%; height: auto; max-width: 500px; }
 
+/* ── The Idea diagram ─────────────────────────────────────────────
+   One consequence leaves the decision, travels a line, lands on a
+   node. Staggered so it reads as a slow rolling wave, not a strobe. */
+
+.idea-pulse path {
+  stroke-dasharray: 11 100;
+  stroke-dashoffset: 0;
+  opacity: 0;
+}
+
+.idea-node circle {
+  transform-box: fill-box;
+  transform-origin: center;
+  opacity: .5;
+}
+
+.idea-halo { opacity: 0; transform-box: fill-box; transform-origin: center; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .idea-pulse path {
+    animation: ideaTravel 4.4s cubic-bezier(.45, 0, .55, 1) infinite;
+    animation-delay: calc(var(--i) * 0.5s);
+  }
+  .idea-node circle {
+    animation: ideaLand 4.4s ease-out infinite;
+    animation-delay: calc(var(--i) * 0.5s + 0.62s);
+  }
+  .idea-halo { animation: ideaHalo 4.4s ease-out infinite; }
+}
+
+@keyframes ideaTravel {
+  0%   { stroke-dashoffset: 0;    opacity: 0; }
+  10%  { opacity: .9; }
+  46%  { opacity: .9; }
+  60%  { stroke-dashoffset: -111; opacity: 0; }
+  100% { stroke-dashoffset: -111; opacity: 0; }
+}
+
+@keyframes ideaLand {
+  0%, 100% { transform: scale(1);    opacity: .5; }
+  8%       { transform: scale(1.75); opacity: 1; }
+  34%      { transform: scale(1);    opacity: .5; }
+}
+
+@keyframes ideaHalo {
+  0%   { transform: scale(1);    opacity: .28; }
+  36%  { transform: scale(1.14); opacity: 0; }
+  100% { transform: scale(1.14); opacity: 0; }
+}
+
+
 /* --------------------------------------------------------------------------
    9. Belief — full-width statement
    -------------------------------------------------------------------------- */
