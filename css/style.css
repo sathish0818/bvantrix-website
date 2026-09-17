@@ -1148,3 +1148,14 @@ button { font: inherit; color: inherit; }
   }
   .tel input { font-size: 0.9375rem; padding-left: 14px; padding-right: 14px; }
 }
+
+/* a button that has to sit in running text without looking like one */
+.as-link {
+  font: inherit;
+  background: none; border: 0; padding: 0;
+  color: var(--violet);
+  cursor: pointer;
+  text-align: left;
+}
+.as-link:hover { text-decoration: underline; text-underline-offset: 3px; }
+.as-link:focus-visible { outline: 2px solid var(--violet); outline-offset: 3px; border-radius: 3px; }
