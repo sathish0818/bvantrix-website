@@ -345,6 +345,29 @@
 
   var done = document.getElementById('contactDone');
 
+  /* The placeholder is a full sentence and a narrow phone cannot show it
+     without cutting it in half, so it shortens rather than clips. */
+  var tel = document.getElementById('ctPhone');
+  if (tel) {
+    var narrow = window.matchMedia('(max-width: 360px)');
+    var setHint = function () {
+      tel.placeholder = narrow.matches ? 'Mobile number' : 'Enter your mobile number';
+    };
+    if (narrow.addEventListener) narrow.addEventListener('change', setHint);
+    else if (narrow.addListener) narrow.addListener(setHint);
+    setHint();
+  }
+
+  /* The control shows only the dialling code; the native select behind it
+     carries the country names. Keep the two in step. */
+  var code = document.getElementById('ctCode');
+  var codeTxt = form.querySelector('.tel-code-txt');
+  if (code && codeTxt) {
+    var syncCode = function () { codeTxt.textContent = code.value; };
+    code.addEventListener('change', syncCode);
+    syncCode();
+  }
+
   function setErr(id, msg) {
     var p = form.querySelector('[data-err-for="' + id + '"]');
     if (p) p.textContent = msg;
@@ -407,6 +430,7 @@
       btn.disabled = false;
       txt.textContent = 'Send';
       form.reset();   // restores India as the default country
+      if (code && codeTxt) codeTxt.textContent = code.value;
     }
 
     if (CONTACT_ENDPOINT) {

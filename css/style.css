@@ -1061,7 +1061,7 @@ button { font: inherit; color: inherit; }
 }
 .contact-meta li:last-child { border-bottom: 1px solid var(--line); }
 .contact-meta .k {
-  flex: none; width: 104px;
+  flex: none; width: 124px;
   font-size: 0.6875rem; letter-spacing: .14em; text-transform: uppercase;
   color: var(--muted); font-weight: 500;
 }
@@ -1091,62 +1091,72 @@ button { font: inherit; color: inherit; }
   .contact-grid { grid-template-columns: 1fr; gap: 40px; }
 }
 
-/* phone: dialling code and number read as one control */
+/* phone: the dialling code and the number are one control, not two
+   glued together — same surface, one hairline between them */
 .tel {
   display: flex;
+  align-items: stretch;
   border: 1px solid var(--line-2);
   border-radius: 10px;
   background: var(--shell);
   transition: border-color .2s ease, box-shadow .2s ease;
-  overflow: hidden;
 }
 .tel:focus-within { border-color: var(--violet); box-shadow: 0 0 0 3px var(--violet-soft); }
 .fld.is-bad .tel { border-color: #C4362F; }
 
-.tel select {
+.tel-code {
+  position: relative;
   flex: none;
-  width: clamp(118px, 38%, 152px);
-  font: inherit; font-size: 0.875rem; color: var(--ink-2);
-  background: var(--panel);
-  border: 0; border-right: 1px solid var(--line-2);
-  border-radius: 0;
-  padding: 12px 10px;
+  display: flex; align-items: center; gap: 7px;
+  padding: 0 11px 0 14px;
+  color: var(--ink-2);
+  font-size: 0.9375rem;
+  font-variant-numeric: tabular-nums;
+  border-right: 1px solid var(--line);
   cursor: pointer;
-  /* keep long country names from pushing the number out */
-  text-overflow: ellipsis;
-  -webkit-appearance: none; appearance: none;
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='7' fill='none'%3E%3Cpath d='M1 1.5 5 5.5 9 1.5' stroke='%236E7278' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 10px center;
-  padding-right: 26px;
 }
-.tel select:focus { outline: none; }
+.tel-code-txt { line-height: 1; }
+.tel-chev { color: var(--ink-3); transition: color .18s ease; }
+.tel-code:hover { color: var(--ink); }
+.tel-code:hover .tel-chev { color: var(--ink-2); }
+
+/* the native select, invisible but still the thing being operated */
+.js .tel-code select {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  font: inherit;
+  border: 0; padding: 0;
+  -webkit-appearance: none; appearance: none;
+}
+.js .tel-code:focus-within { color: var(--violet); }
+.js .tel-code:focus-within .tel-chev { color: var(--violet); }
+.tel-code select:focus { outline: none; }
+
+/* no JS: drop the stand-in and let the select be itself */
+.tel-code-txt, .tel-chev { display: none; }
+.js .tel-code-txt { display: block; }
+.js .tel-chev     { display: block; }
+html:not(.js) .tel-code { padding: 0; }
+html:not(.js) .tel-code select {
+  font: inherit; font-size: 0.875rem;
+  border: 0; background: transparent;
+  padding: 12px 10px 12px 14px;
+  cursor: pointer;
+}
 
 /* the number sheds its own box — the wrapper is the control now */
 .tel input {
   flex: 1 1 auto; min-width: 0;
   border: 0; border-radius: 0;
+  background: transparent;
 }
 .tel input:focus { box-shadow: none; border-color: transparent; }
 
-/* on a phone the code needs only enough room for itself */
 @media (max-width: 560px) {
-  .tel select { width: 88px; font-size: 0.8125rem; padding-left: 8px; padding-right: 20px; }
-  /* the placeholder is a full sentence — give it the room to land */
-  .tel input  { font-size: 0.8125rem; padding-left: 11px; padding-right: 10px; }
-}
-
-/* below this the code and the number cannot share a line without the
-   placeholder being cut in half, so they stack inside the same box */
-@media (max-width: 400px) {
-  .tel { flex-direction: column; }
-  .tel select {
-    width: 100%;
-    border-right: 0;
-    border-bottom: 1px solid var(--line-2);
-    background-position: right 12px center;
-  }
-  .tel input { font-size: 0.9375rem; padding-left: 14px; padding-right: 14px; }
+  .tel-code { font-size: 0.875rem; padding: 0 9px 0 12px; }
+  .tel input { font-size: 0.875rem; padding-left: 12px; padding-right: 12px; }
 }
 
 /* a button that has to sit in running text without looking like one */

@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600;700&display=swap">
-<link rel="stylesheet" href="css/style.css?v=3.1">
+<link rel="stylesheet" href="css/style.css?v=3.5">
 </head>
 <body>
 
@@ -583,23 +583,34 @@
       </div>
 
       <form class="contact-form reveal" data-d="1" id="contactForm" novalidate>
-        <div class="fld">
-          <label for="ctName">Your name</label>
-          <input id="ctName" name="name" type="text" autocomplete="name" required placeholder="Full name">
-          <p class="err" data-err-for="ctName"></p>
-        </div>
-
         <div class="fld-row">
+          <div class="fld">
+            <label for="ctName">Your name</label>
+            <input id="ctName" name="name" type="text" autocomplete="name" required placeholder="Full name">
+            <p class="err" data-err-for="ctName"></p>
+          </div>
           <div class="fld">
             <label for="ctEmail">Email</label>
             <input id="ctEmail" name="email" type="email" autocomplete="email" required placeholder="you@company.com">
             <p class="err" data-err-for="ctEmail"></p>
           </div>
-          <div class="fld">
+        </div>
+
+        <div class="fld">
             <label for="ctPhone">Mobile number</label>
             <div class="tel">
-              <select id="ctCode" name="code" aria-label="Country dialling code">
-              <option value="+61">Australia +61</option>
+              <!-- The real <select> sits invisibly over the code, so the native
+                   picker (full country names) opens on click while the control
+                   itself shows only the dialling code. Without JS the select
+                   renders normally instead. -->
+              <span class="tel-code">
+                <span class="tel-code-txt" aria-hidden="true">+91</span>
+                <svg class="tel-chev" width="10" height="7" viewBox="0 0 10 7" fill="none" aria-hidden="true">
+                  <path d="M1 1.5 5 5.5 9 1.5" stroke="currentColor" stroke-width="1.4"
+                        stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <select id="ctCode" name="code" aria-label="Country dialling code">
+                  <option value="+61">Australia +61</option>
               <option value="+43">Austria +43</option>
               <option value="+973">Bahrain +973</option>
               <option value="+880">Bangladesh +880</option>
@@ -651,12 +662,12 @@
               <option value="+44">United Kingdom +44</option>
               <option value="+1">United States +1</option>
               <option value="+84">Vietnam +84</option>
-              </select>
+                </select>
+              </span>
               <input id="ctPhone" name="phone" type="tel" autocomplete="tel" required
                      inputmode="tel" placeholder="Enter your mobile number">
             </div>
-            <p class="err" data-err-for="ctPhone"></p>
-          </div>
+          <p class="err" data-err-for="ctPhone"></p>
         </div>
 
         <div class="fld">
@@ -820,6 +831,6 @@
   </div>
 </div>
 
-<script src="js/main.js?v=3.1"></script>
+<script src="js/main.js?v=3.5"></script>
 </body>
 </html>
