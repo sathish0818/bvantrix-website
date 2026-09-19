@@ -1,5 +1,22 @@
 /* BVANTRIX — progressive enhancement only.
    Nothing here is required for the page to be readable. */
+
+/* ════════════════════════════════════════════════════════════════════
+   FORM DELIVERY — the one line to change.
+
+   Paste a form endpoint (Formspree, Getform, Basin, your own API) and
+   both the booking panel and the contact form POST to it. The request
+   is then sent from the form service's server and lands in the
+   info@bvantrix.com inbox whether or not the visitor has a mail app.
+
+   Left empty, both forms fall back to opening the visitor's own mail
+   client — which fails silently for anyone who does not have one.
+
+     var BVANTRIX_ENDPOINT = 'https://formspree.io/f/xxxxxxxx';
+   ════════════════════════════════════════════════════════════════════ */
+var BVANTRIX_ENDPOINT = '';
+var BVANTRIX_EMAIL    = 'info@bvantrix.com';
+
 (function () {
   'use strict';
 
@@ -112,14 +129,8 @@
 (function () {
   'use strict';
 
-  /* ──────────────────────────────────────────────────────────────
-     WHERE THE REQUEST GOES.
-     Leave empty and the form hands off to email (opens the visitor's
-     mail client, pre-filled). Set it to a POST endpoint — Formspree,
-     a Google Apps Script, your own API — and it posts JSON instead.
-     ────────────────────────────────────────────────────────────── */
-  var BOOKING_ENDPOINT = '';
-  var BOOKING_EMAIL    = 'info@bvantrix.com';
+  var BOOKING_ENDPOINT = BVANTRIX_ENDPOINT;   /* set at the top of this file */
+  var BOOKING_EMAIL    = BVANTRIX_EMAIL;
 
   var DAYS_AHEAD = 12;                                    // weekdays offered
   var SLOTS = ['10:00', '11:00', '12:00', '15:00', '16:00', '17:00'];
@@ -238,7 +249,9 @@
       company: document.getElementById('bkCo').value.trim(),
       day:     picked.day,
       time:    picked.time,
-      message: document.getElementById('bkMsg').value.trim()
+      message: document.getElementById('bkMsg').value.trim(),
+      _subject: 'Call request — ' + document.getElementById('bkName').value.trim(),
+      form: 'Call booking'
     };
 
     var btn = form.querySelector('.book-submit');
@@ -279,8 +292,9 @@
     grid.hidden = true;
     done.hidden = false;
     doneLn.textContent =
-      data.day + ' at ' + data.time + '. We will confirm to ' + data.email +
-      ' within one working day, with the meeting link.';
+      'You asked for ' + data.day + ' at ' + data.time + '. We will check that ' +
+      'against our calendar and email ' + data.email + ' within one working day ' +
+      'to confirm it, with the meeting link.';
     panel.scrollTop = 0;
     done.querySelector('.btn').focus();
   }
@@ -335,10 +349,8 @@
 (function () {
   'use strict';
 
-  /* Leave empty and the form hands off to email. Set it to a POST
-     endpoint and it posts JSON instead. See BOOKING_ENDPOINT above. */
-  var CONTACT_ENDPOINT = '';
-  var CONTACT_EMAIL    = 'info@bvantrix.com';
+  var CONTACT_ENDPOINT = BVANTRIX_ENDPOINT;   /* set at the top of this file */
+  var CONTACT_EMAIL    = BVANTRIX_EMAIL;
 
   var form = document.getElementById('contactForm');
   if (!form) return;
@@ -417,7 +429,9 @@
                document.getElementById('ctPhone').value.trim(),
       country: document.getElementById('ctCode')
                  .selectedOptions[0].text.replace(/\s*\+\d+$/, ''),
-      message: document.getElementById('ctMsg').value.trim()
+      message: document.getElementById('ctMsg').value.trim(),
+      _subject: 'Website enquiry — ' + document.getElementById('ctName').value.trim(),
+      form: 'Contact'
     };
 
     var btn = form.querySelector('.contact-submit');
