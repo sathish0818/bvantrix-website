@@ -40,6 +40,15 @@ assets/
 Every colour, radius and spacing value is a custom property in the `:root`
 block at the top of `style.css`. Change one there and it updates everywhere.
 
+## Icons
+
+**Material Symbols Outlined**, weight 300 to match the type, subset in the
+`<head>` to exactly the 23 names the page uses via `icon_names=`. Adding an
+icon means adding its name to that list as well as the markup, or it will
+render as the literal word.
+
+## Type
+
 Two families, both from Google Fonts: **Newsreader** carries the argument
 (every headline and pull quote), **Onest** carries everything else. The
 split is deliberate — the serif is what stops the page reading as generic.

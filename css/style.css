@@ -1072,3 +1072,28 @@ html:not(.js) .tel-code select {
   .tel-code { font-size: 0.875rem; padding: 0 9px 0 12px; }
   .tel input { font-size: 0.875rem; padding-left: 12px; padding-right: 12px; }
 }
+
+/* --------------------------------------------------------------------------
+   22. Icons — Material Symbols Outlined, subset in the <head> to exactly
+   the names this page uses. One family, one weight, one optical size, so
+   every icon on the page shares a drawing.
+   -------------------------------------------------------------------------- */
+
+.mi {
+  font-family: "Material Symbols Outlined";
+  font-weight: normal; font-style: normal;
+  font-size: 22px; line-height: 1;
+  letter-spacing: normal; text-transform: none;
+  display: inline-block; white-space: nowrap; word-wrap: normal;
+  direction: ltr;
+  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+  -webkit-font-feature-settings: 'liga';
+  font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+  user-select: none;
+}
+
+.silo-ico  .mi { font-size: 21px; }
+.chain-ico .mi { font-size: 21px; }
+.step-ico  .mi { font-size: 20px; }
+.forces li span .mi { font-size: 19px; }
