@@ -164,15 +164,29 @@ button { font: inherit; }
 .band--forest .h2 em,
 .band--ink    .h2 em { color: var(--amber-2); }
 
-/* the two-column editorial grid every band uses */
-.split {
+/* ── The grid ──────────────────────────────────────────────────
+   One measure for the whole page. The copy column is 36% of the
+   content width in every band, so the right-hand column always
+   begins on the same vertical line as you scroll. Sections used to
+   each pick their own ratio, and the page read as unbalanced
+   because nothing lined up with anything above it. */
+:root { --col: 36%; --gutter: clamp(32px, 4.2vw, 76px); }
+
+.split,
+.triptych,
+.whynow,
+.vision,
+.contact-grid {
   display: grid;
-  grid-template-columns: minmax(0, 0.86fr) minmax(0, 1.14fr);
-  gap: clamp(36px, 5vw, 86px);
+  grid-template-columns: var(--col) minmax(0, 1fr);
+  gap: var(--gutter);
   align-items: start;
 }
-.split--wide  { grid-template-columns: minmax(0, 0.72fr) minmax(0, 1.28fr); }
-.split--tight { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: center; }
+
+/* the three-part band keeps the same first column, then splits the rest */
+.triptych { grid-template-columns: var(--col) minmax(0, 1.12fr) minmax(0, 0.88fr); }
+.vision   { grid-template-columns: var(--col) minmax(0, 1fr) auto; }
+.split--tight { align-items: start; }
 
 /* --------------------------------------------------------------------------
    5. Navigation
@@ -380,7 +394,14 @@ button { font: inherit; }
 }
 .silo-ico svg { width: 21px; height: 21px; }
 .silos b { font-size: 0.8125rem; font-weight: 500; }
-.silos i { font-style: normal; font-size: 0.6875rem; line-height: 1.45; color: var(--ink-3); }
+.silos i {
+  font-style: normal; font-size: 0.6875rem; line-height: 1.45;
+  color: var(--ink-3);
+  /* two lines whether the caption needs them or not, so the row of six
+     has one bottom edge instead of a ragged one */
+  min-height: calc(2 * 1.45em);
+  text-wrap: balance;
+}
 
 .silo-funnel { width: 100%; height: 76px; margin-top: 6px; }
 
@@ -409,6 +430,7 @@ button { font: inherit; }
 .chain li {
   flex: 1 1 0; min-width: 84px;
   display: grid; justify-items: center; gap: 12px;
+  align-content: start;
   text-align: center;
   font-size: 0.75rem; line-height: 1.35;
   color: var(--on-dark-2);
@@ -457,21 +479,24 @@ button { font: inherit; }
   display: grid; gap: 6px; align-content: start;
 }
 .steps li:first-child { border-left: 0; padding-left: 0; }
+.step-head { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
 .step-n {
-  font-size: 0.6875rem; font-weight: 500; letter-spacing: .14em;
+  font-size: 0.8125rem; font-weight: 500; letter-spacing: .1em;
   color: var(--amber);
+  font-variant-numeric: tabular-nums;
 }
 .step-ico {
-  width: 46px; height: 46px; margin: 10px 0 6px;
+  width: 44px; height: 44px; flex: none;
   display: grid; place-items: center;
   border: 1px solid var(--line-2); border-radius: 50%;
   color: var(--ink-2);
 }
 .step-ico svg { width: 19px; height: 19px; }
-.steps b { font-size: 0.875rem; font-weight: 600; }
+.steps b { font-size: 0.875rem; font-weight: 600; margin-bottom: 2px; }
 .steps i {
   font-style: normal; font-size: 0.75rem; line-height: 1.5;
   color: var(--ink-3);
+  text-wrap: pretty;
 }
 
 /* --------------------------------------------------------------------------
@@ -546,12 +571,6 @@ button { font: inherit; }
    13. Human principle
    -------------------------------------------------------------------------- */
 
-.triptych {
-  display: grid;
-  grid-template-columns: minmax(0, 1.08fr) minmax(0, 1.02fr) minmax(0, 0.9fr);
-  gap: clamp(28px, 4vw, 64px);
-  align-items: start;
-}
 .triptych .body { margin-top: 0; }
 .triptych .h2 { font-size: clamp(1.75rem, 3vw, 2.5rem); }
 
@@ -577,18 +596,17 @@ button { font: inherit; }
    14. Founder
    -------------------------------------------------------------------------- */
 
-.founder {
-  display: grid;
-  grid-template-columns: minmax(0, 0.84fr) minmax(0, 1.16fr);
-  align-items: stretch;
-  background: var(--stone);
-}
+/* The photo bleeds to the left edge behind the grid; the copy sits in
+   the ordinary .wrap grid, so its left edge is the same 2nd column the
+   rest of the page uses. Putting the photo in the grid itself pulled
+   the text 15px off that line. */
+.founder { position: relative; background: var(--stone); }
+
 .founder-photo {
-  position: relative;
-  min-height: 460px;
+  position: absolute; inset: 0 auto 0 0;
+  width: calc(var(--pad) + (100% - 2 * var(--pad)) * 0.36 + var(--gutter) / 2);
   display: grid; place-items: center;
-  background:
-    radial-gradient(120% 90% at 30% 18%, #EEEAE0 0%, #DFDACB 46%, #C8C2B1 100%);
+  background: radial-gradient(120% 90% at 30% 18%, #EEEAE0 0%, #DFDACB 46%, #C8C2B1 100%);
   overflow: hidden;
 }
 .founder-photo::after {
@@ -598,12 +616,16 @@ button { font: inherit; }
 }
 .founder-watermark { width: 92px; height: 120px; color: #1C1F23; opacity: .07; }
 
-.founder-copy {
-  padding: clamp(44px, 5.4vw, 86px) clamp(28px, 5vw, 86px);
-  align-self: center;
-  max-width: 760px;
+.founder-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: var(--col) minmax(0, 1fr);
+  gap: var(--gutter);
+  align-items: center;
+  min-height: 520px;
 }
-.founder-copy .body { max-width: 58ch; }
+.founder-copy { padding: clamp(52px, 6vw, 92px) 0; max-width: 680px; }
+.founder-copy .body { max-width: 56ch; }
 
 .sign { margin-top: 36px; }
 .sign-mark { width: 164px; height: 38px; color: var(--ink); opacity: .78; }
@@ -614,12 +636,6 @@ button { font: inherit; }
    15. Why now / vision
    -------------------------------------------------------------------------- */
 
-.whynow {
-  display: grid;
-  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
-  gap: clamp(30px, 4vw, 70px);
-  align-items: center;
-}
 .forces {
   list-style: none; margin: 0; padding: 0;
   display: grid; grid-template-columns: repeat(7, minmax(0, 1fr));
@@ -627,8 +643,10 @@ button { font: inherit; }
 }
 .forces li {
   display: grid; justify-items: center; gap: 10px;
+  align-content: start;
   text-align: center;
   font-size: 0.6875rem; line-height: 1.4; color: var(--ink-3);
+  text-wrap: balance;
 }
 .forces li span {
   width: 42px; height: 42px;
@@ -638,12 +656,6 @@ button { font: inherit; }
 }
 .forces svg { width: 18px; height: 18px; }
 
-.vision {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto;
-  gap: clamp(26px, 4vw, 60px);
-  align-items: center;
-}
 .vision .body { margin-top: 0; }
 
 /* --------------------------------------------------------------------------
@@ -653,12 +665,6 @@ button { font: inherit; }
 .closer { max-width: 760px; margin-bottom: clamp(40px, 5vw, 70px); }
 .closer .body { max-width: 56ch; }
 
-.contact-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 0.76fr) minmax(0, 1.24fr);
-  gap: clamp(32px, 5vw, 80px);
-  align-items: start;
-}
 
 .contact-meta ul { list-style: none; margin: 0; padding: 0; }
 .contact-meta li {
