@@ -31,7 +31,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300&family=Onest:wght@300;400;500;600&display=swap">
-<link rel="stylesheet" href="css/style.css?v=4.8">
+<link rel="stylesheet" href="css/style.css?v=5.0">
 </head>
 <body>
 
@@ -435,16 +435,12 @@
 <!-- ══ The Founder ═════════════════════════════════════════════════════ -->
 <section class="band band--paper band--flush" id="founder">
   <div class="founder">
-    <!-- PHOTO SLOT — assets/images/team/founder.jpg, portrait, 900×1100 ideal.
-         Bleeds to the left edge behind the grid, so the copy beside it still
-         lands on the page's second column rather than near it. -->
-    <div class="founder-photo" aria-hidden="true">
-      <svg class="founder-watermark" viewBox="0 0 96 124" fill="none">
-        <path d="M14 6 H32 V118 H14 Z" fill="currentColor"/>
-        <path d="M32 6 A28 28 0 0 1 32 62 Z" fill="currentColor" opacity=".55"/>
-        <path d="M32 62 A30 30 0 0 1 32 122 Z" fill="currentColor" opacity=".8"/>
-        <path d="M32 62 L62 92 L32 122 Z" fill="currentColor" opacity=".3"/>
-      </svg>
+    <div class="founder-photo">
+      <picture>
+        <source srcset="assets/images/team/founder.webp" type="image/webp">
+        <img src="assets/images/team/founder.jpg" width="900" height="1200"
+             alt="Bhuvana Selvan, founder of BVANTRIX" loading="lazy" decoding="async">
+      </picture>
     </div>
 
     <div class="wrap founder-grid">
@@ -784,6 +780,6 @@
   </div>
 </div>
 
-<script src="js/main.js?v=4.8"></script>
+<script src="js/main.js?v=5.0"></script>
 </body>
 </html>

@@ -31,6 +31,7 @@ js/main.js          scroll reveal, sticky nav, drawer, booking panel, contact fo
 legacy/             the previous design, kept so it can be read without git
 assets/
   vectors/          the B mark and favicon
+  images/team/      the founder portrait
   images/og/        social share card + the page it is rendered from
 ```
 
@@ -45,15 +46,13 @@ split is deliberate — the serif is what stops the page reading as generic.
 
 ## Photographs
 
-Two slots are waiting for real images, both marked `PHOTO SLOT` in
-`index.html`:
+The founder portrait is in place: `assets/images/team/founder.{jpg,webp}`,
+900x1200, served through a `<picture>` so WebP goes to browsers that take
+it and JPEG to the rest.
 
-- the hero, which currently renders a built dusk gradient rather than a
-  photograph
-- the founder portrait, which renders a tonal panel with a faint mark
-
-Both are designed to look intentional while empty, so the site can ship
-before the photography exists.
+One slot is still empty, marked `PHOTO SLOT` in `index.html`: the hero,
+which renders a built dusk gradient rather than a photograph. It is
+designed to look intentional while empty.
 
 ## Forms
 

@@ -654,16 +654,23 @@ button { font: inherit; }
 .founder-photo {
   position: absolute; inset: 0 auto 0 0;
   width: calc(var(--pad) + (100% - 2 * var(--pad)) * 0.36 + var(--gutter) / 2);
-  display: grid; place-items: center;
-  background: radial-gradient(120% 90% at 30% 18%, #EEEAE0 0%, #DFDACB 46%, #C8C2B1 100%);
   overflow: hidden;
+  background: #DFDACB;
 }
+.founder-photo picture, .founder-photo img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: 50% 22%;   /* keep the face clear of the bottom crop */
+  display: block;
+}
+/* the stone band warms the photo so it belongs to the page */
 .founder-photo::after {
   content: "";
   position: absolute; inset: 0;
-  background: linear-gradient(200deg, rgba(255,255,255,.3), rgba(28,31,35,.08));
+  background:
+    linear-gradient(100deg, rgba(240, 237, 228, 0) 58%, rgba(240, 237, 228, .55) 100%);
+  pointer-events: none;
 }
-.founder-watermark { width: 92px; height: 120px; color: #1C1F23; opacity: .07; }
 
 .founder-grid {
   position: relative;
@@ -996,8 +1003,19 @@ html:not(.js) .tel-code select {
   .split, .split--wide, .split--tight { grid-template-columns: 1fr; gap: 42px; }
   .triptych { grid-template-columns: 1fr; gap: 32px; }
   .whynow, .vision { grid-template-columns: 1fr; gap: 32px; }
-  .founder { grid-template-columns: 1fr; }
-  .founder-photo { min-height: 340px; }
+  /* the portrait stops being a background and becomes the lead image */
+  .founder-photo {
+    position: static;
+    width: 100%;
+    height: clamp(320px, 62vw, 520px);
+  }
+  .founder-photo img { object-position: 50% 16%; }
+  .founder-photo::after {
+    background: linear-gradient(180deg, rgba(240,237,228,0) 72%, rgba(240,237,228,.5) 100%);
+  }
+  .founder-grid { grid-template-columns: 1fr; min-height: 0; }
+  .founder-grid > div:first-child { display: none; }
+  .founder-copy { padding: clamp(36px, 7vw, 60px) 0 clamp(44px, 8vw, 72px); }
   .contact-grid { grid-template-columns: 1fr; gap: 38px; }
   .foot-in { grid-template-columns: 1fr 1fr; }
   .foot-end { justify-items: start; grid-column: 1 / -1; }
