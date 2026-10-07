@@ -310,7 +310,7 @@ button { font: inherit; }
   position: relative;
   min-height: min(92vh, 860px);
   display: flex; align-items: center;
-  padding: 150px var(--pad) clamp(68px, 8vw, 104px);
+  padding: 150px 0 clamp(68px, 8vw, 104px);
   background: var(--ink-bg-2);
   color: var(--on-dark);
   overflow: hidden;
@@ -340,38 +340,87 @@ button { font: inherit; }
   content: "";
   position: absolute; inset: 0; z-index: -1;
   background:
-    linear-gradient(90deg, rgba(8,12,14,.9) 0%, rgba(8,12,14,.72) 38%, rgba(8,12,14,.16) 70%),
+    linear-gradient(90deg, rgba(8,12,14,.88) 0%, rgba(8,12,14,.66) 46%, rgba(8,12,14,.42) 100%),
     linear-gradient(180deg, rgba(8,12,14,.78) 0%, rgba(8,12,14,0) 32%);
 }
 
-.hero-web {
-  position: absolute; right: -4%; top: 12%;
-  width: 72%; max-width: 980px; z-index: 0;
-  pointer-events: none;
+/* the hero is two columns: the argument, and the picture of it */
+.hero-grid {
+  position: relative; z-index: 1;
+  width: 100%; max-width: var(--content); margin: 0 auto;
+  padding: 0 var(--pad);          /* same measure as .wrap, so the headline
+                                     starts on the page's first column */
+  display: grid;
+  grid-template-columns: minmax(0, 1.06fr) minmax(0, 0.94fr);
+  gap: clamp(28px, 3.4vw, 64px);
+  align-items: center;
 }
-.web-label { opacity: .9; }
+/* wide enough that "important decision" holds one line */
+.hero-copy { max-width: 660px; }
 
-.hero-inner { position: relative; z-index: 1; max-width: 640px; }
-.hero-lede {
-  margin: 30px 0 0;
-  max-width: 46ch;
-  font-size: 1rem; line-height: 1.66;
-  color: var(--on-dark-2);
+.hero-art { display: grid; justify-items: center; gap: 22px; }
+.hero-web { width: 100%; max-width: 520px; height: auto; }
+
+.web-label {
+  font-family: var(--sans);
+  font-size: 12.5px; font-weight: 500;
+  letter-spacing: .15em;
+  opacity: 1;
 }
-.hero-sub {
-  margin: 20px 0 34px;
-  font-size: 0.9375rem;
-  color: var(--on-dark-2);
+.web-hub-t {
+  font-family: var(--sans);
+  font-size: 10px; font-weight: 500; letter-spacing: .24em;
+  fill: var(--on-dark-2);
+}
+.web-hub-t--big {
+  font-size: 15px; font-weight: 600; letter-spacing: .13em;
+  fill: #F0B46B;
 }
 
-.hero-stamp {
-  position: absolute; right: var(--pad); bottom: clamp(34px, 5vw, 60px);
-  margin: 0; z-index: 1;
-  text-align: right;
-  font-size: 0.6875rem; font-weight: 500;
-  letter-spacing: .22em; text-transform: uppercase;
-  line-height: 2.1;
+.hero-caption {
+  margin: 0; max-width: 54ch; text-align: center;
+  font-size: 0.875rem; line-height: 1.6;
   color: var(--on-dark-2);
+  text-wrap: balance;
+}
+.hero-caption b { color: var(--on-dark); font-weight: 500; }
+
+/* the pulse leaves the decision and fades as it reaches each domain */
+.web-pulse path { stroke-dasharray: 12 100; stroke-dashoffset: 0; opacity: 0; }
+.web-node circle { opacity: .55; transform-box: fill-box; transform-origin: center; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .web-pulse path {
+    animation: spokeTravel 8s cubic-bezier(.4, 0, .6, 1) infinite;
+    animation-delay: calc(var(--i) * 0.42s);
+  }
+  .web-node circle {
+    animation: spokeLand 8s ease-out infinite;
+    animation-delay: calc(var(--i) * 0.42s + 1.05s);
+  }
+  .web-hub { animation: hubBreathe 8s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+  .web-orbit { animation: orbitFade 8s ease-in-out infinite; }
+}
+
+@keyframes spokeTravel {
+  0%   { stroke-dashoffset: 0;    opacity: 0; }
+  6%   { opacity: .95; }
+  22%  { opacity: .95; }
+  32%  { stroke-dashoffset: -110; opacity: 0; }
+  100% { stroke-dashoffset: -110; opacity: 0; }
+}
+@keyframes spokeLand {
+  0%, 100% { transform: scale(1);    opacity: .55; }
+  4%       { transform: scale(1.55); opacity: 1; }
+  20%      { transform: scale(1);    opacity: .72; }
+}
+@keyframes hubBreathe {
+  0%, 100% { transform: scale(1); }
+  46%      { transform: scale(1.035); }
+}
+@keyframes orbitFade {
+  0%, 100% { stroke-opacity: .2; }
+  50%      { stroke-opacity: .38; }
 }
 
 /* --------------------------------------------------------------------------
@@ -954,8 +1003,9 @@ html:not(.js) .tel-code select {
   .foot-end { justify-items: start; grid-column: 1 / -1; }
   .steps { grid-template-columns: repeat(3, 1fr); gap: 28px 0; }
   .steps li:nth-child(4) { border-left: 0; padding-left: 0; }
-  .hero-web { right: -14%; top: auto; bottom: 4%; width: 100%; opacity: .55; }
-  .hero-stamp { display: none; }
+  .hero-grid { grid-template-columns: 1fr; gap: 44px; }
+  .hero-copy { max-width: 46ch; }
+  .hero-web { max-width: 440px; }
 }
 
 @media (max-width: 960px) {
