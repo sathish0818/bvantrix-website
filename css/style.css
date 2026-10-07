@@ -729,18 +729,26 @@ button { font: inherit; }
    16. Contact
    -------------------------------------------------------------------------- */
 
-.closer { max-width: 760px; margin-bottom: clamp(40px, 5vw, 70px); }
-.closer .body { max-width: 56ch; }
+/* The left column used to hold two short lines with 366px of nothing
+   under them, and the closing statement floated above the grid as a
+   third, unrelated block. The statement now leads the column and the
+   details sit beneath it, so both sides carry weight. */
+.contact-side { align-self: center; }
+.contact-side .body { max-width: 44ch; }
 
-
-.contact-meta ul { list-style: none; margin: 0; padding: 0; }
+.contact-meta {
+  list-style: none;
+  margin: clamp(32px, 3.6vw, 48px) 0 0;
+  padding: 0;
+  max-width: 420px;
+}
 .contact-meta li {
   display: flex; align-items: baseline; gap: 16px;
   padding: 15px 0;
-  border-top: 1px solid var(--line);
+  border-top: 1px solid var(--line-2);
   font-size: 0.9375rem; color: var(--ink-2);
 }
-.contact-meta li:last-child { border-bottom: 1px solid var(--line); }
+.contact-meta li:last-child { border-bottom: 1px solid var(--line-2); }
 .contact-meta .k {
   flex: none; width: 124px;
   font-size: 0.6875rem; letter-spacing: .14em; text-transform: uppercase;
@@ -757,11 +765,14 @@ button { font: inherit; }
 
 .contact-form {
   display: grid; gap: 20px; align-content: start;
-  background: var(--stone);
-  border: 1px solid var(--line);
+  background: var(--paper);
+  border: 1px solid var(--line-2);
   border-radius: var(--r);
-  padding: clamp(24px, 3vw, 42px);
+  padding: clamp(26px, 3.2vw, 46px);
 }
+.contact-form .fld input,
+.contact-form .fld textarea,
+.contact-form .tel { background: var(--paper); }
 .contact-submit { justify-self: start; margin-top: 2px; }
 .contact-submit[disabled] { opacity: .55; pointer-events: none; }
 .contact-done {
