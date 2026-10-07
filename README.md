@@ -1,6 +1,10 @@
-# BVantrix — website
+# BVANTRIX — website
 
 Static site. No build step, no dependencies.
+
+The current design is the editorial one: cream and forest bands, serif
+headlines, the brand B mark. The previous white minimal build is kept in
+`legacy/`, and at the git tag `design-v1` / branch `design-v1-backup`.
 
 ## Run it
 
@@ -24,10 +28,10 @@ when you wonder why something is the way it is.
 index.html          the page
 css/style.css       all styling, tokens at the top
 js/main.js          scroll reveal, sticky nav, drawer, booking panel, contact form
+legacy/             the previous design, kept so it can be read without git
 assets/
-  vectors/          logo, favicon
-  images/team/      headshots — placeholders for now
-  images/og/        social share card
+  vectors/          the B mark and favicon
+  images/og/        social share card + the page it is rendered from
 ```
 
 ## Editing
@@ -35,7 +39,21 @@ assets/
 Every colour, radius and spacing value is a custom property in the `:root`
 block at the top of `style.css`. Change one there and it updates everywhere.
 
-Type is **Onest**, one family throughout, loaded from Google Fonts.
+Two families, both from Google Fonts: **Newsreader** carries the argument
+(every headline and pull quote), **Onest** carries everything else. The
+split is deliberate — the serif is what stops the page reading as generic.
+
+## Photographs
+
+Two slots are waiting for real images, both marked `PHOTO SLOT` in
+`index.html`:
+
+- the hero, which currently renders a built dusk gradient rather than a
+  photograph
+- the founder portrait, which renders a tonal panel with a faint mark
+
+Both are designed to look intentional while empty, so the site can ship
+before the photography exists.
 
 ## Forms
 
