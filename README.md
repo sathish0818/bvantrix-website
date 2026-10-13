@@ -40,6 +40,32 @@ assets/
 Every colour, radius and spacing value is a custom property in the `:root`
 block at the top of `style.css`. Change one there and it updates everywhere.
 
+## The ESG demo
+
+`esg-demo.html` — six steps, 15 scored questions, a preliminary score out of
+100 with its confidence, then one decision compared using weights derived from
+the answers.
+
+```
+js/esg-demo-data.js   ALL the content: dimensions, questions, scoring, the
+                      worked decision. This is the only file to edit when
+                      the questions change.
+js/esg-demo.js        the engine. Reads the data file, hard-codes nothing.
+css/esg-demo.css      only what the homepage does not already have
+```
+
+Rules the engine enforces, because they are the point of the thing:
+
+- every question carries a **"I don't know"** option worth `null`. Those do not
+  score — they lower the stated confidence, which is the honest way round
+- the score always ships with its confidence band and the list of questions it
+  could not score
+- the decision weights start from the visitor's **weakest** dimensions, since
+  that is where a decision is most likely to surprise them, and stay adjustable
+
+To change a question, edit `js/esg-demo-data.js` and keep the shape. Adding a
+dimension means adding it to `dimensions` and pointing questions at its `id`.
+
 ## Icons
 
 **Material Symbols Outlined**, weight 300 to match the type, subset in the
