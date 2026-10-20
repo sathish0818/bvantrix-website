@@ -28,8 +28,9 @@
   --field-2:      #15332B;   /* brand Teal, darkened for a whole page */
 
   /* one accent, on the action and almost nowhere else */
-  --accent:     #C8752A;
+  --accent:     #C8752A;   /* on bone */
   --accent-ink: #15110B;
+  --accent-dk:  #E2A058;   /* the same accent, for dark fields: 4.2:1 was short */
 
   --rule: #C7C3B8;
 
@@ -452,7 +453,7 @@ p { margin: 0; }
 .scene-count b {
   font-family: var(--display); font-weight: 400;
   font-size: var(--t-head); line-height: 1;
-  color: var(--accent); font-variant-numeric: tabular-nums;
+  color: var(--accent-dk); font-variant-numeric: tabular-nums;
 }
 .scene-count span { font-size: var(--t-small); color: var(--field-ink-2); }
 
@@ -468,7 +469,7 @@ p { margin: 0; }
 .chain li::before {
   content: ""; display: block;
   width: 26px; height: 2px; margin-bottom: 14px;
-  background: var(--accent);
+  background: var(--accent-dk);
   transform: scaleX(var(--lit)); transform-origin: left;
   transition: transform .4s cubic-bezier(.16,.84,.3,1);
 }
@@ -842,3 +843,83 @@ html:not(.js) .tel-code select { font: inherit; border: 0; background: transpare
 
 /* the one moving picture: a port at work, paused when motion is unwelcome */
 .mosaic .clip { width: 100%; height: 100%; object-fit: cover; }
+
+/* --------------------------------------------------------------------------
+   19. The flow — a decision travelling, as its own band
+   A sweep crosses the row from left to right, lighting each place as it
+   arrives. Hovering holds the sweep on whatever the pointer is over, so
+   the thing can be read rather than watched.
+   -------------------------------------------------------------------------- */
+
+.flow {
+  background: var(--field);
+  color: var(--field-ink);
+  padding: clamp(30px, 3.6vw, 52px) 0;
+  overflow: hidden;
+}
+
+.flow-row {
+  list-style: none; margin: 0;
+  padding: 0 var(--margin);
+  max-width: var(--page);
+  margin-inline: auto;
+  display: flex; align-items: baseline;
+  gap: clamp(14px, 2.6vw, 46px);
+  font-family: var(--display);
+  font-size: var(--t-lead);
+  line-height: 1.1; letter-spacing: -0.018em;
+  white-space: nowrap;
+}
+
+.flow-row li {
+  --lit: 0;
+  position: relative;
+  color: var(--field-ink-2);
+  opacity: calc(0.42 + 0.58 * var(--lit));
+  transform: translateY(calc(var(--lit) * -3px));
+  transition: opacity .45s ease, transform .45s cubic-bezier(.16,.84,.3,1), color .45s ease;
+  cursor: default;
+}
+.flow-row li em {
+  font-style: italic;
+  color: var(--accent-dk);
+}
+
+/* the place the sweep is on */
+.flow-row li[data-on] { color: var(--field-ink); }
+
+/* a decision enters, so it never fully dims */
+.flow-row li:first-child { --lit: .55; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .flow-row li {
+    animation: flowSweep 9.1s cubic-bezier(.4,0,.3,1) infinite;
+    animation-delay: calc(var(--i) * 0.42s);
+  }
+  .flow-row:hover li, .flow-row:focus-within li { animation-play-state: paused; }
+  .flow-row li:hover { --lit: 1; color: var(--field-ink); }
+}
+
+@keyframes flowSweep {
+  0%, 100% { --lit: 0; }
+  6%       { --lit: 1; }
+  16%      { --lit: .18; }
+}
+
+/* --lit has to be a registered property for a keyframe to interpolate it */
+@property --lit {
+  syntax: "<number>";
+  inherits: false;
+  initial-value: 0;
+}
+
+@media (max-width: 860px) {
+  .flow { padding: 24px 0; }
+  .flow-row {
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 4px;
+  }
+  .flow-row::-webkit-scrollbar { display: none; }
+}
