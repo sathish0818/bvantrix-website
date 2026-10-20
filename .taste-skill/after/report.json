@@ -1,28 +1,30 @@
 {
  "url": "http://127.0.0.1:8777/index.html",
- "at": "2026-10-20T11:03:02.588Z",
+ "at": "2026-10-20T11:09:34.363Z",
  "allow": [],
  "viewports": [
   {
    "width": 1440,
    "height": 900,
    "load": "load",
-   "screens": 8,
+   "screens": 10,
    "filled": [
     0.37,
     0.55,
-    0.83,
-    0.29,
-    0.27,
-    0.55,
     1,
+    1,
+    1,
+    0.37,
+    0.28,
+    0.47,
+    0.87,
     1
    ],
    "motion": {
-    "elements": 26,
+    "elements": 48,
     "css": 5,
-    "transitions": 21,
-    "scripted": 0,
+    "transitions": 40,
+    "scripted": 3,
     "videos": 1,
     "playingVideos": 0
    },
@@ -32,13 +34,13 @@
      "h": 900
     },
     "page": {
-     "height": 6362,
-     "screens": 7.1,
-     "words": 785,
+     "height": 8568,
+     "screens": 9.5,
+     "words": 792,
      "img": 5,
      "video": 1,
      "canvas": 0,
-     "svg": 4,
+     "svg": 6,
      "sections": 7,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
@@ -232,7 +234,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.39,
-      "top": 2131,
+      "top": 2297,
       "tag": "h2",
       "kind": "heading"
      },
@@ -253,7 +255,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.15,
-      "top": 2131,
+      "top": 2368,
       "tag": "b",
       "kind": "statement"
      },
@@ -274,7 +276,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.15,
-      "top": 2131,
+      "top": 2368,
       "tag": "b",
       "kind": "statement"
      },
@@ -295,8 +297,29 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.15,
-      "top": 2131,
+      "top": 2368,
       "tag": "b",
+      "kind": "statement"
+     },
+     {
+      "text": "They keep moving. Scroll, and watch one arrive in six places.",
+      "words": 11,
+      "chars": 61,
+      "lines": 2,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Newsreader",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.3,
+      "top": 2462,
+      "tag": "p",
       "kind": "statement"
      },
      {
@@ -316,7 +339,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.15,
-      "top": 2254,
+      "top": 2506,
       "tag": "b",
       "kind": "statement"
      },
@@ -337,7 +360,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.15,
-      "top": 2254,
+      "top": 2506,
       "tag": "b",
       "kind": "statement"
      },
@@ -358,29 +381,29 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.15,
-      "top": 2254,
+      "top": 2506,
       "tag": "b",
       "kind": "statement"
      },
      {
-      "text": "They keep moving, through six places at once.",
-      "words": 8,
-      "chars": 45,
-      "lines": 2,
-      "size": 32,
-      "vw": 2.2,
+      "text": "0",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 68,
+      "vw": 4.7,
       "font": "Newsreader",
       "weight": 400,
       "tracking": 0,
-      "leading": 1.2,
+      "leading": 1,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "left",
-      "widthRatio": 0.3,
-      "top": 2295,
-      "tag": "p",
+      "widthRatio": 0.03,
+      "top": 2582,
+      "tag": "b",
       "kind": "statement"
      },
      {
@@ -400,7 +423,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.39,
-      "top": 2631,
+      "top": 4831,
       "tag": "h2",
       "kind": "heading"
      },
@@ -421,7 +444,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.47,
-      "top": 2663,
+      "top": 4863,
       "tag": "b",
       "kind": "statement"
      },
@@ -442,7 +465,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.47,
-      "top": 2796,
+      "top": 4996,
       "tag": "b",
       "kind": "statement"
      },
@@ -463,7 +486,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.47,
-      "top": 2930,
+      "top": 5130,
       "tag": "b",
       "kind": "statement"
      },
@@ -484,7 +507,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.47,
-      "top": 3063,
+      "top": 5263,
       "tag": "b",
       "kind": "statement"
      },
@@ -505,7 +528,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.39,
-      "top": 3424,
+      "top": 5624,
       "tag": "h2",
       "kind": "heading"
      },
@@ -526,7 +549,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.25,
-      "top": 3467,
+      "top": 5667,
       "tag": "p",
       "kind": "statement"
      },
@@ -547,7 +570,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.5,
-      "top": 4315,
+      "top": 6515,
       "tag": "h2",
       "kind": "heading"
      },
@@ -568,7 +591,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.14,
-      "top": 4906,
+      "top": 7106,
       "tag": "b",
       "kind": "statement"
      },
@@ -589,7 +612,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.39,
-      "top": 5219,
+      "top": 7419,
       "tag": "h2",
       "kind": "heading"
      },
@@ -610,16 +633,16 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.94,
-      "top": 5891,
+      "top": 8091,
       "tag": "p",
       "kind": "statement"
      }
     ],
     "headingSummary": {
-     "count": 25,
+     "count": 26,
      "maxLines": 3,
      "over2Lines": 0,
-     "statements": 16,
+     "statements": 17,
      "centered": 0,
      "medianWords": 4,
      "mixedFontHeadings": 0
@@ -695,7 +718,7 @@
       },
       {
        "color": "#dedbd3",
-       "top": 3424,
+       "top": 5624,
        "hsl": {
         "h": 44,
         "s": 0.14,
@@ -704,7 +727,7 @@
       },
       {
        "color": "#15332b",
-       "top": 5090,
+       "top": 7290,
        "hsl": {
         "h": 164,
         "s": 0.42,
@@ -727,7 +750,7 @@
       },
       {
        "color": "#46525e",
-       "share": 0.06
+       "share": 0.05
       },
       {
        "color": "#15110b",
@@ -789,7 +812,7 @@
     "nav": {
      "links": 8,
      "fixed": false,
-     "height": 50,
+     "height": 56,
      "floatingPill": false,
      "blur": false
     },
@@ -803,7 +826,7 @@
      "w": 1440,
      "h": 900
     },
-    "pageH": 6362,
+    "pageH": 8568,
     "margins": {
      "left": 46,
      "right": 46
@@ -856,7 +879,7 @@
       "pinned": false
      },
      {
-      "sel": "div.mosaic",
+      "sel": "div.mosaic.rise",
       "tag": "div",
       "top": 1455,
       "height": 547,
@@ -879,32 +902,28 @@
       "pinned": false
      },
      {
-      "sel": "section#chain.page.field",
+      "sel": "section#chain.scene.field",
       "tag": "section",
       "top": 2002,
-      "height": 500,
-      "words": 67,
+      "height": 2700,
+      "words": 0,
       "media": 0,
-      "middle": 213,
-      "heading": {
-       "text": "Decisions",
-       "size": 68,
-       "tag": "h2"
-      },
-      "left": 46,
-      "right": 56,
-      "textLeft": 46,
-      "textRight": 56,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
       "fullBleed": false,
       "footer": false,
       "hero": false,
       "continues": true,
-      "pinned": false
+      "pinned": true
      },
      {
       "sel": "section#method.page.sheet",
       "tag": "section",
-      "top": 2502,
+      "top": 4702,
       "height": 793,
       "words": 88,
       "media": 0,
@@ -927,7 +946,7 @@
      {
       "sel": "section#esg.page.sheet",
       "tag": "section",
-      "top": 3295,
+      "top": 5495,
       "height": 890,
       "words": 108,
       "media": 0,
@@ -950,7 +969,7 @@
      {
       "sel": "section#founder.page.sheet",
       "tag": "section",
-      "top": 4185,
+      "top": 6385,
       "height": 905,
       "words": 107,
       "media": 2,
@@ -973,7 +992,7 @@
      {
       "sel": "section#contact.page.field",
       "tag": "section",
-      "top": 5090,
+      "top": 7290,
       "height": 672,
       "words": 44,
       "media": 0,
@@ -996,15 +1015,15 @@
      {
       "sel": "footer.close",
       "tag": "footer",
-      "top": 5762,
-      "height": 600,
+      "top": 7962,
+      "height": 606,
       "words": 91,
       "media": 0,
       "middle": 0,
       "heading": {
        "text": "BVANTRIX",
        "size": 140,
-       "tag": "p"
+       "tag": "span"
       },
       "left": 46,
       "right": 73,
@@ -1019,15 +1038,15 @@
     ],
     "gaps": [
      {
-      "top": 3132,
+      "top": 5332,
       "height": 292
      },
      {
-      "top": 4012,
+      "top": 6212,
       "height": 300
      },
      {
-      "top": 4944,
+      "top": 7144,
       "height": 272
      }
     ],
@@ -1043,7 +1062,7 @@
     "edges": [
      {
       "x": 46,
-      "n": 13
+      "n": 11
      },
      {
       "x": 670,
@@ -1070,7 +1089,7 @@
       "n": 1
      }
     ],
-    "leftBlocks": 25,
+    "leftBlocks": 23,
     "bodySize": 19,
     "stage": false,
     "explains": true,
@@ -1090,22 +1109,25 @@
    "width": 768,
    "height": 1024,
    "load": "load",
-   "screens": 8,
+   "screens": 11,
    "filled": [
     0.48,
     0.66,
     1,
-    0.35,
-    0.35,
-    0.73,
-    0.46,
+    1,
+    1,
+    0.61,
+    0.34,
+    0.59,
+    0.51,
+    0.88,
     1
    ],
    "motion": {
-    "elements": 26,
+    "elements": 48,
     "css": 5,
-    "transitions": 21,
-    "scripted": 0,
+    "transitions": 34,
+    "scripted": 9,
     "videos": 1,
     "playingVideos": 0
    },
@@ -1115,13 +1137,13 @@
      "h": 1024
     },
     "page": {
-     "height": 8100,
-     "screens": 7.9,
-     "words": 775,
+     "height": 10501,
+     "screens": 10.3,
+     "words": 782,
      "img": 5,
      "video": 1,
      "canvas": 0,
-     "svg": 4,
+     "svg": 6,
      "sections": 7,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
@@ -1315,14 +1337,14 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.94,
-      "top": 2607,
+      "top": 2741,
       "tag": "h2",
       "kind": "heading"
      },
      {
-      "text": "They keep moving, through six places at once.",
-      "words": 8,
-      "chars": 45,
+      "text": "They keep moving. Scroll, and watch one arrive in six places.",
+      "words": 11,
+      "chars": 61,
       "lines": 2,
       "size": 26,
       "vw": 3.4,
@@ -1336,8 +1358,29 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.45,
-      "top": 2732,
+      "top": 2866,
       "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "0",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 48.4,
+      "vw": 6.3,
+      "font": "Newsreader",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.04,
+      "top": 2957,
+      "tag": "b",
       "kind": "statement"
      },
      {
@@ -1357,7 +1400,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.4,
-      "top": 2833,
+      "top": 3058,
       "tag": "b",
       "kind": "statement"
      },
@@ -1378,7 +1421,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.4,
-      "top": 2833,
+      "top": 3058,
       "tag": "b",
       "kind": "statement"
      },
@@ -1399,7 +1442,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.4,
-      "top": 2934,
+      "top": 3175,
       "tag": "b",
       "kind": "statement"
      },
@@ -1420,7 +1463,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.4,
-      "top": 2934,
+      "top": 3175,
       "tag": "b",
       "kind": "statement"
      },
@@ -1441,7 +1484,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.4,
-      "top": 3034,
+      "top": 3291,
       "tag": "b",
       "kind": "statement"
      },
@@ -1462,7 +1505,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.4,
-      "top": 3034,
+      "top": 3291,
       "tag": "b",
       "kind": "statement"
      },
@@ -1483,7 +1526,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.94,
-      "top": 3281,
+      "top": 5679,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1504,7 +1547,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.84,
-      "top": 3543,
+      "top": 5941,
       "tag": "b",
       "kind": "statement"
      },
@@ -1525,7 +1568,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.84,
-      "top": 3645,
+      "top": 6043,
       "tag": "b",
       "kind": "statement"
      },
@@ -1546,7 +1589,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.84,
-      "top": 3748,
+      "top": 6145,
       "tag": "b",
       "kind": "statement"
      },
@@ -1567,7 +1610,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.84,
-      "top": 3850,
+      "top": 6247,
       "tag": "b",
       "kind": "statement"
      },
@@ -1588,7 +1631,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.94,
-      "top": 4100,
+      "top": 6498,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1609,7 +1652,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.38,
-      "top": 4457,
+      "top": 6855,
       "tag": "p",
       "kind": "statement"
      },
@@ -1630,7 +1673,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.94,
-      "top": 6046,
+      "top": 8444,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1651,7 +1694,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.22,
-      "top": 6561,
+      "top": 8958,
       "tag": "b",
       "kind": "statement"
      },
@@ -1672,7 +1715,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.94,
-      "top": 6755,
+      "top": 9152,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1693,16 +1736,16 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.94,
-      "top": 7571,
+      "top": 9969,
       "tag": "p",
       "kind": "statement"
      }
     ],
     "headingSummary": {
-     "count": 25,
+     "count": 26,
      "maxLines": 3,
      "over2Lines": 0,
-     "statements": 16,
+     "statements": 17,
      "centered": 0,
      "medianWords": 4,
      "mixedFontHeadings": 0
@@ -1711,12 +1754,12 @@
      "families": [
       {
        "family": "Onest",
-       "share": 0.85,
+       "share": 0.84,
        "mono": false
       },
       {
        "family": "Newsreader",
-       "share": 0.15,
+       "share": 0.16,
        "mono": false
       }
      ],
@@ -1778,7 +1821,7 @@
       },
       {
        "color": "#dedbd3",
-       "top": 4431,
+       "top": 6829,
        "hsl": {
         "h": 44,
         "s": 0.14,
@@ -1787,7 +1830,7 @@
       },
       {
        "color": "#15332b",
-       "top": 6671,
+       "top": 9068,
        "hsl": {
         "h": 164,
         "s": 0.42,
@@ -1798,7 +1841,7 @@
      "textColors": [
       {
        "color": "#121c26",
-       "share": 0.62
+       "share": 0.61
       },
       {
        "color": "#9fb0c2",
@@ -1886,7 +1929,7 @@
      "w": 768,
      "h": 1024
     },
-    "pageH": 8100,
+    "pageH": 10501,
     "margins": {
      "left": 25,
      "right": 25
@@ -1939,7 +1982,7 @@
       "pinned": false
      },
      {
-      "sel": "div.mosaic",
+      "sel": "div.mosaic.rise",
       "tag": "div",
       "top": 1643,
       "height": 880,
@@ -1962,32 +2005,28 @@
       "pinned": false
      },
      {
-      "sel": "section#chain.page.field",
+      "sel": "section#chain.scene.field",
       "tag": "section",
       "top": 2523,
-      "height": 674,
-      "words": 67,
+      "height": 3072,
+      "words": 0,
       "media": 0,
-      "middle": 42,
-      "heading": {
-       "text": "Decisions",
-       "size": 48,
-       "tag": "h2"
-      },
-      "left": 25,
-      "right": 74,
-      "textLeft": 25,
-      "textRight": 74,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
       "fullBleed": false,
       "footer": false,
       "hero": false,
       "continues": true,
-      "pinned": false
+      "pinned": true
      },
      {
       "sel": "section#method.page.sheet",
       "tag": "section",
-      "top": 3197,
+      "top": 5595,
       "height": 819,
       "words": 88,
       "media": 0,
@@ -2010,7 +2049,7 @@
      {
       "sel": "section#esg.page.sheet",
       "tag": "section",
-      "top": 4016,
+      "top": 6414,
       "height": 1073,
       "words": 108,
       "media": 0,
@@ -2033,7 +2072,7 @@
      {
       "sel": "section#founder.page.sheet",
       "tag": "section",
-      "top": 5089,
+      "top": 7487,
       "height": 1582,
       "words": 107,
       "media": 2,
@@ -2052,7 +2091,7 @@
      {
       "sel": "section#contact.page.field",
       "tag": "section",
-      "top": 6671,
+      "top": 9068,
       "height": 817,
       "words": 44,
       "media": 0,
@@ -2075,15 +2114,15 @@
      {
       "sel": "footer.close",
       "tag": "footer",
-      "top": 7487,
-      "height": 612,
+      "top": 9885,
+      "height": 616,
       "words": 91,
       "media": 0,
       "middle": 0,
       "heading": {
        "text": "BVANTRIX",
        "size": 85,
-       "tag": "p"
+       "tag": "span"
       },
       "left": 25,
       "right": 39,
@@ -2109,7 +2148,7 @@
     "edges": [
      {
       "x": 25,
-      "n": 22
+      "n": 20
      },
      {
       "x": 397,
@@ -2120,7 +2159,7 @@
       "n": 1
      }
     ],
-    "leftBlocks": 25,
+    "leftBlocks": 23,
     "bodySize": 18,
     "stage": false,
     "explains": true,
@@ -2135,24 +2174,25 @@
    "width": 390,
    "height": 844,
    "load": "load",
-   "screens": 10,
+   "screens": 11,
    "filled": [
-    0.41,
+    0.43,
     0.5,
     1,
-    0.79,
-    0.38,
-    0.63,
-    0.6,
-    0.75,
-    0.95,
+    1,
+    1,
+    0.44,
+    0.57,
+    0.5,
+    0.62,
+    0.78,
     1
    ],
    "motion": {
-    "elements": 26,
+    "elements": 48,
     "css": 5,
-    "transitions": 21,
-    "scripted": 0,
+    "transitions": 40,
+    "scripted": 3,
     "videos": 1,
     "playingVideos": 0
    },
@@ -2162,13 +2202,13 @@
      "h": 844
     },
     "page": {
-     "height": 7801,
-     "screens": 9.2,
-     "words": 775,
+     "height": 8949,
+     "screens": 10.6,
+     "words": 782,
      "img": 5,
      "video": 1,
      "canvas": 0,
-     "svg": 4,
+     "svg": 6,
      "sections": 7,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
@@ -2362,14 +2402,14 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 2313,
+      "top": 2237,
       "tag": "h2",
       "kind": "heading"
      },
      {
-      "text": "They keep moving, through six places at once.",
-      "words": 8,
-      "chars": 45,
+      "text": "They keep moving. Scroll, and watch one arrive in six places.",
+      "words": 11,
+      "chars": 61,
       "lines": 2,
       "size": 22,
       "vw": 5.6,
@@ -2383,8 +2423,29 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 2410,
+      "top": 2335,
       "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "0",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 34.8,
+      "vw": 8.9,
+      "font": "Newsreader",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.05,
+      "top": 2415,
+      "tag": "b",
       "kind": "statement"
      },
      {
@@ -2404,7 +2465,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 2489,
+      "top": 2490,
       "tag": "b",
       "kind": "statement"
      },
@@ -2425,7 +2486,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 2586,
+      "top": 2603,
       "tag": "b",
       "kind": "statement"
      },
@@ -2446,7 +2507,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 2682,
+      "top": 2715,
       "tag": "b",
       "kind": "statement"
      },
@@ -2467,7 +2528,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 2779,
+      "top": 2828,
       "tag": "b",
       "kind": "statement"
      },
@@ -2488,7 +2549,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 2875,
+      "top": 2941,
       "tag": "b",
       "kind": "statement"
      },
@@ -2509,7 +2570,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 2972,
+      "top": 3053,
       "tag": "b",
       "kind": "statement"
      },
@@ -2530,7 +2591,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 3193,
+      "top": 4338,
       "tag": "h2",
       "kind": "heading"
      },
@@ -2551,7 +2612,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 3391,
+      "top": 4536,
       "mixedFonts": [
        "Newsreader",
        "Onest"
@@ -2576,7 +2637,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 3513,
+      "top": 4658,
       "mixedFonts": [
        "Newsreader",
        "Onest"
@@ -2601,7 +2662,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 3635,
+      "top": 4780,
       "mixedFonts": [
        "Newsreader",
        "Onest"
@@ -2626,7 +2687,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 3757,
+      "top": 4903,
       "mixedFonts": [
        "Newsreader",
        "Onest"
@@ -2651,7 +2712,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 4047,
+      "top": 5193,
       "tag": "h2",
       "kind": "heading"
      },
@@ -2672,7 +2733,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.62,
-      "top": 4420,
+      "top": 5565,
       "tag": "p",
       "kind": "statement"
      },
@@ -2693,7 +2754,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 5561,
+      "top": 6706,
       "tag": "h2",
       "kind": "heading"
      },
@@ -2714,7 +2775,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.36,
-      "top": 6107,
+      "top": 7252,
       "tag": "b",
       "kind": "statement"
      },
@@ -2735,7 +2796,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 6297,
+      "top": 7442,
       "tag": "h2",
       "kind": "heading"
      },
@@ -2756,16 +2817,16 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 7182,
+      "top": 8327,
       "tag": "p",
       "kind": "statement"
      }
     ],
     "headingSummary": {
-     "count": 25,
+     "count": 26,
      "maxLines": 3,
      "over2Lines": 0,
-     "statements": 16,
+     "statements": 17,
      "centered": 0,
      "medianWords": 4,
      "mixedFontHeadings": 4
@@ -2774,12 +2835,12 @@
      "families": [
       {
        "family": "Onest",
-       "share": 0.85,
+       "share": 0.84,
        "mono": false
       },
       {
        "family": "Newsreader",
-       "share": 0.15,
+       "share": 0.16,
        "mono": false
       }
      ],
@@ -2841,7 +2902,7 @@
       },
       {
        "color": "#dedbd3",
-       "top": 4394,
+       "top": 5539,
        "hsl": {
         "h": 44,
         "s": 0.14,
@@ -2850,7 +2911,7 @@
       },
       {
        "color": "#15332b",
-       "top": 6213,
+       "top": 7358,
        "hsl": {
         "h": 164,
         "s": 0.42,
@@ -2861,7 +2922,7 @@
      "textColors": [
       {
        "color": "#121c26",
-       "share": 0.62
+       "share": 0.61
       },
       {
        "color": "#9fb0c2",
@@ -2949,7 +3010,7 @@
      "w": 390,
      "h": 844
     },
-    "pageH": 7801,
+    "pageH": 8949,
     "margins": {
      "left": 20,
      "right": 20
@@ -2998,7 +3059,7 @@
       "pinned": false
      },
      {
-      "sel": "div.mosaic",
+      "sel": "div.mosaic.rise",
       "tag": "div",
       "top": 1669,
       "height": 560,
@@ -3017,32 +3078,28 @@
       "pinned": false
      },
      {
-      "sel": "section#chain.page.field",
+      "sel": "section#chain.scene.field",
       "tag": "section",
       "top": 2229,
-      "height": 880,
-      "words": 67,
+      "height": 2026,
+      "words": 0,
       "media": 0,
       "middle": 0,
-      "heading": {
-       "text": "Decisions",
-       "size": 35,
-       "tag": "h2"
-      },
-      "left": 20,
-      "right": 77,
-      "textLeft": 20,
-      "textRight": 77,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
       "fullBleed": false,
       "footer": false,
       "hero": false,
       "continues": true,
-      "pinned": false
+      "pinned": true
      },
      {
       "sel": "section#method.page.sheet",
       "tag": "section",
-      "top": 3109,
+      "top": 4254,
       "height": 855,
       "words": 88,
       "media": 0,
@@ -3065,7 +3122,7 @@
      {
       "sel": "section#esg.page.sheet",
       "tag": "section",
-      "top": 3963,
+      "top": 5109,
       "height": 1116,
       "words": 108,
       "media": 0,
@@ -3088,7 +3145,7 @@
      {
       "sel": "section#founder.page.sheet",
       "tag": "section",
-      "top": 5080,
+      "top": 6225,
       "height": 1134,
       "words": 107,
       "media": 2,
@@ -3111,7 +3168,7 @@
      {
       "sel": "section#contact.page.field",
       "tag": "section",
-      "top": 6213,
+      "top": 7358,
       "height": 885,
       "words": 44,
       "media": 0,
@@ -3134,15 +3191,15 @@
      {
       "sel": "footer.close",
       "tag": "footer",
-      "top": 7098,
-      "height": 704,
+      "top": 8243,
+      "height": 706,
       "words": 91,
       "media": 0,
       "middle": 0,
       "heading": {
        "text": "BVANTRIX",
        "size": 54,
-       "tag": "p"
+       "tag": "span"
       },
       "left": 20,
       "right": 21,
@@ -3168,14 +3225,14 @@
     "edges": [
      {
       "x": 20,
-      "n": 24
+      "n": 22
      },
      {
       "x": 46,
       "n": 1
      }
     ],
-    "leftBlocks": 25,
+    "leftBlocks": 23,
     "bodySize": 17,
     "stage": false,
     "explains": true,
@@ -3210,7 +3267,8 @@
    "fold": "/Users/sathish.s/Downloads/Bvantrix/site/.taste-skill/after/desktop-fold.jpg",
    "pages": [
     "/Users/sathish.s/Downloads/Bvantrix/site/.taste-skill/after/desktop-page-01.jpg",
-    "/Users/sathish.s/Downloads/Bvantrix/site/.taste-skill/after/desktop-page-02.jpg"
+    "/Users/sathish.s/Downloads/Bvantrix/site/.taste-skill/after/desktop-page-02.jpg",
+    "/Users/sathish.s/Downloads/Bvantrix/site/.taste-skill/after/desktop-page-03.jpg"
    ],
    "film": []
   },
