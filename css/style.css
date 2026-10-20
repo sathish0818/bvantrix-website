@@ -612,7 +612,15 @@ button { font: inherit; }
 .live-opts button:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
 .live-opts .is-quiet { color: var(--ink-3); font-style: italic; }
 
-.live-fine { margin: 16px 0 0; font-size: 0.6875rem; color: var(--ink-3); }
+.live-fine {
+  margin: 16px 0 0;
+  font-size: 0.6875rem; line-height: 1.7;
+  color: var(--ink-3);
+}
+/* the way past the question sits with the small print, not beside the
+   primary action — the section should only ever offer one of the two */
+.live-fine a { color: var(--ink-3); border-bottom: 1px solid var(--line-2); }
+.live-fine a:hover { color: var(--amber); border-bottom-color: var(--amber); }
 
 /* the answered face */
 .live-face--said:focus { outline: none; }
