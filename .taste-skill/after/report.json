@@ -1,6 +1,6 @@
 {
  "url": "http://127.0.0.1:8777/index.html",
- "at": "2026-10-20T11:46:54.616Z",
+ "at": "2026-10-20T11:55:23.942Z",
  "allow": [],
  "viewports": [
   {
@@ -9,15 +9,15 @@
    "load": "load",
    "screens": 10,
    "filled": [
-    0.43,
-    0.48,
+    0.41,
+    0.5,
     1,
     1,
     1,
     0.44,
-    0.28,
+    0.27,
     0.47,
-    0.8,
+    0.78,
     1
    ],
    "motion": {
@@ -34,8 +34,8 @@
      "h": 900
     },
     "page": {
-     "height": 8628,
-     "screens": 9.6,
+     "height": 8590,
+     "screens": 9.5,
      "words": 827,
      "img": 4,
      "video": 1,
@@ -66,8 +66,8 @@
      "words": 2,
      "chars": 17,
      "lines": 2,
-     "size": 140.5,
-     "vw": 9.8,
+     "size": 116,
+     "vw": 8.1,
      "font": "Newsreader",
      "weight": 400,
      "tracking": -0.035,
@@ -77,8 +77,8 @@
      "mono": false,
      "align": "left",
      "position": "right",
-     "widthRatio": 0.59,
-     "top": 91,
+     "widthRatio": 0.5,
+     "top": 85,
      "tag": "h1",
      "kind": "heading"
     },
@@ -86,7 +86,7 @@
      "text": "Decisions travel.",
      "words": 2,
      "lines": 2,
-     "size": 140.5,
+     "size": 116,
      "font": "Newsreader"
     },
     "headings": [
@@ -95,8 +95,8 @@
       "words": 2,
       "chars": 17,
       "lines": 2,
-      "size": 140.5,
-      "vw": 9.8,
+      "size": 116,
+      "vw": 8.1,
       "font": "Newsreader",
       "weight": 400,
       "tracking": -0.035,
@@ -106,8 +106,8 @@
       "mono": false,
       "align": "left",
       "position": "right",
-      "widthRatio": 0.59,
-      "top": 91,
+      "widthRatio": 0.5,
+      "top": 85,
       "tag": "h1",
       "kind": "heading"
      },
@@ -127,8 +127,8 @@
       "mono": false,
       "align": "left",
       "position": "left",
-      "widthRatio": 0.32,
-      "top": 108,
+      "widthRatio": 0.33,
+      "top": 99,
       "tag": "p",
       "kind": "statement"
      },
@@ -149,7 +149,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.38,
-      "top": 1046,
+      "top": 1030,
       "tag": "p",
       "kind": "statement"
      },
@@ -170,7 +170,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.19,
-      "top": 1625,
+      "top": 1608,
       "tag": "b",
       "kind": "heading"
      },
@@ -191,7 +191,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.25,
-      "top": 1788,
+      "top": 1772,
       "tag": "div",
       "kind": "heading"
      },
@@ -212,7 +212,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.39,
-      "top": 2357,
+      "top": 2341,
       "tag": "h2",
       "kind": "heading"
      },
@@ -233,7 +233,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.15,
-      "top": 2428,
+      "top": 2411,
       "tag": "b",
       "kind": "statement"
      },
@@ -254,7 +254,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.15,
-      "top": 2428,
+      "top": 2411,
       "tag": "b",
       "kind": "statement"
      },
@@ -275,7 +275,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.15,
-      "top": 2428,
+      "top": 2411,
       "tag": "b",
       "kind": "statement"
      },
@@ -296,7 +296,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.3,
-      "top": 2522,
+      "top": 2505,
       "tag": "p",
       "kind": "statement"
      },
@@ -317,7 +317,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.15,
-      "top": 2566,
+      "top": 2550,
       "tag": "b",
       "kind": "statement"
      },
@@ -338,7 +338,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.15,
-      "top": 2566,
+      "top": 2550,
       "tag": "b",
       "kind": "statement"
      },
@@ -359,7 +359,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.15,
-      "top": 2566,
+      "top": 2550,
       "tag": "b",
       "kind": "statement"
      },
@@ -380,7 +380,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.03,
-      "top": 2642,
+      "top": 2625,
       "tag": "b",
       "kind": "statement"
      },
@@ -401,7 +401,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.39,
-      "top": 4891,
+      "top": 4875,
       "tag": "h2",
       "kind": "heading"
      },
@@ -422,7 +422,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.47,
-      "top": 4923,
+      "top": 4907,
       "tag": "b",
       "kind": "statement"
      },
@@ -443,7 +443,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.47,
-      "top": 5056,
+      "top": 5040,
       "tag": "b",
       "kind": "statement"
      },
@@ -464,7 +464,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.47,
-      "top": 5190,
+      "top": 5173,
       "tag": "b",
       "kind": "statement"
      },
@@ -485,7 +485,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.47,
-      "top": 5323,
+      "top": 5307,
       "tag": "b",
       "kind": "statement"
      },
@@ -506,7 +506,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.39,
-      "top": 5684,
+      "top": 5668,
       "tag": "h2",
       "kind": "heading"
      },
@@ -527,7 +527,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.25,
-      "top": 5727,
+      "top": 5711,
       "tag": "p",
       "kind": "statement"
      },
@@ -548,7 +548,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.5,
-      "top": 6575,
+      "top": 6558,
       "tag": "h2",
       "kind": "heading"
      },
@@ -569,7 +569,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.14,
-      "top": 7166,
+      "top": 7149,
       "tag": "b",
       "kind": "statement"
      },
@@ -590,7 +590,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.39,
-      "top": 7479,
+      "top": 7463,
       "tag": "h2",
       "kind": "heading"
      },
@@ -599,8 +599,8 @@
       "words": 1,
       "chars": 8,
       "lines": 1,
-      "size": 140.5,
-      "vw": 9.8,
+      "size": 116,
+      "vw": 8.1,
       "font": "Newsreader",
       "weight": 400,
       "tracking": -0.04,
@@ -611,7 +611,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.94,
-      "top": 8151,
+      "top": 8135,
       "tag": "p",
       "kind": "statement"
      }
@@ -644,7 +644,7 @@
       19,
       32,
       68,
-      141
+      116
      ],
      "sizeCount": 5,
      "notLoaded": [],
@@ -658,8 +658,8 @@
      },
      "measureChars": 61,
      "max": {
-      "size": 140.5,
-      "vw": 9.8,
+      "size": 116,
+      "vw": 8.1,
       "font": "Newsreader",
       "text": "Decisions"
      },
@@ -687,7 +687,7 @@
      "sectionBgs": [
       {
        "color": "#0e2a47",
-       "top": 2062,
+       "top": 2045,
        "hsl": {
         "h": 211,
         "s": 0.67,
@@ -696,7 +696,7 @@
       },
       {
        "color": "#dedbd3",
-       "top": 5684,
+       "top": 5668,
        "hsl": {
         "h": 44,
         "s": 0.14,
@@ -705,7 +705,7 @@
       },
       {
        "color": "#15332b",
-       "top": 7350,
+       "top": 7333,
        "hsl": {
         "h": 164,
         "s": 0.42,
@@ -804,7 +804,7 @@
      "w": 1440,
      "h": 900
     },
-    "pageH": 8628,
+    "pageH": 8590,
     "margins": {
      "left": 46,
      "right": 46
@@ -814,19 +814,19 @@
       "sel": "section#top.masthead.sheet",
       "tag": "section",
       "top": 0,
-      "height": 916,
+      "height": 900,
       "words": 32,
       "media": 1,
-      "middle": 115,
+      "middle": 238,
       "heading": {
        "text": "Decisions",
-       "size": 140,
+       "size": 116,
        "tag": "h1"
       },
       "left": 46,
       "right": 46,
       "textLeft": 46,
-      "textRight": 333,
+      "textRight": 309,
       "fullBleed": false,
       "footer": false,
       "hero": true,
@@ -836,7 +836,7 @@
      {
       "sel": "section#problem.page.sheet",
       "tag": "section",
-      "top": 916,
+      "top": 900,
       "height": 598,
       "words": 112,
       "media": 0,
@@ -859,7 +859,7 @@
      {
       "sel": "div.mosaic.rise",
       "tag": "div",
-      "top": 1514,
+      "top": 1498,
       "height": 547,
       "words": 19,
       "media": 4,
@@ -882,7 +882,7 @@
      {
       "sel": "section#chain.scene.field",
       "tag": "section",
-      "top": 2062,
+      "top": 2045,
       "height": 2700,
       "words": 0,
       "media": 0,
@@ -901,7 +901,7 @@
      {
       "sel": "section#method.page.sheet",
       "tag": "section",
-      "top": 4762,
+      "top": 4745,
       "height": 793,
       "words": 88,
       "media": 0,
@@ -924,7 +924,7 @@
      {
       "sel": "section#esg.page.sheet",
       "tag": "section",
-      "top": 5555,
+      "top": 5538,
       "height": 890,
       "words": 108,
       "media": 0,
@@ -947,7 +947,7 @@
      {
       "sel": "section#founder.page.sheet",
       "tag": "section",
-      "top": 6445,
+      "top": 6429,
       "height": 905,
       "words": 107,
       "media": 2,
@@ -970,7 +970,7 @@
      {
       "sel": "section#contact.page.field",
       "tag": "section",
-      "top": 7350,
+      "top": 7333,
       "height": 672,
       "words": 44,
       "media": 0,
@@ -993,14 +993,14 @@
      {
       "sel": "footer.close",
       "tag": "footer",
-      "top": 8022,
-      "height": 606,
+      "top": 8005,
+      "height": 585,
       "words": 91,
       "media": 0,
       "middle": 0,
       "heading": {
        "text": "BVANTRIX",
-       "size": 140,
+       "size": 116,
        "tag": "span"
       },
       "left": 46,
@@ -1016,23 +1016,23 @@
     ],
     "gaps": [
      {
-      "top": 5392,
-      "height": 292
+      "top": 5376,
+      "height": 288
      },
      {
-      "top": 6272,
+      "top": 6256,
       "height": 300
      },
      {
-      "top": 7204,
+      "top": 7188,
       "height": 272
      }
     ],
     "h1s": [
      {
       "text": "Decisions travel.",
-      "size": 140,
-      "top": 91,
+      "size": 116,
+      "top": 85,
       "firstScreen": true
      }
     ],
@@ -1044,11 +1044,7 @@
      },
      {
       "x": 670,
-      "n": 6
-     },
-     {
-      "x": 548,
-      "n": 2
+      "n": 8
      },
      {
       "x": 392,
@@ -1072,11 +1068,11 @@
     "stage": false,
     "explains": true,
     "slivers": [],
-    "voidShare": 0.2,
+    "voidShare": 0.24,
     "voidBox": {
      "x": 0,
      "y": 420,
-     "w": 540,
+     "w": 660,
      "h": 480
     }
    },
@@ -1090,16 +1086,16 @@
    "screens": 11,
    "filled": [
     0.51,
-    0.66,
+    0.67,
     1,
     1,
     1,
-    0.57,
-    0.35,
+    0.59,
+    0.32,
     0.62,
-    0.51,
-    0.83,
-    1
+    0.52,
+    0.88,
+    0.94
    ],
    "motion": {
     "elements": 58,
@@ -1115,7 +1111,7 @@
      "h": 1024
     },
     "page": {
-     "height": 10416,
+     "height": 10420,
      "screens": 10.2,
      "words": 775,
      "img": 4,
@@ -1147,8 +1143,8 @@
      "words": 2,
      "chars": 17,
      "lines": 2,
-     "size": 85.4,
-     "vw": 11.1,
+     "size": 73.2,
+     "vw": 9.5,
      "font": "Newsreader",
      "weight": 400,
      "tracking": -0.035,
@@ -1158,8 +1154,8 @@
      "mono": false,
      "align": "left",
      "position": "left",
-     "widthRatio": 0.73,
-     "top": 102,
+     "widthRatio": 0.63,
+     "top": 95,
      "tag": "h1",
      "kind": "heading"
     },
@@ -1167,7 +1163,7 @@
      "text": "Decisions travel.",
      "words": 2,
      "lines": 2,
-     "size": 85.4,
+     "size": 73.2,
      "font": "Newsreader"
     },
     "headings": [
@@ -1176,8 +1172,8 @@
       "words": 2,
       "chars": 17,
       "lines": 2,
-      "size": 85.4,
-      "vw": 11.1,
+      "size": 73.2,
+      "vw": 9.5,
       "font": "Newsreader",
       "weight": 400,
       "tracking": -0.035,
@@ -1187,8 +1183,8 @@
       "mono": false,
       "align": "left",
       "position": "left",
-      "widthRatio": 0.73,
-      "top": 102,
+      "widthRatio": 0.63,
+      "top": 95,
       "tag": "h1",
       "kind": "heading"
      },
@@ -1209,7 +1205,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.49,
-      "top": 298,
+      "top": 268,
       "tag": "p",
       "kind": "statement"
      },
@@ -1230,7 +1226,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.57,
-      "top": 1092,
+      "top": 1107,
       "tag": "p",
       "kind": "statement"
      },
@@ -1251,7 +1247,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.44,
-      "top": 1675,
+      "top": 1689,
       "tag": "b",
       "kind": "heading"
      },
@@ -1272,7 +1268,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.5,
-      "top": 2218,
+      "top": 2232,
       "tag": "div",
       "kind": "heading"
      },
@@ -1293,7 +1289,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.94,
-      "top": 2656,
+      "top": 2671,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1314,7 +1310,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.45,
-      "top": 2781,
+      "top": 2796,
       "tag": "p",
       "kind": "statement"
      },
@@ -1335,7 +1331,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.04,
-      "top": 2872,
+      "top": 2886,
       "tag": "b",
       "kind": "statement"
      },
@@ -1356,7 +1352,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.4,
-      "top": 2973,
+      "top": 2987,
       "tag": "b",
       "kind": "statement"
      },
@@ -1377,7 +1373,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.4,
-      "top": 2973,
+      "top": 2987,
       "tag": "b",
       "kind": "statement"
      },
@@ -1398,7 +1394,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.4,
-      "top": 3089,
+      "top": 3104,
       "tag": "b",
       "kind": "statement"
      },
@@ -1419,7 +1415,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.4,
-      "top": 3089,
+      "top": 3104,
       "tag": "b",
       "kind": "statement"
      },
@@ -1440,7 +1436,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.4,
-      "top": 3206,
+      "top": 3221,
       "tag": "b",
       "kind": "statement"
      },
@@ -1461,7 +1457,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.4,
-      "top": 3206,
+      "top": 3221,
       "tag": "b",
       "kind": "statement"
      },
@@ -1482,7 +1478,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.94,
-      "top": 5594,
+      "top": 5608,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1503,7 +1499,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.84,
-      "top": 5856,
+      "top": 5870,
       "tag": "b",
       "kind": "statement"
      },
@@ -1524,7 +1520,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.84,
-      "top": 5958,
+      "top": 5972,
       "tag": "b",
       "kind": "statement"
      },
@@ -1545,7 +1541,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.84,
-      "top": 6060,
+      "top": 6075,
       "tag": "b",
       "kind": "statement"
      },
@@ -1566,7 +1562,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.84,
-      "top": 6162,
+      "top": 6177,
       "tag": "b",
       "kind": "statement"
      },
@@ -1587,7 +1583,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.94,
-      "top": 6413,
+      "top": 6427,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1608,7 +1604,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.38,
-      "top": 6770,
+      "top": 6784,
       "tag": "p",
       "kind": "statement"
      },
@@ -1629,7 +1625,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.94,
-      "top": 8358,
+      "top": 8373,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1650,7 +1646,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.22,
-      "top": 8873,
+      "top": 8888,
       "tag": "b",
       "kind": "statement"
      },
@@ -1671,7 +1667,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.94,
-      "top": 9067,
+      "top": 9082,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1680,8 +1676,8 @@
       "words": 1,
       "chars": 8,
       "lines": 1,
-      "size": 85.4,
-      "vw": 11.1,
+      "size": 73.2,
+      "vw": 9.5,
       "font": "Newsreader",
       "weight": 400,
       "tracking": -0.04,
@@ -1692,7 +1688,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.94,
-      "top": 9884,
+      "top": 9898,
       "tag": "p",
       "kind": "statement"
      }
@@ -1725,7 +1721,7 @@
       18,
       26,
       48,
-      85
+      73
      ],
      "sizeCount": 5,
      "notLoaded": [],
@@ -1739,8 +1735,8 @@
      },
      "measureChars": 61,
      "max": {
-      "size": 85.4,
-      "vw": 11.1,
+      "size": 73.2,
+      "vw": 9.5,
       "font": "Newsreader",
       "text": "Decisions"
      },
@@ -1768,7 +1764,7 @@
      "sectionBgs": [
       {
        "color": "#0e2a47",
-       "top": 2438,
+       "top": 2452,
        "hsl": {
         "h": 211,
         "s": 0.67,
@@ -1777,7 +1773,7 @@
       },
       {
        "color": "#dedbd3",
-       "top": 6744,
+       "top": 6758,
        "hsl": {
         "h": 44,
         "s": 0.14,
@@ -1786,7 +1782,7 @@
       },
       {
        "color": "#15332b",
-       "top": 8983,
+       "top": 8998,
        "hsl": {
         "h": 164,
         "s": 0.42,
@@ -1865,7 +1861,7 @@
     "heroMedia": [
      {
       "type": "svg",
-      "ratio": 0.35
+      "ratio": 0.38
      }
     ],
     "nav": {
@@ -1885,7 +1881,7 @@
      "w": 768,
      "h": 1024
     },
-    "pageH": 10416,
+    "pageH": 10420,
     "margins": {
      "left": 25,
      "right": 25
@@ -1895,19 +1891,19 @@
       "sel": "section#top.masthead.sheet",
       "tag": "section",
       "top": 0,
-      "height": 1008,
+      "height": 1023,
       "words": 32,
       "media": 1,
       "middle": 0,
       "heading": {
        "text": "Decisions",
-       "size": 85,
+       "size": 73,
        "tag": "h1"
       },
       "left": 25,
       "right": 25,
       "textLeft": 25,
-      "textRight": 404,
+      "textRight": 433,
       "fullBleed": false,
       "footer": false,
       "hero": true,
@@ -1917,7 +1913,7 @@
      {
       "sel": "section#problem.page.sheet",
       "tag": "section",
-      "top": 1008,
+      "top": 1023,
       "height": 550,
       "words": 112,
       "media": 0,
@@ -1940,7 +1936,7 @@
      {
       "sel": "div.mosaic.rise",
       "tag": "div",
-      "top": 1558,
+      "top": 1572,
       "height": 880,
       "words": 19,
       "media": 4,
@@ -1963,7 +1959,7 @@
      {
       "sel": "section#chain.scene.field",
       "tag": "section",
-      "top": 2438,
+      "top": 2452,
       "height": 3072,
       "words": 0,
       "media": 0,
@@ -1982,7 +1978,7 @@
      {
       "sel": "section#method.page.sheet",
       "tag": "section",
-      "top": 5510,
+      "top": 5524,
       "height": 819,
       "words": 88,
       "media": 0,
@@ -2005,7 +2001,7 @@
      {
       "sel": "section#esg.page.sheet",
       "tag": "section",
-      "top": 6329,
+      "top": 6343,
       "height": 1073,
       "words": 108,
       "media": 0,
@@ -2028,7 +2024,7 @@
      {
       "sel": "section#founder.page.sheet",
       "tag": "section",
-      "top": 7402,
+      "top": 7416,
       "height": 1582,
       "words": 107,
       "media": 2,
@@ -2047,7 +2043,7 @@
      {
       "sel": "section#contact.page.field",
       "tag": "section",
-      "top": 8983,
+      "top": 8998,
       "height": 817,
       "words": 44,
       "media": 0,
@@ -2070,14 +2066,14 @@
      {
       "sel": "footer.close",
       "tag": "footer",
-      "top": 9800,
-      "height": 616,
+      "top": 9814,
+      "height": 605,
       "words": 91,
       "media": 0,
       "middle": 0,
       "heading": {
        "text": "BVANTRIX",
-       "size": 85,
+       "size": 73,
        "tag": "span"
       },
       "left": 25,
@@ -2095,8 +2091,8 @@
     "h1s": [
      {
       "text": "Decisions travel.",
-      "size": 85,
-      "top": 102,
+      "size": 73,
+      "top": 95,
       "firstScreen": true
      }
     ],
@@ -2132,15 +2128,15 @@
    "load": "load",
    "screens": 11,
    "filled": [
-    0.39,
+    0.43,
     0.66,
     1,
     1,
-    0.83,
-    0.37,
-    0.68,
+    0.88,
+    0.39,
+    0.53,
     0.49,
-    0.79,
+    0.74,
     0.89,
     1
    ],
@@ -2158,7 +2154,7 @@
      "h": 844
     },
     "page": {
-     "height": 8760,
+     "height": 8762,
      "screens": 10.4,
      "words": 775,
      "img": 4,
@@ -2190,8 +2186,8 @@
      "words": 2,
      "chars": 17,
      "lines": 2,
-     "size": 54.4,
-     "vw": 13.9,
+     "size": 49,
+     "vw": 12.6,
      "font": "Newsreader",
      "weight": 400,
      "tracking": -0.035,
@@ -2201,8 +2197,8 @@
      "mono": false,
      "align": "left",
      "position": "center",
-     "widthRatio": 0.9,
-     "top": 105,
+     "widthRatio": 0.8,
+     "top": 98,
      "tag": "h1",
      "kind": "heading"
     },
@@ -2210,7 +2206,7 @@
      "text": "Decisions travel.",
      "words": 2,
      "lines": 2,
-     "size": 54.4,
+     "size": 49,
      "font": "Newsreader"
     },
     "headings": [
@@ -2219,8 +2215,8 @@
       "words": 2,
       "chars": 17,
       "lines": 2,
-      "size": 54.4,
-      "vw": 13.9,
+      "size": 49,
+      "vw": 12.6,
       "font": "Newsreader",
       "weight": 400,
       "tracking": -0.035,
@@ -2230,8 +2226,8 @@
       "mono": false,
       "align": "left",
       "position": "center",
-      "widthRatio": 0.9,
-      "top": 105,
+      "widthRatio": 0.8,
+      "top": 98,
       "tag": "h1",
       "kind": "heading"
      },
@@ -2252,7 +2248,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.81,
-      "top": 240,
+      "top": 222,
       "tag": "p",
       "kind": "statement"
      },
@@ -2273,7 +2269,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 821,
+      "top": 828,
       "tag": "p",
       "kind": "statement"
      },
@@ -2294,7 +2290,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.4,
-      "top": 1482,
+      "top": 1488,
       "tag": "b",
       "kind": "heading"
      },
@@ -2315,7 +2311,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.5,
-      "top": 1900,
+      "top": 1906,
       "tag": "div",
       "kind": "heading"
      },
@@ -2336,7 +2332,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 2048,
+      "top": 2054,
       "tag": "h2",
       "kind": "heading"
      },
@@ -2357,7 +2353,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 2146,
+      "top": 2152,
       "tag": "p",
       "kind": "statement"
      },
@@ -2378,7 +2374,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.05,
-      "top": 2227,
+      "top": 2233,
       "tag": "b",
       "kind": "statement"
      },
@@ -2399,7 +2395,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 2302,
+      "top": 2308,
       "tag": "b",
       "kind": "statement"
      },
@@ -2420,7 +2416,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 2414,
+      "top": 2421,
       "tag": "b",
       "kind": "statement"
      },
@@ -2441,7 +2437,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 2527,
+      "top": 2533,
       "tag": "b",
       "kind": "statement"
      },
@@ -2462,7 +2458,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 2639,
+      "top": 2646,
       "tag": "b",
       "kind": "statement"
      },
@@ -2483,7 +2479,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 2752,
+      "top": 2758,
       "tag": "b",
       "kind": "statement"
      },
@@ -2504,7 +2500,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 2865,
+      "top": 2871,
       "tag": "b",
       "kind": "statement"
      },
@@ -2525,7 +2521,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 4149,
+      "top": 4156,
       "tag": "h2",
       "kind": "heading"
      },
@@ -2546,7 +2542,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 4348,
+      "top": 4354,
       "mixedFonts": [
        "Newsreader",
        "Onest"
@@ -2571,7 +2567,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 4470,
+      "top": 4476,
       "mixedFonts": [
        "Newsreader",
        "Onest"
@@ -2596,7 +2592,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 4592,
+      "top": 4598,
       "mixedFonts": [
        "Newsreader",
        "Onest"
@@ -2621,7 +2617,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 4714,
+      "top": 4720,
       "mixedFonts": [
        "Newsreader",
        "Onest"
@@ -2646,7 +2642,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 5004,
+      "top": 5010,
       "tag": "h2",
       "kind": "heading"
      },
@@ -2667,7 +2663,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.62,
-      "top": 5376,
+      "top": 5383,
       "tag": "p",
       "kind": "statement"
      },
@@ -2688,7 +2684,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 6518,
+      "top": 6524,
       "tag": "h2",
       "kind": "heading"
      },
@@ -2709,7 +2705,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.36,
-      "top": 7063,
+      "top": 7070,
       "tag": "b",
       "kind": "statement"
      },
@@ -2730,7 +2726,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 7254,
+      "top": 7260,
       "tag": "h2",
       "kind": "heading"
      },
@@ -2739,8 +2735,8 @@
       "words": 1,
       "chars": 8,
       "lines": 1,
-      "size": 54.4,
-      "vw": 13.9,
+      "size": 49,
+      "vw": 12.6,
       "font": "Newsreader",
       "weight": 400,
       "tracking": -0.04,
@@ -2751,7 +2747,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 8138,
+      "top": 8145,
       "tag": "p",
       "kind": "statement"
      }
@@ -2784,7 +2780,7 @@
       17,
       22,
       35,
-      54
+      49
      ],
      "sizeCount": 5,
      "notLoaded": [],
@@ -2798,8 +2794,8 @@
      },
      "measureChars": 41,
      "max": {
-      "size": 54.4,
-      "vw": 13.9,
+      "size": 49,
+      "vw": 12.6,
       "font": "Newsreader",
       "text": "Decisions"
      },
@@ -2827,7 +2823,7 @@
      "sectionBgs": [
       {
        "color": "#0e2a47",
-       "top": 2040,
+       "top": 2046,
        "hsl": {
         "h": 211,
         "s": 0.67,
@@ -2836,7 +2832,7 @@
       },
       {
        "color": "#dedbd3",
-       "top": 5350,
+       "top": 5357,
        "hsl": {
         "h": 44,
         "s": 0.14,
@@ -2845,7 +2841,7 @@
       },
       {
        "color": "#15332b",
-       "top": 7170,
+       "top": 7176,
        "hsl": {
         "h": 164,
         "s": 0.42,
@@ -2924,7 +2920,7 @@
     "heroMedia": [
      {
       "type": "svg",
-      "ratio": 0.2
+      "ratio": 0.21
      }
     ],
     "nav": {
@@ -2944,7 +2940,7 @@
      "w": 390,
      "h": 844
     },
-    "pageH": 8760,
+    "pageH": 8762,
     "margins": {
      "left": 20,
      "right": 20
@@ -2954,13 +2950,13 @@
       "sel": "section#top.masthead.sheet",
       "tag": "section",
       "top": 0,
-      "height": 737,
+      "height": 744,
       "words": 32,
       "media": 1,
       "middle": 0,
       "heading": {
        "text": "Decisions",
-       "size": 54,
+       "size": 49,
        "tag": "h1"
       },
       "left": 20,
@@ -2976,7 +2972,7 @@
      {
       "sel": "section#problem.page.sheet",
       "tag": "section",
-      "top": 737,
+      "top": 744,
       "height": 743,
       "words": 112,
       "media": 0,
@@ -2995,7 +2991,7 @@
      {
       "sel": "div.mosaic.rise",
       "tag": "div",
-      "top": 1480,
+      "top": 1486,
       "height": 560,
       "words": 19,
       "media": 4,
@@ -3014,7 +3010,7 @@
      {
       "sel": "section#chain.scene.field",
       "tag": "section",
-      "top": 2040,
+      "top": 2046,
       "height": 2026,
       "words": 0,
       "media": 0,
@@ -3033,7 +3029,7 @@
      {
       "sel": "section#method.page.sheet",
       "tag": "section",
-      "top": 4065,
+      "top": 4072,
       "height": 855,
       "words": 88,
       "media": 0,
@@ -3056,7 +3052,7 @@
      {
       "sel": "section#esg.page.sheet",
       "tag": "section",
-      "top": 4920,
+      "top": 4926,
       "height": 1116,
       "words": 108,
       "media": 0,
@@ -3079,7 +3075,7 @@
      {
       "sel": "section#founder.page.sheet",
       "tag": "section",
-      "top": 6036,
+      "top": 6043,
       "height": 1134,
       "words": 107,
       "media": 2,
@@ -3102,7 +3098,7 @@
      {
       "sel": "section#contact.page.field",
       "tag": "section",
-      "top": 7170,
+      "top": 7176,
       "height": 885,
       "words": 44,
       "media": 0,
@@ -3125,14 +3121,14 @@
      {
       "sel": "footer.close",
       "tag": "footer",
-      "top": 8054,
-      "height": 706,
+      "top": 8061,
+      "height": 701,
       "words": 91,
       "media": 0,
       "middle": 0,
       "heading": {
        "text": "BVANTRIX",
-       "size": 54,
+       "size": 49,
        "tag": "span"
       },
       "left": 20,
@@ -3150,8 +3146,8 @@
     "h1s": [
      {
       "text": "Decisions travel.",
-      "size": 54,
-      "top": 105,
+      "size": 49,
+      "top": 98,
       "firstScreen": true
      }
     ],
