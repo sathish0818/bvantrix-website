@@ -1,6 +1,6 @@
 {
  "url": "http://127.0.0.1:8777/index.html",
- "at": "2026-10-20T11:29:18.514Z",
+ "at": "2026-10-20T11:46:54.616Z",
  "allow": [],
  "viewports": [
   {
@@ -9,22 +9,22 @@
    "load": "load",
    "screens": 10,
    "filled": [
+    0.43,
+    0.48,
+    1,
+    1,
+    1,
     0.44,
+    0.28,
     0.47,
-    1,
-    1,
-    1,
-    0.57,
-    0.24,
-    0.44,
-    0.69,
+    0.8,
     1
    ],
    "motion": {
-    "elements": 48,
-    "css": 11,
-    "transitions": 28,
-    "scripted": 9,
+    "elements": 58,
+    "css": 15,
+    "transitions": 40,
+    "scripted": 3,
     "videos": 1,
     "playingVideos": 0
    },
@@ -34,23 +34,22 @@
      "h": 900
     },
     "page": {
-     "height": 8707,
-     "screens": 9.7,
-     "words": 785,
-     "img": 5,
+     "height": 8628,
+     "screens": 9.6,
+     "words": 827,
+     "img": 4,
      "video": 1,
      "canvas": 0,
-     "svg": 6,
-     "sections": 8,
+     "svg": 7,
+     "sections": 7,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 0,
      "uiAbuse": false,
-     "realPictures": 6,
+     "realPictures": 5,
      "videoCount": 1,
      "uiPictures": 0,
      "pictureSamples": [
-      "container-cranes-at-the-mpet-msc-psa.jpg",
       "coo-trois-ponts-turbine-hall-02.jpg",
       "interior-magnolia-cotton-mills-spinning.webp",
       "snowfall-at-night-over-brofjorden-and-preemraff.",
@@ -79,7 +78,7 @@
      "align": "left",
      "position": "right",
      "widthRatio": 0.59,
-     "top": 118,
+     "top": 91,
      "tag": "h1",
      "kind": "heading"
     },
@@ -108,7 +107,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.59,
-      "top": 118,
+      "top": 91,
       "tag": "h1",
       "kind": "heading"
      },
@@ -127,157 +126,10 @@
       "italic": false,
       "mono": false,
       "align": "left",
-      "position": "center",
-      "widthRatio": 0.33,
-      "top": 425,
+      "position": "left",
+      "widthRatio": 0.32,
+      "top": 108,
       "tag": "p",
-      "kind": "statement"
-     },
-     {
-      "text": "a decision",
-      "words": 2,
-      "chars": 10,
-      "lines": 1,
-      "size": 32,
-      "vw": 2.2,
-      "font": "Newsreader",
-      "weight": 400,
-      "tracking": -0.018,
-      "leading": 1.1,
-      "upper": false,
-      "italic": true,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.09,
-      "top": 905,
-      "tag": "li",
-      "kind": "statement"
-     },
-     {
-      "text": "business",
-      "words": 1,
-      "chars": 8,
-      "lines": 1,
-      "size": 32,
-      "vw": 2.2,
-      "font": "Newsreader",
-      "weight": 400,
-      "tracking": -0.018,
-      "leading": 1.1,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.07,
-      "top": 908,
-      "tag": "li",
-      "kind": "statement"
-     },
-     {
-      "text": "people",
-      "words": 1,
-      "chars": 6,
-      "lines": 1,
-      "size": 32,
-      "vw": 2.2,
-      "font": "Newsreader",
-      "weight": 400,
-      "tracking": -0.018,
-      "leading": 1.1,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.06,
-      "top": 908,
-      "tag": "li",
-      "kind": "statement"
-     },
-     {
-      "text": "resources",
-      "words": 1,
-      "chars": 9,
-      "lines": 1,
-      "size": 32,
-      "vw": 2.2,
-      "font": "Newsreader",
-      "weight": 400,
-      "tracking": -0.018,
-      "leading": 1.1,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.08,
-      "top": 908,
-      "tag": "li",
-      "kind": "statement"
-     },
-     {
-      "text": "environment",
-      "words": 1,
-      "chars": 11,
-      "lines": 1,
-      "size": 32,
-      "vw": 2.2,
-      "font": "Newsreader",
-      "weight": 400,
-      "tracking": -0.018,
-      "leading": 1.1,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.12,
-      "top": 908,
-      "tag": "li",
-      "kind": "statement"
-     },
-     {
-      "text": "risk",
-      "words": 1,
-      "chars": 4,
-      "lines": 1,
-      "size": 32,
-      "vw": 2.2,
-      "font": "Newsreader",
-      "weight": 400,
-      "tracking": -0.018,
-      "leading": 1.1,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "right",
-      "widthRatio": 0.03,
-      "top": 908,
-      "tag": "li",
-      "kind": "statement"
-     },
-     {
-      "text": "compliance",
-      "words": 1,
-      "chars": 10,
-      "lines": 1,
-      "size": 32,
-      "vw": 2.2,
-      "font": "Newsreader",
-      "weight": 400,
-      "tracking": -0.018,
-      "leading": 1.1,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "right",
-      "widthRatio": 0.1,
-      "top": 908,
-      "tag": "li",
       "kind": "statement"
      },
      {
@@ -297,7 +149,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.38,
-      "top": 1125,
+      "top": 1046,
       "tag": "p",
       "kind": "statement"
      },
@@ -318,7 +170,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.19,
-      "top": 1704,
+      "top": 1625,
       "tag": "b",
       "kind": "heading"
      },
@@ -339,7 +191,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.25,
-      "top": 1867,
+      "top": 1788,
       "tag": "div",
       "kind": "heading"
      },
@@ -360,7 +212,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.39,
-      "top": 2436,
+      "top": 2357,
       "tag": "h2",
       "kind": "heading"
      },
@@ -381,7 +233,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.15,
-      "top": 2507,
+      "top": 2428,
       "tag": "b",
       "kind": "statement"
      },
@@ -402,7 +254,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.15,
-      "top": 2507,
+      "top": 2428,
       "tag": "b",
       "kind": "statement"
      },
@@ -423,7 +275,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.15,
-      "top": 2507,
+      "top": 2428,
       "tag": "b",
       "kind": "statement"
      },
@@ -444,7 +296,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.3,
-      "top": 2601,
+      "top": 2522,
       "tag": "p",
       "kind": "statement"
      },
@@ -465,7 +317,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.15,
-      "top": 2645,
+      "top": 2566,
       "tag": "b",
       "kind": "statement"
      },
@@ -486,7 +338,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.15,
-      "top": 2645,
+      "top": 2566,
       "tag": "b",
       "kind": "statement"
      },
@@ -507,7 +359,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.15,
-      "top": 2645,
+      "top": 2566,
       "tag": "b",
       "kind": "statement"
      },
@@ -528,7 +380,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.03,
-      "top": 2721,
+      "top": 2642,
       "tag": "b",
       "kind": "statement"
      },
@@ -549,7 +401,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.39,
-      "top": 4970,
+      "top": 4891,
       "tag": "h2",
       "kind": "heading"
      },
@@ -570,7 +422,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.47,
-      "top": 5002,
+      "top": 4923,
       "tag": "b",
       "kind": "statement"
      },
@@ -591,7 +443,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.47,
-      "top": 5135,
+      "top": 5056,
       "tag": "b",
       "kind": "statement"
      },
@@ -612,7 +464,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.47,
-      "top": 5269,
+      "top": 5190,
       "tag": "b",
       "kind": "statement"
      },
@@ -633,7 +485,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.47,
-      "top": 5402,
+      "top": 5323,
       "tag": "b",
       "kind": "statement"
      },
@@ -654,7 +506,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.39,
-      "top": 5763,
+      "top": 5684,
       "tag": "h2",
       "kind": "heading"
      },
@@ -675,7 +527,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.25,
-      "top": 5806,
+      "top": 5727,
       "tag": "p",
       "kind": "statement"
      },
@@ -696,7 +548,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.5,
-      "top": 6654,
+      "top": 6575,
       "tag": "h2",
       "kind": "heading"
      },
@@ -717,7 +569,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.14,
-      "top": 7245,
+      "top": 7166,
       "tag": "b",
       "kind": "statement"
      },
@@ -738,7 +590,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.39,
-      "top": 7558,
+      "top": 7479,
       "tag": "h2",
       "kind": "heading"
      },
@@ -759,30 +611,30 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.94,
-      "top": 8230,
+      "top": 8151,
       "tag": "p",
       "kind": "statement"
      }
     ],
     "headingSummary": {
-     "count": 32,
+     "count": 25,
      "maxLines": 3,
      "over2Lines": 0,
-     "statements": 24,
+     "statements": 17,
      "centered": 0,
-     "medianWords": 2,
+     "medianWords": 4,
      "mixedFontHeadings": 0
     },
     "type": {
      "families": [
       {
        "family": "Onest",
-       "share": 0.83,
+       "share": 0.84,
        "mono": false
       },
       {
        "family": "Newsreader",
-       "share": 0.17,
+       "share": 0.16,
        "mono": false
       }
      ],
@@ -835,7 +687,7 @@
      "sectionBgs": [
       {
        "color": "#0e2a47",
-       "top": 2141,
+       "top": 2062,
        "hsl": {
         "h": 211,
         "s": 0.67,
@@ -844,7 +696,7 @@
       },
       {
        "color": "#dedbd3",
-       "top": 5763,
+       "top": 5684,
        "hsl": {
         "h": 44,
         "s": 0.14,
@@ -853,7 +705,7 @@
       },
       {
        "color": "#15332b",
-       "top": 7429,
+       "top": 7350,
        "hsl": {
         "h": 164,
         "s": 0.42,
@@ -864,11 +716,11 @@
      "textColors": [
       {
        "color": "#121c26",
-       "share": 0.61
+       "share": 0.62
       },
       {
        "color": "#9fb0c2",
-       "share": 0.26
+       "share": 0.25
       },
       {
        "color": "#e9e7e1",
@@ -923,7 +775,7 @@
      "blurred": 0,
      "roundedBoxes": 0,
      "boxRadius": 0,
-     "squareMedia": 6,
+     "squareMedia": 5,
      "roundedMedia": 0,
      "mediaRadius": 0,
      "textShadow": 0,
@@ -931,8 +783,8 @@
     },
     "heroMedia": [
      {
-      "type": "img",
-      "ratio": 0.17
+      "type": "svg",
+      "ratio": 0.29
      }
     ],
     "nav": {
@@ -952,7 +804,7 @@
      "w": 1440,
      "h": 900
     },
-    "pageH": 8707,
+    "pageH": 8628,
     "margins": {
      "left": 46,
      "right": 46
@@ -962,17 +814,17 @@
       "sel": "section#top.masthead.sheet",
       "tag": "section",
       "top": 0,
-      "height": 856,
+      "height": 916,
       "words": 32,
       "media": 1,
-      "middle": 202,
+      "middle": 115,
       "heading": {
        "text": "Decisions",
        "size": 140,
        "tag": "h1"
       },
       "left": 46,
-      "right": 86,
+      "right": 46,
       "textLeft": 46,
       "textRight": 333,
       "fullBleed": false,
@@ -982,32 +834,9 @@
       "pinned": false
      },
      {
-      "sel": "section.flow",
-      "tag": "section",
-      "top": 856,
-      "height": 139,
-      "words": 8,
-      "media": 0,
-      "middle": 37,
-      "heading": {
-       "text": "a decision",
-       "size": 32,
-       "tag": "em"
-      },
-      "left": 46,
-      "right": 375,
-      "textLeft": 46,
-      "textRight": 375,
-      "fullBleed": false,
-      "footer": false,
-      "hero": false,
-      "continues": true,
-      "pinned": false
-     },
-     {
       "sel": "section#problem.page.sheet",
       "tag": "section",
-      "top": 995,
+      "top": 916,
       "height": 598,
       "words": 112,
       "media": 0,
@@ -1030,7 +859,7 @@
      {
       "sel": "div.mosaic.rise",
       "tag": "div",
-      "top": 1593,
+      "top": 1514,
       "height": 547,
       "words": 19,
       "media": 4,
@@ -1053,7 +882,7 @@
      {
       "sel": "section#chain.scene.field",
       "tag": "section",
-      "top": 2141,
+      "top": 2062,
       "height": 2700,
       "words": 0,
       "media": 0,
@@ -1072,7 +901,7 @@
      {
       "sel": "section#method.page.sheet",
       "tag": "section",
-      "top": 4841,
+      "top": 4762,
       "height": 793,
       "words": 88,
       "media": 0,
@@ -1095,7 +924,7 @@
      {
       "sel": "section#esg.page.sheet",
       "tag": "section",
-      "top": 5634,
+      "top": 5555,
       "height": 890,
       "words": 108,
       "media": 0,
@@ -1118,7 +947,7 @@
      {
       "sel": "section#founder.page.sheet",
       "tag": "section",
-      "top": 6524,
+      "top": 6445,
       "height": 905,
       "words": 107,
       "media": 2,
@@ -1141,7 +970,7 @@
      {
       "sel": "section#contact.page.field",
       "tag": "section",
-      "top": 7429,
+      "top": 7350,
       "height": 672,
       "words": 44,
       "media": 0,
@@ -1164,7 +993,7 @@
      {
       "sel": "footer.close",
       "tag": "footer",
-      "top": 8101,
+      "top": 8022,
       "height": 606,
       "words": 91,
       "media": 0,
@@ -1187,15 +1016,15 @@
     ],
     "gaps": [
      {
-      "top": 5472,
-      "height": 288
+      "top": 5392,
+      "height": 292
      },
      {
-      "top": 6352,
+      "top": 6272,
       "height": 300
      },
      {
-      "top": 7284,
+      "top": 7204,
       "height": 272
      }
     ],
@@ -1203,7 +1032,7 @@
      {
       "text": "Decisions travel.",
       "size": 140,
-      "top": 118,
+      "top": 91,
       "firstScreen": true
      }
     ],
@@ -1243,12 +1072,12 @@
     "stage": false,
     "explains": true,
     "slivers": [],
-    "voidShare": 0.23,
+    "voidShare": 0.2,
     "voidBox": {
      "x": 0,
-     "y": 360,
+     "y": 420,
      "w": 540,
-     "h": 540
+     "h": 480
     }
    },
    "app": null,
@@ -1260,23 +1089,23 @@
    "load": "load",
    "screens": 11,
    "filled": [
-    0.49,
-    0.62,
+    0.51,
+    0.66,
     1,
     1,
     1,
     0.57,
-    0.37,
-    0.59,
-    0.55,
-    0.88,
+    0.35,
+    0.62,
+    0.51,
+    0.83,
     1
    ],
    "motion": {
-    "elements": 48,
-    "css": 11,
-    "transitions": 28,
-    "scripted": 9,
+    "elements": 58,
+    "css": 15,
+    "transitions": 40,
+    "scripted": 3,
     "videos": 1,
     "playingVideos": 0
    },
@@ -1286,23 +1115,22 @@
      "h": 1024
     },
     "page": {
-     "height": 10463,
+     "height": 10416,
      "screens": 10.2,
      "words": 775,
-     "img": 5,
+     "img": 4,
      "video": 1,
      "canvas": 0,
-     "svg": 6,
-     "sections": 8,
+     "svg": 7,
+     "sections": 7,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 0,
      "uiAbuse": false,
-     "realPictures": 6,
+     "realPictures": 5,
      "videoCount": 1,
      "uiPictures": 0,
      "pictureSamples": [
-      "container-cranes-at-the-mpet-msc-psa.jpg",
       "coo-trois-ponts-turbine-hall-02.jpg",
       "interior-magnolia-cotton-mills-spinning.webp",
       "snowfall-at-night-over-brofjorden-and-preemraff.",
@@ -1386,153 +1214,6 @@
       "kind": "statement"
      },
      {
-      "text": "business",
-      "words": 1,
-      "chars": 8,
-      "lines": 1,
-      "size": 26,
-      "vw": 3.4,
-      "font": "Newsreader",
-      "weight": 400,
-      "tracking": -0.018,
-      "leading": 1.1,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.11,
-      "top": 996,
-      "tag": "li",
-      "kind": "statement"
-     },
-     {
-      "text": "people",
-      "words": 1,
-      "chars": 6,
-      "lines": 1,
-      "size": 26,
-      "vw": 3.4,
-      "font": "Newsreader",
-      "weight": 400,
-      "tracking": -0.018,
-      "leading": 1.1,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.09,
-      "top": 997,
-      "tag": "li",
-      "kind": "statement"
-     },
-     {
-      "text": "a decision",
-      "words": 2,
-      "chars": 10,
-      "lines": 1,
-      "size": 26,
-      "vw": 3.4,
-      "font": "Newsreader",
-      "weight": 400,
-      "tracking": -0.018,
-      "leading": 1.1,
-      "upper": false,
-      "italic": true,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.13,
-      "top": 998,
-      "tag": "li",
-      "kind": "statement"
-     },
-     {
-      "text": "resources",
-      "words": 1,
-      "chars": 9,
-      "lines": 1,
-      "size": 26,
-      "vw": 3.4,
-      "font": "Newsreader",
-      "weight": 400,
-      "tracking": -0.018,
-      "leading": 1.1,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.12,
-      "top": 999,
-      "tag": "li",
-      "kind": "statement"
-     },
-     {
-      "text": "environment",
-      "words": 1,
-      "chars": 11,
-      "lines": 1,
-      "size": 26,
-      "vw": 3.4,
-      "font": "Newsreader",
-      "weight": 400,
-      "tracking": -0.018,
-      "leading": 1.1,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "right",
-      "widthRatio": 0.17,
-      "top": 999,
-      "tag": "li",
-      "kind": "statement"
-     },
-     {
-      "text": "risk",
-      "words": 1,
-      "chars": 4,
-      "lines": 1,
-      "size": 26,
-      "vw": 3.4,
-      "font": "Newsreader",
-      "weight": 400,
-      "tracking": -0.018,
-      "leading": 1.1,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "right",
-      "widthRatio": 0.05,
-      "top": 999,
-      "tag": "li",
-      "kind": "statement"
-     },
-     {
-      "text": "compliance",
-      "words": 1,
-      "chars": 10,
-      "lines": 1,
-      "size": 26,
-      "vw": 3.4,
-      "font": "Newsreader",
-      "weight": 400,
-      "tracking": -0.018,
-      "leading": 1.1,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "right",
-      "widthRatio": 0.15,
-      "top": 999,
-      "tag": "li",
-      "kind": "statement"
-     },
-     {
       "text": "The problem was never a lack of data. It is that a consequential decision belongs to no single system.",
       "words": 19,
       "chars": 102,
@@ -1549,7 +1230,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.57,
-      "top": 1140,
+      "top": 1092,
       "tag": "p",
       "kind": "statement"
      },
@@ -1570,7 +1251,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.44,
-      "top": 1722,
+      "top": 1675,
       "tag": "b",
       "kind": "heading"
      },
@@ -1591,7 +1272,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.5,
-      "top": 2266,
+      "top": 2218,
       "tag": "div",
       "kind": "heading"
      },
@@ -1612,7 +1293,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.94,
-      "top": 2704,
+      "top": 2656,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1633,7 +1314,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.45,
-      "top": 2829,
+      "top": 2781,
       "tag": "p",
       "kind": "statement"
      },
@@ -1654,7 +1335,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.04,
-      "top": 2920,
+      "top": 2872,
       "tag": "b",
       "kind": "statement"
      },
@@ -1675,7 +1356,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.4,
-      "top": 3020,
+      "top": 2973,
       "tag": "b",
       "kind": "statement"
      },
@@ -1696,7 +1377,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.4,
-      "top": 3020,
+      "top": 2973,
       "tag": "b",
       "kind": "statement"
      },
@@ -1717,7 +1398,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.4,
-      "top": 3137,
+      "top": 3089,
       "tag": "b",
       "kind": "statement"
      },
@@ -1738,7 +1419,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.4,
-      "top": 3137,
+      "top": 3089,
       "tag": "b",
       "kind": "statement"
      },
@@ -1759,7 +1440,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.4,
-      "top": 3254,
+      "top": 3206,
       "tag": "b",
       "kind": "statement"
      },
@@ -1780,7 +1461,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.4,
-      "top": 3254,
+      "top": 3206,
       "tag": "b",
       "kind": "statement"
      },
@@ -1801,7 +1482,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.94,
-      "top": 5642,
+      "top": 5594,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1822,7 +1503,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.84,
-      "top": 5903,
+      "top": 5856,
       "tag": "b",
       "kind": "statement"
      },
@@ -1843,7 +1524,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.84,
-      "top": 6006,
+      "top": 5958,
       "tag": "b",
       "kind": "statement"
      },
@@ -1864,7 +1545,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.84,
-      "top": 6108,
+      "top": 6060,
       "tag": "b",
       "kind": "statement"
      },
@@ -1885,7 +1566,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.84,
-      "top": 6210,
+      "top": 6162,
       "tag": "b",
       "kind": "statement"
      },
@@ -1906,7 +1587,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.94,
-      "top": 6460,
+      "top": 6413,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1927,7 +1608,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.38,
-      "top": 6817,
+      "top": 6770,
       "tag": "p",
       "kind": "statement"
      },
@@ -1948,7 +1629,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.94,
-      "top": 8406,
+      "top": 8358,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1969,7 +1650,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.22,
-      "top": 8921,
+      "top": 8873,
       "tag": "b",
       "kind": "statement"
      },
@@ -1990,7 +1671,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.94,
-      "top": 9115,
+      "top": 9067,
       "tag": "h2",
       "kind": "heading"
      },
@@ -2011,30 +1692,30 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.94,
-      "top": 9932,
+      "top": 9884,
       "tag": "p",
       "kind": "statement"
      }
     ],
     "headingSummary": {
-     "count": 32,
+     "count": 25,
      "maxLines": 3,
      "over2Lines": 0,
-     "statements": 24,
+     "statements": 17,
      "centered": 0,
-     "medianWords": 2,
+     "medianWords": 4,
      "mixedFontHeadings": 0
     },
     "type": {
      "families": [
       {
        "family": "Onest",
-       "share": 0.83,
+       "share": 0.84,
        "mono": false
       },
       {
        "family": "Newsreader",
-       "share": 0.17,
+       "share": 0.16,
        "mono": false
       }
      ],
@@ -2087,7 +1768,7 @@
      "sectionBgs": [
       {
        "color": "#0e2a47",
-       "top": 2486,
+       "top": 2438,
        "hsl": {
         "h": 211,
         "s": 0.67,
@@ -2096,7 +1777,7 @@
       },
       {
        "color": "#dedbd3",
-       "top": 6791,
+       "top": 6744,
        "hsl": {
         "h": 44,
         "s": 0.14,
@@ -2105,7 +1786,7 @@
       },
       {
        "color": "#15332b",
-       "top": 9031,
+       "top": 8983,
        "hsl": {
         "h": 164,
         "s": 0.42,
@@ -2116,11 +1797,11 @@
      "textColors": [
       {
        "color": "#121c26",
-       "share": 0.62
+       "share": 0.63
       },
       {
        "color": "#9fb0c2",
-       "share": 0.26
+       "share": 0.25
       },
       {
        "color": "#e9e7e1",
@@ -2175,7 +1856,7 @@
      "blurred": 0,
      "roundedBoxes": 0,
      "boxRadius": 0,
-     "squareMedia": 6,
+     "squareMedia": 5,
      "roundedMedia": 0,
      "mediaRadius": 0,
      "textShadow": 0,
@@ -2183,8 +1864,8 @@
     },
     "heroMedia": [
      {
-      "type": "img",
-      "ratio": 0.27
+      "type": "svg",
+      "ratio": 0.35
      }
     ],
     "nav": {
@@ -2204,7 +1885,7 @@
      "w": 768,
      "h": 1024
     },
-    "pageH": 10463,
+    "pageH": 10416,
     "margins": {
      "left": 25,
      "right": 25
@@ -2214,7 +1895,7 @@
       "sel": "section#top.masthead.sheet",
       "tag": "section",
       "top": 0,
-      "height": 975,
+      "height": 1008,
       "words": 32,
       "media": 1,
       "middle": 0,
@@ -2224,7 +1905,7 @@
        "tag": "h1"
       },
       "left": 25,
-      "right": 65,
+      "right": 25,
       "textLeft": 25,
       "textRight": 404,
       "fullBleed": false,
@@ -2236,7 +1917,7 @@
      {
       "sel": "section#problem.page.sheet",
       "tag": "section",
-      "top": 1056,
+      "top": 1008,
       "height": 550,
       "words": 112,
       "media": 0,
@@ -2259,7 +1940,7 @@
      {
       "sel": "div.mosaic.rise",
       "tag": "div",
-      "top": 1606,
+      "top": 1558,
       "height": 880,
       "words": 19,
       "media": 4,
@@ -2282,7 +1963,7 @@
      {
       "sel": "section#chain.scene.field",
       "tag": "section",
-      "top": 2486,
+      "top": 2438,
       "height": 3072,
       "words": 0,
       "media": 0,
@@ -2301,7 +1982,7 @@
      {
       "sel": "section#method.page.sheet",
       "tag": "section",
-      "top": 5558,
+      "top": 5510,
       "height": 819,
       "words": 88,
       "media": 0,
@@ -2324,7 +2005,7 @@
      {
       "sel": "section#esg.page.sheet",
       "tag": "section",
-      "top": 6376,
+      "top": 6329,
       "height": 1073,
       "words": 108,
       "media": 0,
@@ -2347,7 +2028,7 @@
      {
       "sel": "section#founder.page.sheet",
       "tag": "section",
-      "top": 7449,
+      "top": 7402,
       "height": 1582,
       "words": 107,
       "media": 2,
@@ -2366,7 +2047,7 @@
      {
       "sel": "section#contact.page.field",
       "tag": "section",
-      "top": 9031,
+      "top": 8983,
       "height": 817,
       "words": 44,
       "media": 0,
@@ -2389,7 +2070,7 @@
      {
       "sel": "footer.close",
       "tag": "footer",
-      "top": 9848,
+      "top": 9800,
       "height": 616,
       "words": 91,
       "media": 0,
@@ -2451,23 +2132,23 @@
    "load": "load",
    "screens": 11,
    "filled": [
-    0.45,
-    0.53,
+    0.39,
+    0.66,
     1,
     1,
-    1,
-    0.38,
-    0.58,
-    0.44,
-    0.67,
-    0.78,
+    0.83,
+    0.37,
+    0.68,
+    0.49,
+    0.79,
+    0.89,
     1
    ],
    "motion": {
-    "elements": 48,
-    "css": 11,
-    "transitions": 28,
-    "scripted": 9,
+    "elements": 58,
+    "css": 15,
+    "transitions": 40,
+    "scripted": 3,
     "videos": 1,
     "playingVideos": 0
    },
@@ -2477,23 +2158,22 @@
      "h": 844
     },
     "page": {
-     "height": 8890,
-     "screens": 10.5,
+     "height": 8760,
+     "screens": 10.4,
      "words": 775,
-     "img": 5,
+     "img": 4,
      "video": 1,
      "canvas": 0,
-     "svg": 6,
-     "sections": 8,
+     "svg": 7,
+     "sections": 7,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 0,
      "uiAbuse": false,
-     "realPictures": 6,
+     "realPictures": 5,
      "videoCount": 1,
      "uiPictures": 0,
      "pictureSamples": [
-      "container-cranes-at-the-mpet-msc-psa.jpg",
       "coo-trois-ponts-turbine-hall-02.jpg",
       "interior-magnolia-cotton-mills-spinning.webp",
       "snowfall-at-night-over-brofjorden-and-preemraff.",
@@ -2577,153 +2257,6 @@
       "kind": "statement"
      },
      {
-      "text": "business",
-      "words": 1,
-      "chars": 8,
-      "lines": 1,
-      "size": 22,
-      "vw": 5.6,
-      "font": "Newsreader",
-      "weight": 400,
-      "tracking": -0.018,
-      "leading": 1.1,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.18,
-      "top": 812,
-      "tag": "li",
-      "kind": "statement"
-     },
-     {
-      "text": "people",
-      "words": 1,
-      "chars": 6,
-      "lines": 1,
-      "size": 22,
-      "vw": 5.6,
-      "font": "Newsreader",
-      "weight": 400,
-      "tracking": -0.018,
-      "leading": 1.1,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "right",
-      "widthRatio": 0.15,
-      "top": 812,
-      "tag": "li",
-      "kind": "statement"
-     },
-     {
-      "text": "a decision",
-      "words": 2,
-      "chars": 10,
-      "lines": 1,
-      "size": 22,
-      "vw": 5.6,
-      "font": "Newsreader",
-      "weight": 400,
-      "tracking": -0.018,
-      "leading": 1.1,
-      "upper": false,
-      "italic": true,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.22,
-      "top": 814,
-      "tag": "li",
-      "kind": "statement"
-     },
-     {
-      "text": "resources",
-      "words": 1,
-      "chars": 9,
-      "lines": 1,
-      "size": 22,
-      "vw": 5.6,
-      "font": "Newsreader",
-      "weight": 400,
-      "tracking": -0.018,
-      "leading": 1.1,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "right",
-      "widthRatio": 0.2,
-      "top": 815,
-      "tag": "li",
-      "kind": "statement"
-     },
-     {
-      "text": "environment",
-      "words": 1,
-      "chars": 11,
-      "lines": 1,
-      "size": 22,
-      "vw": 5.6,
-      "font": "Newsreader",
-      "weight": 400,
-      "tracking": -0.018,
-      "leading": 1.1,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "right",
-      "widthRatio": 0.29,
-      "top": 815,
-      "tag": "li",
-      "kind": "statement"
-     },
-     {
-      "text": "risk",
-      "words": 1,
-      "chars": 4,
-      "lines": 1,
-      "size": 22,
-      "vw": 5.6,
-      "font": "Newsreader",
-      "weight": 400,
-      "tracking": -0.018,
-      "leading": 1.1,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "right",
-      "widthRatio": 0.08,
-      "top": 815,
-      "tag": "li",
-      "kind": "statement"
-     },
-     {
-      "text": "compliance",
-      "words": 1,
-      "chars": 10,
-      "lines": 1,
-      "size": 22,
-      "vw": 5.6,
-      "font": "Newsreader",
-      "weight": 400,
-      "tracking": -0.018,
-      "leading": 1.1,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "right",
-      "widthRatio": 0.25,
-      "top": 815,
-      "tag": "li",
-      "kind": "statement"
-     },
-     {
       "text": "The problem was never a lack of data. It is that a consequential decision belongs to no single system.",
       "words": 19,
       "chars": 102,
@@ -2740,7 +2273,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 951,
+      "top": 821,
       "tag": "p",
       "kind": "statement"
      },
@@ -2761,7 +2294,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.4,
-      "top": 1612,
+      "top": 1482,
       "tag": "b",
       "kind": "heading"
      },
@@ -2782,7 +2315,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.5,
-      "top": 2030,
+      "top": 1900,
       "tag": "div",
       "kind": "heading"
      },
@@ -2803,7 +2336,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 2178,
+      "top": 2048,
       "tag": "h2",
       "kind": "heading"
      },
@@ -2824,7 +2357,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 2276,
+      "top": 2146,
       "tag": "p",
       "kind": "statement"
      },
@@ -2845,7 +2378,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.05,
-      "top": 2357,
+      "top": 2227,
       "tag": "b",
       "kind": "statement"
      },
@@ -2866,7 +2399,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 2431,
+      "top": 2302,
       "tag": "b",
       "kind": "statement"
      },
@@ -2887,7 +2420,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 2544,
+      "top": 2414,
       "tag": "b",
       "kind": "statement"
      },
@@ -2908,7 +2441,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 2657,
+      "top": 2527,
       "tag": "b",
       "kind": "statement"
      },
@@ -2929,7 +2462,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 2769,
+      "top": 2639,
       "tag": "b",
       "kind": "statement"
      },
@@ -2950,7 +2483,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 2882,
+      "top": 2752,
       "tag": "b",
       "kind": "statement"
      },
@@ -2971,7 +2504,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 2994,
+      "top": 2865,
       "tag": "b",
       "kind": "statement"
      },
@@ -2992,7 +2525,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 4279,
+      "top": 4149,
       "tag": "h2",
       "kind": "heading"
      },
@@ -3013,7 +2546,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 4477,
+      "top": 4348,
       "mixedFonts": [
        "Newsreader",
        "Onest"
@@ -3038,7 +2571,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 4600,
+      "top": 4470,
       "mixedFonts": [
        "Newsreader",
        "Onest"
@@ -3063,7 +2596,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 4722,
+      "top": 4592,
       "mixedFonts": [
        "Newsreader",
        "Onest"
@@ -3088,7 +2621,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 4844,
+      "top": 4714,
       "mixedFonts": [
        "Newsreader",
        "Onest"
@@ -3113,7 +2646,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 5134,
+      "top": 5004,
       "tag": "h2",
       "kind": "heading"
      },
@@ -3134,7 +2667,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.62,
-      "top": 5506,
+      "top": 5376,
       "tag": "p",
       "kind": "statement"
      },
@@ -3155,7 +2688,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 6648,
+      "top": 6518,
       "tag": "h2",
       "kind": "heading"
      },
@@ -3176,7 +2709,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.36,
-      "top": 7193,
+      "top": 7063,
       "tag": "b",
       "kind": "statement"
      },
@@ -3197,7 +2730,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 7384,
+      "top": 7254,
       "tag": "h2",
       "kind": "heading"
      },
@@ -3218,30 +2751,30 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 8268,
+      "top": 8138,
       "tag": "p",
       "kind": "statement"
      }
     ],
     "headingSummary": {
-     "count": 32,
+     "count": 25,
      "maxLines": 3,
      "over2Lines": 0,
-     "statements": 24,
+     "statements": 17,
      "centered": 0,
-     "medianWords": 2,
+     "medianWords": 4,
      "mixedFontHeadings": 4
     },
     "type": {
      "families": [
       {
        "family": "Onest",
-       "share": 0.83,
+       "share": 0.84,
        "mono": false
       },
       {
        "family": "Newsreader",
-       "share": 0.17,
+       "share": 0.16,
        "mono": false
       }
      ],
@@ -3294,7 +2827,7 @@
      "sectionBgs": [
       {
        "color": "#0e2a47",
-       "top": 2170,
+       "top": 2040,
        "hsl": {
         "h": 211,
         "s": 0.67,
@@ -3303,7 +2836,7 @@
       },
       {
        "color": "#dedbd3",
-       "top": 5480,
+       "top": 5350,
        "hsl": {
         "h": 44,
         "s": 0.14,
@@ -3312,7 +2845,7 @@
       },
       {
        "color": "#15332b",
-       "top": 7300,
+       "top": 7170,
        "hsl": {
         "h": 164,
         "s": 0.42,
@@ -3323,11 +2856,11 @@
      "textColors": [
       {
        "color": "#121c26",
-       "share": 0.62
+       "share": 0.63
       },
       {
        "color": "#9fb0c2",
-       "share": 0.26
+       "share": 0.25
       },
       {
        "color": "#e9e7e1",
@@ -3382,7 +2915,7 @@
      "blurred": 0,
      "roundedBoxes": 0,
      "boxRadius": 0,
-     "squareMedia": 4,
+     "squareMedia": 3,
      "roundedMedia": 0,
      "mediaRadius": 0,
      "textShadow": 0,
@@ -3390,8 +2923,8 @@
     },
     "heroMedia": [
      {
-      "type": "img",
-      "ratio": 0.18
+      "type": "svg",
+      "ratio": 0.2
      }
     ],
     "nav": {
@@ -3411,7 +2944,7 @@
      "w": 390,
      "h": 844
     },
-    "pageH": 8890,
+    "pageH": 8760,
     "margins": {
      "left": 20,
      "right": 20
@@ -3421,7 +2954,7 @@
       "sel": "section#top.masthead.sheet",
       "tag": "section",
       "top": 0,
-      "height": 791,
+      "height": 737,
       "words": 32,
       "media": 1,
       "middle": 0,
@@ -3431,7 +2964,7 @@
        "tag": "h1"
       },
       "left": 20,
-      "right": 60,
+      "right": 20,
       "textLeft": 20,
       "textRight": 102,
       "fullBleed": false,
@@ -3443,7 +2976,7 @@
      {
       "sel": "section#problem.page.sheet",
       "tag": "section",
-      "top": 867,
+      "top": 737,
       "height": 743,
       "words": 112,
       "media": 0,
@@ -3462,7 +2995,7 @@
      {
       "sel": "div.mosaic.rise",
       "tag": "div",
-      "top": 1610,
+      "top": 1480,
       "height": 560,
       "words": 19,
       "media": 4,
@@ -3481,7 +3014,7 @@
      {
       "sel": "section#chain.scene.field",
       "tag": "section",
-      "top": 2170,
+      "top": 2040,
       "height": 2026,
       "words": 0,
       "media": 0,
@@ -3500,7 +3033,7 @@
      {
       "sel": "section#method.page.sheet",
       "tag": "section",
-      "top": 4195,
+      "top": 4065,
       "height": 855,
       "words": 88,
       "media": 0,
@@ -3523,7 +3056,7 @@
      {
       "sel": "section#esg.page.sheet",
       "tag": "section",
-      "top": 5050,
+      "top": 4920,
       "height": 1116,
       "words": 108,
       "media": 0,
@@ -3546,7 +3079,7 @@
      {
       "sel": "section#founder.page.sheet",
       "tag": "section",
-      "top": 6166,
+      "top": 6036,
       "height": 1134,
       "words": 107,
       "media": 2,
@@ -3569,7 +3102,7 @@
      {
       "sel": "section#contact.page.field",
       "tag": "section",
-      "top": 7300,
+      "top": 7170,
       "height": 885,
       "words": 44,
       "media": 0,
@@ -3592,7 +3125,7 @@
      {
       "sel": "footer.close",
       "tag": "footer",
-      "top": 8184,
+      "top": 8054,
       "height": 706,
       "words": 91,
       "media": 0,

@@ -250,7 +250,7 @@ p { margin: 0; }
 .masthead {
   position: relative;
   min-height: 92svh;
-  padding-top: clamp(120px, 15vh, 190px);
+  padding-top: clamp(104px, 12vh, 150px);
   display: grid;
   grid-template-columns: 34% minmax(0, 1fr);
   column-gap: clamp(24px, 3vw, 56px);
@@ -270,7 +270,7 @@ p { margin: 0; }
 .masthead-title .display { max-width: 11ch; }
 
 .standfirst {
-  margin-top: 26px;
+  margin-top: 0; margin-bottom: 22px;
   font-family: var(--display);
   font-size: var(--t-lead);
   line-height: 1.24;
@@ -279,69 +279,6 @@ p { margin: 0; }
 }
 
 /* the photograph the title sits above, cropped by the bottom edge */
-.masthead-plate {
-  grid-column: 2;
-  position: relative;
-  margin-top: clamp(34px, 5vh, 72px);
-  height: clamp(220px, 32vh, 400px);
-  overflow: hidden;
-}
-.masthead-plate img {
-  width: 100%; height: 100%;
-  object-fit: cover; object-position: 50% 62%;
-}
-
-/* a solid field overlapping the plate, carrying one real figure */
-.tag {
-  position: absolute; left: 0; top: 0;
-  transform: translateY(-50%);
-  width: min(326px, 80%);
-  background: var(--field); color: var(--field-ink);
-  padding: 20px 24px 24px;
-}
-/* One sentence that finishes differently every two and a half seconds.
-   It is a sentence, not a label over a heading: the cycling word sits
-   inline, in the same face and size, so the movement is the only
-   emphasis. A hidden sizer holds the width of the longest word so the
-   line never reflows. */
-.tag-line {
-  margin: 0;
-  font-size: var(--t-body);
-  line-height: 1.34;
-  color: var(--field-ink);
-}
-
-.cycle {
-  position: relative;
-  display: inline-block;
-  vertical-align: bottom;
-  overflow: hidden;
-  height: 1.34em;
-  margin-left: 0.34em;
-}
-.cycle-size { visibility: hidden; font-style: normal; }
-.cycle > span {
-  position: absolute; left: 0; top: 0;
-  white-space: nowrap;
-  opacity: 0; transform: translateY(0.62em);
-}
-.cycle > span:first-of-type { opacity: 1; transform: none; }
-
-@media (prefers-reduced-motion: no-preference) {
-  .cycle > span { animation: cycleWord 15s cubic-bezier(.16,.84,.3,1) infinite; }
-  .cycle > span:nth-of-type(2) { animation-delay: 2.5s; }
-  .cycle > span:nth-of-type(3) { animation-delay: 5s; }
-  .cycle > span:nth-of-type(4) { animation-delay: 7.5s; }
-  .cycle > span:nth-of-type(5) { animation-delay: 10s; }
-  .cycle > span:nth-of-type(6) { animation-delay: 12.5s; }
-}
-
-@keyframes cycleWord {
-  0%           { opacity: 0; transform: translateY(0.62em); }
-  2%, 15.2%    { opacity: 1; transform: translateY(0); }
-  17%, 100%    { opacity: 0; transform: translateY(-0.5em); }
-}
-
 /* One treatment on every photograph, so the page reads as one system —
    and the colour underneath on hover, because these are real places. */
 .plate img, .mosaic img, .mosaic .clip, .leaf-plate img {
@@ -633,9 +570,7 @@ html:not(.js) .tel-code select { font: inherit; border: 0; background: transpare
 @media (prefers-reduced-motion: no-preference) {
   .js .line > span { transform: translateY(128%); animation: riseLine .9s cubic-bezier(.16,.84,.3,1) forwards; }
   .js .line:nth-child(2) > span { animation-delay: .11s; }
-  .js .masthead-talk, .js .standfirst, .js .tag { opacity: 0; animation: fadeUp .7s cubic-bezier(.16,.84,.3,1) .5s forwards; }
   .js .standfirst { animation-delay: .58s; }
-  .js .tag { animation-delay: .72s; }
 
   /* Each kind of thing arrives in its own manner. One preset on every block
      is the motion tell this page is trying not to be. */
@@ -698,9 +633,6 @@ html:not(.js) .tel-code select { font: inherit; border: 0; background: transpare
 /* If the animation never runs — a backgrounded tab, a frozen frame — the
    content must not stay off-screen behind its own mask. */
 .js .shown .line > span { transform: none !important; animation: none !important; }
-.js .shown .masthead-talk, .js .shown .standfirst, .js .shown .tag {
-  opacity: 1 !important; transform: none !important; animation: none !important;
-}
 @keyframes fadeUp { to { opacity: 1; transform: none; } }
 
 @media (prefers-reduced-motion: reduce) {
@@ -732,9 +664,6 @@ html:not(.js) .tel-code select { font: inherit; border: 0; background: transpare
   }
   .masthead-title { order: -1; }
   /* on a phone the panel stops covering its own photograph and sits under it */
-  .masthead-plate { grid-column: 1; height: auto; margin-top: 26px; display: grid; }
-  .masthead-plate img { height: clamp(220px, 52vw, 330px); }
-  .tag { position: static; transform: none; width: 100%; padding: 20px var(--margin) 22px; }
   .masthead-talk { padding-bottom: 0; }
   .mosaic { grid-template-columns: repeat(2, 1fr); grid-auto-rows: clamp(140px, 34vw, 220px); }
   .mosaic .wide { grid-column: span 2; }
@@ -844,82 +773,101 @@ html:not(.js) .tel-code select { font: inherit; border: 0; background: transpare
 /* the one moving picture: a port at work, paused when motion is unwelcome */
 .mosaic .clip { width: 100%; height: 100%; object-fit: cover; }
 
+
 /* --------------------------------------------------------------------------
-   19. The flow — a decision travelling, as its own band
-   A sweep crosses the row from left to right, lighting each place as it
-   arrives. Hovering holds the sweep on whatever the pointer is over, so
-   the thing can be read rather than watched.
+   19. The flow diagram — the hero's picture
+   One decision on the left; six lines leaving it. A pulse travels each line
+   in turn. Point at a lane and it holds, the others stand back, and what
+   that consequence actually is appears under its name.
    -------------------------------------------------------------------------- */
 
-.flow {
-  background: var(--field);
-  color: var(--field-ink);
-  padding: clamp(30px, 3.6vw, 52px) 0;
-  overflow: hidden;
+.flowfig { margin: clamp(14px, 2.4vh, 34px) 0 0; grid-column: 2; }
+.flowfig svg { width: 100%; height: auto; overflow: visible; }
+
+/* the decision */
+.source-ring { fill: none; stroke: var(--rule); stroke-width: 1.5; }
+.source-dot  { fill: var(--ink); }
+.source-label {
+  font-family: var(--text); font-size: 14px; font-weight: 500;
+  fill: var(--ink); text-anchor: middle; letter-spacing: .01em;
 }
 
-.flow-row {
-  list-style: none; margin: 0;
-  padding: 0 var(--margin);
-  max-width: var(--page);
-  margin-inline: auto;
-  display: flex; align-items: baseline;
-  gap: clamp(14px, 2.6vw, 46px);
-  font-family: var(--display);
-  font-size: var(--t-lead);
-  line-height: 1.1; letter-spacing: -0.018em;
-  white-space: nowrap;
+/* a lane: its wire, the pulse that travels it, where it lands */
+.lane { cursor: default; outline: none; }
+.lane-wire  { fill: none; stroke: var(--rule); stroke-width: 1.5; }
+.lane-pulse {
+  fill: none; stroke: var(--accent); stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-dasharray: 14 100; stroke-dashoffset: 0;
+  opacity: 0;
+}
+.lane-dot { fill: var(--bg); stroke: var(--ink); stroke-width: 1.5; }
+.lane-name {
+  font-family: var(--display); font-size: 25px;
+  fill: var(--ink); letter-spacing: -0.015em;
+}
+.lane-note {
+  font-family: var(--text); font-size: 13.5px;
+  fill: var(--ink-2);
+  opacity: 0;
+  transition: opacity .32s ease;
 }
 
-.flow-row li {
-  --lit: 0;
-  position: relative;
-  color: var(--field-ink-2);
-  opacity: calc(0.42 + 0.58 * var(--lit));
-  transform: translateY(calc(var(--lit) * -3px));
-  transition: opacity .45s ease, transform .45s cubic-bezier(.16,.84,.3,1), color .45s ease;
-  cursor: default;
-}
-.flow-row li em {
-  font-style: italic;
-  color: var(--accent-dk);
-}
+/* the lane under the pointer holds; the rest stand back */
+.flowfig:has(.lane:hover) .lane:not(:hover),
+.flowfig:has(.lane:focus-visible) .lane:not(:focus-visible) { opacity: .34; }
+.flowfig .lane { transition: opacity .32s ease; }
 
-/* the place the sweep is on */
-.flow-row li[data-on] { color: var(--field-ink); }
-
-/* a decision enters, so it never fully dims */
-.flow-row li:first-child { --lit: .55; }
+.lane:hover .lane-wire, .lane:focus-visible .lane-wire { stroke: var(--ink); }
+.lane:hover .lane-dot,  .lane:focus-visible .lane-dot  { fill: var(--accent); stroke: var(--accent); }
+.lane:hover .lane-note, .lane:focus-visible .lane-note { opacity: 1; }
+.lane:focus-visible .lane-name { fill: var(--accent); }
 
 @media (prefers-reduced-motion: no-preference) {
-  .flow-row li {
-    animation: flowSweep 9.1s cubic-bezier(.4,0,.3,1) infinite;
-    animation-delay: calc(var(--i) * 0.42s);
+  .lane-pulse {
+    animation: laneTravel 7.8s cubic-bezier(.42,0,.58,1) infinite;
+    animation-delay: calc(var(--i) * 0.46s);
   }
-  .flow-row:hover li, .flow-row:focus-within li { animation-play-state: paused; }
-  .flow-row li:hover { --lit: 1; color: var(--field-ink); }
+  .lane-dot { animation: laneLand 7.8s ease-out infinite; animation-delay: calc(var(--i) * 0.46s + 0.86s); }
+  .flowfig:hover .lane-pulse, .flowfig:hover .lane-dot { animation-play-state: paused; }
+  .source-ring { animation: sourceBreathe 7.8s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
 }
 
-@keyframes flowSweep {
-  0%, 100% { --lit: 0; }
-  6%       { --lit: 1; }
-  16%      { --lit: .18; }
+@keyframes laneTravel {
+  0%        { stroke-dashoffset: 0;    opacity: 0; }
+  5%        { opacity: .95; }
+  20%       { opacity: .95; }
+  28%       { stroke-dashoffset: -112; opacity: 0; }
+  100%      { stroke-dashoffset: -112; opacity: 0; }
+}
+@keyframes laneLand {
+  0%, 100%  { fill: var(--bg); }
+  3%        { fill: var(--accent); }
+  22%       { fill: var(--bg); }
+}
+/* The notes are revealed by the pointer. Asked for reduced motion, nothing
+   should depend on a reveal, so they simply stand open. */
+@media (prefers-reduced-motion: reduce) {
+  .lane-note { opacity: 1; }
+  .flowfig:has(.lane:hover) .lane:not(:hover) { opacity: 1; }
 }
 
-/* --lit has to be a registered property for a keyframe to interpolate it */
-@property --lit {
-  syntax: "<number>";
-  inherits: false;
-  initial-value: 0;
+@keyframes sourceBreathe {
+  0%, 100%  { transform: scale(1); opacity: 1; }
+  50%       { transform: scale(1.06); opacity: .72; }
 }
 
+/* On a phone the whole figure scales down with its viewBox, which took the
+   labels to 7.6px. The type inside grows to compensate, and the notes go:
+   they are revealed by hover, and a phone has no pointer to reveal them. */
 @media (max-width: 860px) {
-  .flow { padding: 24px 0; }
-  .flow-row {
-    overflow-x: auto;
-    scrollbar-width: none;
-    -webkit-overflow-scrolling: touch;
-    padding-bottom: 4px;
-  }
-  .flow-row::-webkit-scrollbar { display: none; }
+  .flowfig { grid-column: 1; margin-top: 26px; }
+  .lane-name   { font-size: 46px; }
+  .lane-note   { display: none; }
+  .source-label { font-size: 30px; }
+  .lane-dot    { r: 10; stroke-width: 3; }
+  .lane-wire   { stroke-width: 3; }
+  .lane-pulse  { stroke-width: 5; }
+  .source-ring { stroke-width: 3; }
+  .source-dot  { r: 13; }
 }
