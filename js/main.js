@@ -576,6 +576,8 @@ var BVANTRIX_EMAIL    = 'info@bvantrix.com';
     });
   });
 
+  /* Not an undo. Most people who press this are asking what a different
+     answer would have said, which is the behaviour worth encouraging. */
   document.getElementById('esgAgain').addEventListener('click', function () {
     try {
       var raw = sessionStorage.getItem(KEY);
