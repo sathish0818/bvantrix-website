@@ -544,11 +544,21 @@ html:not(.js) .tel-code select { font: inherit; border: 0; background: transpare
    16. Motion
    -------------------------------------------------------------------------- */
 
-.line { display: block; overflow: hidden; }
+/* The mask that the headline rises out of. It needs more room than the
+   line box: at line-height 0.88 the glyphs are taller than their line, so
+   a mask fitted to the line clips 9px off every ascender and 8px off every
+   descender. The padding gives them room; the negative margin keeps the
+   rhythm; the start offset is past the taller mask so nothing peeks. */
+.line {
+  display: block;
+  overflow: hidden;
+  padding-top: 0.12em; padding-bottom: 0.12em;
+  margin-top: -0.12em; margin-bottom: -0.12em;
+}
 .line > span { display: block; }
 
 @media (prefers-reduced-motion: no-preference) {
-  .js .line > span { transform: translateY(102%); animation: riseLine .9s cubic-bezier(.16,.84,.3,1) forwards; }
+  .js .line > span { transform: translateY(128%); animation: riseLine .9s cubic-bezier(.16,.84,.3,1) forwards; }
   .js .line:nth-child(2) > span { animation-delay: .11s; }
   .js .masthead-talk, .js .standfirst, .js .tag { opacity: 0; animation: fadeUp .7s cubic-bezier(.16,.84,.3,1) .5s forwards; }
   .js .standfirst { animation-delay: .58s; }
@@ -564,6 +574,13 @@ html:not(.js) .tel-code select { font: inherit; border: 0; background: transpare
   .plate:hover img, .leaf-plate:hover img { transform: scale(1.03); }
 }
 @keyframes riseLine { to { transform: none; } }
+
+/* If the animation never runs — a backgrounded tab, a frozen frame — the
+   content must not stay off-screen behind its own mask. */
+.js .shown .line > span { transform: none !important; animation: none !important; }
+.js .shown .masthead-talk, .js .shown .standfirst, .js .shown .tag {
+  opacity: 1 !important; transform: none !important; animation: none !important;
+}
 @keyframes fadeUp { to { opacity: 1; transform: none; } }
 
 @media (prefers-reduced-motion: reduce) {
@@ -594,8 +611,10 @@ html:not(.js) .tel-code select { font: inherit; border: 0; background: transpare
     row-gap: 26px;
   }
   .masthead-title { order: -1; }
-  .masthead-plate { grid-column: 1; height: clamp(250px, 56vw, 360px); margin-top: 26px; }
-  .tag { width: min(260px, 66%); padding: 16px 18px 18px; }
+  /* on a phone the panel stops covering its own photograph and sits under it */
+  .masthead-plate { grid-column: 1; height: auto; margin-top: 26px; display: grid; }
+  .masthead-plate img { height: clamp(220px, 52vw, 330px); }
+  .tag { position: static; transform: none; width: 100%; padding: 20px var(--margin) 22px; }
   .masthead-talk { padding-bottom: 0; }
   .mosaic { grid-template-columns: repeat(2, 1fr); grid-auto-rows: clamp(140px, 34vw, 220px); }
   .mosaic .wide { grid-column: span 2; }

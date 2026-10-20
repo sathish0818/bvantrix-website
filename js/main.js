@@ -37,6 +37,17 @@ var BVANTRIX_EMAIL    = 'info@bvantrix.com';
     items.forEach(function (n) { n.classList.add('in'); });
   }
 
+  /* The masthead reveals itself with CSS. If that never finishes — a tab
+     opened in the background freezes animations — the mask would hold the
+     headline off-screen, so take the end state by hand. */
+  var mast = document.querySelector('.masthead');
+  if (mast) {
+    window.setTimeout(function () { mast.classList.add('shown'); }, 1600);
+    document.addEventListener('visibilitychange', function () {
+      if (!document.hidden) mast.classList.add('shown');
+    });
+  }
+
   /* ── the menu ───────────────────────────────────────────────────── */
   var btn = document.getElementById('menuBtn');
   var drawer = document.getElementById('drawer');
