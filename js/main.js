@@ -475,3 +475,128 @@ var BVANTRIX_EMAIL    = 'info@bvantrix.com';
     }
   });
 })();
+
+/* BVANTRIX — the live question in the ESG section.
+   The homepage asks question one of the assessment and hands the answer to
+   the demo, so nobody is asked the same thing twice. */
+(function () {
+  'use strict';
+
+  var card = document.getElementById('esgLive');
+  if (!card) return;
+
+  var KEY = 'bvx-esg-demo';
+  var QID = card.dataset.qid || 'q1';
+
+  /* What each answer actually means. Written to be useful rather than
+     flattering — the "not measured" reading is the blunt one on purpose. */
+  var READINGS = {
+    '4': {
+      said: 'Verified, both scopes.',
+      read: 'You are in the small group who could put that number in front of an ' +
+            'auditor. The interesting question is no longer whether you can measure it.',
+      then: ['Carbon can carry real weight against cost, because the number holds up.',
+             'The trade-off becomes arguable instead of assertable.']
+    },
+    '3': {
+      said: 'Both scopes, self-reported.',
+      read: 'Enough to report. Whether it is enough to defend a decision is a ' +
+            'different question, and it is the one that gets asked later.',
+      then: ['Carbon enters the comparison, with a caveat attached.',
+             'Assurance becomes the gap worth closing before it is asked of you.']
+    },
+    '2': {
+      said: 'One scope of the two.',
+      read: 'Half the picture — and usually the half that moves least. Scope 2 is ' +
+            'what changes when you replace a piece of equipment.',
+      then: ['Efficiency gains are visible. The grid behind them is not.',
+             'Replace and Upgrade look closer than they are.']
+    },
+    '1': {
+      said: 'Estimated, not measured.',
+      read: 'An estimate is adequate for a report and risky for a decision. The ' +
+            'margin of error is usually larger than the difference between the options.',
+      then: ['Carbon cannot sensibly outrank cost yet.',
+             'The decision defaults to financial, whatever the policy says.']
+    },
+    '0': {
+      said: 'Not measured.',
+      read: 'Then every decision that touches energy is being made without one of ' +
+            'its largest consequences in view. That is common, and it is still true.',
+      then: ['Only cost, return and maintenance are available to compare.',
+             'This is the traditional view — which is where most organisations still are.']
+    },
+    'null': {
+      said: "You don't know.",
+      read: 'The most common honest answer, and a finding rather than a failure. ' +
+            'Not knowing who holds the number is itself the problem to solve.',
+      then: ['Nobody can say what the carbon consequence of this decision would be.',
+             'Which means nobody can be held to it afterwards, either.']
+    }
+  };
+
+  var ask  = card.querySelector('.live-face--ask');
+  var said = card.querySelector('.live-face--said');
+
+  function seed(value) {
+    try {
+      var state = {};
+      var raw = sessionStorage.getItem(KEY);
+      if (raw) state = JSON.parse(raw) || {};
+      state.answers = state.answers || {};
+      state.answers[QID] = value;          // null is a real answer here
+      state.fromHome = true;
+      sessionStorage.setItem(KEY, JSON.stringify(state));
+    } catch (e) {}                          // private window: the demo still works
+  }
+
+  function reveal(raw) {
+    var r = READINGS[raw] || READINGS['null'];
+    document.getElementById('esgSaid').textContent = r.said;
+    document.getElementById('esgRead').textContent = r.read;
+    var list = document.getElementById('esgThen');
+    list.innerHTML = '';
+    r.then.forEach(function (line) {
+      var li = document.createElement('li');
+      li.textContent = line;
+      list.appendChild(li);
+    });
+    ask.hidden = true;
+    said.hidden = false;
+    card.classList.add('is-answered');
+    said.setAttribute('tabindex', '-1');
+    said.focus({ preventScroll: true });
+  }
+
+  card.querySelectorAll('.live-opts button').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var raw = b.dataset.v;
+      seed(raw === 'null' ? null : Number(raw));
+      reveal(raw);
+    });
+  });
+
+  document.getElementById('esgAgain').addEventListener('click', function () {
+    try {
+      var raw = sessionStorage.getItem(KEY);
+      if (raw) {
+        var state = JSON.parse(raw) || {};
+        if (state.answers) delete state.answers[QID];
+        sessionStorage.setItem(KEY, JSON.stringify(state));
+      }
+    } catch (e) {}
+    said.hidden = true;
+    ask.hidden = false;
+    card.classList.remove('is-answered');
+    ask.querySelector('.live-opts button').focus();
+  });
+
+  /* Coming back to the homepage should not re-ask a question already given. */
+  try {
+    var prev = JSON.parse(sessionStorage.getItem(KEY) || '{}');
+    if (prev.answers && QID in prev.answers) {
+      reveal(prev.answers[QID] === null ? 'null' : String(prev.answers[QID]));
+      said.removeAttribute('tabindex');
+    }
+  } catch (e) {}
+})();

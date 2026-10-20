@@ -251,6 +251,10 @@
     w.innerHTML =
       '<p class="eyebrow">Step 02 — Context</p>' +
       '<h2 class="h2">First, who is answering.</h2>' +
+      (root.classList.contains('is-continued')
+        ? '<p class="carried"><span class="mi" aria-hidden="true">check</span>' +
+          'Question 1 came with you from the homepage. Fourteen to go.</p>'
+        : '') +
       '<p class="body">None of this is scored. It decides which parts of the ' +
       'result matter most for you.</p>';
     var grid = el('div', 'profile');
@@ -494,5 +498,14 @@
   }
 
   restore();
+  /* Arrived with question one already answered on the homepage: start at
+     the context step rather than the pitch, and say so. */
+  try {
+    var seeded = JSON.parse(sessionStorage.getItem(KEY) || '{}');
+    if (seeded.fromHome && Object.keys(state.answers).length && state.step === 1) {
+      state.step = 2;
+      root.classList.add('is-continued');
+    }
+  } catch (e) {}
   paint();
 })();

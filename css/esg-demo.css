@@ -321,3 +321,11 @@
   .dopt-m { margin: 2px 0; }
   .q-opts, .q-help, .q-fw { margin-left: 0; }
 }
+
+/* arrived from the homepage with question one already answered */
+.carried {
+  display: flex; align-items: center; gap: 9px;
+  margin: 18px 0 0;
+  font-size: 0.8125rem; color: var(--teal);
+}
+.carried .mi { font-size: 17px; }
