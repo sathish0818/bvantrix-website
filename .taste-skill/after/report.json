@@ -1,6 +1,6 @@
 {
  "url": "http://127.0.0.1:8777/index.html",
- "at": "2026-10-20T11:09:34.363Z",
+ "at": "2026-10-20T11:19:41.425Z",
  "allow": [],
  "viewports": [
   {
@@ -21,8 +21,8 @@
     1
    ],
    "motion": {
-    "elements": 48,
-    "css": 5,
+    "elements": 54,
+    "css": 11,
     "transitions": 40,
     "scripted": 3,
     "videos": 1,
@@ -36,7 +36,7 @@
     "page": {
      "height": 8568,
      "screens": 9.5,
-     "words": 792,
+     "words": 805,
      "img": 5,
      "video": 1,
      "canvas": 0,
@@ -132,27 +132,6 @@
       "top": 425,
       "tag": "p",
       "kind": "statement"
-     },
-     {
-      "text": "Six",
-      "words": 1,
-      "chars": 3,
-      "lines": 1,
-      "size": 32,
-      "vw": 2.2,
-      "font": "Newsreader",
-      "weight": 400,
-      "tracking": -0.02,
-      "leading": 1,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.18,
-      "top": 569,
-      "tag": "b",
-      "kind": "heading"
      },
      {
       "text": "The problem was never a lack of data. It is that a consequential decision belongs to no single system.",
@@ -639,7 +618,7 @@
      }
     ],
     "headingSummary": {
-     "count": 26,
+     "count": 25,
      "maxLines": 3,
      "over2Lines": 0,
      "statements": 17,
@@ -742,15 +721,15 @@
       },
       {
        "color": "#9fb0c2",
-       "share": 0.26
+       "share": 0.24
       },
       {
        "color": "#e9e7e1",
-       "share": 0.06
+       "share": 0.08
       },
       {
        "color": "#46525e",
-       "share": 0.05
+       "share": 0.06
       },
       {
        "color": "#15110b",
@@ -837,7 +816,7 @@
       "tag": "section",
       "top": 0,
       "height": 856,
-      "words": 47,
+      "words": 37,
       "media": 1,
       "middle": 202,
       "heading": {
@@ -1111,23 +1090,23 @@
    "load": "load",
    "screens": 11,
    "filled": [
-    0.48,
-    0.66,
+    0.49,
+    0.75,
     1,
     1,
     1,
-    0.61,
-    0.34,
+    0.58,
+    0.39,
+    0.64,
     0.59,
-    0.51,
-    0.88,
+    0.94,
     1
    ],
    "motion": {
-    "elements": 48,
-    "css": 5,
-    "transitions": 34,
-    "scripted": 9,
+    "elements": 54,
+    "css": 11,
+    "transitions": 40,
+    "scripted": 3,
     "videos": 1,
     "playingVideos": 0
    },
@@ -1137,9 +1116,9 @@
      "h": 1024
     },
     "page": {
-     "height": 10501,
-     "screens": 10.3,
-     "words": 782,
+     "height": 10449,
+     "screens": 10.2,
+     "words": 795,
      "img": 5,
      "video": 1,
      "canvas": 0,
@@ -1237,27 +1216,6 @@
       "kind": "statement"
      },
      {
-      "text": "Six",
-      "words": 1,
-      "chars": 3,
-      "lines": 1,
-      "size": 26,
-      "vw": 3.4,
-      "font": "Newsreader",
-      "weight": 400,
-      "tracking": -0.02,
-      "leading": 1,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.77,
-      "top": 977,
-      "tag": "b",
-      "kind": "heading"
-     },
-     {
       "text": "The problem was never a lack of data. It is that a consequential decision belongs to no single system.",
       "words": 19,
       "chars": 102,
@@ -1274,7 +1232,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.57,
-      "top": 1177,
+      "top": 1125,
       "tag": "p",
       "kind": "statement"
      },
@@ -1295,7 +1253,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.44,
-      "top": 1760,
+      "top": 1708,
       "tag": "b",
       "kind": "heading"
      },
@@ -1316,7 +1274,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.5,
-      "top": 2303,
+      "top": 2251,
       "tag": "div",
       "kind": "heading"
      },
@@ -1337,7 +1295,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.94,
-      "top": 2741,
+      "top": 2689,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1358,7 +1316,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.45,
-      "top": 2866,
+      "top": 2814,
       "tag": "p",
       "kind": "statement"
      },
@@ -1379,7 +1337,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.04,
-      "top": 2957,
+      "top": 2905,
       "tag": "b",
       "kind": "statement"
      },
@@ -1400,7 +1358,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.4,
-      "top": 3058,
+      "top": 3006,
       "tag": "b",
       "kind": "statement"
      },
@@ -1421,7 +1379,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.4,
-      "top": 3058,
+      "top": 3006,
       "tag": "b",
       "kind": "statement"
      },
@@ -1442,7 +1400,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.4,
-      "top": 3175,
+      "top": 3123,
       "tag": "b",
       "kind": "statement"
      },
@@ -1463,7 +1421,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.4,
-      "top": 3175,
+      "top": 3123,
       "tag": "b",
       "kind": "statement"
      },
@@ -1484,7 +1442,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.4,
-      "top": 3291,
+      "top": 3239,
       "tag": "b",
       "kind": "statement"
      },
@@ -1505,7 +1463,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.4,
-      "top": 3291,
+      "top": 3239,
       "tag": "b",
       "kind": "statement"
      },
@@ -1526,7 +1484,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.94,
-      "top": 5679,
+      "top": 5627,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1547,7 +1505,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.84,
-      "top": 5941,
+      "top": 5889,
       "tag": "b",
       "kind": "statement"
      },
@@ -1568,7 +1526,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.84,
-      "top": 6043,
+      "top": 5991,
       "tag": "b",
       "kind": "statement"
      },
@@ -1589,7 +1547,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.84,
-      "top": 6145,
+      "top": 6093,
       "tag": "b",
       "kind": "statement"
      },
@@ -1610,7 +1568,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.84,
-      "top": 6247,
+      "top": 6195,
       "tag": "b",
       "kind": "statement"
      },
@@ -1631,7 +1589,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.94,
-      "top": 6498,
+      "top": 6446,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1652,7 +1610,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.38,
-      "top": 6855,
+      "top": 6803,
       "tag": "p",
       "kind": "statement"
      },
@@ -1673,7 +1631,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.94,
-      "top": 8444,
+      "top": 8391,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1694,7 +1652,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.22,
-      "top": 8958,
+      "top": 8906,
       "tag": "b",
       "kind": "statement"
      },
@@ -1715,7 +1673,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.94,
-      "top": 9152,
+      "top": 9100,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1736,13 +1694,13 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.94,
-      "top": 9969,
+      "top": 9917,
       "tag": "p",
       "kind": "statement"
      }
     ],
     "headingSummary": {
-     "count": 26,
+     "count": 25,
      "maxLines": 3,
      "over2Lines": 0,
      "statements": 17,
@@ -1812,7 +1770,7 @@
      "sectionBgs": [
       {
        "color": "#0e2a47",
-       "top": 2523,
+       "top": 2471,
        "hsl": {
         "h": 211,
         "s": 0.67,
@@ -1821,7 +1779,7 @@
       },
       {
        "color": "#dedbd3",
-       "top": 6829,
+       "top": 6777,
        "hsl": {
         "h": 44,
         "s": 0.14,
@@ -1830,7 +1788,7 @@
       },
       {
        "color": "#15332b",
-       "top": 9068,
+       "top": 9016,
        "hsl": {
         "h": 164,
         "s": 0.42,
@@ -1841,15 +1799,15 @@
      "textColors": [
       {
        "color": "#121c26",
-       "share": 0.61
+       "share": 0.62
       },
       {
        "color": "#9fb0c2",
-       "share": 0.27
+       "share": 0.25
       },
       {
        "color": "#e9e7e1",
-       "share": 0.06
+       "share": 0.08
       },
       {
        "color": "#46525e",
@@ -1929,7 +1887,7 @@
      "w": 768,
      "h": 1024
     },
-    "pageH": 10501,
+    "pageH": 10449,
     "margins": {
      "left": 25,
      "right": 25
@@ -1939,8 +1897,8 @@
       "sel": "section#top.masthead.sheet",
       "tag": "section",
       "top": 0,
-      "height": 1093,
-      "words": 47,
+      "height": 1041,
+      "words": 36,
       "media": 1,
       "middle": 0,
       "heading": {
@@ -1951,7 +1909,7 @@
       "left": 25,
       "right": 65,
       "textLeft": 25,
-      "textRight": 97,
+      "textRight": 404,
       "fullBleed": false,
       "footer": false,
       "hero": true,
@@ -1961,7 +1919,7 @@
      {
       "sel": "section#problem.page.sheet",
       "tag": "section",
-      "top": 1093,
+      "top": 1041,
       "height": 550,
       "words": 112,
       "media": 0,
@@ -1984,7 +1942,7 @@
      {
       "sel": "div.mosaic.rise",
       "tag": "div",
-      "top": 1643,
+      "top": 1591,
       "height": 880,
       "words": 19,
       "media": 4,
@@ -2007,7 +1965,7 @@
      {
       "sel": "section#chain.scene.field",
       "tag": "section",
-      "top": 2523,
+      "top": 2471,
       "height": 3072,
       "words": 0,
       "media": 0,
@@ -2026,7 +1984,7 @@
      {
       "sel": "section#method.page.sheet",
       "tag": "section",
-      "top": 5595,
+      "top": 5543,
       "height": 819,
       "words": 88,
       "media": 0,
@@ -2049,7 +2007,7 @@
      {
       "sel": "section#esg.page.sheet",
       "tag": "section",
-      "top": 6414,
+      "top": 6362,
       "height": 1073,
       "words": 108,
       "media": 0,
@@ -2072,7 +2030,7 @@
      {
       "sel": "section#founder.page.sheet",
       "tag": "section",
-      "top": 7487,
+      "top": 7435,
       "height": 1582,
       "words": 107,
       "media": 2,
@@ -2091,7 +2049,7 @@
      {
       "sel": "section#contact.page.field",
       "tag": "section",
-      "top": 9068,
+      "top": 9016,
       "height": 817,
       "words": 44,
       "media": 0,
@@ -2114,7 +2072,7 @@
      {
       "sel": "footer.close",
       "tag": "footer",
-      "top": 9885,
+      "top": 9833,
       "height": 616,
       "words": 91,
       "media": 0,
@@ -2176,23 +2134,23 @@
    "load": "load",
    "screens": 11,
    "filled": [
-    0.43,
-    0.5,
-    1,
-    1,
-    1,
     0.44,
-    0.57,
-    0.5,
-    0.62,
-    0.78,
+    0.56,
+    1,
+    1,
+    1,
+    0.41,
+    0.48,
+    0.44,
+    0.69,
+    0.84,
     1
    ],
    "motion": {
-    "elements": 48,
-    "css": 5,
-    "transitions": 40,
-    "scripted": 3,
+    "elements": 54,
+    "css": 11,
+    "transitions": 34,
+    "scripted": 9,
     "videos": 1,
     "playingVideos": 0
    },
@@ -2202,9 +2160,9 @@
      "h": 844
     },
     "page": {
-     "height": 8949,
-     "screens": 10.6,
-     "words": 782,
+     "height": 8901,
+     "screens": 10.5,
+     "words": 795,
      "img": 5,
      "video": 1,
      "canvas": 0,
@@ -2302,27 +2260,6 @@
       "kind": "statement"
      },
      {
-      "text": "Six",
-      "words": 1,
-      "chars": 3,
-      "lines": 1,
-      "size": 22,
-      "vw": 5.6,
-      "font": "Newsreader",
-      "weight": 400,
-      "tracking": -0.02,
-      "leading": 1,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.59,
-      "top": 794,
-      "tag": "b",
-      "kind": "heading"
-     },
-     {
       "text": "The problem was never a lack of data. It is that a consequential decision belongs to no single system.",
       "words": 19,
       "chars": 102,
@@ -2339,7 +2276,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 1010,
+      "top": 962,
       "tag": "p",
       "kind": "statement"
      },
@@ -2360,7 +2297,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.4,
-      "top": 1671,
+      "top": 1623,
       "tag": "b",
       "kind": "heading"
      },
@@ -2381,7 +2318,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.5,
-      "top": 2089,
+      "top": 2041,
       "tag": "div",
       "kind": "heading"
      },
@@ -2402,7 +2339,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 2237,
+      "top": 2189,
       "tag": "h2",
       "kind": "heading"
      },
@@ -2423,7 +2360,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 2335,
+      "top": 2287,
       "tag": "p",
       "kind": "statement"
      },
@@ -2444,7 +2381,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.05,
-      "top": 2415,
+      "top": 2368,
       "tag": "b",
       "kind": "statement"
      },
@@ -2465,7 +2402,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 2490,
+      "top": 2443,
       "tag": "b",
       "kind": "statement"
      },
@@ -2486,7 +2423,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 2603,
+      "top": 2555,
       "tag": "b",
       "kind": "statement"
      },
@@ -2507,7 +2444,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 2715,
+      "top": 2668,
       "tag": "b",
       "kind": "statement"
      },
@@ -2528,7 +2465,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 2828,
+      "top": 2781,
       "tag": "b",
       "kind": "statement"
      },
@@ -2549,7 +2486,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 2941,
+      "top": 2893,
       "tag": "b",
       "kind": "statement"
      },
@@ -2570,7 +2507,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 3053,
+      "top": 3006,
       "tag": "b",
       "kind": "statement"
      },
@@ -2591,7 +2528,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 4338,
+      "top": 4291,
       "tag": "h2",
       "kind": "heading"
      },
@@ -2612,7 +2549,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 4536,
+      "top": 4489,
       "mixedFonts": [
        "Newsreader",
        "Onest"
@@ -2637,7 +2574,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 4658,
+      "top": 4611,
       "mixedFonts": [
        "Newsreader",
        "Onest"
@@ -2662,7 +2599,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 4780,
+      "top": 4733,
       "mixedFonts": [
        "Newsreader",
        "Onest"
@@ -2687,7 +2624,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 4903,
+      "top": 4855,
       "mixedFonts": [
        "Newsreader",
        "Onest"
@@ -2712,7 +2649,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 5193,
+      "top": 5145,
       "tag": "h2",
       "kind": "heading"
      },
@@ -2733,7 +2670,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.62,
-      "top": 5565,
+      "top": 5518,
       "tag": "p",
       "kind": "statement"
      },
@@ -2754,7 +2691,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 6706,
+      "top": 6659,
       "tag": "h2",
       "kind": "heading"
      },
@@ -2775,7 +2712,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.36,
-      "top": 7252,
+      "top": 7204,
       "tag": "b",
       "kind": "statement"
      },
@@ -2796,7 +2733,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 7442,
+      "top": 7395,
       "tag": "h2",
       "kind": "heading"
      },
@@ -2817,13 +2754,13 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 8327,
+      "top": 8280,
       "tag": "p",
       "kind": "statement"
      }
     ],
     "headingSummary": {
-     "count": 26,
+     "count": 25,
      "maxLines": 3,
      "over2Lines": 0,
      "statements": 17,
@@ -2893,7 +2830,7 @@
      "sectionBgs": [
       {
        "color": "#0e2a47",
-       "top": 2229,
+       "top": 2181,
        "hsl": {
         "h": 211,
         "s": 0.67,
@@ -2902,7 +2839,7 @@
       },
       {
        "color": "#dedbd3",
-       "top": 5539,
+       "top": 5492,
        "hsl": {
         "h": 44,
         "s": 0.14,
@@ -2911,7 +2848,7 @@
       },
       {
        "color": "#15332b",
-       "top": 7358,
+       "top": 7311,
        "hsl": {
         "h": 164,
         "s": 0.42,
@@ -2922,15 +2859,15 @@
      "textColors": [
       {
        "color": "#121c26",
-       "share": 0.61
+       "share": 0.62
       },
       {
        "color": "#9fb0c2",
-       "share": 0.27
+       "share": 0.25
       },
       {
        "color": "#e9e7e1",
-       "share": 0.06
+       "share": 0.08
       },
       {
        "color": "#46525e",
@@ -3010,7 +2947,7 @@
      "w": 390,
      "h": 844
     },
-    "pageH": 8949,
+    "pageH": 8901,
     "margins": {
      "left": 20,
      "right": 20
@@ -3020,8 +2957,8 @@
       "sel": "section#top.masthead.sheet",
       "tag": "section",
       "top": 0,
-      "height": 926,
-      "words": 47,
+      "height": 878,
+      "words": 36,
       "media": 1,
       "middle": 0,
       "heading": {
@@ -3032,7 +2969,7 @@
       "left": 20,
       "right": 60,
       "textLeft": 20,
-      "textRight": 86,
+      "textRight": 102,
       "fullBleed": false,
       "footer": false,
       "hero": true,
@@ -3042,7 +2979,7 @@
      {
       "sel": "section#problem.page.sheet",
       "tag": "section",
-      "top": 926,
+      "top": 878,
       "height": 743,
       "words": 112,
       "media": 0,
@@ -3061,7 +2998,7 @@
      {
       "sel": "div.mosaic.rise",
       "tag": "div",
-      "top": 1669,
+      "top": 1621,
       "height": 560,
       "words": 19,
       "media": 4,
@@ -3080,7 +3017,7 @@
      {
       "sel": "section#chain.scene.field",
       "tag": "section",
-      "top": 2229,
+      "top": 2181,
       "height": 2026,
       "words": 0,
       "media": 0,
@@ -3099,7 +3036,7 @@
      {
       "sel": "section#method.page.sheet",
       "tag": "section",
-      "top": 4254,
+      "top": 4207,
       "height": 855,
       "words": 88,
       "media": 0,
@@ -3122,7 +3059,7 @@
      {
       "sel": "section#esg.page.sheet",
       "tag": "section",
-      "top": 5109,
+      "top": 5061,
       "height": 1116,
       "words": 108,
       "media": 0,
@@ -3145,7 +3082,7 @@
      {
       "sel": "section#founder.page.sheet",
       "tag": "section",
-      "top": 6225,
+      "top": 6177,
       "height": 1134,
       "words": 107,
       "media": 2,
@@ -3168,7 +3105,7 @@
      {
       "sel": "section#contact.page.field",
       "tag": "section",
-      "top": 7358,
+      "top": 7311,
       "height": 885,
       "words": 44,
       "media": 0,
@@ -3191,7 +3128,7 @@
      {
       "sel": "footer.close",
       "tag": "footer",
-      "top": 8243,
+      "top": 8196,
       "height": 706,
       "words": 91,
       "media": 0,

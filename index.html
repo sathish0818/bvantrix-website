@@ -25,7 +25,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500&family=Onest:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="assets/scenes/stage.css">
-<link rel="stylesheet" href="css/style.css?v=8.1">
+<link rel="stylesheet" href="css/style.css?v=8.4">
 </head>
 <body>
 
@@ -101,9 +101,20 @@
   <figure class="masthead-plate plate">
     <img src="assets/container-cranes-at-the-mpet-msc-psa.jpg" width="1920" height="1354"
          alt="Container cranes at a deep-water terminal at dusk">
+    <!-- The block the hero composition needs, carrying the six domains as a
+         slow flow rather than a number. The whole list is in the DOM for a
+         screen reader; the cycling is decoration and says so. -->
     <div class="tag">
-      <b>Six</b>
-      <span>domains a single operating decision reaches, and almost no system sees more than one.</span>
+      <p class="tag-line">A decision reaches<!--
+     --><span class="cycle" aria-hidden="true"><!--
+       --><i class="cycle-size">the environment</i><!--
+       --><span>business</span><!--
+       --><span>people</span><!--
+       --><span>resources</span><!--
+       --><span>the environment</span><!--
+       --><span>risk</span><!--
+       --><span>compliance</span><!--
+     --></span><span class="sr-only">business, people, resources, the environment, risk and compliance, and almost no system sees more than one of them.</span></p>
     </div>
   </figure>
 </section>
