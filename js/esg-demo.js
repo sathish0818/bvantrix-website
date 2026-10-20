@@ -227,7 +227,7 @@
     var w = el('div', 'screen');
     w.innerHTML =
       '<p class="eyebrow">ESG demo</p>' +
-      '<h1 class="h2">See where your data<br>would let you decide.</h1>' +
+      '<h2 class="h2">See where your data<br>would let you decide.</h2>' +
       '<p class="body">Fifteen questions, about five minutes. You get a preliminary ' +
       'ESG score out of 100 with its confidence level — then one real decision, ' +
       'compared using the priorities your own answers imply.</p>' +

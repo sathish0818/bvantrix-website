@@ -21,13 +21,14 @@
   /* type */
   --ink:     #1C1F23;
   --ink-2:   #4A4E54;
-  --ink-3:   #74787E;
+  --ink-3:   #686C72;   /* 4.51:1 on stone — #74787E was 3.79 */
   --on-dark:   #ECE8DE;
   --on-dark-2: #B3B6AD;
-  --on-dark-3: #878B84;
+  --on-dark-3: #8C9089;   /* 4.55:1 on forest — #878B84 was 4.26 */
 
   /* brand accents */
-  --amber:   #C8752A;
+  --amber:   #C8752A;   /* fills, borders, rules — never body text on light */
+  --amber-ink: #A8550A; /* 4.52:1 on stone: the amber for text and links */
   --amber-2: #E09A4E;
   --amber-soft: #F3E4D2;
   --blue:    #0E2A47;
@@ -81,6 +82,18 @@ button { font: inherit; }
 ::selection { background: var(--amber); color: #fff; }
 
 :focus-visible { outline: 2px solid var(--amber); outline-offset: 3px; }
+
+/* WCAG 2.4.1 — a way past the navigation for keyboard and screen readers */
+.skip {
+  /* fixed, not absolute: absolute anchors to the document, so the link
+     appeared 4000px above the viewport once the page was scrolled */
+  position: fixed; left: 12px; top: -60px; z-index: 100;
+  background: var(--ink-bg); color: var(--on-dark);
+  padding: 11px 18px; border-radius: var(--r);
+  font-size: 0.875rem; font-weight: 500;
+  transition: top .18s ease;
+}
+.skip:focus { top: 12px; }
 
 .wrap {
   width: 100%;
@@ -216,6 +229,8 @@ button { font: inherit; }
 .nav-links { display: flex; gap: 26px; }
 .nav-links a {
   font-size: 0.8125rem; font-weight: 400;
+  /* WCAG 2.2 target size: 24px minimum, these were 21 */
+  display: inline-flex; align-items: center; min-height: 24px;
   opacity: .82;
   transition: opacity .18s ease, color .18s ease;
 }
@@ -295,7 +310,7 @@ button { font: inherit; }
   display: inline-flex; align-items: center; gap: 9px;
   margin-top: 30px;
   font-size: 0.875rem; font-weight: 500;
-  color: var(--amber);
+  color: var(--amber-ink);
   border-bottom: 1px solid currentColor;
   padding-bottom: 3px;
 }
@@ -531,7 +546,7 @@ button { font: inherit; }
 .step-head { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
 .step-n {
   font-size: 0.8125rem; font-weight: 500; letter-spacing: .1em;
-  color: var(--amber);
+  color: var(--amber-ink);
   font-variant-numeric: tabular-nums;
 }
 .step-ico {
@@ -620,7 +635,7 @@ button { font: inherit; }
 /* the way past the question sits with the small print, not beside the
    primary action — the section should only ever offer one of the two */
 .live-fine a { color: var(--ink-3); border-bottom: 1px solid var(--line-2); }
-.live-fine a:hover { color: var(--amber); border-bottom-color: var(--amber); }
+.live-fine a:hover { color: var(--amber-ink); border-bottom-color: var(--amber-ink); }
 
 /* the answered face */
 .live-face--said:focus { outline: none; }
@@ -821,12 +836,12 @@ button { font: inherit; }
   font-size: 0.6875rem; letter-spacing: .14em; text-transform: uppercase;
   color: var(--ink-3); font-weight: 500;
 }
-.contact-meta a { color: var(--amber); }
+.contact-meta a { color: var(--amber-ink); }
 .contact-meta a:hover { text-decoration: underline; text-underline-offset: 3px; }
 
 .as-link {
   background: none; border: 0; padding: 0;
-  color: var(--amber); cursor: pointer; text-align: left;
+  color: var(--amber-ink); cursor: pointer; text-align: left;
 }
 .as-link:hover { text-decoration: underline; text-underline-offset: 3px; }
 
@@ -940,7 +955,10 @@ html:not(.js) .tel-code select {
 }
 
 .foot-nav { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 26px; }
-.foot-nav a { font-size: 0.8125rem; color: var(--on-dark-2); }
+.foot-nav a {
+  font-size: 0.8125rem; color: var(--on-dark-2);
+  display: inline-flex; align-items: center; min-height: 24px;
+}
 .foot-nav a:hover { color: var(--amber-2); }
 
 .foot-end { display: grid; justify-items: end; gap: 20px; }

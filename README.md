@@ -66,6 +66,24 @@ Rules the engine enforces, because they are the point of the thing:
 To change a question, edit `js/esg-demo-data.js` and keep the shape. Adding a
 dimension means adding it to `dimensions` and pointing questions at its `id`.
 
+## Standards
+
+Built to **WCAG 2.2 level AA**. The parts that are easy to break if you edit
+carelessly:
+
+| Rule | What it means here |
+|---|---|
+| 1.4.3 Contrast | Every colour pair was measured, not eyeballed. `--ink-3` is `#686C72` (4.51:1 on stone) and `--on-dark-3` is `#8C9089` (4.55:1 on forest) because the previous values failed. |
+| 1.4.3 again | `--amber` is for fills, borders and rules **only**. Amber text on a light ground is 2.97:1. Use `--amber-ink` (`#A8550A`, 4.52:1) for any amber that carries words. |
+| 2.5.8 Target size | Interactive things are at least 24x24. Nav links carry `min-height: 24px` for this reason, not for looks. |
+| 2.4.1 Bypass blocks | `.skip` is the first thing in the tab order. It is `position: fixed` — `absolute` anchors it to the document and it vanishes once the page scrolls. |
+| 1.3.1 Info & relationships | One `<main id="content">` per page, one `<h1>`, headings never skip a level downward. The demo's `<h1>` is visually hidden because its steps each own an `<h2>`. |
+| 4.1.2 Name, role, value | Anything with `role="radiogroup"` has children with `role="radio"` and a live `aria-checked`. Decorative SVGs carry `aria-hidden="true"`. |
+| 2.3.3 Animation | Every animation sits inside `@media (prefers-reduced-motion: no-preference)`. |
+
+To re-check after a change, open the page and measure rather than trust the
+eye — the three colours above all looked fine and all failed.
+
 ## Icons
 
 **Material Symbols Outlined**, weight 300 to match the type, subset in the

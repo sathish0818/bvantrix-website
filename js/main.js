@@ -571,6 +571,11 @@ var BVANTRIX_EMAIL    = 'info@bvantrix.com';
   card.querySelectorAll('.live-opts button').forEach(function (b) {
     b.addEventListener('click', function () {
       var raw = b.dataset.v;
+      /* 4.1.2 — the group says it is a radiogroup, so the state has to be
+         readable by anything that is not looking at the colour */
+      card.querySelectorAll('.live-opts button').forEach(function (n) {
+        n.setAttribute('aria-checked', String(n === b));
+      });
       seed(raw === 'null' ? null : Number(raw));
       reveal(raw);
     });
