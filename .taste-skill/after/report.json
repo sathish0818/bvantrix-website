@@ -1,6 +1,6 @@
 {
  "url": "http://127.0.0.1:8777/index.html",
- "at": "2026-10-20T10:43:46.952Z",
+ "at": "2026-10-20T10:57:46.420Z",
  "allow": [],
  "viewports": [
   {
@@ -14,14 +14,14 @@
     0.77,
     0.29,
     0.27,
-    0.56,
+    0.57,
     1,
     1
    ],
    "motion": {
-    "elements": 25,
+    "elements": 26,
     "css": 5,
-    "transitions": 20,
+    "transitions": 21,
     "scripted": 0,
     "videos": 1,
     "playingVideos": 0
@@ -34,7 +34,7 @@
     "page": {
      "height": 6345,
      "screens": 7.1,
-     "words": 781,
+     "words": 785,
      "img": 5,
      "video": 1,
      "canvas": 0,
@@ -552,6 +552,27 @@
       "kind": "heading"
      },
      {
+      "text": "Bhuvana Selvan",
+      "words": 2,
+      "chars": 14,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Newsreader",
+      "weight": 400,
+      "tracking": -0.015,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.14,
+      "top": 4889,
+      "tag": "b",
+      "kind": "statement"
+     },
+     {
       "text": "Too consequential to see alone.",
       "words": 5,
       "chars": 31,
@@ -595,10 +616,10 @@
      }
     ],
     "headingSummary": {
-     "count": 24,
+     "count": 25,
      "maxLines": 3,
      "over2Lines": 0,
-     "statements": 15,
+     "statements": 16,
      "centered": 0,
      "medianWords": 4,
      "mixedFontHeadings": 0
@@ -706,7 +727,7 @@
       },
       {
        "color": "#46525e",
-       "share": 0.05
+       "share": 0.06
       },
       {
        "color": "#15110b",
@@ -931,7 +952,7 @@
       "tag": "section",
       "top": 4168,
       "height": 905,
-      "words": 103,
+      "words": 107,
       "media": 2,
       "middle": 98,
       "heading": {
@@ -1077,13 +1098,13 @@
     0.22,
     0.39,
     0.71,
-    0.7,
+    0.62,
     1
    ],
    "motion": {
-    "elements": 25,
+    "elements": 26,
     "css": 5,
-    "transitions": 20,
+    "transitions": 21,
     "scripted": 0,
     "videos": 1,
     "playingVideos": 0
@@ -1094,9 +1115,9 @@
      "h": 1024
     },
     "page": {
-     "height": 7947,
+     "height": 8001,
      "screens": 7.8,
-     "words": 771,
+     "words": 775,
      "img": 5,
      "video": 1,
      "canvas": 0,
@@ -1614,6 +1635,27 @@
       "kind": "heading"
      },
      {
+      "text": "Bhuvana Selvan",
+      "words": 2,
+      "chars": 14,
+      "lines": 1,
+      "size": 26,
+      "vw": 3.4,
+      "font": "Newsreader",
+      "weight": 400,
+      "tracking": -0.015,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.22,
+      "top": 6462,
+      "tag": "b",
+      "kind": "statement"
+     },
+     {
       "text": "Too consequential to see alone.",
       "words": 5,
       "chars": 31,
@@ -1630,7 +1672,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.94,
-      "top": 6602,
+      "top": 6656,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1651,16 +1693,16 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.94,
-      "top": 7419,
+      "top": 7473,
       "tag": "p",
       "kind": "statement"
      }
     ],
     "headingSummary": {
-     "count": 24,
+     "count": 25,
      "maxLines": 3,
      "over2Lines": 0,
-     "statements": 15,
+     "statements": 16,
      "centered": 0,
      "medianWords": 4,
      "mixedFontHeadings": 0
@@ -1745,7 +1787,7 @@
       },
       {
        "color": "#15332b",
-       "top": 6518,
+       "top": 6572,
        "hsl": {
         "h": 164,
         "s": 0.42,
@@ -1844,7 +1886,7 @@
      "w": 768,
      "h": 1024
     },
-    "pageH": 7947,
+    "pageH": 8001,
     "margins": {
      "left": 25,
      "right": 25
@@ -1992,8 +2034,8 @@
       "sel": "section#founder.page.sheet",
       "tag": "section",
       "top": 4991,
-      "height": 1528,
-      "words": 103,
+      "height": 1582,
+      "words": 107,
       "media": 2,
       "middle": 0,
       "heading": null,
@@ -2010,7 +2052,7 @@
      {
       "sel": "section#contact.page.field",
       "tag": "section",
-      "top": 6518,
+      "top": 6572,
       "height": 817,
       "words": 44,
       "media": 0,
@@ -2033,7 +2075,7 @@
      {
       "sel": "footer.close",
       "tag": "footer",
-      "top": 7335,
+      "top": 7389,
       "height": 612,
       "words": 91,
       "media": 0,
@@ -2102,14 +2144,14 @@
     0.38,
     0.57,
     0.65,
-    0.81,
+    0.73,
     1,
     1
    ],
    "motion": {
-    "elements": 25,
+    "elements": 26,
     "css": 5,
-    "transitions": 20,
+    "transitions": 21,
     "scripted": 0,
     "videos": 1,
     "playingVideos": 0
@@ -2120,9 +2162,9 @@
      "h": 844
     },
     "page": {
-     "height": 7639,
+     "height": 7690,
      "screens": 9.1,
-     "words": 771,
+     "words": 775,
      "img": 5,
      "video": 1,
      "canvas": 0,
@@ -2656,6 +2698,27 @@
       "kind": "heading"
      },
      {
+      "text": "Bhuvana Selvan",
+      "words": 2,
+      "chars": 14,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Newsreader",
+      "weight": 400,
+      "tracking": -0.015,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.36,
+      "top": 5995,
+      "tag": "b",
+      "kind": "statement"
+     },
+     {
       "text": "Too consequential to see alone.",
       "words": 5,
       "chars": 31,
@@ -2672,7 +2735,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 6135,
+      "top": 6186,
       "tag": "h2",
       "kind": "heading"
      },
@@ -2693,16 +2756,16 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 7020,
+      "top": 7070,
       "tag": "p",
       "kind": "statement"
      }
     ],
     "headingSummary": {
-     "count": 24,
+     "count": 25,
      "maxLines": 3,
      "over2Lines": 0,
-     "statements": 15,
+     "statements": 16,
      "centered": 0,
      "medianWords": 4,
      "mixedFontHeadings": 4
@@ -2787,7 +2850,7 @@
       },
       {
        "color": "#15332b",
-       "top": 6051,
+       "top": 6102,
        "hsl": {
         "h": 164,
         "s": 0.42,
@@ -2886,7 +2949,7 @@
      "w": 390,
      "h": 844
     },
-    "pageH": 7639,
+    "pageH": 7690,
     "margins": {
      "left": 20,
      "right": 20
@@ -3026,8 +3089,8 @@
       "sel": "section#founder.page.sheet",
       "tag": "section",
       "top": 4968,
-      "height": 1083,
-      "words": 103,
+      "height": 1134,
+      "words": 107,
       "media": 2,
       "middle": 0,
       "heading": {
@@ -3048,7 +3111,7 @@
      {
       "sel": "section#contact.page.field",
       "tag": "section",
-      "top": 6051,
+      "top": 6102,
       "height": 885,
       "words": 44,
       "media": 0,
@@ -3071,7 +3134,7 @@
      {
       "sel": "footer.close",
       "tag": "footer",
-      "top": 6936,
+      "top": 6986,
       "height": 704,
       "words": 91,
       "media": 0,

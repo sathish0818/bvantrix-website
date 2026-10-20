@@ -300,10 +300,15 @@ p { margin: 0; }
   color: var(--field-ink-2);
 }
 
-/* one treatment on every photograph on the page */
-.plate img, .mosaic img, .leaf-plate img {
+/* One treatment on every photograph, so the page reads as one system —
+   and the colour underneath on hover, because these are real places. */
+.plate img, .mosaic img, .mosaic .clip, .leaf-plate img {
   filter: grayscale(1) contrast(1.06);
+  transition: filter .55s ease;
 }
+.plate:hover img,
+.mosaic img:hover, .mosaic .clip:hover,
+.leaf-plate:hover img { filter: grayscale(0) contrast(1.02); }
 
 /* --------------------------------------------------------------------------
    8. The opening — a lead over four columns
@@ -454,6 +459,17 @@ p { margin: 0; }
 .ask-then li { font-size: var(--t-small); line-height: 1.45; color: var(--field-ink-2); }
 .ask-go { margin-top: 26px; display: flex; align-items: center; gap: 22px; flex-wrap: wrap; }
 .ask-next { margin-top: 14px; font-size: var(--t-small); color: var(--ink-2); }
+
+.byline {
+  margin-top: clamp(28px, 3vw, 44px);
+  display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap;
+}
+.byline b {
+  font-family: var(--display); font-weight: 400;
+  font-size: var(--t-lead); line-height: 1;
+  letter-spacing: -0.015em;
+}
+.byline span { font-size: var(--t-small); color: var(--ink-2); }
 
 /* --------------------------------------------------------------------------
    14. Contact
@@ -687,4 +703,4 @@ html:not(.js) .tel-code select { font: inherit; border: 0; background: transpare
 }
 
 /* the one moving picture: a port at work, paused when motion is unwelcome */
-.mosaic .clip { width: 100%; height: 100%; object-fit: cover; filter: grayscale(1) contrast(1.06); }
+.mosaic .clip { width: 100%; height: 100%; object-fit: cover; }
