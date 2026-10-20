@@ -253,7 +253,8 @@
       '<h2 class="h2">First, who is answering.</h2>' +
       (root.classList.contains('is-continued')
         ? '<p class="carried"><span class="mi" aria-hidden="true">check</span>' +
-          'Question 1 came with you from the homepage. Fourteen to go.</p>'
+          'Question 1 came with you from the homepage — it is answered on the ' +
+          'next step, and you can change it there. Fourteen to go.</p>'
         : '') +
       '<p class="body">None of this is scored. It decides which parts of the ' +
       'result matter most for you.</p>';

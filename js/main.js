@@ -576,23 +576,6 @@ var BVANTRIX_EMAIL    = 'info@bvantrix.com';
     });
   });
 
-  /* Not an undo. Most people who press this are asking what a different
-     answer would have said, which is the behaviour worth encouraging. */
-  document.getElementById('esgAgain').addEventListener('click', function () {
-    try {
-      var raw = sessionStorage.getItem(KEY);
-      if (raw) {
-        var state = JSON.parse(raw) || {};
-        if (state.answers) delete state.answers[QID];
-        sessionStorage.setItem(KEY, JSON.stringify(state));
-      }
-    } catch (e) {}
-    said.hidden = true;
-    ask.hidden = false;
-    card.classList.remove('is-answered');
-    ask.querySelector('.live-opts button').focus();
-  });
-
   /* Coming back to the homepage should not re-ask a question already given. */
   try {
     var prev = JSON.parse(sessionStorage.getItem(KEY) || '{}');
