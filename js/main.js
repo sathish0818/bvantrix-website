@@ -1,8 +1,5 @@
-/* BVANTRIX — progressive enhancement only.
-   Nothing here is required for the page to be readable. */
-
 /* ════════════════════════════════════════════════════════════════════
-   FORM DELIVERY — the one line to change.
+   FORM DELIVERY, the one line to change.
 
    Paste a form endpoint (Formspree, Getform, Basin, your own API) and
    both the booking panel and the contact form POST to it. The request
@@ -10,121 +7,57 @@
    info@bvantrix.com inbox whether or not the visitor has a mail app.
 
    Left empty, both forms fall back to opening the visitor's own mail
-   client — which fails silently for anyone who does not have one.
+   client, which fails silently for anyone who does not have one.
 
      var BVANTRIX_ENDPOINT = 'https://formspree.io/f/xxxxxxxx';
    ════════════════════════════════════════════════════════════════════ */
 var BVANTRIX_ENDPOINT = '';
 var BVANTRIX_EMAIL    = 'info@bvantrix.com';
 
+/* BVANTRIX, progressive enhancement only.
+   The page is readable with none of this running. */
 (function () {
   'use strict';
-
-  // Mark that JS is running, so reveal styles may apply.
   document.documentElement.classList.add('js');
 
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  /* ── Scroll reveal ────────────────────────────────────────── */
-  var items = document.querySelectorAll('.reveal');
+  /* ── sections rise as they arrive ───────────────────────────────── */
+  var items = document.querySelectorAll('.rise');
   if (!reduce && 'IntersectionObserver' in window) {
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (e) {
-        if (e.isIntersecting) {
-          e.target.classList.add('is-in');
-          io.unobserve(e.target);
-        }
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
       });
-    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
-    items.forEach(function (el) { io.observe(el); });
-
-    // Safety net — nothing stays hidden if the observer never fires.
-    window.setTimeout(function () {
-      items.forEach(function (el) { el.classList.add('is-in'); });
-    }, 700);
+    }, { rootMargin: '0px 0px -12% 0px' });
+    items.forEach(function (n) { io.observe(n); });
+    /* never leave content hidden if something goes wrong */
+    setTimeout(function () { items.forEach(function (n) { n.classList.add('in'); }); }, 2200);
   } else {
-    items.forEach(function (el) { el.classList.add('is-in'); });
+    items.forEach(function (n) { n.classList.add('in'); });
   }
 
-  /* ── Nav shadow on scroll ─────────────────────────────────── */
-  var nav = document.getElementById('nav');
-  var ticking = false;
-  function onScroll() {
-    if (ticking) return;
-    ticking = true;
-    window.requestAnimationFrame(function () {
-      nav.classList.toggle('is-stuck', window.scrollY > 12);
-      ticking = false;
+  /* ── the menu ───────────────────────────────────────────────────── */
+  var btn = document.getElementById('menuBtn');
+  var drawer = document.getElementById('drawer');
+  if (btn && drawer) {
+    var set = function (open) {
+      btn.setAttribute('aria-expanded', String(open));
+      drawer.hidden = !open;
+      btn.textContent = open ? 'Close' : 'Menu';
+    };
+    btn.addEventListener('click', function () {
+      set(btn.getAttribute('aria-expanded') !== 'true');
     });
-  }
-  window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
-
-  /* ── Orb follows the pointer, gently ──────────────────────── */
-  var stage = document.getElementById('orbStage');
-  if (stage && !reduce && window.matchMedia('(hover: hover)').matches) {
-    var MAX = 14;           // px of travel — deliberately small
-    var raf = null;
-
-    stage.closest('.hero').addEventListener('pointermove', function (e) {
-      if (raf) return;
-      raf = window.requestAnimationFrame(function () {
-        var r = stage.getBoundingClientRect();
-        var dx = (e.clientX - (r.left + r.width / 2)) / (r.width / 2);
-        var dy = (e.clientY - (r.top + r.height / 2)) / (r.height / 2);
-        dx = Math.max(-1, Math.min(1, dx));
-        dy = Math.max(-1, Math.min(1, dy));
-        stage.style.setProperty('--tilt-x', (dx * MAX).toFixed(1) + 'px');
-        stage.style.setProperty('--tilt-y', (dy * MAX).toFixed(1) + 'px');
-        raf = null;
-      });
+    drawer.addEventListener('click', function (e) { if (e.target.closest('a')) set(false); });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && btn.getAttribute('aria-expanded') === 'true') { set(false); btn.focus(); }
     });
-
-    stage.closest('.hero').addEventListener('pointerleave', function () {
-      stage.style.setProperty('--tilt-x', '0px');
-      stage.style.setProperty('--tilt-y', '0px');
-    });
+    window.addEventListener('resize', function () { if (window.innerWidth > 860) set(false); });
   }
-
-  /* ── Mobile drawer ────────────────────────────────────────── */
-  var toggle = document.getElementById('navToggle');
-  var drawer = document.getElementById('navDrawer');
-
-  // keep the drawer pinned directly under the nav, whatever its height
-  function syncNavHeight() {
-    document.documentElement.style.setProperty(
-      '--nav-h', Math.round(nav.getBoundingClientRect().height) + 'px'
-    );
-  }
-  syncNavHeight();
-  window.addEventListener('resize', syncNavHeight);
-
-  function setDrawer(open) {
-    toggle.setAttribute('aria-expanded', String(open));
-    drawer.hidden = !open;
-  }
-
-  toggle.addEventListener('click', function () {
-    setDrawer(toggle.getAttribute('aria-expanded') !== 'true');
-  });
-
-  drawer.addEventListener('click', function (e) {
-    if (e.target.closest('a')) setDrawer(false);
-  });
-
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
-      setDrawer(false);
-      toggle.focus();
-    }
-  });
-
-  window.addEventListener('resize', function () {
-    if (window.innerWidth > 860) setDrawer(false);
-  });
 })();
 
-/* BVANTRIX — booking panel.
+/* BVANTRIX, booking panel.
    The call is taken on our own page; nothing redirects to a third party. */
 (function () {
   'use strict';
@@ -145,8 +78,8 @@ var BVANTRIX_EMAIL    = 'info@bvantrix.com';
   var doneLn  = document.getElementById('bookDoneLine');
   var dayWrap = document.getElementById('bkDays');
   var timeWrap= document.getElementById('bkTimes');
-  var drawer  = document.getElementById('navDrawer');
-  var toggle  = document.getElementById('navToggle');
+  var drawer  = document.getElementById('drawer');
+  var toggle  = document.getElementById('menuBtn');
 
   var picked  = { day: null, time: null };
   var opener  = null;
@@ -250,7 +183,7 @@ var BVANTRIX_EMAIL    = 'info@bvantrix.com';
       day:     picked.day,
       time:    picked.time,
       message: document.getElementById('bkMsg').value.trim(),
-      _subject: 'Call request — ' + document.getElementById('bkName').value.trim(),
+      _subject: 'Call request, ' + document.getElementById('bkName').value.trim(),
       form: 'Call booking'
     };
 
@@ -276,12 +209,12 @@ var BVANTRIX_EMAIL    = 'info@bvantrix.com';
       var body =
         'Name: '    + data.name    + '\n' +
         'Email: '   + data.email   + '\n' +
-        'Company: ' + (data.company || '—') + '\n' +
+        'Company: ' + (data.company || '–') + '\n' +
         'Requested: ' + data.day + ' at ' + data.time + '\n\n' +
         (data.message || '');
       var a = document.createElement('a');
       a.href = 'mailto:' + BOOKING_EMAIL +
-               '?subject=' + encodeURIComponent('Call request — ' + data.name) +
+               '?subject=' + encodeURIComponent('Call request, ' + data.name) +
                '&body=' + encodeURIComponent(body);
       a.click();
       confirmed(data);
@@ -344,7 +277,7 @@ var BVANTRIX_EMAIL    = 'info@bvantrix.com';
   buildTimes();
 })();
 
-/* BVANTRIX — contact form.
+/* BVANTRIX, contact form.
    Same validation vocabulary as the booking panel. */
 (function () {
   'use strict';
@@ -430,7 +363,7 @@ var BVANTRIX_EMAIL    = 'info@bvantrix.com';
       country: document.getElementById('ctCode')
                  .selectedOptions[0].text.replace(/\s*\+\d+$/, ''),
       message: document.getElementById('ctMsg').value.trim(),
-      _subject: 'Website enquiry — ' + document.getElementById('ctName').value.trim(),
+      _subject: 'Website enquiry, ' + document.getElementById('ctName').value.trim(),
       form: 'Contact'
     };
 
@@ -468,7 +401,7 @@ var BVANTRIX_EMAIL    = 'info@bvantrix.com';
         (data.message || '');
       var a = document.createElement('a');
       a.href = 'mailto:' + CONTACT_EMAIL +
-               '?subject=' + encodeURIComponent('Website enquiry — ' + data.name) +
+               '?subject=' + encodeURIComponent('Website enquiry, ' + data.name) +
                '&body=' + encodeURIComponent(body);
       a.click();
       settled();
@@ -476,7 +409,7 @@ var BVANTRIX_EMAIL    = 'info@bvantrix.com';
   });
 })();
 
-/* BVANTRIX — the live question in the ESG section.
+/* BVANTRIX, the live question in the ESG section.
    The homepage asks question one of the assessment and hands the answer to
    the demo, so nobody is asked the same thing twice. */
 (function () {
@@ -489,7 +422,7 @@ var BVANTRIX_EMAIL    = 'info@bvantrix.com';
   var QID = card.dataset.qid || 'q1';
 
   /* What each answer actually means. Written to be useful rather than
-     flattering — the "not measured" reading is the blunt one on purpose. */
+     flattering, the "not measured" reading is the blunt one on purpose. */
   var READINGS = {
     '4': {
       said: 'Verified, both scopes.',
@@ -507,7 +440,7 @@ var BVANTRIX_EMAIL    = 'info@bvantrix.com';
     },
     '2': {
       said: 'One scope of the two.',
-      read: 'Half the picture — and usually the half that moves least. Scope 2 is ' +
+      read: 'Half the picture, and usually the half that moves least. Scope 2 is ' +
             'what changes when you replace a piece of equipment.',
       then: ['Efficiency gains are visible. The grid behind them is not.',
              'Replace and Upgrade look closer than they are.']
@@ -524,7 +457,7 @@ var BVANTRIX_EMAIL    = 'info@bvantrix.com';
       read: 'Then every decision that touches energy is being made without one of ' +
             'its largest consequences in view. That is common, and it is still true.',
       then: ['Only cost, return and maintenance are available to compare.',
-             'This is the traditional view — which is where most organisations still are.']
+             'This is the traditional view, which is where most organisations still are.']
     },
     'null': {
       said: "You don't know.",
@@ -568,12 +501,12 @@ var BVANTRIX_EMAIL    = 'info@bvantrix.com';
     said.focus({ preventScroll: true });
   }
 
-  card.querySelectorAll('.live-opts button').forEach(function (b) {
+  card.querySelectorAll('.ask-opts button').forEach(function (b) {
     b.addEventListener('click', function () {
       var raw = b.dataset.v;
-      /* 4.1.2 — the group says it is a radiogroup, so the state has to be
+      /* 4.1.2, the group says it is a radiogroup, so the state has to be
          readable by anything that is not looking at the colour */
-      card.querySelectorAll('.live-opts button').forEach(function (n) {
+      card.querySelectorAll('.ask-opts button').forEach(function (n) {
         n.setAttribute('aria-checked', String(n === b));
       });
       seed(raw === 'null' ? null : Number(raw));
@@ -589,4 +522,21 @@ var BVANTRIX_EMAIL    = 'info@bvantrix.com';
       said.removeAttribute('tabindex');
     }
   } catch (e) {}
+})();
+
+/* The one moving picture. It plays only when it is on screen and only when
+   motion is welcome; otherwise the poster frame stands in. */
+(function () {
+  'use strict';
+  var clip = document.querySelector('.clip');
+  if (!clip) return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  if (!('IntersectionObserver' in window)) return;
+
+  new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) { clip.preload = 'auto'; clip.play().catch(function () {}); }
+      else { clip.pause(); }
+    });
+  }, { rootMargin: '200px' }).observe(clip);
 })();

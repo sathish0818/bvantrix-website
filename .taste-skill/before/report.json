@@ -1,0 +1,3206 @@
+{
+ "url": "http://127.0.0.1:8777/index.html",
+ "at": "2026-10-20T10:21:34.704Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 7,
+   "filled": [
+    0.97,
+    0.99,
+    0.5,
+    0.81,
+    0.88,
+    0.93,
+    0.75
+   ],
+   "motion": {
+    "elements": 45,
+    "css": 15,
+    "transitions": 30,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 6114,
+     "screens": 6.8,
+     "words": 862,
+     "img": 1,
+     "video": 0,
+     "canvas": 0,
+     "svg": 18,
+     "sections": 11,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 1,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "founder.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "What if every important decision could understand its consequences?",
+     "words": 9,
+     "chars": 67,
+     "lines": 4,
+     "size": 65.6,
+     "vw": 4.6,
+     "font": "Newsreader",
+     "weight": 300,
+     "tracking": -0.016,
+     "leading": 1.08,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.42,
+     "top": 194,
+     "mixedFonts": [
+      "Newsreader",
+      "Newsreader italic"
+     ],
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "What if every important decision could understand its consequences?",
+     "words": 9,
+     "lines": 4,
+     "size": 65.6,
+     "font": "Newsreader"
+    },
+    "headings": [
+     {
+      "text": "What if every important decision could understand its consequences?",
+      "words": 9,
+      "chars": 67,
+      "lines": 4,
+      "size": 65.6,
+      "vw": 4.6,
+      "font": "Newsreader",
+      "weight": 300,
+      "tracking": -0.016,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.42,
+      "top": 194,
+      "mixedFonts": [
+       "Newsreader",
+       "Newsreader italic"
+      ],
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "The problem isn't a lack of data. It's the distance between data and decisions.",
+      "words": 14,
+      "chars": 79,
+      "lines": 4,
+      "size": 48,
+      "vw": 3.3,
+      "font": "Newsreader",
+      "weight": 300,
+      "tracking": -0.014,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.3,
+      "top": 965,
+      "mixedFonts": [
+       "Newsreader",
+       "Newsreader italic"
+      ],
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Every decision creates a chain of consequences.",
+      "words": 7,
+      "chars": 47,
+      "lines": 3,
+      "size": 48,
+      "vw": 3.3,
+      "font": "Newsreader",
+      "weight": 300,
+      "tracking": -0.014,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.3,
+      "top": 1511,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "From information to decision intelligence.",
+      "words": 5,
+      "chars": 42,
+      "lines": 3,
+      "size": 48,
+      "vw": 3.3,
+      "font": "Newsreader",
+      "weight": 300,
+      "tracking": -0.014,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.3,
+      "top": 1979,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "From ESG reporting to ESG decision intelligence.",
+      "words": 7,
+      "chars": 48,
+      "lines": 3,
+      "size": 48,
+      "vw": 3.3,
+      "font": "Newsreader",
+      "weight": 300,
+      "tracking": -0.014,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.3,
+      "top": 2401,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "We're not building another dashboard.",
+      "words": 5,
+      "chars": 37,
+      "lines": 2,
+      "size": 48,
+      "vw": 3.3,
+      "font": "Newsreader",
+      "weight": 300,
+      "tracking": -0.014,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.3,
+      "top": 3140,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "“",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 54.4,
+      "vw": 3.8,
+      "font": "Newsreader",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.02,
+      "top": 3526,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Human judgement stays at the centre.",
+      "words": 6,
+      "chars": 36,
+      "lines": 2,
+      "size": 40,
+      "vw": 2.8,
+      "font": "Newsreader",
+      "weight": 300,
+      "tracking": -0.014,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.3,
+      "top": 3580,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Built from a question that wouldn't go away.",
+      "words": 8,
+      "chars": 44,
+      "lines": 2,
+      "size": 48,
+      "vw": 3.3,
+      "font": "Newsreader",
+      "weight": 300,
+      "tracking": -0.014,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.47,
+      "top": 3926,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The complexity of decisions is growing faster than our ability to connect them.",
+      "words": 13,
+      "chars": 79,
+      "lines": 4,
+      "size": 33.6,
+      "vw": 2.3,
+      "font": "Newsreader",
+      "weight": 300,
+      "tracking": -0.01,
+      "leading": 1.18,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.3,
+      "top": 4651,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "ESG is where we begin. Decision intelligence is where we're going.",
+      "words": 11,
+      "chars": 66,
+      "lines": 3,
+      "size": 33.6,
+      "vw": 2.3,
+      "font": "Newsreader",
+      "weight": 300,
+      "tracking": -0.01,
+      "leading": 1.18,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.3,
+      "top": 4990,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Some decisions are too consequential to see in isolation.",
+      "words": 9,
+      "chars": 57,
+      "lines": 3,
+      "size": 48,
+      "vw": 3.3,
+      "font": "Newsreader",
+      "weight": 300,
+      "tracking": -0.014,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.3,
+      "top": 5334,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 12,
+     "maxLines": 4,
+     "over2Lines": 8,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 7,
+     "mixedFontHeadings": 2
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Onest",
+       "share": 0.81,
+       "mono": false
+      },
+      {
+       "family": "Newsreader",
+       "share": 0.14,
+       "mono": false
+      },
+      {
+       "family": "Material Symbols Outlined",
+       "share": 0.04,
+       "mono": false
+      }
+     ],
+     "familyCount": 3,
+     "sizes": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      19,
+      20,
+      21,
+      24,
+      26,
+      34,
+      40,
+      48,
+      54,
+      66
+     ],
+     "sizeCount": 16,
+     "notLoaded": [],
+     "body": {
+      "font": "Onest",
+      "size": 15,
+      "leading": 1.68,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7.2
+     },
+     "measureChars": 74,
+     "max": {
+      "size": 65.6,
+      "vw": 4.6,
+      "font": "Newsreader",
+      "text": "What if everyimportant decisioncould und"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 15,
+     "microLabelShare": 0.054,
+     "microSamples": [
+      "The Problem",
+      "The information exists.",
+      "The intelligence is fragmented.",
+      "The Big Idea",
+      "How BVANTRIX works",
+      "ESG is where we begin"
+     ],
+     "upperShare": 0.06,
+     "centerShare": 0.15,
+     "smallText": 35
+    },
+    "eyebrows": [
+     {
+      "text": "The Problem",
+      "above": "The problem isn't a lack of data. It's t",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11,
+      "top": 929
+     },
+     {
+      "text": "The Big Idea",
+      "above": "Every decision creates a chain of conseq",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11,
+      "top": 1475
+     },
+     {
+      "text": "How BVANTRIX works",
+      "above": "From information to decision intelligenc",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11,
+      "top": 1943
+     },
+     {
+      "text": "ESG is where we begin",
+      "above": "From ESG reporting to ESG decision intel",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11,
+      "top": 2365
+     },
+     {
+      "text": "The Differentiator",
+      "above": "We're not building another dashboard.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11,
+      "top": 3104
+     },
+     {
+      "text": "The Founder",
+      "above": "Built from a question that wouldn't go a",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11,
+      "top": 3890
+     },
+     {
+      "text": "Why now",
+      "above": "The complexity of decisions is growing f",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11,
+      "top": 4616
+     },
+     {
+      "text": "Explore a decision",
+      "above": "Some decisions are too consequential to ",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11,
+      "top": 5299
+     }
+    ],
+    "numbered": [
+     {
+      "text": "01",
+      "size": 13,
+      "top": 1955
+     },
+     {
+      "text": "02",
+      "size": 13,
+      "top": 1955
+     },
+     {
+      "text": "03",
+      "size": 13,
+      "top": 1955
+     },
+     {
+      "text": "04",
+      "size": 13,
+      "top": 1955
+     },
+     {
+      "text": "05",
+      "size": 13,
+      "top": 1955
+     }
+    ],
+    "color": {
+     "bodyBg": "#faf8f3",
+     "bodyBgHsl": {
+      "h": 43,
+      "s": 0.41,
+      "l": 0.97
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#0c0f13",
+       "top": 0,
+       "hsl": {
+        "h": 214,
+        "s": 0.23,
+        "l": 0.06
+       }
+      },
+      {
+       "color": "#f0ede4",
+       "top": 828,
+       "hsl": {
+        "h": 45,
+        "s": 0.29,
+        "l": 0.92
+       }
+      },
+      {
+       "color": "#1d2b23",
+       "top": 1374,
+       "hsl": {
+        "h": 146,
+        "s": 0.19,
+        "l": 0.14
+       }
+      },
+      {
+       "color": "#faf8f3",
+       "top": 1842,
+       "hsl": {
+        "h": 43,
+        "s": 0.41,
+        "l": 0.97
+       }
+      },
+      {
+       "color": "#14181d",
+       "top": 3003,
+       "hsl": {
+        "h": 213,
+        "s": 0.18,
+        "l": 0.1
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#4a4e54",
+       "share": 0.3
+      },
+      {
+       "color": "#686c72",
+       "share": 0.22
+      },
+      {
+       "color": "#b3b6ad",
+       "share": 0.15
+      },
+      {
+       "color": "#ece8de",
+       "share": 0.13
+      },
+      {
+       "color": "#1c1f23",
+       "share": 0.12
+      }
+     ],
+     "button": {
+      "bg": "#f0ede4",
+      "hsl": {
+       "h": 45,
+       "s": 0.29,
+       "l": 0.92
+      },
+      "fg": "#4a4e54"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 11,
+     "inHero": 3,
+     "radius": 3,
+     "height": 47,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Explore a Decision",
+      "Explore BVANTRIX"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 1,
+     "scrims": 0,
+     "gradientSamples": [
+      "div.hero-sun → radial-gradient(circle, rgba(255, 228, 180, 0.92) 0%, rgba(240, 180, 107, 0.5) 18%, rgba(200, 117, 42, 0.22) 3"
+     ],
+     "gradientText": 0,
+     "hairlines": 2,
+     "hairlineSamples": [
+      "li 420px",
+      "li 420px"
+     ],
+     "outlinedBoxes": 2,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 1,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "svg",
+      "ratio": 0.57
+     },
+     {
+      "type": "svg",
+      "ratio": 0.18
+     }
+    ],
+    "nav": {
+     "links": 9,
+     "fixed": true,
+     "height": 78,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "newsreader",
+     "onest",
+     "material symbols outlined"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 6114,
+    "margins": {
+     "left": 124,
+     "right": 137
+    },
+    "sections": [
+     {
+      "sel": "section#top.hero",
+      "tag": "section",
+      "top": 0,
+      "height": 828,
+      "words": 65,
+      "media": 2,
+      "middle": 77,
+      "heading": {
+       "text": "What if every",
+       "size": 66,
+       "tag": "h1"
+      },
+      "left": 124,
+      "right": 133,
+      "textLeft": 124,
+      "textRight": 263,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#problem.band.band--stone",
+      "tag": "section",
+      "top": 828,
+      "height": 546,
+      "words": 79,
+      "media": 1,
+      "middle": 67,
+      "heading": {
+       "text": "The problem isn't",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 124,
+      "right": 124,
+      "textLeft": 124,
+      "textRight": 141,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#idea.band.band--forest",
+      "tag": "section",
+      "top": 1374,
+      "height": 468,
+      "words": 47,
+      "media": 0,
+      "middle": 187,
+      "heading": {
+       "text": "Every decision",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 124,
+      "right": 148,
+      "textLeft": 124,
+      "textRight": 148,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#approach.band.band--paper",
+      "tag": "section",
+      "top": 1842,
+      "height": 422,
+      "words": 75,
+      "media": 0,
+      "middle": 145,
+      "heading": {
+       "text": "From information",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 124,
+      "right": 148,
+      "textLeft": 124,
+      "textRight": 148,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#esg.band.band--stone",
+      "tag": "section",
+      "top": 2265,
+      "height": 738,
+      "words": 110,
+      "media": 0,
+      "middle": 114,
+      "heading": {
+       "text": "From ESG reporting",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 124,
+      "right": 163,
+      "textLeft": 124,
+      "textRight": 250,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.band.band--ink",
+      "tag": "section",
+      "top": 3003,
+      "height": 441,
+      "words": 56,
+      "media": 0,
+      "middle": 77,
+      "heading": {
+       "text": "We're not building",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 124,
+      "right": 417,
+      "textLeft": 124,
+      "textRight": 417,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.band.band--paper",
+      "tag": "section",
+      "top": 3444,
+      "height": 353,
+      "words": 60,
+      "media": 0,
+      "middle": 192,
+      "heading": {
+       "text": "Human judgement",
+       "size": 40,
+       "tag": "h2"
+      },
+      "left": 124,
+      "right": 135,
+      "textLeft": 124,
+      "textRight": 135,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#founder.band.band--paper",
+      "tag": "section",
+      "top": 3796,
+      "height": 747,
+      "words": 112,
+      "media": 2,
+      "middle": 104,
+      "heading": {
+       "text": "Built from a question",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 124,
+      "right": 271,
+      "textLeft": 614,
+      "textRight": 271,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.band.band--stone",
+      "tag": "section",
+      "top": 4544,
+      "height": 338,
+      "words": 36,
+      "media": 0,
+      "middle": 78,
+      "heading": {
+       "text": "The complexity of decisions is growing",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 124,
+      "right": 137,
+      "textLeft": 124,
+      "textRight": 137,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#vision.band.band--forest",
+      "tag": "section",
+      "top": 4882,
+      "height": 299,
+      "words": 53,
+      "media": 0,
+      "middle": 101,
+      "heading": {
+       "text": "ESG is where we begin.",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 124,
+      "right": 174,
+      "textLeft": 124,
+      "textRight": 174,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#contact.band.band--stone",
+      "tag": "section",
+      "top": 5181,
+      "height": 687,
+      "words": 59,
+      "media": 0,
+      "middle": 108,
+      "heading": {
+       "text": "Some decisions are",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 124,
+      "right": 171,
+      "textLeft": 124,
+      "textRight": 438,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.foot",
+      "tag": "footer",
+      "top": 5868,
+      "height": 246,
+      "words": 20,
+      "media": 0,
+      "middle": 306,
+      "heading": null,
+      "left": 124,
+      "right": 124,
+      "textLeft": 124,
+      "textRight": 124,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "What if every important decision could understand its consequences?",
+      "size": 66,
+      "top": 194,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 124,
+      "n": 35
+     },
+     {
+      "x": 614,
+      "n": 8
+     }
+    ],
+    "leftBlocks": 43,
+    "bodySize": 15,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0.07,
+    "voidBox": {
+     "x": 0,
+     "y": 840,
+     "w": 1440,
+     "h": 60
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 9,
+   "filled": [
+    0.94,
+    0.97,
+    0.69,
+    0.78,
+    0.71,
+    0.93,
+    1,
+    0.61,
+    0.55
+   ],
+   "motion": {
+    "elements": 37,
+    "css": 15,
+    "transitions": 22,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 8463,
+     "screens": 8.3,
+     "words": 849,
+     "img": 1,
+     "video": 0,
+     "canvas": 0,
+     "svg": 18,
+     "sections": 11,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 1,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "founder.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "What if every important decision could understand its consequences?",
+     "words": 9,
+     "chars": 67,
+     "lines": 4,
+     "size": 39.2,
+     "vw": 5.1,
+     "font": "Newsreader",
+     "weight": 300,
+     "tracking": -0.016,
+     "leading": 1.08,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.64,
+     "top": 150,
+     "mixedFonts": [
+      "Newsreader",
+      "Newsreader italic"
+     ],
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "What if every important decision could understand its consequences?",
+     "words": 9,
+     "lines": 4,
+     "size": 39.2,
+     "font": "Newsreader"
+    },
+    "headings": [
+     {
+      "text": "What if every important decision could understand its consequences?",
+      "words": 9,
+      "chars": 67,
+      "lines": 4,
+      "size": 39.2,
+      "vw": 5.1,
+      "font": "Newsreader",
+      "weight": 300,
+      "tracking": -0.016,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.64,
+      "top": 150,
+      "mixedFonts": [
+       "Newsreader",
+       "Newsreader italic"
+      ],
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "The problem isn't a lack of data. It's the distance between data and decisions.",
+      "words": 14,
+      "chars": 79,
+      "lines": 4,
+      "size": 30.4,
+      "vw": 4,
+      "font": "Newsreader",
+      "weight": 300,
+      "tracking": -0.014,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 1214,
+      "mixedFonts": [
+       "Newsreader",
+       "Newsreader italic"
+      ],
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Every decision creates a chain of consequences.",
+      "words": 7,
+      "chars": 47,
+      "lines": 3,
+      "size": 30.4,
+      "vw": 4,
+      "font": "Newsreader",
+      "weight": 300,
+      "tracking": -0.014,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 2023,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "From information to decision intelligence.",
+      "words": 5,
+      "chars": 42,
+      "lines": 3,
+      "size": 30.4,
+      "vw": 4,
+      "font": "Newsreader",
+      "weight": 300,
+      "tracking": -0.014,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 2750,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "From ESG reporting to ESG decision intelligence.",
+      "words": 7,
+      "chars": 48,
+      "lines": 3,
+      "size": 30.4,
+      "vw": 4,
+      "font": "Newsreader",
+      "weight": 300,
+      "tracking": -0.014,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 3364,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "We're not building another dashboard.",
+      "words": 5,
+      "chars": 37,
+      "lines": 2,
+      "size": 30.4,
+      "vw": 4,
+      "font": "Newsreader",
+      "weight": 300,
+      "tracking": -0.014,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 4316,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Human judgement stays at the centre.",
+      "words": 6,
+      "chars": 36,
+      "lines": 2,
+      "size": 28,
+      "vw": 3.6,
+      "font": "Newsreader",
+      "weight": 300,
+      "tracking": -0.014,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 4836,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "“",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 54.4,
+      "vw": 7.1,
+      "font": "Newsreader",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.03,
+      "top": 5070,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Built from a question that wouldn't go away.",
+      "words": 8,
+      "chars": 44,
+      "lines": 2,
+      "size": 30.4,
+      "vw": 4,
+      "font": "Newsreader",
+      "weight": 300,
+      "tracking": -0.014,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 5755,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Some decisions are too consequential to see in isolation.",
+      "words": 9,
+      "chars": 57,
+      "lines": 3,
+      "size": 30.4,
+      "vw": 4,
+      "font": "Newsreader",
+      "weight": 300,
+      "tracking": -0.014,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 7172,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 10,
+     "maxLines": 4,
+     "over2Lines": 6,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 7,
+     "mixedFontHeadings": 2
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Onest",
+       "share": 0.81,
+       "mono": false
+      },
+      {
+       "family": "Newsreader",
+       "share": 0.15,
+       "mono": false
+      },
+      {
+       "family": "Material Symbols Outlined",
+       "share": 0.04,
+       "mono": false
+      }
+     ],
+     "familyCount": 3,
+     "sizes": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      18,
+      19,
+      20,
+      21,
+      23,
+      28,
+      30,
+      39,
+      54
+     ],
+     "sizeCount": 15,
+     "notLoaded": [],
+     "body": {
+      "font": "Onest",
+      "size": 15,
+      "leading": 1.68,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7.2
+     },
+     "measureChars": 74,
+     "max": {
+      "size": 54.4,
+      "vw": 7.1,
+      "font": "Newsreader",
+      "text": "“"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 15,
+     "microLabelShare": 0.055,
+     "microSamples": [
+      "The Problem",
+      "The information exists.",
+      "The intelligence is fragmented.",
+      "The Big Idea",
+      "How BVANTRIX works",
+      "ESG is where we begin"
+     ],
+     "upperShare": 0.06,
+     "centerShare": 0.15,
+     "smallText": 35
+    },
+    "eyebrows": [
+     {
+      "text": "The Problem",
+      "above": "The problem isn't a lack of data. It's t",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11,
+      "top": 1179
+     },
+     {
+      "text": "The Big Idea",
+      "above": "Every decision creates a chain of conseq",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11,
+      "top": 1987
+     },
+     {
+      "text": "How BVANTRIX works",
+      "above": "From information to decision intelligenc",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11,
+      "top": 2714
+     },
+     {
+      "text": "ESG is where we begin",
+      "above": "From ESG reporting to ESG decision intel",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11,
+      "top": 3328
+     },
+     {
+      "text": "The Differentiator",
+      "above": "We're not building another dashboard.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11,
+      "top": 4281
+     },
+     {
+      "text": "The Human Principle",
+      "above": "Human judgement stays at the centre.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11,
+      "top": 4800
+     },
+     {
+      "text": "The Founder",
+      "above": "Built from a question that wouldn't go a",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11,
+      "top": 5719
+     },
+     {
+      "text": "Explore a decision",
+      "above": "Some decisions are too consequential to ",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11,
+      "top": 7136
+     }
+    ],
+    "numbered": [
+     {
+      "text": "01",
+      "size": 13,
+      "top": 2904
+     },
+     {
+      "text": "02",
+      "size": 13,
+      "top": 2904
+     },
+     {
+      "text": "03",
+      "size": 13,
+      "top": 2904
+     },
+     {
+      "text": "04",
+      "size": 13,
+      "top": 3081
+     },
+     {
+      "text": "05",
+      "size": 13,
+      "top": 3081
+     }
+    ],
+    "color": {
+     "bodyBg": "#faf8f3",
+     "bodyBgHsl": {
+      "h": 43,
+      "s": 0.41,
+      "l": 0.97
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#0c0f13",
+       "top": 0,
+       "hsl": {
+        "h": 214,
+        "s": 0.23,
+        "l": 0.06
+       }
+      },
+      {
+       "color": "#f0ede4",
+       "top": 1115,
+       "hsl": {
+        "h": 45,
+        "s": 0.29,
+        "l": 0.92
+       }
+      },
+      {
+       "color": "#1d2b23",
+       "top": 1923,
+       "hsl": {
+        "h": 146,
+        "s": 0.19,
+        "l": 0.14
+       }
+      },
+      {
+       "color": "#faf8f3",
+       "top": 2650,
+       "hsl": {
+        "h": 43,
+        "s": 0.41,
+        "l": 0.97
+       }
+      },
+      {
+       "color": "#14181d",
+       "top": 4217,
+       "hsl": {
+        "h": 213,
+        "s": 0.18,
+        "l": 0.1
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#4a4e54",
+       "share": 0.31
+      },
+      {
+       "color": "#686c72",
+       "share": 0.23
+      },
+      {
+       "color": "#b3b6ad",
+       "share": 0.16
+      },
+      {
+       "color": "#ece8de",
+       "share": 0.13
+      },
+      {
+       "color": "#1c1f23",
+       "share": 0.12
+      }
+     ],
+     "button": {
+      "bg": "#f0ede4",
+      "hsl": {
+       "h": 45,
+       "s": 0.29,
+       "l": 0.92
+      },
+      "fg": "#4a4e54"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 10,
+     "inHero": 2,
+     "radius": 3,
+     "height": 47,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Explore BVANTRIX"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 1,
+     "scrims": 0,
+     "gradientSamples": [
+      "div.hero-sun → radial-gradient(circle, rgba(255, 228, 180, 0.92) 0%, rgba(240, 180, 107, 0.5) 18%, rgba(200, 117, 42, 0.22) 3"
+     ],
+     "gradientText": 0,
+     "hairlines": 2,
+     "hairlineSamples": [
+      "li 420px",
+      "li 420px"
+     ],
+     "outlinedBoxes": 2,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 1,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "svg",
+      "ratio": 0.59
+     },
+     {
+      "type": "svg",
+      "ratio": 0.22
+     }
+    ],
+    "nav": {
+     "links": 1,
+     "fixed": true,
+     "height": 75,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "newsreader",
+     "onest",
+     "material symbols outlined"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 8463,
+    "margins": {
+     "left": 35,
+     "right": 60
+    },
+    "sections": [
+     {
+      "sel": "section#top.hero",
+      "tag": "section",
+      "top": 0,
+      "height": 1115,
+      "words": 65,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "What if every",
+       "size": 39,
+       "tag": "h1"
+      },
+      "left": 35,
+      "right": 164,
+      "textLeft": 35,
+      "textRight": 254,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#problem.band.band--stone",
+      "tag": "section",
+      "top": 1115,
+      "height": 809,
+      "words": 79,
+      "media": 0,
+      "middle": 47,
+      "heading": {
+       "text": "The problem isn't",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 35,
+      "right": 84,
+      "textLeft": 35,
+      "textRight": 84,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#idea.band.band--forest",
+      "tag": "section",
+      "top": 1923,
+      "height": 727,
+      "words": 47,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Every decision",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 35,
+      "right": 121,
+      "textLeft": 35,
+      "textRight": 121,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#approach.band.band--paper",
+      "tag": "section",
+      "top": 2650,
+      "height": 613,
+      "words": 75,
+      "media": 0,
+      "middle": 33,
+      "heading": {
+       "text": "From information",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 35,
+      "right": 75,
+      "textLeft": 35,
+      "textRight": 75,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#esg.band.band--stone",
+      "tag": "section",
+      "top": 3264,
+      "height": 953,
+      "words": 110,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "From ESG reporting",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 35,
+      "right": 60,
+      "textLeft": 35,
+      "textRight": 170,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.band.band--ink",
+      "tag": "section",
+      "top": 4217,
+      "height": 520,
+      "words": 56,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "We're not building",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 35,
+      "right": 286,
+      "textLeft": 35,
+      "textRight": 286,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.band.band--paper",
+      "tag": "section",
+      "top": 4736,
+      "height": 491,
+      "words": 60,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Human judgement",
+       "size": 28,
+       "tag": "h2"
+      },
+      "left": 35,
+      "right": 289,
+      "textLeft": 35,
+      "textRight": 289,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#founder.band.band--paper",
+      "tag": "section",
+      "top": 5227,
+      "height": 1069,
+      "words": 112,
+      "media": 2,
+      "middle": 0,
+      "heading": null,
+      "left": 35,
+      "right": 177,
+      "textLeft": 35,
+      "textRight": 177,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.band.band--stone",
+      "tag": "section",
+      "top": 6296,
+      "height": 373,
+      "words": 36,
+      "media": 0,
+      "middle": 56,
+      "heading": {
+       "text": "The complexity of decisions is growing",
+       "size": 23,
+       "tag": "h2"
+      },
+      "left": 35,
+      "right": 64,
+      "textLeft": 35,
+      "textRight": 64,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#vision.band.band--forest",
+      "tag": "section",
+      "top": 6670,
+      "height": 402,
+      "words": 53,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "ESG is where we begin.",
+       "size": 23,
+       "tag": "h2"
+      },
+      "left": 35,
+      "right": 298,
+      "textLeft": 35,
+      "textRight": 298,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#contact.band.band--stone",
+      "tag": "section",
+      "top": 7072,
+      "height": 1082,
+      "words": 59,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Some decisions are",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 35,
+      "right": 62,
+      "textLeft": 35,
+      "textRight": 304,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.foot",
+      "tag": "footer",
+      "top": 8154,
+      "height": 309,
+      "words": 20,
+      "media": 0,
+      "middle": 155,
+      "heading": null,
+      "left": 35,
+      "right": 104,
+      "textLeft": 35,
+      "textRight": 104,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "What if every important decision could understand its consequences?",
+      "size": 39,
+      "top": 150,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 35,
+      "n": 43
+     }
+    ],
+    "leftBlocks": 43,
+    "bodySize": 15,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    0.96,
+    1,
+    0.98,
+    0.55,
+    0.66,
+    0.92,
+    0.66,
+    1,
+    1,
+    0.99,
+    0.54,
+    0.77
+   ],
+   "motion": {
+    "elements": 37,
+    "css": 15,
+    "transitions": 22,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 9556,
+     "screens": 11.3,
+     "words": 849,
+     "img": 1,
+     "video": 0,
+     "canvas": 0,
+     "svg": 18,
+     "sections": 11,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 1,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "founder.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "What if every important decision could understand its consequences?",
+     "words": 9,
+     "chars": 67,
+     "lines": 4,
+     "size": 36.8,
+     "vw": 9.4,
+     "font": "Newsreader",
+     "weight": 300,
+     "tracking": -0.016,
+     "leading": 1.08,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.89,
+     "top": 128,
+     "mixedFonts": [
+      "Newsreader",
+      "Newsreader italic"
+     ],
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "What if every important decision could understand its consequences?",
+     "words": 9,
+     "lines": 4,
+     "size": 36.8,
+     "font": "Newsreader"
+    },
+    "headings": [
+     {
+      "text": "What if every important decision could understand its consequences?",
+      "words": 9,
+      "chars": 67,
+      "lines": 4,
+      "size": 36.8,
+      "vw": 9.4,
+      "font": "Newsreader",
+      "weight": 300,
+      "tracking": -0.016,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 128,
+      "mixedFonts": [
+       "Newsreader",
+       "Newsreader italic"
+      ],
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "The problem isn't a lack of data. It's the distance between data and decisions.",
+      "words": 14,
+      "chars": 79,
+      "lines": 4,
+      "size": 30.4,
+      "vw": 7.8,
+      "font": "Newsreader",
+      "weight": 300,
+      "tracking": -0.014,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 1125,
+      "mixedFonts": [
+       "Newsreader",
+       "Newsreader italic"
+      ],
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Every decision creates a chain of consequences.",
+      "words": 7,
+      "chars": 47,
+      "lines": 3,
+      "size": 30.4,
+      "vw": 7.8,
+      "font": "Newsreader",
+      "weight": 300,
+      "tracking": -0.014,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 2106,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "From information to decision intelligence.",
+      "words": 5,
+      "chars": 42,
+      "lines": 3,
+      "size": 30.4,
+      "vw": 7.8,
+      "font": "Newsreader",
+      "weight": 300,
+      "tracking": -0.014,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 2949,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "From ESG reporting to ESG decision intelligence.",
+      "words": 7,
+      "chars": 48,
+      "lines": 3,
+      "size": 30.4,
+      "vw": 7.8,
+      "font": "Newsreader",
+      "weight": 300,
+      "tracking": -0.014,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 3798,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "We're not building another dashboard.",
+      "words": 5,
+      "chars": 37,
+      "lines": 2,
+      "size": 30.4,
+      "vw": 7.8,
+      "font": "Newsreader",
+      "weight": 300,
+      "tracking": -0.014,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 4840,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Human judgement stays at the centre.",
+      "words": 6,
+      "chars": 36,
+      "lines": 2,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Newsreader",
+      "weight": 300,
+      "tracking": -0.014,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 5446,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "“",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 54.4,
+      "vw": 13.9,
+      "font": "Newsreader",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.06,
+      "top": 5704,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Built from a question that wouldn't go away.",
+      "words": 8,
+      "chars": 44,
+      "lines": 2,
+      "size": 30.4,
+      "vw": 7.8,
+      "font": "Newsreader",
+      "weight": 300,
+      "tracking": -0.014,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 6389,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The complexity of decisions is growing faster than our ability to connect them.",
+      "words": 13,
+      "chars": 79,
+      "lines": 4,
+      "size": 23.2,
+      "vw": 5.9,
+      "font": "Newsreader",
+      "weight": 300,
+      "tracking": -0.01,
+      "leading": 1.18,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 7141,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "ESG is where we begin. Decision intelligence is where we're going.",
+      "words": 11,
+      "chars": 66,
+      "lines": 3,
+      "size": 23.2,
+      "vw": 5.9,
+      "font": "Newsreader",
+      "weight": 300,
+      "tracking": -0.01,
+      "leading": 1.18,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 7687,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Some decisions are too consequential to see in isolation.",
+      "words": 9,
+      "chars": 57,
+      "lines": 3,
+      "size": 30.4,
+      "vw": 7.8,
+      "font": "Newsreader",
+      "weight": 300,
+      "tracking": -0.014,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 8158,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 12,
+     "maxLines": 4,
+     "over2Lines": 8,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 7,
+     "mixedFontHeadings": 2
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Onest",
+       "share": 0.81,
+       "mono": false
+      },
+      {
+       "family": "Newsreader",
+       "share": 0.15,
+       "mono": false
+      },
+      {
+       "family": "Material Symbols Outlined",
+       "share": 0.04,
+       "mono": false
+      }
+     ],
+     "familyCount": 3,
+     "sizes": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      18,
+      19,
+      20,
+      21,
+      23,
+      28,
+      30,
+      37,
+      54
+     ],
+     "sizeCount": 15,
+     "notLoaded": [],
+     "body": {
+      "font": "Onest",
+      "size": 15,
+      "leading": 1.68,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7.2
+     },
+     "measureChars": 46,
+     "max": {
+      "size": 54.4,
+      "vw": 13.9,
+      "font": "Newsreader",
+      "text": "“"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 15,
+     "microLabelShare": 0.055,
+     "microSamples": [
+      "The Problem",
+      "The information exists.",
+      "The intelligence is fragmented.",
+      "The Big Idea",
+      "How BVANTRIX works",
+      "ESG is where we begin"
+     ],
+     "upperShare": 0.06,
+     "centerShare": 0.15,
+     "smallText": 35
+    },
+    "eyebrows": [
+     {
+      "text": "The Problem",
+      "above": "The problem isn't a lack of data. It's t",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11,
+      "top": 1089
+     },
+     {
+      "text": "The Big Idea",
+      "above": "Every decision creates a chain of conseq",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11,
+      "top": 2070
+     },
+     {
+      "text": "How BVANTRIX works",
+      "above": "From information to decision intelligenc",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11,
+      "top": 2913
+     },
+     {
+      "text": "ESG is where we begin",
+      "above": "From ESG reporting to ESG decision intel",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11,
+      "top": 3762
+     },
+     {
+      "text": "The Differentiator",
+      "above": "We're not building another dashboard.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11,
+      "top": 4804
+     },
+     {
+      "text": "The Human Principle",
+      "above": "Human judgement stays at the centre.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11,
+      "top": 5410
+     },
+     {
+      "text": "The Founder",
+      "above": "Built from a question that wouldn't go a",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11,
+      "top": 6354
+     },
+     {
+      "text": "Why now",
+      "above": "The complexity of decisions is growing f",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11,
+      "top": 7105
+     },
+     {
+      "text": "The bigger vision",
+      "above": "ESG is where we begin. Decision intellig",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11,
+      "top": 7651
+     },
+     {
+      "text": "Explore a decision",
+      "above": "Some decisions are too consequential to ",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 11,
+      "top": 8122
+     }
+    ],
+    "numbered": [
+     {
+      "text": "01",
+      "size": 13,
+      "top": 3103
+     },
+     {
+      "text": "02",
+      "size": 13,
+      "top": 3103
+     },
+     {
+      "text": "03",
+      "size": 13,
+      "top": 3297
+     },
+     {
+      "text": "04",
+      "size": 13,
+      "top": 3297
+     },
+     {
+      "text": "05",
+      "size": 13,
+      "top": 3497
+     }
+    ],
+    "color": {
+     "bodyBg": "#faf8f3",
+     "bodyBgHsl": {
+      "h": 43,
+      "s": 0.41,
+      "l": 0.97
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#0c0f13",
+       "top": 0,
+       "hsl": {
+        "h": 214,
+        "s": 0.23,
+        "l": 0.06
+       }
+      },
+      {
+       "color": "#f0ede4",
+       "top": 1025,
+       "hsl": {
+        "h": 45,
+        "s": 0.29,
+        "l": 0.92
+       }
+      },
+      {
+       "color": "#1d2b23",
+       "top": 2006,
+       "hsl": {
+        "h": 146,
+        "s": 0.19,
+        "l": 0.14
+       }
+      },
+      {
+       "color": "#faf8f3",
+       "top": 2849,
+       "hsl": {
+        "h": 43,
+        "s": 0.41,
+        "l": 0.97
+       }
+      },
+      {
+       "color": "#14181d",
+       "top": 4740,
+       "hsl": {
+        "h": 213,
+        "s": 0.18,
+        "l": 0.1
+       }
+      },
+      {
+       "color": "#dfdacb",
+       "top": 5918,
+       "hsl": {
+        "h": 45,
+        "s": 0.24,
+        "l": 0.84
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#4a4e54",
+       "share": 0.31
+      },
+      {
+       "color": "#686c72",
+       "share": 0.23
+      },
+      {
+       "color": "#b3b6ad",
+       "share": 0.16
+      },
+      {
+       "color": "#ece8de",
+       "share": 0.13
+      },
+      {
+       "color": "#1c1f23",
+       "share": 0.12
+      }
+     ],
+     "button": {
+      "bg": "#f0ede4",
+      "hsl": {
+       "h": 45,
+       "s": 0.29,
+       "l": 0.92
+      },
+      "fg": "#4a4e54"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 10,
+     "inHero": 2,
+     "radius": 3,
+     "height": 47,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Explore BVANTRIX"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 1,
+     "scrims": 0,
+     "gradientSamples": [
+      "div.hero-sun → radial-gradient(circle, rgba(255, 228, 180, 0.92) 0%, rgba(240, 180, 107, 0.5) 18%, rgba(200, 117, 42, 0.22) 3"
+     ],
+     "gradientText": 0,
+     "hairlines": 2,
+     "hairlineSamples": [
+      "li 346px",
+      "li 346px"
+     ],
+     "outlinedBoxes": 2,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 1,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "svg",
+      "ratio": 0.54
+     },
+     {
+      "type": "svg",
+      "ratio": 0.27
+     }
+    ],
+    "nav": {
+     "links": 1,
+     "fixed": true,
+     "height": 75,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "newsreader",
+     "onest",
+     "material symbols outlined"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 9556,
+    "margins": {
+     "left": 22,
+     "right": 25
+    },
+    "sections": [
+     {
+      "sel": "section#top.hero",
+      "tag": "section",
+      "top": 0,
+      "height": 1025,
+      "words": 65,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "What if every",
+       "size": 37,
+       "tag": "h1"
+      },
+      "left": 22,
+      "right": 22,
+      "textLeft": 22,
+      "textRight": 22,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#problem.band.band--stone",
+      "tag": "section",
+      "top": 1025,
+      "height": 981,
+      "words": 79,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "The problem isn't",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 22,
+      "right": 40,
+      "textLeft": 22,
+      "textRight": 40,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#idea.band.band--forest",
+      "tag": "section",
+      "top": 2006,
+      "height": 843,
+      "words": 47,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Every decision",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 22,
+      "right": 37,
+      "textLeft": 22,
+      "textRight": 37,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#approach.band.band--paper",
+      "tag": "section",
+      "top": 2849,
+      "height": 849,
+      "words": 75,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "From information",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 22,
+      "right": 34,
+      "textLeft": 22,
+      "textRight": 34,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#esg.band.band--stone",
+      "tag": "section",
+      "top": 3698,
+      "height": 1042,
+      "words": 110,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "From ESG reporting",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 22,
+      "right": 26,
+      "textLeft": 22,
+      "textRight": 26,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.band.band--ink",
+      "tag": "section",
+      "top": 4740,
+      "height": 606,
+      "words": 56,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "We're not building",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 22,
+      "right": 26,
+      "textLeft": 22,
+      "textRight": 26,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.band.band--paper",
+      "tag": "section",
+      "top": 5346,
+      "height": 516,
+      "words": 60,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Human judgement",
+       "size": 28,
+       "tag": "h2"
+      },
+      "left": 22,
+      "right": 23,
+      "textLeft": 22,
+      "textRight": 23,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#founder.band.band--paper",
+      "tag": "section",
+      "top": 5862,
+      "height": 1195,
+      "words": 112,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "Built from a question",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 22,
+      "right": 25,
+      "textLeft": 22,
+      "textRight": 25,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.band.band--stone",
+      "tag": "section",
+      "top": 7057,
+      "height": 546,
+      "words": 36,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "The complexity of decisions is growing",
+       "size": 23,
+       "tag": "h2"
+      },
+      "left": 22,
+      "right": 28,
+      "textLeft": 22,
+      "textRight": 28,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#vision.band.band--forest",
+      "tag": "section",
+      "top": 7603,
+      "height": 455,
+      "words": 53,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "ESG is where we begin.",
+       "size": 23,
+       "tag": "h2"
+      },
+      "left": 22,
+      "right": 25,
+      "textLeft": 22,
+      "textRight": 25,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#contact.band.band--stone",
+      "tag": "section",
+      "top": 8058,
+      "height": 1081,
+      "words": 59,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Some decisions are",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 22,
+      "right": 23,
+      "textLeft": 22,
+      "textRight": 23,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.foot",
+      "tag": "footer",
+      "top": 9139,
+      "height": 418,
+      "words": 20,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 22,
+      "right": 97,
+      "textLeft": 22,
+      "textRight": 97,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "What if every important decision could understand its consequences?",
+      "size": 37,
+      "top": 128,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 22,
+      "n": 43
+     }
+    ],
+    "leftBlocks": 43,
+    "bodySize": 15,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "FAIL",
+   "id": "headline-lines",
+   "width": 1440,
+   "message": "8 headline(s) wrap past two lines at 1440px: \"What if every important decision could understan\" → 4 lines (9 words, 65.6px); \"The problem isn't a lack of data. It's the dista\" → 4 lines (14 words, 48px); \"Every decision creates a chain of consequences.\" → 3 lines (7 words, 48px); \"From information to decision intelligence.\" → 3 lines (5 words, 48px)",
+   "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 36px or less."
+  },
+  {
+   "level": "WARN",
+   "id": "mixed-font-headline",
+   "width": 1440,
+   "message": "2 headline(s) switch typeface or to italic mid-line (the \"one italic serif word\" move).",
+   "fix": "Set the whole headline in one face. Emphasis comes from the words.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "eyebrow",
+   "width": 1440,
+   "message": "8 eyebrow/kicker label(s) above headings: \"The Problem\" above \"The problem isn't a lack of data. It's t\"; \"The Big Idea\" above \"Every decision creates a chain of conseq\"; \"How BVANTRIX works\" above \"From information to decision intelligenc\"; \"ESG is where we begin\" above \"From ESG reporting to ESG decision intel\"; \"The Differentiator\" above \"We're not building another dashboard.\"",
+   "fix": "Delete them. If the label carried real information, fold it into the headline or the supporting sentence.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "numbering",
+   "width": 1440,
+   "message": "Decorative index numbers: \"01\", \"02\", \"03\", \"04\", \"05\"",
+   "fix": "Remove them. If order truly matters, write it into the words (\"First, …\") or use a real <ol>.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "micro-label",
+   "width": 1440,
+   "message": "15 tiny uppercase letter-spaced labels (e.g. \"The Problem\", \"The information exists.\", \"The intelligence is fragmented.\", \"The Big Idea\").",
+   "fix": "Use sentence-case text at a readable size, or delete the label.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "gradient",
+   "width": 1440,
+   "message": "1 gradient fill(s): div.hero-sun → radial-gradient(circle, rgba(255, 228, 180, 0.92) 0%, rgba(240, 180, 107, 0.5) 18%, rgba(200, 117, 42, 0.22) 3",
+   "fix": "Use a flat colour or a real image. The only gradient allowed by default is a neutral scrim over a photo for legibility.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "hairline",
+   "width": 1440,
+   "message": "2 thin rule(s)/divider line(s): li 420px | li 420px",
+   "fix": "Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "outlined-box",
+   "width": 1440,
+   "message": "2 box(es) drawn with a 1px outline.",
+   "fix": "Prefer a filled surface or no box.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "palette-cream",
+   "width": 1440,
+   "message": "Yellow-cream background (page background #faf8f3, section #f0ede4, section #faf8f3).",
+   "fix": "Use the drawn palette. If you want warmth, take a low-chroma stone or bone, not a yellow cream.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "font-count",
+   "width": 1440,
+   "message": "3 typefaces in use (Onest, Newsreader, Material Symbols Outlined).",
+   "fix": "Two at most.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "16 different font sizes (11, 12, 13, 14, 15, 16, 19, 20, 21, 24, 26, 34, 40, 48, 54, 66).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "body-size",
+   "width": 1440,
+   "message": "Body text is 15px.",
+   "fix": "Body copy 16–20px.",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "few-pictures",
+   "width": 1440,
+   "message": "Only 1 picture(s) on the page (1 photographs, footage or raster images, 0 interface fragments). Drawings in SVG do not count.",
+   "fix": "Find real pictures of the subject's world with scripts/assets.mjs (photographs, archival images, maps, engravings, footage), download them to assets/ and give them room: a hero picture, one per section that has a subject, a full-width band. At least four, usually six to twelve."
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "FAIL",
+   "id": "small-text",
+   "width": 1440,
+   "message": "35 text blocks under 13px.",
+   "fix": "Nothing meant to be read goes below 13px.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "headline-lines",
+   "width": 768,
+   "message": "6 headline(s) wrap past two lines at 768px: \"What if every important decision could understan\" → 4 lines (9 words, 39.2px); \"The problem isn't a lack of data. It's the dista\" → 4 lines (14 words, 30.4px); \"Every decision creates a chain of consequences.\" → 3 lines (7 words, 30.4px); \"From information to decision intelligence.\" → 3 lines (5 words, 30.4px)",
+   "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 32px or less."
+  },
+  {
+   "level": "WARN",
+   "id": "off-centre",
+   "width": 768,
+   "message": "The margins differ: 35px on the left, 60px on the right, at 768px.",
+   "fix": "Put the navigation and the content on one pair of margins; check for padding on one side only, a scrollbar gutter, or a header on another inset than the page."
+  },
+  {
+   "level": "FAIL",
+   "id": "headline-lines",
+   "width": 390,
+   "message": "8 headline(s) wrap past two lines at 390px: \"What if every important decision could understan\" → 4 lines (9 words, 36.8px); \"The problem isn't a lack of data. It's the dista\" → 4 lines (14 words, 30.4px); \"Every decision creates a chain of consequences.\" → 3 lines (7 words, 30.4px); \"From information to decision intelligence.\" → 3 lines (5 words, 30.4px)",
+   "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 24px or less."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/Users/sathish.s/Downloads/Bvantrix/site/.taste-skill/before/desktop-fold.jpg",
+   "pages": [
+    "/Users/sathish.s/Downloads/Bvantrix/site/.taste-skill/before/desktop-page-01.jpg",
+    "/Users/sathish.s/Downloads/Bvantrix/site/.taste-skill/before/desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/Users/sathish.s/Downloads/Bvantrix/site/.taste-skill/before/tablet-fold.jpg",
+   "pages": [
+    "/Users/sathish.s/Downloads/Bvantrix/site/.taste-skill/before/tablet-page-01.jpg",
+    "/Users/sathish.s/Downloads/Bvantrix/site/.taste-skill/before/tablet-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/Users/sathish.s/Downloads/Bvantrix/site/.taste-skill/before/mobile-fold.jpg",
+   "pages": [
+    "/Users/sathish.s/Downloads/Bvantrix/site/.taste-skill/before/mobile-page-01.jpg",
+    "/Users/sathish.s/Downloads/Bvantrix/site/.taste-skill/before/mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}
