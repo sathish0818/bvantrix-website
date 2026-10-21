@@ -46,6 +46,7 @@
   --t-display: clamp(3rem, 1.5rem + 6.4vw, 7.25rem);       /* 48–116 */
 
   /* the frame */
+  --bar-h: 60px;
   --page:   1480px;
   --margin: clamp(20px, 3.2vw, 56px);
   --gutter: clamp(28px, 4vw, 72px);
@@ -174,10 +175,15 @@ p { margin: 0; }
 
 .bar {
   position: absolute; left: 0; right: 0; top: 0; z-index: 50;
-  display: flex; align-items: baseline; gap: clamp(20px, 3vw, 44px);
+  /* centre, not baseline: the wordmark carries the B-mark beside it, so its box
+     is a different height from a line of nav text and a shared baseline left the
+     two sitting 6px off each other's middle. */
+  display: flex; align-items: center; gap: clamp(20px, 3vw, 44px);
   width: 100%; max-width: var(--page);
   margin: 0 auto;
-  padding: 26px var(--margin) 0;
+  /* symmetric, and sized so the bar is exactly --bar-h tall; the hero's top
+     clearance is measured from that same token. */
+  padding: calc((var(--bar-h) - 24px) / 2) var(--margin);
 }
 .mark {
   display: flex; align-items: center; gap: 10px;
@@ -262,7 +268,7 @@ p { margin: 0; }
      viewport edge -- the nav occupies the first 56px, so the top padding carries
      that clearance on top of the shared band. */
   --hero-band: clamp(30px, 6vh, 90px);
-  padding-top: calc(56px + var(--hero-band));
+  padding-top: calc(var(--bar-h) + var(--hero-band));
   padding-bottom: var(--hero-band);
   display: grid;
   grid-template-columns: minmax(0, 0.84fr) minmax(0, 1.16fr);

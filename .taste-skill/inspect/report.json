@@ -1,6 +1,6 @@
 {
  "url": "http://127.0.0.1:8777/index.html",
- "at": "2026-10-21T07:49:44.326Z",
+ "at": "2026-10-21T08:15:38.397Z",
  "allow": [],
  "viewports": [
   {
@@ -78,7 +78,7 @@
      "align": "left",
      "position": "left",
      "widthRatio": 0.32,
-     "top": 224,
+     "top": 226,
      "tag": "h1",
      "kind": "heading"
     },
@@ -107,7 +107,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.32,
-      "top": 224,
+      "top": 226,
       "tag": "h1",
       "kind": "heading"
      },
@@ -128,7 +128,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.32,
-      "top": 468,
+      "top": 470,
       "tag": "p",
       "kind": "statement"
      },
@@ -790,7 +790,7 @@
     "nav": {
      "links": 8,
      "fixed": false,
-     "height": 56,
+     "height": 60,
      "floatingPill": false,
      "blur": false
     },
@@ -1032,7 +1032,7 @@
      {
       "text": "Decisions travel.",
       "size": 116,
-      "top": 224,
+      "top": 226,
       "firstScreen": true
      }
     ],
@@ -1867,7 +1867,7 @@
     "nav": {
      "links": 1,
      "fixed": false,
-     "height": 61,
+     "height": 71,
      "floatingPill": false,
      "blur": false
     },
@@ -2143,8 +2143,8 @@
    "motion": {
     "elements": 57,
     "css": 15,
-    "transitions": 33,
-    "scripted": 9,
+    "transitions": 39,
+    "scripted": 3,
     "videos": 1,
     "playingVideos": 0
    },
@@ -2926,7 +2926,7 @@
     "nav": {
      "links": 1,
      "fixed": false,
-     "height": 61,
+     "height": 71,
      "floatingPill": false,
      "blur": false
     },
