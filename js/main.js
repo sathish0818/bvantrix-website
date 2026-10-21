@@ -66,6 +66,20 @@ var BVANTRIX_EMAIL    = 'info@bvantrix.com';
     });
     window.addEventListener('resize', function () { if (window.innerWidth > 860) set(false); });
   }
+
+  /* The flow diagram's box is cropped tight to its labels so the hero has no
+     blank strip down its right side. Stacked on a phone the same labels are
+     drawn much larger to stay legible, and at that size they need a wider box
+     to sit in -- so the narrow layout gets the alternate viewBox instead. */
+  var flow = document.querySelector('.flowfig svg[data-vb-wide]');
+  if (flow) {
+    var tight = flow.getAttribute('viewBox');
+    var wide  = flow.getAttribute('data-vb-wide');
+    var mq    = window.matchMedia('(max-width: 860px)');
+    var fit   = function () { flow.setAttribute('viewBox', mq.matches ? wide : tight); };
+    fit();
+    (mq.addEventListener ? mq.addEventListener('change', fit) : mq.addListener(fit));
+  }
 })();
 
 /* BVANTRIX, booking panel.

@@ -25,7 +25,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500&family=Onest:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="assets/scenes/stage.css">
-<link rel="stylesheet" href="css/style.css?v=10.6">
+<link rel="stylesheet" href="css/style.css?v=10.8">
 </head>
 <body>
 
@@ -94,66 +94,87 @@
   </div>
 
   <figure class="flowfig" aria-label="A decision reaching six places">
-    <svg viewBox="57 24 890 750" role="list">
+    <!-- The box is cropped to the labels you can always see. The hover notes are
+         allowed to run past its right edge into the page margin; sizing the box to
+         them reserved 173px of blank page for text at opacity 0. -->
+    <svg viewBox="55 17 698 587" data-vb-wide="21 22 852 566" role="list">
       <!-- the decision, where every line begins -->
       <g class="source">
-        <circle class="source-ring" cx="104" cy="390" r="42"/>
-        <circle class="source-dot" cx="104" cy="390" r="8"/>
-        <text class="source-label" x="104" y="460">a decision</text>
+        <circle class="source-ring" cx="104" cy="310" r="42"/>
+        <circle class="source-dot" cx="104" cy="310" r="8"/>
+        <text class="source-label" x="104" y="380">a decision</text>
       </g>
 
       <g class="lane" style="--i:0" tabindex="0" role="listitem"
-         aria-label="business: capital, margin, the plan it was approved against">
-        <path class="lane-wire" d="M104 390 C 320 390, 360 40, 590 40"/>
-        <path class="lane-pulse" d="M104 390 C 320 390, 360 40, 590 40" pathLength="100"/>
-        <circle class="lane-dot" cx="590" cy="40" r="6"/>
-        <text class="lane-name" x="616" y="46">business</text>
-        <text class="lane-note" x="616" y="68">capital, margin, the plan it was approved against</text>
+         aria-label="business: capital, margin, and the plan it was approved against">
+        <path class="lane-wire" d="M104 310 C 320 310, 360 60, 590 60"/>
+        <path class="lane-pulse" d="M104 310 C 320 310, 360 60, 590 60" pathLength="100"/>
+        <circle class="lane-dot" cx="590" cy="60" r="6"/>
+        <text class="lane-name" x="616" y="66">business</text>
+        <text class="lane-note" x="616" y="84" aria-hidden="true">
+          <tspan x="616">capital, margin, and the plan</tspan>
+          <tspan x="616" dy="16">it was approved against</tspan>
+        </text>
       </g>
 
       <g class="lane" style="--i:1" tabindex="0" role="listitem"
          aria-label="people: who retrains, who is exposed, who leaves">
-        <path class="lane-wire" d="M104 390 C 320 390, 360 180, 590 180"/>
-        <path class="lane-pulse" d="M104 390 C 320 390, 360 180, 590 180" pathLength="100"/>
-        <circle class="lane-dot" cx="590" cy="180" r="6"/>
-        <text class="lane-name" x="616" y="186">people</text>
-        <text class="lane-note" x="616" y="208">who retrains, who is exposed, who leaves</text>
+        <path class="lane-wire" d="M104 310 C 320 310, 360 160, 590 160"/>
+        <path class="lane-pulse" d="M104 310 C 320 310, 360 160, 590 160" pathLength="100"/>
+        <circle class="lane-dot" cx="590" cy="160" r="6"/>
+        <text class="lane-name" x="616" y="166">people</text>
+        <text class="lane-note" x="616" y="184" aria-hidden="true">
+          <tspan x="616">who retrains, who is exposed,</tspan>
+          <tspan x="616" dy="16">who leaves</tspan>
+        </text>
       </g>
 
       <g class="lane" style="--i:2" tabindex="0" role="listitem"
          aria-label="resources: what is consumed, recovered, or thrown">
-        <path class="lane-wire" d="M104 390 C 320 390, 360 320, 590 320"/>
-        <path class="lane-pulse" d="M104 390 C 320 390, 360 320, 590 320" pathLength="100"/>
-        <circle class="lane-dot" cx="590" cy="320" r="6"/>
-        <text class="lane-name" x="616" y="326">resources</text>
-        <text class="lane-note" x="616" y="348">what is consumed, recovered, or thrown</text>
+        <path class="lane-wire" d="M104 310 C 320 310, 360 260, 590 260"/>
+        <path class="lane-pulse" d="M104 310 C 320 310, 360 260, 590 260" pathLength="100"/>
+        <circle class="lane-dot" cx="590" cy="260" r="6"/>
+        <text class="lane-name" x="616" y="266">resources</text>
+        <text class="lane-note" x="616" y="284" aria-hidden="true">
+          <tspan x="616">what is consumed, recovered,</tspan>
+          <tspan x="616" dy="16">or thrown</tspan>
+        </text>
       </g>
 
       <g class="lane" style="--i:3" tabindex="0" role="listitem"
          aria-label="environment: emissions in operation, and those already embodied">
-        <path class="lane-wire" d="M104 390 C 320 390, 360 460, 590 460"/>
-        <path class="lane-pulse" d="M104 390 C 320 390, 360 460, 590 460" pathLength="100"/>
-        <circle class="lane-dot" cx="590" cy="460" r="6"/>
-        <text class="lane-name" x="616" y="466">environment</text>
-        <text class="lane-note" x="616" y="488">emissions in operation, and those already embodied</text>
+        <path class="lane-wire" d="M104 310 C 320 310, 360 360, 590 360"/>
+        <path class="lane-pulse" d="M104 310 C 320 310, 360 360, 590 360" pathLength="100"/>
+        <circle class="lane-dot" cx="590" cy="360" r="6"/>
+        <text class="lane-name" x="616" y="366">environment</text>
+        <text class="lane-note" x="616" y="384" aria-hidden="true">
+          <tspan x="616">emissions in operation, and</tspan>
+          <tspan x="616" dy="16">those already embodied</tspan>
+        </text>
       </g>
 
       <g class="lane" style="--i:4" tabindex="0" role="listitem"
          aria-label="risk: what becomes more likely, and what survivable">
-        <path class="lane-wire" d="M104 390 C 320 390, 360 600, 590 600"/>
-        <path class="lane-pulse" d="M104 390 C 320 390, 360 600, 590 600" pathLength="100"/>
-        <circle class="lane-dot" cx="590" cy="600" r="6"/>
-        <text class="lane-name" x="616" y="606">risk</text>
-        <text class="lane-note" x="616" y="628">what becomes more likely, and what survivable</text>
+        <path class="lane-wire" d="M104 310 C 320 310, 360 460, 590 460"/>
+        <path class="lane-pulse" d="M104 310 C 320 310, 360 460, 590 460" pathLength="100"/>
+        <circle class="lane-dot" cx="590" cy="460" r="6"/>
+        <text class="lane-name" x="616" y="466">risk</text>
+        <text class="lane-note" x="616" y="484" aria-hidden="true">
+          <tspan x="616">what becomes more likely,</tspan>
+          <tspan x="616" dy="16">and what survivable</tspan>
+        </text>
       </g>
 
       <g class="lane" style="--i:5" tabindex="0" role="listitem"
          aria-label="compliance: the threshold today, and the one arriving">
-        <path class="lane-wire" d="M104 390 C 320 390, 360 740, 590 740"/>
-        <path class="lane-pulse" d="M104 390 C 320 390, 360 740, 590 740" pathLength="100"/>
-        <circle class="lane-dot" cx="590" cy="740" r="6"/>
-        <text class="lane-name" x="616" y="746">compliance</text>
-        <text class="lane-note" x="616" y="768">the threshold today, and the one arriving</text>
+        <path class="lane-wire" d="M104 310 C 320 310, 360 560, 590 560"/>
+        <path class="lane-pulse" d="M104 310 C 320 310, 360 560, 590 560" pathLength="100"/>
+        <circle class="lane-dot" cx="590" cy="560" r="6"/>
+        <text class="lane-name" x="616" y="566">compliance</text>
+        <text class="lane-note" x="616" y="584" aria-hidden="true">
+          <tspan x="616">the threshold today,</tspan>
+          <tspan x="616" dy="16">and the one arriving</tspan>
+        </text>
       </g>
 
     </svg>
@@ -582,6 +603,6 @@
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js"></script>
 <script src="assets/scenes/stage.js"></script>
 <script src="assets/scenes/consequences.js?v=1.1"></script>
-<script src="js/main.js?v=8.0"></script>
+<script src="js/main.js?v=8.1"></script>
 </body>
 </html>
