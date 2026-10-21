@@ -618,7 +618,18 @@ html:not(.js) .tel-code select { font: inherit; border: 0; background: transpare
   line-height: 0.82; letter-spacing: -0.04em;
   margin: 0 0 clamp(30px, 4vw, 60px);
 }
-.close-rows { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 26px; }
+/* On the page's own four-column grid, not a three-column one of its own: the
+   footer's columns used to land at 46/499/952 while every other row on the
+   page sits at 46/388/730/1072, and the last column's words stopped 296px
+   short of the right edge the fine print below them runs to. */
+.close-rows {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(20px, 2.4vw, 38px);
+}
+.close-rows > :nth-child(1) { grid-column: 1 / span 2; }
+.close-rows > :nth-child(2) { grid-column: 3; }
+.close-rows > :nth-child(3) { grid-column: 4; justify-self: end; text-align: right; }
 .close-rows a { color: var(--field-ink-2); font-size: var(--t-small); display: inline-flex; align-items: center; min-height: 24px; }
 .close-rows a:hover { color: var(--field-ink); }
 .close-fine { margin-top: clamp(30px, 4vw, 56px); font-size: var(--t-small); color: var(--field-ink-2); line-height: 1.6; }
@@ -723,6 +734,9 @@ html:not(.js) .tel-code select { font: inherit; border: 0; background: transpare
   .quartet { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 26px; }
   .chain { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .close-rows { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .close-rows > :nth-child(1) { grid-column: 1 / span 2; }
+  .close-rows > :nth-child(2) { grid-column: 1; }
+  .close-rows > :nth-child(3) { grid-column: 2; justify-self: start; text-align: left; }
 }
 
 @media (max-width: 860px) {
@@ -749,6 +763,9 @@ html:not(.js) .tel-code select { font: inherit; border: 0; background: transpare
   .chain { grid-template-columns: 1fr; }
   .pair { grid-template-columns: 1fr; }
   .close-rows { grid-template-columns: 1fr; gap: 4px; }
+  .close-rows > :nth-child(1),
+  .close-rows > :nth-child(2),
+  .close-rows > :nth-child(3) { grid-column: 1; justify-self: start; text-align: left; }
   .facts li { flex-direction: column; gap: 3px; }
   .facts dt, .facts .k { width: auto; }
 }

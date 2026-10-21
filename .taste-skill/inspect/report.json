@@ -1,6 +1,6 @@
 {
  "url": "http://127.0.0.1:8777/index.html",
- "at": "2026-10-21T08:51:49.554Z",
+ "at": "2026-10-21T09:03:31.067Z",
  "allow": [],
  "viewports": [
   {
@@ -1004,9 +1004,9 @@
        "tag": "span"
       },
       "left": 46,
-      "right": 73,
+      "right": 46,
       "textLeft": 46,
-      "textRight": 73,
+      "textRight": 46,
       "fullBleed": false,
       "footer": true,
       "hero": false,
@@ -1087,8 +1087,8 @@
    "motion": {
     "elements": 57,
     "css": 15,
-    "transitions": 39,
-    "scripted": 3,
+    "transitions": 33,
+    "scripted": 9,
     "videos": 1,
     "playingVideos": 0
    },
@@ -1098,7 +1098,7 @@
      "h": 1024
     },
     "page": {
-     "height": 10382,
+     "height": 10323,
      "screens": 10.1,
      "words": 771,
      "img": 4,
@@ -1868,7 +1868,7 @@
      "w": 768,
      "h": 1024
     },
-    "pageH": 10382,
+    "pageH": 10323,
     "margins": {
      "left": 25,
      "right": 25
@@ -2054,7 +2054,7 @@
       "sel": "footer.close",
       "tag": "footer",
       "top": 9777,
-      "height": 605,
+      "height": 546,
       "words": 91,
       "media": 0,
       "middle": 0,
