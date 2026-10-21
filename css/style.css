@@ -54,6 +54,32 @@
   --gap:    clamp(84px, 9vw, 168px);
 }
 
+/* A large desktop was being handed the laptop layout, centred: at 2656px the
+   1480 column left 588px of empty margin either side and the headline stayed
+   at its 116px cap. Every token here is the same scale carried further, not a
+   second design -- the column widens, the type takes the next step up, and the
+   hero is allowed the extra height the bigger figure needs. */
+@media (min-width: 1800px) {
+  :root {
+    --t-small:   1rem;                                     /* 16 */
+    --t-body:    clamp(1.1875rem, 0.9rem + 0.5vw, 1.3125rem);  /* 19–21 */
+    --t-lead:    clamp(2rem, 1.2rem + 1.2vw, 2.375rem);    /* 32–38 */
+    --t-head:    clamp(4.25rem, 2rem + 4vw, 5.25rem);      /* 68–84 */
+    --t-display: clamp(7.25rem, 3rem + 6.4vw, 8.5rem);     /* 116–136 */
+
+    --bar-h:  68px;
+    --page:   1720px;
+    --margin: clamp(56px, 3.2vw, 80px);
+    --gutter: clamp(72px, 4vw, 96px);
+    --gap:    clamp(168px, 9vw, 200px);
+
+    /* the figure grows with the column, and the hero with the figure */
+    --fig-svh:  78svh;
+    --fig-max:  800px;
+    --hero-max: 1060px;
+  }
+}
+
 /* --------------------------------------------------------------------------
    2. Base
    -------------------------------------------------------------------------- */
@@ -123,6 +149,12 @@ button { font: inherit; }
 .leaf > :nth-child(2) { grid-column: 2; }
 
 .page { padding-top: var(--gap); padding-bottom: var(--gap); }
+/* Where two paper pages meet, each was contributing its own --gap and the join
+   came out at twice the page's rhythm -- 260px against the 130px everywhere
+   else. The second page drops its top padding so one gap separates them. A
+   colour page keeps its own, because there the padding is the block's inset,
+   not the gap between two blocks. */
+.page.sheet + .page.sheet { padding-top: 0; }
 
 /* a colour page: the whole section is one flat field */
 .field {
@@ -261,7 +293,11 @@ p { margin: 0; }
    of the other half. */
 .masthead {
   position: relative;
-  height: 100svh;
+  /* Capped, not simply 100svh: the content is centred in the hero, so on a tall
+     window the leftover split into two bands that grew without limit -- 286px
+     above and below at 1190px tall, with the content filling 47% of the screen.
+     The cap holds the bands at ~110px whatever the window height. */
+  height: min(100svh, var(--hero-max, 900px));
   min-height: 640px;
   /* The band of empty page above the content and the one below it are meant to
      read as the same depth. The datum at the top is the nav's baseline, not the
@@ -379,7 +415,12 @@ p { margin: 0; }
    10. A plate inside a text page
    -------------------------------------------------------------------------- */
 
-.leaf-plate { position: relative; overflow: hidden; }
+.leaf-plate {
+  /* a <figure>: the browser's own margin (1em top, 40px sides) was leaking
+     through and making this one section's gap 21px deeper than the others */
+  margin: 0;
+  position: relative; overflow: hidden;
+}
 .leaf-plate img { width: 100%; height: 100%; object-fit: cover; }
 .leaf-plate figcaption {
   position: absolute; left: 0; bottom: 0;
@@ -819,7 +860,14 @@ html:not(.js) .tel-code select { font: inherit; border: 0; background: transpare
   align-self: center;              /* its own height, not a tall empty box */
   display: grid;
 }
-.flowfig svg { width: 100%; height: auto; max-height: min(70svh, 660px); overflow: visible; }
+.flowfig svg {
+  width: 100%; height: auto;
+  /* Both caps are tokens: whichever binds first decides the figure's height,
+     and if the viewport-height one binds before the column width does, the
+     drawing letterboxes inside its own box and the dead space comes back. */
+  max-height: min(var(--fig-svh, 70svh), var(--fig-max, 660px));
+  overflow: visible;
+}
 
 /* the decision */
 .source-ring { fill: none; stroke: var(--rule); stroke-width: 1.5; }
