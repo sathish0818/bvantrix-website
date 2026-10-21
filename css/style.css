@@ -934,26 +934,33 @@ html:not(.js) .tel-code select { font: inherit; border: 0; background: transpare
 .lane:focus-visible .lane-name { fill: var(--accent); }
 
 @media (prefers-reduced-motion: no-preference) {
+  /* The six lanes are phased evenly around one cycle: the stagger is the cycle
+     divided by six, so a pulse leaves the decision every 0.8s and two or three
+     are always in flight. It ran on a 7.8s cycle with a 0.46s stagger before,
+     which left 3.4s of every cycle with nothing moving at all -- it read as an
+     animation that played once and stopped rather than a loop. */
   .lane-pulse {
-    animation: laneTravel 7.8s cubic-bezier(.42,0,.58,1) infinite;
-    animation-delay: calc(var(--i) * 0.46s);
+    animation: laneTravel 4.8s cubic-bezier(.42,0,.58,1) infinite;
+    animation-delay: calc(var(--i) * 0.8s);
   }
-  .lane-dot { animation: laneLand 7.8s ease-out infinite; animation-delay: calc(var(--i) * 0.46s + 0.86s); }
+  .lane-dot { animation: laneLand 4.8s ease-out infinite; animation-delay: calc(var(--i) * 0.8s + 2s); }
   .flowfig:hover .lane-pulse, .flowfig:hover .lane-dot { animation-play-state: paused; }
-  .source-ring { animation: sourceBreathe 7.8s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+  .source-ring { animation: sourceBreathe 4.8s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
 }
 
+/* the travel fills 45% of the cycle, so with six lanes 0.8s apart the figure
+   is never still */
 @keyframes laneTravel {
   0%        { stroke-dashoffset: 0;    opacity: 0; }
-  5%        { opacity: .95; }
-  20%       { opacity: .95; }
-  28%       { stroke-dashoffset: -112; opacity: 0; }
+  4%        { opacity: .95; }
+  38%       { opacity: .95; }
+  45%       { stroke-dashoffset: -112; opacity: 0; }
   100%      { stroke-dashoffset: -112; opacity: 0; }
 }
 @keyframes laneLand {
   0%, 100%  { fill: var(--bg); }
-  3%        { fill: var(--accent); }
-  22%       { fill: var(--bg); }
+  4%        { fill: var(--accent); }
+  26%       { fill: var(--bg); }
 }
 /* The notes are revealed by the pointer. Asked for reduced motion, nothing
    should depend on a reveal, so they simply stand open. */
