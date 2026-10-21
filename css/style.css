@@ -333,19 +333,31 @@ p { margin: 0; }
    -------------------------------------------------------------------------- */
 
 .mosaic {
+  /* Held in the same column as the text pages. It was full-bleed, which read as
+     a printed plate up to about 1500px but on a wide monitor left the pictures
+     jutting 250px past every other edge on the page. */
+  max-width: var(--page);
+  margin-inline: auto;
+  padding-inline: var(--margin);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: clamp(150px, 19vw, 280px);
+  /* A minimum, not a fixed height: a text tile whose words wrap one line
+     further must be able to grow rather than have its first line clipped.
+     The photographs are capped at --row so their own intrinsic height cannot
+     drive the row instead -- a spanning image would otherwise open it to 457px. */
+  --row: clamp(150px, 19vw, 280px);
+  grid-auto-rows: minmax(var(--row), auto);
 }
 .mosaic > * { overflow: hidden; }
-.mosaic img { width: 100%; height: 100%; object-fit: cover; }
+.mosaic img { width: 100%; height: 100%; max-height: var(--row); object-fit: cover; }
 .mosaic .wide { grid-column: span 2; }
 .mosaic .tall { grid-row: span 2; }
 
 .tile {
   background: var(--field); color: var(--field-ink);
-  /* the mosaic runs to the edges, but its words keep the page's margin */
-  padding: var(--margin);
+  /* the mosaic is held in the page column now, so a tile needs breathing room,
+     not a second copy of the page margin */
+  padding: clamp(16px, 1.8vw, 32px);
   display: flex; flex-direction: column; justify-content: flex-end;
 }
 .tile--teal { background: var(--field-2); }
@@ -685,7 +697,7 @@ html:not(.js) .tel-code select { font: inherit; border: 0; background: transpare
   }
   .masthead-words { grid-column: 1; max-width: none; }
   /* on a phone the panel stops covering its own photograph and sits under it */
-  .mosaic { grid-template-columns: repeat(2, 1fr); grid-auto-rows: clamp(140px, 34vw, 220px); }
+  .mosaic { grid-template-columns: repeat(2, 1fr); --row: clamp(140px, 34vw, 220px); }
   .mosaic .wide { grid-column: span 2; }
   .mosaic .tall { grid-row: span 1; }
 }
@@ -791,7 +803,7 @@ html:not(.js) .tel-code select { font: inherit; border: 0; background: transpare
 }
 
 /* the one moving picture: a port at work, paused when motion is unwelcome */
-.mosaic .clip { width: 100%; height: 100%; object-fit: cover; }
+.mosaic .clip { width: 100%; height: 100%; max-height: var(--row); object-fit: cover; }
 
 
 /* --------------------------------------------------------------------------
