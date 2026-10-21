@@ -1,6 +1,6 @@
 {
  "url": "http://127.0.0.1:8777/index.html",
- "at": "2026-10-21T05:20:10.464Z",
+ "at": "2026-10-21T05:30:13.938Z",
  "allow": [],
  "viewports": [
   {
@@ -1100,8 +1100,8 @@
    "motion": {
     "elements": 57,
     "css": 15,
-    "transitions": 39,
-    "scripted": 3,
+    "transitions": 33,
+    "scripted": 9,
     "videos": 1,
     "playingVideos": 0
    },

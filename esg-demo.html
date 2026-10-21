@@ -3,84 +3,81 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ESG demo — BVANTRIX</title>
-<meta name="description" content="Fifteen questions, about five minutes. A preliminary ESG score out of 100 with its confidence level, then one real decision compared using the priorities your answers imply.">
-<meta name="theme-color" content="#F0EDE4">
+<title>ESG demo, BVANTRIX</title>
+<meta name="description" content="BVANTRIX shows where a decision lands, across business, people, environment, risk, resources and compliance, before it is made. ESG is the first application.">
+<meta name="theme-color" content="#E9E7E1">
 <link rel="canonical" href="https://www.bvantrix.com/esg-demo">
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="BVANTRIX">
 <meta property="og:url" content="https://www.bvantrix.com/esg-demo">
-<meta property="og:title" content="ESG demo — BVANTRIX">
-<meta property="og:description" content="See where your data would let you decide. Fifteen questions, a score with its confidence, then a real decision.">
+<meta property="og:title" content="ESG demo, BVANTRIX">
+<meta property="og:description" content="Where a decision lands, before it is made.">
 <meta property="og:image" content="https://www.bvantrix.com/assets/images/og/og-cover.jpg?v=1">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="BVANTRIX">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://www.bvantrix.com/assets/images/og/og-cover.jpg?v=1">
 
 <link rel="icon" href="assets/vectors/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300&family=Onest:wght@300;400;500;600&display=swap">
-<link rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0&amp;icon_names=check,fact_check,lock,schedule&amp;display=block">
-<link rel="stylesheet" href="css/style.css?v=6.2">
-<link rel="stylesheet" href="css/esg-demo.css?v=1.5">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500&family=Onest:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/scenes/stage.css">
+<link rel="stylesheet" href="css/style.css?v=9.9">
+<link rel="stylesheet" href="css/esg-demo.css?v=2.8">
 </head>
 <body class="demo-page">
 
 <a class="skip" href="#demo">Skip to content</a>
 
-<header class="nav" id="nav">
-  <a class="brand" href="index.html#top" aria-label="BVANTRIX, home">
-    <svg class="mark" viewBox="0 0 96 124" aria-hidden="true">
+<header class="bar">
+  <a class="mark" href="index.html#top" aria-label="BVANTRIX, home">
+    <svg class="bvx" viewBox="0 0 96 124" aria-hidden="true">
       <defs>
-        <linearGradient id="nBlue" x1="18%" y1="2%" x2="86%" y2="78%">
+        <linearGradient id="bvxB" x1="18%" y1="2%" x2="86%" y2="78%">
           <stop offset="0%" stop-color="#9CC6EC"/><stop offset="38%" stop-color="#4F8FC8"/><stop offset="100%" stop-color="#0E2A47"/>
         </linearGradient>
-        <linearGradient id="nFold" x1="0%" y1="0%" x2="100%" y2="100%">
+        <linearGradient id="bvxF" x1="0%" y1="0%" x2="100%" y2="100%">
           <stop offset="0%" stop-color="#EAF3FB"/><stop offset="100%" stop-color="#7FAFDA"/>
         </linearGradient>
-        <linearGradient id="nAmber" x1="4%" y1="96%" x2="84%" y2="10%">
+        <linearGradient id="bvxA" x1="4%" y1="96%" x2="84%" y2="10%">
           <stop offset="0%" stop-color="#9A4C08"/><stop offset="42%" stop-color="#D4812C"/><stop offset="100%" stop-color="#F0B46B"/>
         </linearGradient>
       </defs>
       <path d="M14 6 H32 V118 H14 Z" fill="currentColor"/>
-      <path d="M32 6 A28 28 0 0 1 32 62 Z" fill="url(#nBlue)"/>
-      <path d="M32 6 L60 34 L32 62 Z" fill="url(#nFold)" opacity=".92"/>
+      <path d="M32 6 A28 28 0 0 1 32 62 Z" fill="url(#bvxB)"/>
+      <path d="M32 6 L60 34 L32 62 Z" fill="url(#bvxF)" opacity=".92"/>
       <path d="M32 62 A30 30 0 0 1 32 122 Z" fill="currentColor"/>
-      <path d="M32 62 L62 92 L32 122 Z" fill="url(#nAmber)"/>
+      <path d="M32 62 L62 92 L32 122 Z" fill="url(#bvxA)"/>
     </svg>
-    <span class="wordmark">BVANTRIX</span>
+    <span>BVANTRIX</span>
   </a>
-
-  <nav class="nav-links" aria-label="Primary">
-    <a href="index.html#top">Home</a>
-    <a href="index.html#problem">The Problem</a>
-    <a href="index.html#approach">Our Approach</a>
+  <nav aria-label="Primary">
+    <a href="index.html#problem">The problem</a>
+    <a href="index.html#chain">The idea</a>
+    <a href="index.html#method">What it does</a>
     <a href="index.html#esg">ESG</a>
+    <a href="esg-demo.html">Demo</a>
     <a href="index.html#founder">Founder</a>
-    <a href="index.html#vision">Our Vision</a>
+    <a href="index.html#contact">Contact</a>
   </nav>
-
-  <a class="nav-cta" href="index.html#contact">Explore a Decision</a>
-
-  <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navDrawer" aria-label="Menu">
-    <span></span>
-  </button>
+  <button class="menu" id="menuBtn" aria-expanded="false" aria-controls="drawer">Menu</button>
 </header>
 
-<div class="nav-drawer" id="navDrawer" hidden>
-  <a href="index.html#problem">The Problem</a>
-  <a href="index.html#approach">Our Approach</a>
+<div class="drawer sheet" id="drawer" hidden>
+  <a href="index.html#problem">The problem</a>
+  <a href="index.html#chain">The idea</a>
+  <a href="index.html#method">What it does</a>
   <a href="index.html#esg">ESG</a>
+  <a href="esg-demo.html">Demo</a>
   <a href="index.html#founder">Founder</a>
-  <a href="index.html#vision">Our Vision</a>
-  <a class="btn btn--amber" href="index.html#contact">Explore a Decision</a>
+  <a href="index.html#contact">Contact</a>
 </div>
 
 <main class="demo" id="demo" tabindex="-1">
-  <h1 class="sr-only">BVANTRIX ESG demo</h1>
-  <div class="wrap demo-in">
+  <div class="sheet demo-in">
 
     <aside class="demo-aside">
       <ol class="demo-rail" id="demoRail"></ol>
@@ -91,60 +88,80 @@
       </p>
     </aside>
 
-    <section class="demo-stage" id="demoStage" aria-live="polite"></section>
+    <section class="demo-stage" id="demoStage" aria-live="polite">
+      <div class="screen">
+        <h1 class="h2">See where your data<br>would let you decide.</h1>
+        <p class="body">Fifteen questions, about five minutes. You get a preliminary ESG
+          score out of 100 with its confidence level, then one real decision, compared
+          using the priorities your own answers imply.</p>
+        <ul class="facts">
+          <li>About seven minutes to a result</li>
+          <li>Nothing leaves your browser</li>
+          <li>Mapped to BRSR, GRI and ISSB</li>
+        </ul>
+        <div class="actions">
+          <a class="act" href="#demo">Start the assessment</a>
+        </div>
+      </div>
+    </section>
   </div>
 
-  <div class="wrap">
+  <div class="sheet">
     <div class="demo-foot" id="demoFoot"></div>
   </div>
 
   <noscript>
-    <div class="wrap">
+    <div class="sheet">
       <p class="body">This demo needs JavaScript. Everything it does runs in your
       browser — nothing is sent anywhere.</p>
     </div>
   </noscript>
 </main>
 
-<!-- ══ Footer ══════════════════════════════════════════════════════════ -->
-<footer class="foot">
-  <div class="wrap foot-in">
-    <div>
-      <a class="brand brand--foot" href="index.html#top" aria-label="BVANTRIX, home">
-        <svg class="mark" viewBox="0 0 96 124" aria-hidden="true">
-          <path d="M14 6 H32 V118 H14 Z" fill="currentColor"/>
-          <path d="M32 6 A28 28 0 0 1 32 62 Z" fill="url(#nBlue)"/>
-          <path d="M32 6 L60 34 L32 62 Z" fill="url(#nFold)" opacity=".92"/>
-          <path d="M32 62 A30 30 0 0 1 32 122 Z" fill="currentColor"/>
-          <path d="M32 62 L62 92 L32 122 Z" fill="url(#nAmber)"/>
-        </svg>
-        <span class="wordmark">BVANTRIX</span>
-      </a>
-      <p class="foot-tag">Intelligence for a more responsible tomorrow</p>
-    </div>
+<!-- ══ The close ══════════════════════════════════════════════════════ -->
+<footer class="close">
+  <div class="sheet">
+    <p class="close-name">
+      <svg class="bvx bvx--close" viewBox="0 0 96 124" aria-hidden="true">
+        <path d="M14 6 H32 V118 H14 Z" fill="currentColor"/>
+        <path d="M32 6 A28 28 0 0 1 32 62 Z" fill="url(#bvxB)"/>
+        <path d="M32 6 L60 34 L32 62 Z" fill="url(#bvxF)" opacity=".92"/>
+        <path d="M32 62 A30 30 0 0 1 32 122 Z" fill="currentColor"/>
+        <path d="M32 62 L62 92 L32 122 Z" fill="url(#bvxA)"/>
+      </svg><span>BVANTRIX</span>
+    </p>
 
-    <nav class="foot-nav" aria-label="Footer">
-      <a href="index.html#problem">The Problem</a>
-      <a href="index.html#approach">Our Approach</a>
-      <a href="index.html#esg">ESG</a>
-      <a href="index.html#founder">Founder</a>
-      <a href="index.html#vision">Our Vision</a>
-      <a href="index.html#contact">Contact</a>
-    </nav>
-
-    <div class="foot-end">
-      <div class="social">
-        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95C21.4 8.75 22 11 22 14.1V21h-4v-6.1c0-1.45-.03-3.32-2.05-3.32-2.05 0-2.37 1.58-2.37 3.21V21h-3.99V9Z"/></svg></a>
-        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07c-1.27.06-2.15.26-2.91.56-.79.3-1.46.72-2.13 1.38C1.35 2.68.93 3.35.63 4.14c-.3.76-.5 1.64-.56 2.91C.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.3.79.72 1.46 1.38 2.13.67.66 1.34 1.08 2.13 1.38.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.3 1.46-.72 2.13-1.38.66-.67 1.08-1.34 1.38-2.13.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.3-.79-.72-1.46-1.38-2.13C21.32 1.35 20.65.93 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0Z"/><path d="M12 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84Zm0 10.16A4 4 0 1 1 16 12a4 4 0 0 1-4 4Z"/><circle cx="18.41" cy="5.59" r="1.44"/></svg></a>
-        <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.6-.46-5.33a2.78 2.78 0 0 0-1.95-1.96C18.86 4.25 12 4.25 12 4.25s-6.86 0-8.59.46A2.78 2.78 0 0 0 1.46 6.67C1 8.4 1 12 1 12s0 3.6.46 5.33a2.78 2.78 0 0 0 1.95 1.96c1.73.46 8.59.46 8.59.46s6.86 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96C23 15.6 23 12 23 12ZM9.8 15.3V8.7l5.7 3.3-5.7 3.3Z"/></svg></a>
+    <div class="close-rows">
+      <div>
+        <p style="color:var(--field-ink);max-width:24ch">Intelligence for a more responsible tomorrow.</p>
       </div>
-      <span class="copyright">© 2026 BVANTRIX</span>
+      <nav aria-label="Footer">
+        <a href="index.html#problem">The problem</a><br>
+        <a href="index.html#chain">The idea</a><br>
+        <a href="index.html#method">What it does</a><br>
+        <a href="esg-demo.html">ESG demo</a>
+      </nav>
+      <div>
+        <a href="mailto:info@bvantrix.com">info@bvantrix.com</a><br>
+        <a href="#" aria-label="BVANTRIX on LinkedIn">LinkedIn</a><br>
+        <a href="#" aria-label="BVANTRIX on Instagram">Instagram</a><br>
+        <a href="#" aria-label="BVANTRIX on YouTube">YouTube</a>
+      </div>
     </div>
+
+    <p class="close-fine">
+      © 2026 BVANTRIX.
+      Photographs, in order of appearance:
+      <a href="https://commons.wikimedia.org/wiki/File:Container_cranes_at_the_MPET-_MSC_PSA_European_Terminal_in_Port_of_Antwerp_(Kieldrecht,_Belgium)_during_sunset_(DSCF2787).jpg">Container cranes, Port of Antwerp</a> by Alexander Migl, CC BY-SA 4.0 ·
+      <a href="https://commons.wikimedia.org/wiki/File:20201119-TFAA-LSC-0144-CLIP.webm">Wando Welch Terminal</a>, US Department of Agriculture, public domain ·
+      <a href="https://commons.wikimedia.org/wiki/File:Coo-Trois-Ponts,_Turbine_hall_02.jpg">Coo-Trois-Ponts turbine hall</a> by Jean-Pol Grandmont, CC BY 4.0 ·
+      <a href="https://www.loc.gov/pictures/item/2017681907/">Interior, Magnolia Cotton Mills spinning room</a>, Lewis Hine, public domain ·
+      <a href="https://commons.wikimedia.org/wiki/File:Snowfall_at_night_over_Brofjorden_and_Preemraff.jpg">Preemraff refinery at night</a>, CC0.
+      None of these shows a BVANTRIX customer or installation.
+    </p>
   </div>
 </footer>
-<!-- ══ Booking ════════════════════════════════════════════════════════
-     The call is booked here, on our own page. No third-party redirect.
-     ═══════════════════════════════════════════════════════════════════ -->
+
 <div class="book" id="book" hidden>
   <div class="book-scrim" data-book-close></div>
 
@@ -159,7 +176,6 @@
     <div class="book-grid" id="bookForm">
       <!-- left: context -->
       <aside class="book-aside">
-        <div class="eyebrow"><span class="dash"></span><span class="label">Book a call</span></div>
         <h2 class="h3" id="bookTitle">A conversation, <span class="dim">not a demo.</span></h2>
         <p class="book-note">
           Thirty minutes with someone building BVANTRIX. We want to understand the
@@ -238,8 +254,8 @@
   </div>
 </div>
 
-<script src="js/main.js?v=6.1"></script>
+<script src="js/main.js?v=9.9"></script>
 <script src="js/esg-demo-data.js?v=1.0"></script>
-<script src="js/esg-demo.js?v=1.4"></script>
+<script src="js/esg-demo.js?v=2.5"></script>
 </body>
 </html>

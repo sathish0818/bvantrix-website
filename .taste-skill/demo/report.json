@@ -1,0 +1,1404 @@
+{
+ "url": "http://127.0.0.1:8777/esg-demo.html",
+ "at": "2026-10-21T05:31:49.402Z",
+ "allow": [
+  "font-not-dealt"
+ ],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 2,
+   "filled": [
+    0.49,
+    0.82
+   ],
+   "motion": {
+    "elements": 5,
+    "css": 4,
+    "transitions": 1,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 1371,
+     "screens": 1.5,
+     "words": 201,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 7,
+     "sections": 1,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "See where your data would let you decide.",
+     "words": 8,
+     "chars": 41,
+     "lines": 2,
+     "size": 30,
+     "vw": 2.1,
+     "font": "Newsreader",
+     "weight": 400,
+     "tracking": -0.02,
+     "leading": 1.1,
+     "top": 181,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "See where your data would let you decide.",
+     "words": 8,
+     "lines": 2,
+     "size": 30,
+     "font": "Newsreader"
+    },
+    "headings": [
+     {
+      "text": "See where your data would let you decide.",
+      "words": 8,
+      "chars": 41,
+      "lines": 2,
+      "size": 30,
+      "vw": 2.1,
+      "font": "Newsreader",
+      "weight": 400,
+      "tracking": -0.018,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.43,
+      "top": 181,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "BVANTRIX",
+      "words": 1,
+      "chars": 8,
+      "lines": 1,
+      "size": 116,
+      "vw": 8.1,
+      "font": "Newsreader",
+      "weight": 400,
+      "tracking": -0.04,
+      "leading": 0.82,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 916,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 2,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 1,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Onest",
+       "share": 0.96,
+       "mono": false
+      },
+      {
+       "family": "Newsreader",
+       "share": 0.04,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      15,
+      19,
+      30,
+      116
+     ],
+     "sizeCount": 4,
+     "notLoaded": [],
+     "body": {
+      "font": "Onest",
+      "size": 19,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 12.4
+     },
+     "measureChars": 180,
+     "max": {
+      "size": 116,
+      "vw": 8.1,
+      "font": "Newsreader",
+      "text": "BVANTRIX"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.02,
+     "centerShare": 0.02,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#dedbd3",
+     "bodyBgHsl": {
+      "h": 44,
+      "s": 0.14,
+      "l": 0.85
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#0e2a47",
+       "top": 786,
+       "hsl": {
+        "h": 211,
+        "s": 0.67,
+        "l": 0.17
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#9fb0c2",
+       "share": 0.41
+      },
+      {
+       "color": "#121c26",
+       "share": 0.38
+      },
+      {
+       "color": "#46525e",
+       "share": 0.11
+      },
+      {
+       "color": "#e9e7e1",
+       "share": 0.09
+      }
+     ],
+     "button": {
+      "bg": "#0e2a47",
+      "hsl": {
+       "h": 211,
+       "s": 0.67,
+       "l": 0.17
+      },
+      "fg": "#e9e7e1"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 3,
+     "radius": 0,
+     "height": 53,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Start the assessment",
+      "Bring us your own decision"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 8,
+     "fixed": false,
+     "height": 56,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "newsreader",
+     "onest"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 1371,
+    "margins": {
+     "left": 46,
+     "right": 73
+    },
+    "sections": [
+     {
+      "sel": "main#demo.demo",
+      "tag": "main",
+      "top": 0,
+      "height": 786,
+      "words": 103,
+      "media": 0,
+      "middle": 206,
+      "heading": {
+       "text": "See where your data",
+       "size": 30,
+       "tag": "h1"
+      },
+      "left": 46,
+      "right": 95,
+      "textLeft": 46,
+      "textRight": 95,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer.close",
+      "tag": "footer",
+      "top": 786,
+      "height": 585,
+      "words": 91,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "BVANTRIX",
+       "size": 116,
+       "tag": "span"
+      },
+      "left": 46,
+      "right": 73,
+      "textLeft": 46,
+      "textRight": 73,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "See where your data would let you decide.",
+      "size": 30,
+      "top": 181,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 719,
+      "n": 3
+     },
+     {
+      "x": 46,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 4,
+    "bodySize": 19,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.2,
+    "voidBox": {
+     "x": 0,
+     "y": 720,
+     "w": 1440,
+     "h": 180
+    }
+   },
+   "app": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "dark": false,
+    "ground": "#dedbd3",
+    "sidebar": null,
+    "topbar": {
+     "h": 56
+    },
+    "canvas": {
+     "left": 46,
+     "right": 72
+    },
+    "hero": {
+     "text": "See where your data would let you decide.",
+     "words": 8,
+     "chars": 41,
+     "lines": 2,
+     "size": 30,
+     "vw": 2.1,
+     "font": "Newsreader",
+     "weight": 400,
+     "tracking": -0.02,
+     "leading": 1.1,
+     "top": 181,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 0,
+    "layout": {
+     "panels": 1,
+     "firstScreen": 1,
+     "ragged": [],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 1,
+     "radii": [
+      [
+       0,
+       1
+      ]
+     ],
+     "heavyBorders": 0,
+     "borderSamples": [],
+     "heavyShadows": 0,
+     "softShadows": 0,
+     "shadowSamples": [],
+     "glass": 0
+    },
+    "chips": {
+     "count": 0,
+     "hues": 0,
+     "samples": []
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 0,
+     "tabularShare": null,
+     "kpiMax": null
+    },
+    "rows": null,
+    "chartHues": 0,
+    "placeholders": [],
+    "type": {
+     "under13": 0,
+     "tiny": 0,
+     "tinySamples": [],
+     "sizes": [
+      13,
+      15,
+      19,
+      24,
+      30,
+      32,
+      116
+     ]
+    },
+    "title": {
+     "text": "See where your data\nwould let you decide.",
+     "size": 30,
+     "top": 181
+    },
+    "colourShare": 0.001
+   },
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 2,
+   "filled": [
+    0.64,
+    0.84
+   ],
+   "motion": {
+    "elements": 5,
+    "css": 4,
+    "transitions": 1,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 1478,
+     "screens": 1.4,
+     "words": 191,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 7,
+     "sections": 1,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "See where your data would let you decide.",
+     "words": 8,
+     "chars": 41,
+     "lines": 2,
+     "size": 26,
+     "vw": 3.4,
+     "font": "Newsreader",
+     "weight": 400,
+     "tracking": -0.02,
+     "leading": 1.1,
+     "top": 311,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "See where your data would let you decide.",
+     "words": 8,
+     "lines": 2,
+     "size": 26,
+     "font": "Newsreader"
+    },
+    "headings": [
+     {
+      "text": "See where your data would let you decide.",
+      "words": 8,
+      "chars": 41,
+      "lines": 2,
+      "size": 26,
+      "vw": 3.4,
+      "font": "Newsreader",
+      "weight": 400,
+      "tracking": -0.018,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.86,
+      "top": 311,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "BVANTRIX",
+      "words": 1,
+      "chars": 8,
+      "lines": 1,
+      "size": 73.2,
+      "vw": 9.5,
+      "font": "Newsreader",
+      "weight": 400,
+      "tracking": -0.04,
+      "leading": 0.82,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 957,
+      "tag": "p",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 2,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 8,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Onest",
+       "share": 0.96,
+       "mono": false
+      },
+      {
+       "family": "Newsreader",
+       "share": 0.04,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      15,
+      18,
+      26,
+      73
+     ],
+     "sizeCount": 4,
+     "notLoaded": [],
+     "body": {
+      "font": "Onest",
+      "size": 17.9,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 12.4
+     },
+     "measureChars": 96,
+     "max": {
+      "size": 73.2,
+      "vw": 9.5,
+      "font": "Newsreader",
+      "text": "BVANTRIX"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0.02,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#dedbd3",
+     "bodyBgHsl": {
+      "h": 44,
+      "s": 0.14,
+      "l": 0.85
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#e9e7e1",
+       "top": 283,
+       "hsl": {
+        "h": 45,
+        "s": 0.15,
+        "l": 0.9
+       }
+      },
+      {
+       "color": "#0e2a47",
+       "top": 873,
+       "hsl": {
+        "h": 211,
+        "s": 0.67,
+        "l": 0.17
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#9fb0c2",
+       "share": 0.43
+      },
+      {
+       "color": "#121c26",
+       "share": 0.4
+      },
+      {
+       "color": "#e9e7e1",
+       "share": 0.1
+      },
+      {
+       "color": "#46525e",
+       "share": 0.07
+      }
+     ],
+     "button": {
+      "bg": "#0e2a47",
+      "hsl": {
+       "h": 211,
+       "s": 0.67,
+       "l": 0.17
+      },
+      "fg": "#e9e7e1"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 3,
+     "radius": 0,
+     "height": 53,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Start the assessment",
+      "Bring us your own decision"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 1,
+     "fixed": false,
+     "height": 61,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "newsreader",
+     "onest"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 1478,
+    "margins": {
+     "left": 25,
+     "right": 25
+    },
+    "sections": [
+     {
+      "sel": "main#demo.demo",
+      "tag": "main",
+      "top": 0,
+      "height": 873,
+      "words": 103,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "See where your data",
+       "size": 26,
+       "tag": "h1"
+      },
+      "left": 25,
+      "right": 26,
+      "textLeft": 25,
+      "textRight": 26,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer.close",
+      "tag": "footer",
+      "top": 873,
+      "height": 605,
+      "words": 91,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "BVANTRIX",
+       "size": 73,
+       "tag": "span"
+      },
+      "left": 25,
+      "right": 39,
+      "textLeft": 25,
+      "textRight": 39,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "See where your data would let you decide.",
+      "size": 26,
+      "top": 311,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 53,
+      "n": 3
+     },
+     {
+      "x": 25,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 4,
+    "bodySize": 18,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "dark": false,
+    "ground": "#dedbd3",
+    "sidebar": null,
+    "topbar": {
+     "h": 61
+    },
+    "canvas": {
+     "left": 25,
+     "right": 25
+    },
+    "hero": {
+     "text": "See where your data would let you decide.",
+     "words": 8,
+     "chars": 41,
+     "lines": 2,
+     "size": 26,
+     "vw": 3.4,
+     "font": "Newsreader",
+     "weight": 400,
+     "tracking": -0.02,
+     "leading": 1.1,
+     "top": 311,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 0,
+    "layout": {
+     "panels": 1,
+     "firstScreen": 1,
+     "ragged": [],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 1,
+     "radii": [
+      [
+       0,
+       1
+      ]
+     ],
+     "heavyBorders": 0,
+     "borderSamples": [],
+     "heavyShadows": 0,
+     "softShadows": 0,
+     "shadowSamples": [],
+     "glass": 0
+    },
+    "chips": {
+     "count": 0,
+     "hues": 0,
+     "samples": []
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 0,
+     "tabularShare": null,
+     "kpiMax": null
+    },
+    "rows": null,
+    "chartHues": 0,
+    "placeholders": [],
+    "type": {
+     "under13": 0,
+     "tiny": 0,
+     "tinySamples": [],
+     "sizes": [
+      13,
+      15,
+      18,
+      24,
+      26,
+      73
+     ]
+    },
+    "title": {
+     "text": "See where your data\nwould let you decide.",
+     "size": 26,
+     "top": 311
+    },
+    "colourShare": 0.003
+   },
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 3,
+   "filled": [
+    0.68,
+    0.91,
+    0.89
+   ],
+   "motion": {
+    "elements": 5,
+    "css": 4,
+    "transitions": 1,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 1732,
+     "screens": 2.1,
+     "words": 191,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 7,
+     "sections": 1,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "See where your data would let you decide.",
+     "words": 8,
+     "chars": 41,
+     "lines": 2,
+     "size": 24,
+     "vw": 6.2,
+     "font": "Newsreader",
+     "weight": 400,
+     "tracking": -0.02,
+     "leading": 1.1,
+     "top": 367,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "See where your data would let you decide.",
+     "words": 8,
+     "lines": 2,
+     "size": 24,
+     "font": "Newsreader"
+    },
+    "headings": [
+     {
+      "text": "See where your data would let you decide.",
+      "words": 8,
+      "chars": 41,
+      "lines": 2,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Newsreader",
+      "weight": 400,
+      "tracking": -0.018,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.75,
+      "top": 367,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "BVANTRIX",
+      "words": 1,
+      "chars": 8,
+      "lines": 1,
+      "size": 49,
+      "vw": 12.6,
+      "font": "Newsreader",
+      "weight": 400,
+      "tracking": -0.04,
+      "leading": 0.82,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 1115,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 2,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 1,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Onest",
+       "share": 0.96,
+       "mono": false
+      },
+      {
+       "family": "Newsreader",
+       "share": 0.04,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      15,
+      17,
+      24,
+      49
+     ],
+     "sizeCount": 4,
+     "notLoaded": [],
+     "body": {
+      "font": "Onest",
+      "size": 17,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 12.4
+     },
+     "measureChars": 47,
+     "max": {
+      "size": 49,
+      "vw": 12.6,
+      "font": "Newsreader",
+      "text": "BVANTRIX"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0.02,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#dedbd3",
+     "bodyBgHsl": {
+      "h": 44,
+      "s": 0.14,
+      "l": 0.85
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#e9e7e1",
+       "top": 339,
+       "hsl": {
+        "h": 45,
+        "s": 0.15,
+        "l": 0.9
+       }
+      },
+      {
+       "color": "#0e2a47",
+       "top": 1031,
+       "hsl": {
+        "h": 211,
+        "s": 0.67,
+        "l": 0.17
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#9fb0c2",
+       "share": 0.43
+      },
+      {
+       "color": "#121c26",
+       "share": 0.4
+      },
+      {
+       "color": "#e9e7e1",
+       "share": 0.1
+      },
+      {
+       "color": "#46525e",
+       "share": 0.07
+      }
+     ],
+     "button": {
+      "bg": "#0e2a47",
+      "hsl": {
+       "h": 211,
+       "s": 0.67,
+       "l": 0.17
+      },
+      "fg": "#e9e7e1"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 2,
+     "radius": 0,
+     "height": 47,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Start the assessment"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 1,
+     "fixed": false,
+     "height": 61,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "newsreader",
+     "onest"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 1732,
+    "margins": {
+     "left": 20,
+     "right": 20
+    },
+    "sections": [
+     {
+      "sel": "main#demo.demo",
+      "tag": "main",
+      "top": 0,
+      "height": 1031,
+      "words": 103,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "See where your data",
+       "size": 24,
+       "tag": "h1"
+      },
+      "left": 20,
+      "right": 31,
+      "textLeft": 20,
+      "textRight": 31,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer.close",
+      "tag": "footer",
+      "top": 1031,
+      "height": 701,
+      "words": 91,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "BVANTRIX",
+       "size": 49,
+       "tag": "span"
+      },
+      "left": 20,
+      "right": 21,
+      "textLeft": 20,
+      "textRight": 21,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "See where your data would let you decide.",
+      "size": 24,
+      "top": 367,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 48,
+      "n": 3
+     },
+     {
+      "x": 20,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 4,
+    "bodySize": 17,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "dark": false,
+    "ground": "#dedbd3",
+    "sidebar": null,
+    "topbar": {
+     "h": 61
+    },
+    "canvas": {
+     "left": 20,
+     "right": 20
+    },
+    "hero": {
+     "text": "See where your data would let you decide.",
+     "words": 8,
+     "chars": 41,
+     "lines": 2,
+     "size": 24,
+     "vw": 6.2,
+     "font": "Newsreader",
+     "weight": 400,
+     "tracking": -0.02,
+     "leading": 1.1,
+     "top": 367,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 0,
+    "layout": {
+     "panels": 2,
+     "firstScreen": 1,
+     "ragged": [],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 2,
+     "radii": [
+      [
+       0,
+       2
+      ]
+     ],
+     "heavyBorders": 0,
+     "borderSamples": [],
+     "heavyShadows": 0,
+     "softShadows": 0,
+     "shadowSamples": [],
+     "glass": 0
+    },
+    "chips": {
+     "count": 0,
+     "hues": 0,
+     "samples": []
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 0,
+     "tabularShare": null,
+     "kpiMax": null
+    },
+    "rows": null,
+    "chartHues": 0,
+    "placeholders": [],
+    "type": {
+     "under13": 0,
+     "tiny": 0,
+     "tinySamples": [],
+     "sizes": [
+      13,
+      15,
+      17,
+      22,
+      24,
+      49
+     ]
+    },
+    "title": {
+     "text": "See where your data\nwould let you decide.",
+     "size": 24,
+     "top": 367
+    },
+    "colourShare": 0.001
+   },
+   "consoleErrors": []
+  }
+ ],
+ "findings": [],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/Users/sathish.s/Downloads/Bvantrix/site/.taste-skill/demo/desktop-fold.jpg",
+   "pages": [
+    "/Users/sathish.s/Downloads/Bvantrix/site/.taste-skill/demo/desktop-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/Users/sathish.s/Downloads/Bvantrix/site/.taste-skill/demo/tablet-fold.jpg",
+   "pages": [
+    "/Users/sathish.s/Downloads/Bvantrix/site/.taste-skill/demo/tablet-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/Users/sathish.s/Downloads/Bvantrix/site/.taste-skill/demo/mobile-fold.jpg",
+   "pages": [
+    "/Users/sathish.s/Downloads/Bvantrix/site/.taste-skill/demo/mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

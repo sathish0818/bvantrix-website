@@ -160,8 +160,7 @@
     STEPS.forEach(function (s) {
       var li = el('li', s.n === state.step ? 'is-here'
                       : s.n < state.step ? 'is-done' : '');
-      li.innerHTML = '<span class="rail-n">' + String(s.n).padStart(2, '0') + '</span>' +
-                     '<span class="rail-l">' + s.label + '</span>';
+      li.innerHTML = '<span class="rail-l">' + s.label + '</span>';
       rail.appendChild(li);
     });
     var pct = ((state.step - 1) / (STEPS.length - 1)) * 100;
@@ -226,18 +225,17 @@
   screens[1] = function () {
     var w = el('div', 'screen');
     w.innerHTML =
-      '<p class="eyebrow">ESG demo</p>' +
-      '<h2 class="h2">See where your data<br>would let you decide.</h2>' +
+      '<h1 class="h2">See where your data<br>would let you decide.</h1>' +
       '<p class="body">Fifteen questions, about five minutes. You get a preliminary ' +
       'ESG score out of 100 with its confidence level — then one real decision, ' +
       'compared using the priorities your own answers imply.</p>' +
       '<ul class="facts">' +
-        '<li><span class="mi" aria-hidden="true">schedule</span>About 7 minutes to a result</li>' +
-        '<li><span class="mi" aria-hidden="true">lock</span>Nothing leaves your browser</li>' +
-        '<li><span class="mi" aria-hidden="true">fact_check</span>Mapped to BRSR, GRI and ISSB</li>' +
+        '<li>About seven minutes to a result</li>' +
+        '<li>Nothing leaves your browser</li>' +
+        '<li>Mapped to BRSR, GRI and ISSB</li>' +
       '</ul>' +
       '<div class="actions">' +
-        '<button class="btn btn--amber" data-go="2">Start the assessment' +
+        '<button class="act" data-go="2">Start the assessment' +
           '<svg class="arw" width="13" height="10" viewBox="0 0 13 10" fill="none" aria-hidden="true">' +
           '<path d="M1 5h10M8 1.5 11.5 5 8 8.5" stroke="currentColor" stroke-width="1.4" ' +
           'stroke-linecap="round" stroke-linejoin="round"/></svg></button>' +
@@ -249,10 +247,9 @@
   screens[2] = function () {
     var w = el('div', 'screen');
     w.innerHTML =
-      '<p class="eyebrow">Step 02 — Context</p>' +
-      '<h2 class="h2">First, who is answering.</h2>' +
+      '<h1 class="h2">First, who is answering.</h1>' +
       (root.classList.contains('is-continued')
-        ? '<p class="carried"><span class="mi" aria-hidden="true">check</span>' +
+        ? '<p class="carried">' +
           'Question 1 came with you from the homepage — it is answered on the ' +
           'next step, and you can change it there. Fourteen to go.</p>'
         : '') +
@@ -285,8 +282,7 @@
     return function () {
       var w = el('div', 'screen');
       w.innerHTML =
-        '<p class="eyebrow">Step ' + String(n).padStart(2, '0') + ' — ' + title + '</p>' +
-        '<h2 class="h2">' + (n === 3 ? 'What you measure.' : 'What you can act on.') + '</h2>' +
+        '<h1 class="h2">' + (n === 3 ? 'What you measure.' : 'What you can act on.') + '</h1>' +
         '<p class="body">Answer what you know. <em>I don\'t know</em> is a real ' +
         'answer here — it lowers the confidence of the result rather than the score, ' +
         'which is the honest way round.</p>' +
@@ -309,12 +305,11 @@
     var ring = 2 * Math.PI * 54;
 
     w.innerHTML =
-      '<p class="eyebrow">Step 05 — Your score</p>' +
       '<div class="result">' +
         '<div class="dial">' +
           '<svg viewBox="0 0 128 128" aria-hidden="true">' +
-            '<circle cx="64" cy="64" r="54" stroke="var(--line-2)" stroke-width="7" fill="none"/>' +
-            '<circle class="dial-v" cx="64" cy="64" r="54" stroke="var(--amber)" stroke-width="7" ' +
+            '<circle cx="64" cy="64" r="54" stroke="var(--rule)" stroke-width="7" fill="none"/>' +
+            '<circle class="dial-v" cx="64" cy="64" r="54" stroke="var(--accent)" stroke-width="7" ' +
               'fill="none" stroke-linecap="round" transform="rotate(-90 64 64)" ' +
               'stroke-dasharray="' + ring + '" stroke-dashoffset="' + ring + '" ' +
               'style="--to:' + (ring - ring * score / 100) + '"/>' +
@@ -322,7 +317,7 @@
           '<p class="dial-n"><b>' + score + '</b><span>/ 100</span></p>' +
         '</div>' +
         '<div class="result-copy">' +
-          '<h2 class="h2">' + esc(b.label) + '.</h2>' +
+          '<h1 class="h2">' + esc(b.label) + '.</h1>' +
           '<p class="body">' + esc(b.note) + '</p>' +
           '<p class="conf"><span class="conf-k">Confidence</span>' +
             '<b class="conf-v conf-v--' + c.label.toLowerCase() + '">' + c.label + '</b>' +
@@ -365,8 +360,7 @@
     if (!state.weights) state.weights = state.skipped ? neutralWeights() : deriveWeights();
     var w = el('div', 'screen');
     w.innerHTML =
-      '<p class="eyebrow">Step 06 — A decision</p>' +
-      '<h2 class="h2">' + esc(D.decision.question) + '</h2>' +
+      '<h1 class="h2">' + esc(D.decision.question) + '</h1>' +
       '<p class="body">' + esc(D.decision.context) + ' ' +
       (state.skipped
         ? 'Priorities are set evenly here. Answer the assessment and they shift to yours.'
@@ -441,7 +435,16 @@
   function paint() {
     var stage = document.getElementById('demoStage');
     stage.innerHTML = '';
-    stage.appendChild(screens[state.step]());
+    var screen = screens[state.step]();
+    stage.appendChild(screen);
+    /* the parts of a step arrive in reading order rather than all at once */
+    if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      var parts = screen.children;
+      for (var i = 0; i < parts.length; i++) {
+        parts[i].style.setProperty('--n', i);
+        parts[i].classList.add('arrive');
+      }
+    }
 
     renderRail();
     updateStepCount();
@@ -451,13 +454,14 @@
     var foot = document.getElementById('demoFoot');
     foot.innerHTML = '';
     if (state.step > 1) {
-      var back = el('button', 'as-link', '← Back');
+      var back = el('button', 'as-link', 'Back');
       back.type = 'button';
       back.addEventListener('click', function () { go(state.step - 1); });
       foot.appendChild(back);
     }
-    if (state.step < 6) {
-      var next = el('button', 'btn btn--amber');
+    /* step one carries its own action; a second one in the foot is noise */
+    if (state.step > 1 && state.step < 6) {
+      var next = el('button', 'act');
       next.id = 'demoNext';
       next.type = 'button';
       next.innerHTML = (state.step === 4 ? 'See my score' : state.step === 5 ? 'Now a decision' : 'Continue') +
@@ -477,7 +481,7 @@
         try { sessionStorage.removeItem(KEY); } catch (e) {}
         go(1);
       });
-      var talk = el('a', 'btn btn--amber');
+      var talk = el('a', 'act');
       talk.href = 'index.html#contact';
       talk.innerHTML = 'Bring us your own decision' +
         '<svg class="arw" width="13" height="10" viewBox="0 0 13 10" fill="none" aria-hidden="true">' +
