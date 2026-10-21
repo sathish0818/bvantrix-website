@@ -257,8 +257,13 @@ p { margin: 0; }
   position: relative;
   height: 100svh;
   min-height: 640px;
-  padding-top: clamp(96px, 11vh, 132px);
-  padding-bottom: clamp(30px, 5vh, 64px);
+  /* The band of empty page above the content and the one below it are meant to
+     read as the same depth. The datum at the top is the nav's baseline, not the
+     viewport edge -- the nav occupies the first 56px, so the top padding carries
+     that clearance on top of the shared band. */
+  --hero-band: clamp(30px, 6vh, 90px);
+  padding-top: calc(56px + var(--hero-band));
+  padding-bottom: var(--hero-band);
   display: grid;
   grid-template-columns: minmax(0, 0.84fr) minmax(0, 1.16fr);
   column-gap: var(--gutter);
@@ -268,11 +273,12 @@ p { margin: 0; }
 .masthead-words {
   align-self: center;
   display: grid; align-content: center;
-  max-width: 26ch;
+  max-width: 36ch;                 /* was 26ch, which left the lines ragged
+                                      130px short of the headline's own width */
 }
 .masthead-words .display { max-width: 9ch; }
 .masthead-words .copy {
-  max-width: 30ch;
+  max-width: 34ch;
   font-size: var(--t-body); line-height: 1.45; color: var(--ink);
 }
 .masthead-words .act { justify-self: start; margin-top: 30px; }
@@ -795,7 +801,7 @@ html:not(.js) .tel-code select { font: inherit; border: 0; background: transpare
   align-self: center;              /* its own height, not a tall empty box */
   display: grid;
 }
-.flowfig svg { width: 100%; height: auto; max-height: 76svh; overflow: visible; }
+.flowfig svg { width: 100%; height: auto; max-height: min(70svh, 660px); overflow: visible; }
 
 /* the decision */
 .source-ring { fill: none; stroke: var(--rule); stroke-width: 1.5; }
