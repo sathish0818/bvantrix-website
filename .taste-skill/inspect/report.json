@@ -1,6 +1,6 @@
 {
  "url": "http://127.0.0.1:8777/index.html",
- "at": "2026-10-21T08:43:14.546Z",
+ "at": "2026-10-21T08:51:49.554Z",
  "allow": [],
  "viewports": [
   {
@@ -16,7 +16,7 @@
     1,
     0.44,
     0.31,
-    0.52,
+    0.53,
     0.97,
     1
    ],
@@ -1080,8 +1080,8 @@
     0.63,
     0.42,
     0.81,
-    0.57,
-    0.94,
+    0.56,
+    0.88,
     0.94
    ],
    "motion": {
@@ -1098,7 +1098,7 @@
      "h": 1024
     },
     "page": {
-     "height": 10356,
+     "height": 10382,
      "screens": 10.1,
      "words": 771,
      "img": 4,
@@ -1654,7 +1654,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.94,
-      "top": 9018,
+      "top": 9044,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1675,7 +1675,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.94,
-      "top": 9835,
+      "top": 9861,
       "tag": "p",
       "kind": "statement"
      }
@@ -1769,7 +1769,7 @@
       },
       {
        "color": "#15332b",
-       "top": 8934,
+       "top": 8960,
        "hsl": {
         "h": 164,
         "s": 0.42,
@@ -1868,7 +1868,7 @@
      "w": 768,
      "h": 1024
     },
-    "pageH": 10356,
+    "pageH": 10382,
     "margins": {
      "left": 25,
      "right": 25
@@ -2012,7 +2012,7 @@
       "sel": "section#founder.page.sheet",
       "tag": "section",
       "top": 7372,
-      "height": 1562,
+      "height": 1588,
       "words": 107,
       "media": 2,
       "middle": 0,
@@ -2030,7 +2030,7 @@
      {
       "sel": "section#contact.page.field",
       "tag": "section",
-      "top": 8934,
+      "top": 8960,
       "height": 817,
       "words": 44,
       "media": 0,
@@ -2053,7 +2053,7 @@
      {
       "sel": "footer.close",
       "tag": "footer",
-      "top": 9751,
+      "top": 9777,
       "height": 605,
       "words": 91,
       "media": 0,
@@ -2123,7 +2123,7 @@
     0.38,
     0.7,
     0.77,
-    0.59,
+    0.66,
     0.95,
     1
    ],
@@ -2141,7 +2141,7 @@
      "h": 844
     },
     "page": {
-     "height": 8675,
+     "height": 8701,
      "screens": 10.3,
      "words": 771,
      "img": 4,
@@ -2713,7 +2713,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 7173,
+      "top": 7199,
       "tag": "h2",
       "kind": "heading"
      },
@@ -2734,7 +2734,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 8058,
+      "top": 8084,
       "tag": "p",
       "kind": "statement"
      }
@@ -2828,7 +2828,7 @@
       },
       {
        "color": "#15332b",
-       "top": 7089,
+       "top": 7115,
        "hsl": {
         "h": 164,
         "s": 0.42,
@@ -2927,7 +2927,7 @@
      "w": 390,
      "h": 844
     },
-    "pageH": 8675,
+    "pageH": 8701,
     "margins": {
      "left": 20,
      "right": 20
@@ -3063,7 +3063,7 @@
       "sel": "section#founder.page.sheet",
       "tag": "section",
       "top": 5974,
-      "height": 1116,
+      "height": 1142,
       "words": 107,
       "media": 2,
       "middle": 0,
@@ -3085,7 +3085,7 @@
      {
       "sel": "section#contact.page.field",
       "tag": "section",
-      "top": 7089,
+      "top": 7115,
       "height": 885,
       "words": 44,
       "media": 0,
@@ -3108,7 +3108,7 @@
      {
       "sel": "footer.close",
       "tag": "footer",
-      "top": 7974,
+      "top": 8000,
       "height": 701,
       "words": 91,
       "media": 0,
