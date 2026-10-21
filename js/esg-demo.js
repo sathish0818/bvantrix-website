@@ -28,11 +28,14 @@
     skipped: false                     // came straight to the decision
   };
 
+  /* Each label is the step's own heading. Two steps both called
+     "Questions" told a visitor nothing about which one they were on or
+     what the difference between them was. */
   var STEPS = [
     { n: 1, label: 'Start' },
-    { n: 2, label: 'Context' },
-    { n: 3, label: 'Questions' },
-    { n: 4, label: 'Questions' },
+    { n: 2, label: 'About you' },
+    { n: 3, label: 'What you measure' },
+    { n: 4, label: 'What you can act on' },
     { n: 5, label: 'Your score' },
     { n: 6, label: 'A decision' }
   ];

@@ -1,6 +1,6 @@
 {
  "url": "http://127.0.0.1:8777/esg-demo.html",
- "at": "2026-10-21T05:31:49.402Z",
+ "at": "2026-10-21T07:27:44.055Z",
  "allow": [
   "font-not-dealt"
  ],
@@ -30,7 +30,7 @@
     "page": {
      "height": 1371,
      "screens": 1.5,
-     "words": 201,
+     "words": 208,
      "img": 0,
      "video": 0,
      "canvas": 0,
@@ -207,7 +207,7 @@
       },
       {
        "color": "#46525e",
-       "share": 0.11
+       "share": 0.12
       },
       {
        "color": "#e9e7e1",
@@ -290,7 +290,7 @@
       "tag": "main",
       "top": 0,
       "height": 786,
-      "words": 103,
+      "words": 110,
       "media": 0,
       "middle": 206,
       "heading": {
@@ -464,7 +464,7 @@
    "load": "load",
    "screens": 2,
    "filled": [
-    0.64,
+    0.58,
     0.84
    ],
    "motion": {
@@ -481,9 +481,9 @@
      "h": 1024
     },
     "page": {
-     "height": 1478,
-     "screens": 1.4,
-     "words": 191,
+     "height": 1509,
+     "screens": 1.5,
+     "words": 198,
      "img": 0,
      "video": 0,
      "canvas": 0,
@@ -514,7 +514,7 @@
      "weight": 400,
      "tracking": -0.02,
      "leading": 1.1,
-     "top": 311,
+     "top": 342,
      "tag": "h1",
      "kind": "heading",
      "align": "left",
@@ -545,7 +545,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.86,
-      "top": 311,
+      "top": 342,
       "tag": "h1",
       "kind": "heading"
      },
@@ -566,18 +566,18 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.94,
-      "top": 957,
+      "top": 988,
       "tag": "p",
-      "kind": "heading"
+      "kind": "statement"
      }
     ],
     "headingSummary": {
      "count": 2,
      "maxLines": 2,
      "over2Lines": 0,
-     "statements": 0,
+     "statements": 1,
      "centered": 0,
-     "medianWords": 8,
+     "medianWords": 1,
      "mixedFontHeadings": 0
     },
     "type": {
@@ -641,7 +641,7 @@
      "sectionBgs": [
       {
        "color": "#e9e7e1",
-       "top": 283,
+       "top": 314,
        "hsl": {
         "h": 45,
         "s": 0.15,
@@ -650,7 +650,7 @@
       },
       {
        "color": "#0e2a47",
-       "top": 873,
+       "top": 904,
        "hsl": {
         "h": 211,
         "s": 0.67,
@@ -661,7 +661,7 @@
      "textColors": [
       {
        "color": "#9fb0c2",
-       "share": 0.43
+       "share": 0.42
       },
       {
        "color": "#121c26",
@@ -673,7 +673,7 @@
       },
       {
        "color": "#46525e",
-       "share": 0.07
+       "share": 0.08
       }
      ],
      "button": {
@@ -741,7 +741,7 @@
      "w": 768,
      "h": 1024
     },
-    "pageH": 1478,
+    "pageH": 1509,
     "margins": {
      "left": 25,
      "right": 25
@@ -751,8 +751,8 @@
       "sel": "main#demo.demo",
       "tag": "main",
       "top": 0,
-      "height": 873,
-      "words": 103,
+      "height": 904,
+      "words": 110,
       "media": 0,
       "middle": 0,
       "heading": {
@@ -773,7 +773,7 @@
      {
       "sel": "footer.close",
       "tag": "footer",
-      "top": 873,
+      "top": 904,
       "height": 605,
       "words": 91,
       "media": 0,
@@ -799,7 +799,7 @@
      {
       "text": "See where your data would let you decide.",
       "size": 26,
-      "top": 311,
+      "top": 342,
       "firstScreen": true
      }
     ],
@@ -848,7 +848,7 @@
      "weight": 400,
      "tracking": -0.02,
      "leading": 1.1,
-     "top": 311,
+     "top": 342,
      "tag": "h1",
      "kind": "heading",
      "align": "left",
@@ -908,9 +908,9 @@
     "title": {
      "text": "See where your data\nwould let you decide.",
      "size": 26,
-     "top": 311
+     "top": 342
     },
-    "colourShare": 0.003
+    "colourShare": 0.002
    },
    "consoleErrors": []
   },
@@ -920,14 +920,14 @@
    "load": "load",
    "screens": 3,
    "filled": [
-    0.68,
-    0.91,
-    0.89
+    0.69,
+    0.85,
+    0.9
    ],
    "motion": {
-    "elements": 5,
+    "elements": 4,
     "css": 4,
-    "transitions": 1,
+    "transitions": 0,
     "scripted": 0,
     "videos": 0,
     "playingVideos": 0
@@ -938,9 +938,9 @@
      "h": 844
     },
     "page": {
-     "height": 1732,
+     "height": 1762,
      "screens": 2.1,
-     "words": 191,
+     "words": 198,
      "img": 0,
      "video": 0,
      "canvas": 0,
@@ -971,7 +971,7 @@
      "weight": 400,
      "tracking": -0.02,
      "leading": 1.1,
-     "top": 367,
+     "top": 397,
      "tag": "h1",
      "kind": "heading",
      "align": "left",
@@ -1002,7 +1002,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 367,
+      "top": 397,
       "tag": "h1",
       "kind": "heading"
      },
@@ -1023,7 +1023,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 1115,
+      "top": 1145,
       "tag": "p",
       "kind": "statement"
      }
@@ -1098,7 +1098,7 @@
      "sectionBgs": [
       {
        "color": "#e9e7e1",
-       "top": 339,
+       "top": 369,
        "hsl": {
         "h": 45,
         "s": 0.15,
@@ -1107,7 +1107,7 @@
       },
       {
        "color": "#0e2a47",
-       "top": 1031,
+       "top": 1061,
        "hsl": {
         "h": 211,
         "s": 0.67,
@@ -1118,7 +1118,7 @@
      "textColors": [
       {
        "color": "#9fb0c2",
-       "share": 0.43
+       "share": 0.42
       },
       {
        "color": "#121c26",
@@ -1130,7 +1130,7 @@
       },
       {
        "color": "#46525e",
-       "share": 0.07
+       "share": 0.08
       }
      ],
      "button": {
@@ -1197,7 +1197,7 @@
      "w": 390,
      "h": 844
     },
-    "pageH": 1732,
+    "pageH": 1762,
     "margins": {
      "left": 20,
      "right": 20
@@ -1207,8 +1207,8 @@
       "sel": "main#demo.demo",
       "tag": "main",
       "top": 0,
-      "height": 1031,
-      "words": 103,
+      "height": 1061,
+      "words": 110,
       "media": 0,
       "middle": 0,
       "heading": {
@@ -1229,7 +1229,7 @@
      {
       "sel": "footer.close",
       "tag": "footer",
-      "top": 1031,
+      "top": 1061,
       "height": 701,
       "words": 91,
       "media": 0,
@@ -1255,7 +1255,7 @@
      {
       "text": "See where your data would let you decide.",
       "size": 24,
-      "top": 367,
+      "top": 397,
       "firstScreen": true
      }
     ],
@@ -1304,7 +1304,7 @@
      "weight": 400,
      "tracking": -0.02,
      "leading": 1.1,
-     "top": 367,
+     "top": 397,
      "tag": "h1",
      "kind": "heading",
      "align": "left",
@@ -1364,7 +1364,7 @@
     "title": {
      "text": "See where your data\nwould let you decide.",
      "size": 24,
-     "top": 367
+     "top": 397
     },
     "colourShare": 0.001
    },
