@@ -219,6 +219,7 @@ p { margin: 0; }
 }
 .mark {
   display: flex; align-items: center; gap: 10px;
+  min-height: 24px;                /* WCAG 2.5.8: it measured 23px */
   font-family: var(--text);
   font-size: var(--t-small); font-weight: 600;
   letter-spacing: 0.16em;
@@ -632,7 +633,13 @@ html:not(.js) .tel-code select { font: inherit; border: 0; background: transpare
 .close-rows > :nth-child(3) { grid-column: 4; justify-self: end; text-align: right; }
 .close-rows a { color: var(--field-ink-2); font-size: var(--t-small); display: inline-flex; align-items: center; min-height: 24px; }
 .close-rows a:hover { color: var(--field-ink); }
-.close-fine { margin-top: clamp(30px, 4vw, 56px); font-size: var(--t-small); color: var(--field-ink-2); line-height: 1.6; }
+.close-fine {
+  margin-top: clamp(30px, 4vw, 56px);
+  /* it ran the footer's full width: 178 characters a line, twice a readable
+     measure. Small type needs a shorter line, not a longer one. */
+  max-width: 66ch;
+  font-size: var(--t-small); color: var(--field-ink-2); line-height: 1.6;
+}
 .close-fine a { color: var(--field-ink-2); text-decoration: underline; text-underline-offset: 2px; }
 
 /* --------------------------------------------------------------------------
