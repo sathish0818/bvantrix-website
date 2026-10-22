@@ -532,7 +532,11 @@ p { margin: 0; }
 .ask-opts .unsure { color: var(--ink-2); }
 
 .ask-fine { margin-top: 20px; font-size: var(--t-small); color: var(--ink-2); }
-.ask-fine a { text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+.ask-fine a {
+  /* WCAG 2.5.8: it measured 19px tall */
+  display: inline-flex; align-items: center; min-height: 24px;
+  text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px;
+}
 .ask-fine a:hover { color: var(--accent); }
 
 .ask-said { font-family: var(--display); font-size: var(--t-lead); line-height: 1.1; letter-spacing: -0.018em; }

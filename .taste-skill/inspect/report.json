@@ -1,29 +1,31 @@
 {
  "url": "http://127.0.0.1:8777/index.html",
- "at": "2026-10-21T09:21:48.355Z",
+ "at": "2026-10-22T05:56:40.560Z",
  "allow": [],
  "viewports": [
   {
    "width": 1440,
    "height": 900,
    "load": "load",
-   "screens": 10,
+   "screens": 12,
    "filled": [
-    0.48,
+    0.49,
     0.47,
     0.98,
     1,
     1,
     0.44,
-    0.31,
-    0.53,
-    0.97,
+    0.29,
+    0.3,
+    0.51,
+    0.29,
+    0.59,
     1
    ],
    "motion": {
-    "elements": 57,
+    "elements": 75,
     "css": 15,
-    "transitions": 39,
+    "transitions": 57,
     "scripted": 3,
     "videos": 1,
     "playingVideos": 0
@@ -34,14 +36,14 @@
      "h": 900
     },
     "page": {
-     "height": 8441,
-     "screens": 9.4,
-     "words": 824,
+     "height": 10647,
+     "screens": 11.8,
+     "words": 1224,
      "img": 4,
      "video": 1,
      "canvas": 0,
      "svg": 7,
-     "sections": 7,
+     "sections": 11,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 0,
@@ -196,9 +198,9 @@
       "kind": "heading"
      },
      {
-      "text": "Decisions do not stop.",
-      "words": 4,
-      "chars": 22,
+      "text": "Every decision creates a chain.",
+      "words": 5,
+      "chars": 31,
       "lines": 2,
       "size": 68,
       "vw": 4.7,
@@ -212,7 +214,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.39,
-      "top": 2341,
+      "top": 2321,
       "tag": "h2",
       "kind": "heading"
      },
@@ -280,10 +282,10 @@
       "kind": "statement"
      },
      {
-      "text": "They keep moving. Scroll, and watch one arrive in six places.",
-      "words": 11,
-      "chars": 61,
-      "lines": 2,
+      "text": "A decision does not stop when it is made. It moves. Scroll, and watch one arrive in six places.",
+      "words": 19,
+      "chars": 95,
+      "lines": 3,
       "size": 32,
       "vw": 2.2,
       "font": "Newsreader",
@@ -296,7 +298,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.3,
-      "top": 2505,
+      "top": 2486,
       "tag": "p",
       "kind": "statement"
      },
@@ -380,14 +382,14 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.03,
-      "top": 2625,
+      "top": 2644,
       "tag": "b",
       "kind": "statement"
      },
      {
-      "text": "What the system does.",
+      "text": "From information to intelligence.",
       "words": 4,
-      "chars": 21,
+      "chars": 33,
       "lines": 2,
       "size": 68,
       "vw": 4.7,
@@ -406,9 +408,9 @@
       "kind": "heading"
      },
      {
-      "text": "It brings the context together",
-      "words": 5,
-      "chars": 30,
+      "text": "Understand",
+      "words": 1,
+      "chars": 10,
       "lines": 1,
       "size": 32,
       "vw": 2.2,
@@ -427,73 +429,94 @@
       "kind": "statement"
      },
      {
-      "text": "It finds the relationships",
+      "text": "Connect",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Newsreader",
+      "weight": 400,
+      "tracking": -0.018,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.47,
+      "top": 5068,
+      "tag": "b",
+      "kind": "statement"
+     },
+     {
+      "text": "Understand the consequences",
+      "words": 3,
+      "chars": 27,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Newsreader",
+      "weight": 400,
+      "tracking": -0.018,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.47,
+      "top": 5230,
+      "tag": "b",
+      "kind": "statement"
+     },
+     {
+      "text": "Guide",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Newsreader",
+      "weight": 400,
+      "tracking": -0.018,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.47,
+      "top": 5392,
+      "tag": "b",
+      "kind": "statement"
+     },
+     {
+      "text": "Decide",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Newsreader",
+      "weight": 400,
+      "tracking": -0.018,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.47,
+      "top": 5526,
+      "tag": "b",
+      "kind": "statement"
+     },
+     {
+      "text": "From reporting to deciding.",
       "words": 4,
-      "chars": 26,
-      "lines": 1,
-      "size": 32,
-      "vw": 2.2,
-      "font": "Newsreader",
-      "weight": 400,
-      "tracking": -0.018,
-      "leading": 1.05,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "right",
-      "widthRatio": 0.47,
-      "top": 5040,
-      "tag": "b",
-      "kind": "statement"
-     },
-     {
-      "text": "It surfaces the consequences",
-      "words": 4,
-      "chars": 28,
-      "lines": 1,
-      "size": 32,
-      "vw": 2.2,
-      "font": "Newsreader",
-      "weight": 400,
-      "tracking": -0.018,
-      "leading": 1.05,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "right",
-      "widthRatio": 0.47,
-      "top": 5173,
-      "tag": "b",
-      "kind": "statement"
-     },
-     {
-      "text": "It leaves the decision with you",
-      "words": 6,
-      "chars": 31,
-      "lines": 1,
-      "size": 32,
-      "vw": 2.2,
-      "font": "Newsreader",
-      "weight": 400,
-      "tracking": -0.018,
-      "leading": 1.05,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "right",
-      "widthRatio": 0.47,
-      "top": 5307,
-      "tag": "b",
-      "kind": "statement"
-     },
-     {
-      "text": "ESG, first.",
-      "words": 2,
-      "chars": 11,
-      "lines": 1,
+      "chars": 27,
+      "lines": 2,
       "size": 68,
       "vw": 4.7,
       "font": "Newsreader",
@@ -506,7 +529,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.39,
-      "top": 5538,
+      "top": 5757,
       "tag": "h2",
       "kind": "heading"
      },
@@ -527,7 +550,112 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.25,
-      "top": 5581,
+      "top": 5800,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Not another dashboard.",
+      "words": 3,
+      "chars": 22,
+      "lines": 2,
+      "size": 68,
+      "vw": 4.7,
+      "font": "Newsreader",
+      "weight": 400,
+      "tracking": -0.018,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 6520,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Not another system of record",
+      "words": 5,
+      "chars": 28,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Newsreader",
+      "weight": 400,
+      "tracking": -0.018,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.47,
+      "top": 6551,
+      "tag": "b",
+      "kind": "statement"
+     },
+     {
+      "text": "A system of context",
+      "words": 4,
+      "chars": 19,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Newsreader",
+      "weight": 400,
+      "tracking": -0.018,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.47,
+      "top": 6713,
+      "tag": "b",
+      "kind": "statement"
+     },
+     {
+      "text": "Human judgement stays at the centre.",
+      "words": 6,
+      "chars": 36,
+      "lines": 2,
+      "size": 68,
+      "vw": 4.7,
+      "font": "Newsreader",
+      "weight": 400,
+      "tracking": -0.018,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 6982,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Technology should amplify human judgement. Not replace it.",
+      "words": 8,
+      "chars": 58,
+      "lines": 3,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Newsreader",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.3,
+      "top": 6982,
       "tag": "p",
       "kind": "statement"
      },
@@ -548,7 +676,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.5,
-      "top": 6299,
+      "top": 7473,
       "tag": "h2",
       "kind": "heading"
      },
@@ -569,9 +697,51 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.14,
-      "top": 6890,
+      "top": 8064,
       "tag": "b",
       "kind": "statement"
+     },
+     {
+      "text": "The complexity of decisions is growing faster than our ability to connect them.",
+      "words": 13,
+      "chars": 79,
+      "lines": 2,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Newsreader",
+      "weight": 400,
+      "tracking": -0.012,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.38,
+      "top": 8310,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "The larger ambition.",
+      "words": 3,
+      "chars": 20,
+      "lines": 2,
+      "size": 68,
+      "vw": 4.7,
+      "font": "Newsreader",
+      "weight": 400,
+      "tracking": -0.018,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 8858,
+      "tag": "h2",
+      "kind": "heading"
      },
      {
       "text": "Too consequential to see alone.",
@@ -590,7 +760,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.39,
-      "top": 7266,
+      "top": 9472,
       "tag": "h2",
       "kind": "heading"
      },
@@ -611,30 +781,30 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.94,
-      "top": 7938,
+      "top": 10144,
       "tag": "p",
       "kind": "statement"
      }
     ],
     "headingSummary": {
-     "count": 25,
+     "count": 33,
      "maxLines": 3,
      "over2Lines": 0,
-     "statements": 17,
+     "statements": 22,
      "centered": 0,
-     "medianWords": 4,
+     "medianWords": 3,
      "mixedFontHeadings": 0
     },
     "type": {
      "families": [
       {
        "family": "Onest",
-       "share": 0.84,
+       "share": 0.86,
        "mono": false
       },
       {
        "family": "Newsreader",
-       "share": 0.16,
+       "share": 0.14,
        "mono": false
       }
      ],
@@ -656,7 +826,7 @@
       "tracking": 0,
       "contrast": 13.9
      },
-     "measureChars": 61,
+     "measureChars": 51,
      "max": {
       "size": 116,
       "vw": 8.1,
@@ -671,7 +841,7 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0,
-     "centerShare": 0.01,
+     "centerShare": 0,
      "smallText": 0
     },
     "eyebrows": [],
@@ -696,7 +866,7 @@
       },
       {
        "color": "#dedbd3",
-       "top": 5538,
+       "top": 5757,
        "hsl": {
         "h": 44,
         "s": 0.14,
@@ -705,7 +875,7 @@
       },
       {
        "color": "#15332b",
-       "top": 7136,
+       "top": 9343,
        "hsl": {
         "h": 164,
         "s": 0.42,
@@ -716,19 +886,19 @@
      "textColors": [
       {
        "color": "#121c26",
-       "share": 0.62
+       "share": 0.76
       },
       {
        "color": "#9fb0c2",
-       "share": 0.25
+       "share": 0.15
       },
       {
        "color": "#e9e7e1",
-       "share": 0.06
+       "share": 0.05
       },
       {
        "color": "#46525e",
-       "share": 0.06
+       "share": 0.04
       },
       {
        "color": "#15110b",
@@ -804,7 +974,7 @@
      "w": 1440,
      "h": 900
     },
-    "pageH": 8441,
+    "pageH": 10647,
     "margins": {
      "left": 46,
      "right": 46
@@ -880,7 +1050,7 @@
       "pinned": false
      },
      {
-      "sel": "section#chain.scene.field",
+      "sel": "section#approach.scene.field",
       "tag": "section",
       "top": 2045,
       "height": 2700,
@@ -902,19 +1072,19 @@
       "sel": "section#method.page.sheet",
       "tag": "section",
       "top": 4745,
-      "height": 793,
-      "words": 88,
+      "height": 1012,
+      "words": 105,
       "media": 0,
-      "middle": 154,
+      "middle": 101,
       "heading": {
-       "text": "What the",
+       "text": "From information",
        "size": 68,
        "tag": "h2"
       },
       "left": 46,
-      "right": 113,
+      "right": 100,
       "textLeft": 46,
-      "textRight": 113,
+      "textRight": 100,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -924,13 +1094,13 @@
      {
       "sel": "section#esg.page.sheet",
       "tag": "section",
-      "top": 5538,
-      "height": 761,
-      "words": 104,
+      "top": 5757,
+      "height": 762,
+      "words": 115,
       "media": 0,
-      "middle": 194,
+      "middle": 187,
       "heading": {
-       "text": "ESG, first.",
+       "text": "From reporting",
        "size": 68,
        "tag": "h2"
       },
@@ -945,9 +1115,55 @@
       "pinned": false
      },
      {
+      "sel": "section#differentiator.page.sheet",
+      "tag": "section",
+      "top": 6520,
+      "height": 463,
+      "words": 95,
+      "media": 0,
+      "middle": 152,
+      "heading": {
+       "text": "Not another",
+       "size": 68,
+       "tag": "h2"
+      },
+      "left": 46,
+      "right": 133,
+      "textLeft": 46,
+      "textRight": 133,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#human.page.sheet",
+      "tag": "section",
+      "top": 6982,
+      "height": 491,
+      "words": 66,
+      "media": 0,
+      "middle": 78,
+      "heading": {
+       "text": "Human judgement",
+       "size": 68,
+       "tag": "h2"
+      },
+      "left": 46,
+      "right": 363,
+      "textLeft": 46,
+      "textRight": 363,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
       "sel": "section#founder.page.sheet",
       "tag": "section",
-      "top": 6299,
+      "top": 7473,
       "height": 837,
       "words": 107,
       "media": 2,
@@ -968,9 +1184,55 @@
       "pinned": false
      },
      {
+      "sel": "section#why.page.sheet",
+      "tag": "section",
+      "top": 8310,
+      "height": 547,
+      "words": 127,
+      "media": 0,
+      "middle": 60,
+      "heading": {
+       "text": "The complexity of decisions is growing faster than",
+       "size": 32,
+       "tag": "p"
+      },
+      "left": 46,
+      "right": 55,
+      "textLeft": 46,
+      "textRight": 55,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#vision.page.sheet",
+      "tag": "section",
+      "top": 8858,
+      "height": 485,
+      "words": 84,
+      "media": 0,
+      "middle": 326,
+      "heading": {
+       "text": "The larger",
+       "size": 68,
+       "tag": "h2"
+      },
+      "left": 46,
+      "right": 294,
+      "textLeft": 46,
+      "textRight": 294,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
       "sel": "section#contact.page.field",
       "tag": "section",
-      "top": 7136,
+      "top": 9343,
       "height": 672,
       "words": 44,
       "media": 0,
@@ -993,11 +1255,11 @@
      {
       "sel": "footer.close",
       "tag": "footer",
-      "top": 7808,
+      "top": 10014,
       "height": 633,
       "words": 91,
       "media": 0,
-      "middle": 436,
+      "middle": 399,
       "heading": {
        "text": "BVANTRIX",
        "size": 116,
@@ -1027,30 +1289,30 @@
     "edges": [
      {
       "x": 46,
-      "n": 13
+      "n": 25
      },
      {
       "x": 670,
-      "n": 6
+      "n": 9
      },
      {
       "x": 392,
-      "n": 1
+      "n": 3
+     },
+     {
+      "x": 737,
+      "n": 3
+     },
+     {
+      "x": 1083,
+      "n": 2
      },
      {
       "x": 713,
       "n": 1
-     },
-     {
-      "x": 737,
-      "n": 1
-     },
-     {
-      "x": 1083,
-      "n": 1
      }
     ],
-    "leftBlocks": 23,
+    "leftBlocks": 43,
     "bodySize": 19,
     "stage": false,
     "explains": true,
@@ -1070,25 +1332,26 @@
    "width": 768,
    "height": 1024,
    "load": "load",
-   "screens": 11,
+   "screens": 12,
    "filled": [
     0.58,
     0.52,
     0.96,
     1,
     1,
-    0.63,
-    0.42,
-    0.81,
-    0.56,
-    0.88,
-    0.94
+    0.62,
+    0.36,
+    0.32,
+    0.57,
+    0.68,
+    0.32,
+    0.7
    ],
    "motion": {
-    "elements": 57,
+    "elements": 75,
     "css": 15,
-    "transitions": 39,
-    "scripted": 3,
+    "transitions": 51,
+    "scripted": 9,
     "videos": 1,
     "playingVideos": 0
    },
@@ -1098,14 +1361,14 @@
      "h": 1024
     },
     "page": {
-     "height": 10323,
-     "screens": 10.1,
-     "words": 771,
+     "height": 12983,
+     "screens": 12.7,
+     "words": 1170,
      "img": 4,
      "video": 1,
      "canvas": 0,
      "svg": 7,
-     "sections": 7,
+     "sections": 11,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 0,
@@ -1260,9 +1523,9 @@
       "kind": "heading"
      },
      {
-      "text": "Decisions do not stop.",
-      "words": 4,
-      "chars": 22,
+      "text": "Every decision creates a chain.",
+      "words": 5,
+      "chars": 31,
       "lines": 2,
       "size": 48.4,
       "vw": 6.3,
@@ -1276,15 +1539,15 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.94,
-      "top": 2768,
+      "top": 2752,
       "tag": "h2",
       "kind": "heading"
      },
      {
-      "text": "They keep moving. Scroll, and watch one arrive in six places.",
-      "words": 11,
-      "chars": 61,
-      "lines": 2,
+      "text": "A decision does not stop when it is made. It moves. Scroll, and watch one arrive in six places.",
+      "words": 19,
+      "chars": 95,
+      "lines": 3,
       "size": 26,
       "vw": 3.4,
       "font": "Newsreader",
@@ -1297,7 +1560,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.45,
-      "top": 2893,
+      "top": 2877,
       "tag": "p",
       "kind": "statement"
      },
@@ -1318,7 +1581,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.04,
-      "top": 2983,
+      "top": 2999,
       "tag": "b",
       "kind": "statement"
      },
@@ -1339,7 +1602,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.4,
-      "top": 3084,
+      "top": 3100,
       "tag": "b",
       "kind": "statement"
      },
@@ -1360,7 +1623,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.4,
-      "top": 3084,
+      "top": 3100,
       "tag": "b",
       "kind": "statement"
      },
@@ -1381,7 +1644,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.4,
-      "top": 3201,
+      "top": 3217,
       "tag": "b",
       "kind": "statement"
      },
@@ -1402,7 +1665,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.4,
-      "top": 3201,
+      "top": 3217,
       "tag": "b",
       "kind": "statement"
      },
@@ -1423,7 +1686,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.4,
-      "top": 3318,
+      "top": 3333,
       "tag": "b",
       "kind": "statement"
      },
@@ -1444,14 +1707,14 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.4,
-      "top": 3318,
+      "top": 3333,
       "tag": "b",
       "kind": "statement"
      },
      {
-      "text": "What the system does.",
+      "text": "From information to intelligence.",
       "words": 4,
-      "chars": 21,
+      "chars": 33,
       "lines": 2,
       "size": 48.4,
       "vw": 6.3,
@@ -1470,9 +1733,9 @@
       "kind": "heading"
      },
      {
-      "text": "It brings the context together",
-      "words": 5,
-      "chars": 30,
+      "text": "Understand",
+      "words": 1,
+      "chars": 10,
       "lines": 1,
       "size": 26,
       "vw": 3.4,
@@ -1491,73 +1754,94 @@
       "kind": "statement"
      },
      {
-      "text": "It finds the relationships",
+      "text": "Connect",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 26,
+      "vw": 3.4,
+      "font": "Newsreader",
+      "weight": 400,
+      "tracking": -0.018,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.84,
+      "top": 6096,
+      "tag": "b",
+      "kind": "statement"
+     },
+     {
+      "text": "Understand the consequences",
+      "words": 3,
+      "chars": 27,
+      "lines": 1,
+      "size": 26,
+      "vw": 3.4,
+      "font": "Newsreader",
+      "weight": 400,
+      "tracking": -0.018,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.84,
+      "top": 6225,
+      "tag": "b",
+      "kind": "statement"
+     },
+     {
+      "text": "Guide",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 26,
+      "vw": 3.4,
+      "font": "Newsreader",
+      "weight": 400,
+      "tracking": -0.018,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.84,
+      "top": 6354,
+      "tag": "b",
+      "kind": "statement"
+     },
+     {
+      "text": "Decide",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 26,
+      "vw": 3.4,
+      "font": "Newsreader",
+      "weight": 400,
+      "tracking": -0.018,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.84,
+      "top": 6457,
+      "tag": "b",
+      "kind": "statement"
+     },
+     {
+      "text": "From reporting to deciding.",
       "words": 4,
-      "chars": 26,
-      "lines": 1,
-      "size": 26,
-      "vw": 3.4,
-      "font": "Newsreader",
-      "weight": 400,
-      "tracking": -0.018,
-      "leading": 1.05,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.84,
-      "top": 6069,
-      "tag": "b",
-      "kind": "statement"
-     },
-     {
-      "text": "It surfaces the consequences",
-      "words": 4,
-      "chars": 28,
-      "lines": 1,
-      "size": 26,
-      "vw": 3.4,
-      "font": "Newsreader",
-      "weight": 400,
-      "tracking": -0.018,
-      "leading": 1.05,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.84,
-      "top": 6172,
-      "tag": "b",
-      "kind": "statement"
-     },
-     {
-      "text": "It leaves the decision with you",
-      "words": 6,
-      "chars": 31,
-      "lines": 1,
-      "size": 26,
-      "vw": 3.4,
-      "font": "Newsreader",
-      "weight": 400,
-      "tracking": -0.018,
-      "leading": 1.05,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.84,
-      "top": 6274,
-      "tag": "b",
-      "kind": "statement"
-     },
-     {
-      "text": "ESG, first.",
-      "words": 2,
-      "chars": 11,
-      "lines": 1,
+      "chars": 27,
+      "lines": 2,
       "size": 48.4,
       "vw": 6.3,
       "font": "Newsreader",
@@ -1570,7 +1854,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.94,
-      "top": 6440,
+      "top": 6623,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1591,7 +1875,112 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.38,
-      "top": 6740,
+      "top": 6998,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Not another dashboard.",
+      "words": 3,
+      "chars": 22,
+      "lines": 2,
+      "size": 48.4,
+      "vw": 6.3,
+      "font": "Newsreader",
+      "weight": 400,
+      "tracking": -0.018,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 7632,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Not another system of record",
+      "words": 5,
+      "chars": 28,
+      "lines": 1,
+      "size": 26,
+      "vw": 3.4,
+      "font": "Newsreader",
+      "weight": 400,
+      "tracking": -0.018,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.84,
+      "top": 7974,
+      "tag": "b",
+      "kind": "statement"
+     },
+     {
+      "text": "A system of context",
+      "words": 4,
+      "chars": 19,
+      "lines": 1,
+      "size": 26,
+      "vw": 3.4,
+      "font": "Newsreader",
+      "weight": 400,
+      "tracking": -0.018,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.84,
+      "top": 8103,
+      "tag": "b",
+      "kind": "statement"
+     },
+     {
+      "text": "Human judgement stays at the centre.",
+      "words": 6,
+      "chars": 36,
+      "lines": 2,
+      "size": 48.4,
+      "vw": 6.3,
+      "font": "Newsreader",
+      "weight": 400,
+      "tracking": -0.018,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 8297,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Technology should amplify human judgement. Not replace it.",
+      "words": 8,
+      "chars": 58,
+      "lines": 3,
+      "size": 26,
+      "vw": 3.4,
+      "font": "Newsreader",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.45,
+      "top": 8646,
       "tag": "p",
       "kind": "statement"
      },
@@ -1612,7 +2001,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.94,
-      "top": 8309,
+      "top": 9761,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1633,9 +2022,51 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.22,
-      "top": 8824,
+      "top": 10275,
       "tag": "b",
       "kind": "statement"
+     },
+     {
+      "text": "The complexity of decisions is growing faster than our ability to connect them.",
+      "words": 13,
+      "chars": 79,
+      "lines": 2,
+      "size": 26,
+      "vw": 3.4,
+      "font": "Newsreader",
+      "weight": 400,
+      "tracking": -0.012,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.57,
+      "top": 10412,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "The larger ambition.",
+      "words": 3,
+      "chars": 20,
+      "lines": 2,
+      "size": 48.4,
+      "vw": 6.3,
+      "font": "Newsreader",
+      "weight": 400,
+      "tracking": -0.018,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 11066,
+      "tag": "h2",
+      "kind": "heading"
      },
      {
       "text": "Too consequential to see alone.",
@@ -1654,7 +2085,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.94,
-      "top": 9044,
+      "top": 11705,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1675,30 +2106,30 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.94,
-      "top": 9861,
+      "top": 12521,
       "tag": "p",
       "kind": "statement"
      }
     ],
     "headingSummary": {
-     "count": 25,
+     "count": 33,
      "maxLines": 3,
      "over2Lines": 0,
-     "statements": 17,
+     "statements": 22,
      "centered": 0,
-     "medianWords": 4,
+     "medianWords": 3,
      "mixedFontHeadings": 0
     },
     "type": {
      "families": [
       {
        "family": "Onest",
-       "share": 0.84,
+       "share": 0.86,
        "mono": false
       },
       {
        "family": "Newsreader",
-       "share": 0.16,
+       "share": 0.14,
        "mono": false
       }
      ],
@@ -1720,7 +2151,7 @@
       "tracking": 0,
       "contrast": 13.9
      },
-     "measureChars": 61,
+     "measureChars": 51,
      "max": {
       "size": 73.2,
       "vw": 9.5,
@@ -1760,7 +2191,7 @@
       },
       {
        "color": "#dedbd3",
-       "top": 6714,
+       "top": 6972,
        "hsl": {
         "h": 44,
         "s": 0.14,
@@ -1769,7 +2200,7 @@
       },
       {
        "color": "#15332b",
-       "top": 8960,
+       "top": 11621,
        "hsl": {
         "h": 164,
         "s": 0.42,
@@ -1780,19 +2211,19 @@
      "textColors": [
       {
        "color": "#121c26",
-       "share": 0.63
+       "share": 0.76
       },
       {
        "color": "#9fb0c2",
-       "share": 0.25
+       "share": 0.16
       },
       {
        "color": "#e9e7e1",
-       "share": 0.06
+       "share": 0.05
       },
       {
        "color": "#46525e",
-       "share": 0.04
+       "share": 0.03
       },
       {
        "color": "#15110b",
@@ -1868,7 +2299,7 @@
      "w": 768,
      "h": 1024
     },
-    "pageH": 10323,
+    "pageH": 12983,
     "margins": {
      "left": 25,
      "right": 25
@@ -1944,7 +2375,7 @@
       "pinned": false
      },
      {
-      "sel": "section#chain.scene.field",
+      "sel": "section#approach.scene.field",
       "tag": "section",
       "top": 2549,
       "height": 3072,
@@ -1966,19 +2397,19 @@
       "sel": "section#method.page.sheet",
       "tag": "section",
       "top": 5621,
-      "height": 819,
-      "words": 88,
+      "height": 1002,
+      "words": 105,
       "media": 0,
       "middle": 0,
       "heading": {
-       "text": "What the",
+       "text": "From information",
        "size": 48,
        "tag": "h2"
       },
       "left": 25,
-      "right": 124,
+      "right": 112,
       "textLeft": 25,
-      "textRight": 124,
+      "textRight": 112,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1988,18 +2419,64 @@
      {
       "sel": "section#esg.page.sheet",
       "tag": "section",
-      "top": 6440,
-      "height": 932,
-      "words": 104,
+      "top": 6623,
+      "height": 1009,
+      "words": 115,
       "media": 0,
       "middle": 0,
       "heading": {
-       "text": "ESG, first.",
+       "text": "From reporting",
        "size": 48,
        "tag": "h2"
       },
       "left": 25,
       "right": 51,
+      "textLeft": 25,
+      "textRight": 291,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#differentiator.page.sheet",
+      "tag": "section",
+      "top": 7632,
+      "height": 665,
+      "words": 95,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Not another",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 25,
+      "right": 142,
+      "textLeft": 25,
+      "textRight": 142,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#human.page.sheet",
+      "tag": "section",
+      "top": 8297,
+      "height": 527,
+      "words": 66,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Human judgement",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 25,
+      "right": 297,
       "textLeft": 25,
       "textRight": 297,
       "fullBleed": false,
@@ -2011,7 +2488,7 @@
      {
       "sel": "section#founder.page.sheet",
       "tag": "section",
-      "top": 7372,
+      "top": 8824,
       "height": 1588,
       "words": 107,
       "media": 2,
@@ -2028,9 +2505,55 @@
       "pinned": false
      },
      {
+      "sel": "section#why.page.sheet",
+      "tag": "section",
+      "top": 10412,
+      "height": 654,
+      "words": 127,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "The complexity of decisions is growing faster than",
+       "size": 26,
+       "tag": "p"
+      },
+      "left": 25,
+      "right": 42,
+      "textLeft": 25,
+      "textRight": 42,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#vision.page.sheet",
+      "tag": "section",
+      "top": 11066,
+      "height": 554,
+      "words": 84,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "The larger",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 25,
+      "right": 295,
+      "textLeft": 25,
+      "textRight": 295,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
       "sel": "section#contact.page.field",
       "tag": "section",
-      "top": 8960,
+      "top": 11621,
       "height": 817,
       "words": 44,
       "media": 0,
@@ -2053,7 +2576,7 @@
      {
       "sel": "footer.close",
       "tag": "footer",
-      "top": 9777,
+      "top": 12437,
       "height": 546,
       "words": 91,
       "media": 0,
@@ -2087,18 +2610,18 @@
     "edges": [
      {
       "x": 25,
-      "n": 20
+      "n": 37
      },
      {
       "x": 397,
-      "n": 2
+      "n": 5
      },
      {
       "x": 51,
       "n": 1
      }
     ],
-    "leftBlocks": 23,
+    "leftBlocks": 43,
     "bodySize": 18,
     "stage": false,
     "explains": true,
@@ -2113,7 +2636,7 @@
    "width": 390,
    "height": 844,
    "load": "load",
-   "screens": 11,
+   "screens": 12,
    "filled": [
     0.47,
     0.64,
@@ -2121,16 +2644,17 @@
     1,
     0.93,
     0.38,
-    0.7,
-    0.77,
-    0.66,
-    0.95,
-    1
+    0.63,
+    0.57,
+    0.6,
+    0.75,
+    0.51,
+    0.59
    ],
    "motion": {
-    "elements": 57,
+    "elements": 75,
     "css": 15,
-    "transitions": 39,
+    "transitions": 57,
     "scripted": 3,
     "videos": 1,
     "playingVideos": 0
@@ -2141,14 +2665,14 @@
      "h": 844
     },
     "page": {
-     "height": 8701,
-     "screens": 10.3,
-     "words": 771,
+     "height": 11537,
+     "screens": 13.7,
+     "words": 1170,
      "img": 4,
      "video": 1,
      "canvas": 0,
      "svg": 7,
-     "sections": 7,
+     "sections": 11,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 0,
@@ -2303,9 +2827,9 @@
       "kind": "heading"
      },
      {
-      "text": "Decisions do not stop.",
-      "words": 4,
-      "chars": 22,
+      "text": "Every decision creates a chain.",
+      "words": 5,
+      "chars": 31,
       "lines": 2,
       "size": 34.8,
       "vw": 8.9,
@@ -2319,15 +2843,15 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 2125,
+      "top": 2112,
       "tag": "h2",
       "kind": "heading"
      },
      {
-      "text": "They keep moving. Scroll, and watch one arrive in six places.",
-      "words": 11,
-      "chars": 61,
-      "lines": 2,
+      "text": "A decision does not stop when it is made. It moves. Scroll, and watch one arrive in six places.",
+      "words": 19,
+      "chars": 95,
+      "lines": 3,
       "size": 22,
       "vw": 5.6,
       "font": "Newsreader",
@@ -2340,7 +2864,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 2223,
+      "top": 2210,
       "tag": "p",
       "kind": "statement"
      },
@@ -2361,7 +2885,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.05,
-      "top": 2304,
+      "top": 2317,
       "tag": "b",
       "kind": "statement"
      },
@@ -2382,7 +2906,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 2379,
+      "top": 2392,
       "tag": "b",
       "kind": "statement"
      },
@@ -2403,7 +2927,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 2491,
+      "top": 2504,
       "tag": "b",
       "kind": "statement"
      },
@@ -2424,7 +2948,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 2604,
+      "top": 2617,
       "tag": "b",
       "kind": "statement"
      },
@@ -2445,7 +2969,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 2716,
+      "top": 2730,
       "tag": "b",
       "kind": "statement"
      },
@@ -2466,7 +2990,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 2829,
+      "top": 2842,
       "tag": "b",
       "kind": "statement"
      },
@@ -2487,14 +3011,14 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 2941,
+      "top": 2955,
       "tag": "b",
       "kind": "statement"
      },
      {
-      "text": "What the system does.",
+      "text": "From information to intelligence.",
       "words": 4,
-      "chars": 21,
+      "chars": 33,
       "lines": 2,
       "size": 34.8,
       "vw": 8.9,
@@ -2513,34 +3037,84 @@
       "kind": "heading"
      },
      {
-      "text": "It brings the context together Data, conditions and constraints from the systems that already hold them.",
-      "words": 16,
-      "chars": 104,
-      "lines": 3,
-      "size": 22,
-      "vw": 5.6,
-      "font": "Newsreader",
-      "weight": 400,
-      "tracking": -0.018,
-      "leading": 1.05,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.9,
-      "top": 4425,
-      "mixedFonts": [
-       "Newsreader",
-       "Onest"
-      ],
-      "tag": "li",
-      "kind": "statement"
-     },
-     {
-      "text": "It finds the relationships Where an asset, a target, a supplier and a threshold touch each other.",
+      "text": "Understand Bring together the data, the context and the conditions from the systems that already hold them.",
       "words": 17,
-      "chars": 97,
+      "chars": 107,
+      "lines": 4,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Newsreader",
+      "weight": 400,
+      "tracking": -0.018,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 4450,
+      "mixedFonts": [
+       "Newsreader",
+       "Onest"
+      ],
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "Connect Identify the relationships across business, people, assets, resources, ESG, risk and compliance.",
+      "words": 13,
+      "chars": 104,
+      "lines": 4,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Newsreader",
+      "weight": 400,
+      "tracking": -0.018,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 4598,
+      "mixedFonts": [
+       "Newsreader",
+       "Onest"
+      ],
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "Understand the consequences Surface the direct and the indirect implications of each option still open, before one is chosen.",
+      "words": 19,
+      "chars": 125,
+      "lines": 4,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Newsreader",
+      "weight": 400,
+      "tracking": -0.018,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 4745,
+      "mixedFonts": [
+       "Newsreader",
+       "Onest"
+      ],
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "Guide Present a connected view of the trade-offs, the risks and the opportunities.",
+      "words": 13,
+      "chars": 82,
       "lines": 3,
       "size": 22,
       "vw": 5.6,
@@ -2554,7 +3128,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 4547,
+      "top": 4893,
       "mixedFonts": [
        "Newsreader",
        "Onest"
@@ -2563,9 +3137,9 @@
       "kind": "statement"
      },
      {
-      "text": "It surfaces the consequences Direct and indirect, for each option still open, before one is chosen.",
-      "words": 16,
-      "chars": 99,
+      "text": "Decide Keep the final decision where it belongs. With people.",
+      "words": 10,
+      "chars": 61,
       "lines": 3,
       "size": 22,
       "vw": 5.6,
@@ -2579,7 +3153,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 4669,
+      "top": 5015,
       "mixedFonts": [
        "Newsreader",
        "Onest"
@@ -2588,35 +3162,10 @@
       "kind": "statement"
      },
      {
-      "text": "It leaves the decision with you A connected view of the trade-offs. The judgement stays human.",
-      "words": 16,
-      "chars": 94,
-      "lines": 3,
-      "size": 22,
-      "vw": 5.6,
-      "font": "Newsreader",
-      "weight": 400,
-      "tracking": -0.018,
-      "leading": 1.05,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.9,
-      "top": 4791,
-      "mixedFonts": [
-       "Newsreader",
-       "Onest"
-      ],
-      "tag": "li",
-      "kind": "statement"
-     },
-     {
-      "text": "ESG, first.",
-      "words": 2,
-      "chars": 11,
-      "lines": 1,
+      "text": "From reporting to deciding.",
+      "words": 4,
+      "chars": 27,
+      "lines": 2,
       "size": 34.8,
       "vw": 8.9,
       "font": "Newsreader",
@@ -2629,7 +3178,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 4997,
+      "top": 5221,
       "tag": "h2",
       "kind": "heading"
      },
@@ -2650,7 +3199,120 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.62,
-      "top": 5314,
+      "top": 5598,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Not another dashboard.",
+      "words": 3,
+      "chars": 22,
+      "lines": 2,
+      "size": 34.8,
+      "vw": 8.9,
+      "font": "Newsreader",
+      "weight": 400,
+      "tracking": -0.018,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 6260,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Not another system of record Those already exist, and each one holds its own part faithfully. Adding a seventh would not join the six.",
+      "words": 24,
+      "chars": 134,
+      "lines": 4,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Newsreader",
+      "weight": 400,
+      "tracking": -0.018,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 6560,
+      "mixedFonts": [
+       "Newsreader",
+       "Onest"
+      ],
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "A system of context It reads across what they already hold, so a decision can be seen whole while it is still a decision.",
+      "words": 24,
+      "chars": 121,
+      "lines": 4,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Newsreader",
+      "weight": 400,
+      "tracking": -0.018,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 6707,
+      "mixedFonts": [
+       "Newsreader",
+       "Onest"
+      ],
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "Human judgement stays at the centre.",
+      "words": 6,
+      "chars": 36,
+      "lines": 2,
+      "size": 34.8,
+      "vw": 8.9,
+      "font": "Newsreader",
+      "weight": 400,
+      "tracking": -0.018,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 6939,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Technology should amplify human judgement. Not replace it.",
+      "words": 8,
+      "chars": 58,
+      "lines": 3,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Newsreader",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.75,
+      "top": 7265,
       "tag": "p",
       "kind": "statement"
      },
@@ -2671,7 +3333,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 6437,
+      "top": 7891,
       "tag": "h2",
       "kind": "heading"
      },
@@ -2692,9 +3354,51 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.36,
-      "top": 6983,
+      "top": 8437,
       "tag": "b",
       "kind": "statement"
+     },
+     {
+      "text": "The complexity of decisions is growing faster than our ability to connect them.",
+      "words": 13,
+      "chars": 79,
+      "lines": 2,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Newsreader",
+      "weight": 400,
+      "tracking": -0.012,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 8569,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "The larger ambition.",
+      "words": 3,
+      "chars": 20,
+      "lines": 2,
+      "size": 34.8,
+      "vw": 8.9,
+      "font": "Newsreader",
+      "weight": 400,
+      "tracking": -0.018,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 9403,
+      "tag": "h2",
+      "kind": "heading"
      },
      {
       "text": "Too consequential to see alone.",
@@ -2713,7 +3417,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 7199,
+      "top": 10036,
       "tag": "h2",
       "kind": "heading"
      },
@@ -2734,30 +3438,30 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 8084,
+      "top": 10920,
       "tag": "p",
       "kind": "statement"
      }
     ],
     "headingSummary": {
-     "count": 25,
-     "maxLines": 3,
+     "count": 33,
+     "maxLines": 4,
      "over2Lines": 0,
-     "statements": 17,
+     "statements": 22,
      "centered": 0,
-     "medianWords": 4,
-     "mixedFontHeadings": 4
+     "medianWords": 5,
+     "mixedFontHeadings": 7
     },
     "type": {
      "families": [
       {
        "family": "Onest",
-       "share": 0.84,
+       "share": 0.86,
        "mono": false
       },
       {
        "family": "Newsreader",
-       "share": 0.16,
+       "share": 0.14,
        "mono": false
       }
      ],
@@ -2819,7 +3523,7 @@
       },
       {
        "color": "#dedbd3",
-       "top": 5288,
+       "top": 5572,
        "hsl": {
         "h": 44,
         "s": 0.14,
@@ -2828,7 +3532,7 @@
       },
       {
        "color": "#15332b",
-       "top": 7115,
+       "top": 9952,
        "hsl": {
         "h": 164,
         "s": 0.42,
@@ -2839,19 +3543,19 @@
      "textColors": [
       {
        "color": "#121c26",
-       "share": 0.63
+       "share": 0.76
       },
       {
        "color": "#9fb0c2",
-       "share": 0.25
+       "share": 0.16
       },
       {
        "color": "#e9e7e1",
-       "share": 0.06
+       "share": 0.05
       },
       {
        "color": "#46525e",
-       "share": 0.04
+       "share": 0.03
       },
       {
        "color": "#15110b",
@@ -2927,7 +3631,7 @@
      "w": 390,
      "h": 844
     },
-    "pageH": 8701,
+    "pageH": 11537,
     "margins": {
      "left": 20,
      "right": 20
@@ -2995,7 +3699,7 @@
       "pinned": false
      },
      {
-      "sel": "section#chain.scene.field",
+      "sel": "section#approach.scene.field",
       "tag": "section",
       "top": 2117,
       "height": 2026,
@@ -3017,19 +3721,19 @@
       "sel": "section#method.page.sheet",
       "tag": "section",
       "top": 4142,
-      "height": 855,
-      "words": 88,
+      "height": 1079,
+      "words": 105,
       "media": 0,
       "middle": 0,
       "heading": {
-       "text": "What the",
+       "text": "From information",
        "size": 35,
        "tag": "h2"
       },
       "left": 20,
-      "right": 35,
+      "right": 22,
       "textLeft": 20,
-      "textRight": 35,
+      "textRight": 22,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -3039,20 +3743,66 @@
      {
       "sel": "section#esg.page.sheet",
       "tag": "section",
-      "top": 4997,
-      "height": 977,
-      "words": 104,
+      "top": 5221,
+      "height": 1039,
+      "words": 115,
       "media": 0,
       "middle": 0,
       "heading": {
-       "text": "ESG, first.",
+       "text": "From reporting",
        "size": 35,
        "tag": "h2"
       },
       "left": 20,
-      "right": 29,
+      "right": 23,
       "textLeft": 20,
-      "textRight": 29,
+      "textRight": 23,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#differentiator.page.sheet",
+      "tag": "section",
+      "top": 6260,
+      "height": 679,
+      "words": 95,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Not another",
+       "size": 35,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 23,
+      "textLeft": 20,
+      "textRight": 23,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#human.page.sheet",
+      "tag": "section",
+      "top": 6939,
+      "height": 489,
+      "words": 66,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Human judgement",
+       "size": 35,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 26,
+      "textLeft": 20,
+      "textRight": 26,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -3062,7 +3812,7 @@
      {
       "sel": "section#founder.page.sheet",
       "tag": "section",
-      "top": 5974,
+      "top": 7428,
       "height": 1142,
       "words": 107,
       "media": 2,
@@ -3083,9 +3833,51 @@
       "pinned": false
      },
      {
+      "sel": "section#why.page.sheet",
+      "tag": "section",
+      "top": 8569,
+      "height": 834,
+      "words": 127,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 20,
+      "right": 21,
+      "textLeft": 20,
+      "textRight": 21,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#vision.page.sheet",
+      "tag": "section",
+      "top": 9403,
+      "height": 549,
+      "words": 84,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "The larger",
+       "size": 35,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 26,
+      "textLeft": 20,
+      "textRight": 26,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
       "sel": "section#contact.page.field",
       "tag": "section",
-      "top": 7115,
+      "top": 9952,
       "height": 885,
       "words": 44,
       "media": 0,
@@ -3108,7 +3900,7 @@
      {
       "sel": "footer.close",
       "tag": "footer",
-      "top": 8000,
+      "top": 10836,
       "height": 701,
       "words": 91,
       "media": 0,
@@ -3142,14 +3934,14 @@
     "edges": [
      {
       "x": 20,
-      "n": 22
+      "n": 42
      },
      {
       "x": 46,
       "n": 1
      }
     ],
-    "leftBlocks": 23,
+    "leftBlocks": 43,
     "bodySize": 17,
     "stage": false,
     "explains": true,
@@ -3173,7 +3965,7 @@
    "level": "WARN",
    "id": "mixed-font-headline",
    "width": 390,
-   "message": "4 headline(s) switch typeface or to italic mid-line (the \"one italic serif word\" move).",
+   "message": "7 headline(s) switch typeface or to italic mid-line (the \"one italic serif word\" move).",
    "fix": "Set the whole headline in one face. Emphasis comes from the words."
   }
  ],

@@ -25,7 +25,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500&family=Onest:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="assets/scenes/stage.css">
-<link rel="stylesheet" href="css/style.css?v=12.1">
+<link rel="stylesheet" href="css/style.css?v=12.3">
 </head>
 <body>
 
@@ -54,25 +54,25 @@
     <span>BVANTRIX</span>
   </a>
   <nav aria-label="Primary">
+    <a href="#top">Home</a>
     <a href="#problem">The problem</a>
-    <a href="#chain">The idea</a>
-    <a href="#method">What it does</a>
+    <a href="#approach">Our approach</a>
     <a href="#esg">ESG</a>
-    <a href="esg-demo.html">Demo</a>
     <a href="#founder">Founder</a>
-    <a href="#contact">Contact</a>
+    <a href="#vision">Our vision</a>
+    <a href="esg-demo.html">Explore a decision</a>
   </nav>
   <button class="menu" id="menuBtn" aria-expanded="false" aria-controls="drawer">Menu</button>
 </header>
 
 <div class="drawer sheet" id="drawer" hidden>
+  <a href="#top">Home</a>
   <a href="#problem">The problem</a>
-  <a href="#chain">The idea</a>
-  <a href="#method">What it does</a>
+  <a href="#approach">Our approach</a>
   <a href="#esg">ESG</a>
-  <a href="esg-demo.html">Demo</a>
   <a href="#founder">Founder</a>
-  <a href="#contact">Contact</a>
+  <a href="#vision">Our vision</a>
+  <a href="esg-demo.html">Explore a decision</a>
 </div>
 
 <main id="content">
@@ -223,13 +223,14 @@
 </div>
 
 <!-- ══ The idea, a colour page ═══════════════════════════════════════ -->
-<section class="scene field" id="chain" data-scene="consequences">
+<section class="scene field" id="approach" data-scene="consequences">
   <div class="scene-stage">
     <div class="sheet leaf">
       <div class="scene-talk">
-        <h2 class="head">Decisions<br>do not stop.</h2>
+        <h2 class="head">Every decision<br>creates a chain.</h2>
         <p class="statement" style="margin-top:28px">
-          They keep moving. Scroll, and watch one arrive in six places.
+          A decision does not stop when it is made. It moves. Scroll, and
+          watch one arrive in six places.
         </p>
         <p class="scene-count" aria-hidden="true"><b data-count>0</b><span>of six reached</span></p>
       </div>
@@ -249,34 +250,42 @@
 <!-- ══ What it does ═══════════════════════════════════════════════════ -->
 <section class="page sheet leaf" id="method">
   <div>
-    <h2 class="head rise rise--say">What the<br>system does.</h2>
+    <h2 class="head rise rise--say">From information<br>to intelligence.</h2>
     <p class="copy rise rise--read" data-d="1" style="margin-top:26px">
-      Not a dashboard. Dashboards report what happened inside one boundary.
-      Decisions do not have boundaries.
+      Five movements, in the order a decision actually needs them. Nothing here
+      replaces the person deciding; all of it arrives before they do.
     </p>
   </div>
 
   <ol class="method rise rise--rows">
-    <li><b>It brings the context together</b>
-      <span>Data, conditions and constraints from the systems that already hold them.</span></li>
-    <li><b>It finds the relationships</b>
-      <span>Where an asset, a target, a supplier and a threshold touch each other.</span></li>
-    <li><b>It surfaces the consequences</b>
-      <span>Direct and indirect, for each option still open, before one is chosen.</span></li>
-    <li><b>It leaves the decision with you</b>
-      <span>A connected view of the trade-offs. The judgement stays human.</span></li>
+    <li><b>Understand</b>
+      <span>Bring together the data, the context and the conditions from the
+        systems that already hold them.</span></li>
+    <li><b>Connect</b>
+      <span>Identify the relationships across business, people, assets,
+        resources, ESG, risk and compliance.</span></li>
+    <li><b>Understand the consequences</b>
+      <span>Surface the direct and the indirect implications of each option
+        still open, before one is chosen.</span></li>
+    <li><b>Guide</b>
+      <span>Present a connected view of the trade-offs, the risks and the
+        opportunities.</span></li>
+    <li><b>Decide</b>
+      <span>Keep the final decision where it belongs. With people.</span></li>
   </ol>
 </section>
 
 <!-- ══ ESG, the live question ════════════════════════════════════════ -->
 <section class="page sheet leaf" id="esg">
   <div>
-    <h2 class="head rise rise--say">ESG, first.</h2>
+    <h2 class="head rise rise--say">From reporting<br>to deciding.</h2>
     <p class="copy rise rise--read" data-d="1" style="margin-top:26px">
-      Not because it is fashionable. Because it is where the gap between what
-      an organisation can report and what it can decide with is widest.
-      Most ESG software helps you measure. The question we are interested in
-      is what happens when sustainability becomes part of the decision itself.
+      Most ESG technology helps an organisation measure, report and monitor.
+      We are interested in a different question: what happens when
+      sustainability becomes part of the decision itself? That is the move
+      from ESG reporting to ESG decision intelligence, and it is where the gap
+      between what an organisation can report and what it can decide with is
+      widest.
     </p>
   </div>
 
@@ -316,6 +325,46 @@
   </div>
 </section>
 
+<!-- ══ The differentiator ═════════════════════════════════════════════ -->
+<section class="page sheet leaf" id="differentiator">
+  <div>
+    <h2 class="head rise rise--say">Not another<br>dashboard.</h2>
+    <p class="copy rise rise--read" data-d="1" style="margin-top:26px">
+      Dashboards tell you what happened. Reports tell you what has been
+      measured. Systems tell you what is happening inside their own
+      boundaries. Decisions do not have boundaries, which is why this is being
+      built as a layer across them rather than another thing beneath them.
+    </p>
+  </div>
+
+  <ol class="method rise rise--rows">
+    <li><b>Not another system of record</b>
+      <span>Those already exist, and each one holds its own part faithfully.
+        Adding a seventh would not join the six.</span></li>
+    <li><b>A system of context</b>
+      <span>It reads across what they already hold, so a decision can be seen
+        whole while it is still a decision.</span></li>
+  </ol>
+</section>
+
+<!-- ══ The human principle ════════════════════════════════════════════ -->
+<section class="page sheet leaf" id="human">
+  <div>
+    <h2 class="head rise rise--say">Human judgement<br>stays at the centre.</h2>
+    <p class="copy rise rise--read" data-d="1" style="margin-top:26px">
+      Software can identify patterns. Data can reveal relationships. Systems
+      can surface risk. But organisations do not exist to optimise numbers,
+      and no model carries the accountability. People make these decisions.
+      BVANTRIX is built to give those people a richer understanding of what
+      their decisions set in motion.
+    </p>
+  </div>
+
+  <p class="statement rise rise--say" data-d="1">
+    Technology should amplify human judgement. Not replace it.
+  </p>
+</section>
+
 <!-- ══ The founder ════════════════════════════════════════════════════ -->
 <section class="page sheet leaf" id="founder">
   <figure class="leaf-plate rise rise--plate" style="aspect-ratio:4/5">
@@ -345,6 +394,49 @@
       <b>Bhuvana Selvan</b>
       <span>Founder, BVANTRIX</span>
     </p>
+  </div>
+</section>
+
+<!-- ══ Why now ════════════════════════════════════════════════════════ -->
+<section class="page sheet opening" id="why">
+  <p class="lead rise rise--say">
+    The complexity of decisions is growing faster than our ability to connect
+    them.
+  </p>
+
+  <div class="quartet rise rise--cols">
+    <p><b>AI adoption</b> changes what a decision can be informed by, and how
+      quickly the answer is expected.</p>
+    <p><b>Climate pressure</b> turns what was an annual disclosure into a
+      constraint on this year's capital plan.</p>
+    <p><b>Regulatory change</b> moves thresholds while the assets built against
+      the old ones are still running.</p>
+    <p><b>Resource constraints</b> make what is consumed, recovered or thrown
+      part of the economics rather than a footnote.</p>
+    <p><b>Workforce transformation</b> puts who retrains and who is exposed
+      inside decisions that used to be purely technical.</p>
+    <p><b>Cyber risk</b> attaches to assets and suppliers that no single
+      function sees end to end.</p>
+    <p><b>Stakeholder expectations</b> ask organisations to account for
+      consequences they were never structured to see together.</p>
+  </div>
+</section>
+
+<!-- ══ The bigger vision ══════════════════════════════════════════════ -->
+<section class="page sheet leaf" id="vision">
+  <div>
+    <h2 class="head rise rise--say">The larger<br>ambition.</h2>
+  </div>
+
+  <div class="copy rise rise--read" data-d="1">
+    <p>ESG is where we begin. Decision intelligence is where we are going.
+      Today the first application is ESG, because that is where the distance
+      between what can be reported and what can be decided with is widest.</p>
+    <p>The same layer applies wherever a decision reaches further than one
+      system can see: assets and operations, people and technology, risk,
+      resources, sustainability and compliance.</p>
+    <p>The ambition is not a better report. It is a decision understood before
+      it is made.</p>
   </div>
 </section>
 
@@ -482,9 +574,9 @@
       </div>
       <nav aria-label="Footer">
         <a href="#problem">The problem</a><br>
-        <a href="#chain">The idea</a><br>
-        <a href="#method">What it does</a><br>
-        <a href="esg-demo.html">ESG demo</a>
+        <a href="#approach">Our approach</a><br>
+        <a href="#vision">Our vision</a><br>
+        <a href="esg-demo.html">Explore a decision</a>
       </nav>
       <div>
         <a href="mailto:info@bvantrix.com">info@bvantrix.com</a><br>
