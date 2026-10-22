@@ -1,6 +1,6 @@
 {
  "url": "http://127.0.0.1:8777/index.html",
- "at": "2026-10-22T05:56:40.560Z",
+ "at": "2026-10-22T07:44:58.882Z",
  "allow": [],
  "viewports": [
   {
@@ -214,7 +214,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.39,
-      "top": 2321,
+      "top": 2322,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1350,8 +1350,8 @@
    "motion": {
     "elements": 75,
     "css": 15,
-    "transitions": 51,
-    "scripted": 9,
+    "transitions": 57,
+    "scripted": 3,
     "videos": 1,
     "playingVideos": 0
    },
