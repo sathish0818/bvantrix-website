@@ -111,16 +111,22 @@ a { color: inherit; }
 
 /* ── the frame ───────────────────────────────────────────────────────── */
 
-.page, .bar, .band > *, .foot-main, .foot-strip, .close-cta, .hero-inner {
+.page, .band > *, .foot-main, .foot-strip, .close-cta, .hero-inner {
   width: 100%; max-width: var(--page);
   margin-inline: auto;
   padding-inline: var(--margin);
 }
 .page { padding-block: var(--gap); }
 .page + .page { padding-top: 0; }
-.page--stone { background: var(--stone); max-width: none; }
-.page--stone > * { max-width: var(--page); margin-inline: auto; }
-.page--stone { padding-block: var(--gap); }
+/* A stone page is full bleed, so its children carry the column. They were
+   given the max-width and the auto margins but not the side padding, which
+   set their text 68px to the left of every other section on the page. */
+.page--stone { background: var(--stone); max-width: none; padding-block: var(--gap); }
+.page--stone > * {
+  max-width: var(--page);
+  margin-inline: auto;
+  padding-inline: var(--margin);
+}
 .page + .page--stone, .page--stone + .page { padding-top: var(--gap); }
 
 /* ── type ────────────────────────────────────────────────────────────── */
@@ -199,7 +205,14 @@ a { color: inherit; }
 
 /* ── header ──────────────────────────────────────────────────────────── */
 
+/* The bar's background has to reach both edges of the window while its
+   contents stay on the page column, the way the navy band and the footer
+   already do. It was in the column group, so on a wide screen the background
+   stopped where the column did and the hero showed through at either end.
+   The padding carries the content in to the column instead. */
 .bar {
+  width: 100%; max-width: none;
+  padding-inline: max(var(--margin), calc((100% - var(--page)) / 2 + var(--margin)));
   position: sticky; top: 0; z-index: 50;
   display: flex; align-items: center; gap: clamp(16px, 2.4vw, 40px);
   min-height: var(--bar-h);
