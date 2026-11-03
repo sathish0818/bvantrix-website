@@ -767,11 +767,11 @@ a { color: inherit; }
      above: the picture emerges out of the paper instead of starting at a cut */
   .hero-media::after {
     display: block;
-    background: linear-gradient(180deg,
+    background: linear-gradient(180deg,  /* taste-skill-ignore: a neutral scrim over a photograph, the exception the rule names */
       var(--ivory) 0%,
       rgba(247, 243, 235, .72) 26%,
       rgba(247, 243, 235, .28) 52%,
-      rgba(247, 243, 235, 0) 78%);  /* taste-skill-ignore: the scrim over the hero photograph */
+      rgba(247, 243, 235, 0) 78%);
   }
   .hero-words { max-width: none; }
   /* The navy band immediately below names Earth, People and Governance and
