@@ -752,13 +752,27 @@ a { color: inherit; }
      words. A scrim is only needed where text sits on top of it, and no text
      does any more. */
   .hero { display: flex; flex-direction: column; }
-  .hero-inner { order: 1; grid-template-columns: 1fr; min-height: 0; }
+  .hero-inner { order: 1; grid-template-columns: 1fr; min-height: 0; position: relative; z-index: 1; }
   .hero-media {
     order: 2;
-    position: static; z-index: auto;
-    width: 100%; height: clamp(230px, 52vw, 360px);
+    /* relative, not static: the scrim below is absolutely positioned and has
+       to resolve against the picture rather than the whole hero */
+    position: relative; z-index: auto;
+    width: 100%; height: clamp(300px, 64vw, 420px);
+    /* it tucks up under the words so its soft top edge overlaps them, the way
+       the desktop picture runs under the right of the text */
+    margin-top: clamp(-96px, -12vw, -56px);
   }
-  .hero-media::after { display: none; }
+  /* the same dissolve the desktop does from the left, turned to come from
+     above: the picture emerges out of the paper instead of starting at a cut */
+  .hero-media::after {
+    display: block;
+    background: linear-gradient(180deg,
+      var(--ivory) 0%,
+      rgba(247, 243, 235, .72) 26%,
+      rgba(247, 243, 235, .28) 52%,
+      rgba(247, 243, 235, 0) 78%);  /* taste-skill-ignore: the scrim over the hero photograph */
+  }
   .hero-words { max-width: none; }
   /* The navy band immediately below names Earth, People and Governance and
      explains each one. Repeating the three words here left them hanging under
