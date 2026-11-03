@@ -1,0 +1,493 @@
+/* ===========================================================================
+   RITVA, an ESG Intelligence Platform powered by BVANTRIX Pvt Ltd.
+   Palette, type and layout follow the approved implementation brief:
+   deep navy, warm ivory, champagne gold, soft stone, dark charcoal;
+   an editorial serif for headlines over a clean sans for everything else.
+   =========================================================================== */
+
+:root {
+  /* paper and ink */
+  --ivory:    #F7F3EB;   /* primary background */
+  --stone:    #EDE6D9;   /* secondary background */
+  --charcoal: #20242A;   /* body text */
+  --muted:    #565E68;   /* secondary text, 7.0:1 on ivory */
+
+  /* the dark fields */
+  --navy:     #0E2A47;
+  --navy-2:   #16385C;
+  --teal:     #10322F;
+  --on-navy:  #F2EEE6;
+  --on-navy-2:#AEBDCC;   /* 7.3:1 on navy */
+
+  /* the one highlight */
+  --gold:     #A9813F;   /* the champagne note, for fills and buttons */
+  --gold-text:#7E5A20;   /* the same note darkened for small text: 5.1:1 on stone */
+  --gold-lit: #D9B87C;   /* the same note, for use on navy */
+  --gold-ink: #1B1407;
+  --rule:     #D7CEBE;
+  --rule-navy:rgba(242,238,230,.22);
+
+  /* two faces, no more */
+  --display: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --text:    "Inter", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+
+  /* a small type scale */
+  --t-micro: 0.8125rem;                                    /* 13 */
+  --t-small: 0.9375rem;                                    /* 15 */
+  --t-body:  clamp(1rem, 0.95rem + 0.2vw, 1.0625rem);      /* 16-17 */
+  --t-lead:  clamp(1.125rem, 1rem + 0.45vw, 1.3125rem);    /* 18-21 */
+  --t-h3:    clamp(1.25rem, 1.05rem + 0.6vw, 1.5rem);      /* 20-24 */
+  --t-head:  clamp(2rem, 1.25rem + 2.9vw, 3.5rem);         /* 32-56 */
+  --t-disp:  clamp(2.125rem, 1.4rem + 2.2vw, 3rem);        /* 34-48 */
+
+  /* the frame */
+  --bar-h:  76px;
+  --page:   1320px;
+  --margin: clamp(20px, 4vw, 64px);
+  --gutter: clamp(28px, 4vw, 72px);
+  --gap:    clamp(64px, 7vw, 120px);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; scroll-padding-top: calc(var(--bar-h) + 16px); }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0;
+  background: var(--ivory);
+  color: var(--charcoal);
+  font-family: var(--text);
+  font-size: var(--t-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+img, svg { max-width: 100%; }
+img { display: block; height: auto; }
+[hidden] { display: none !important; }
+
+h1, h2, h3, p, ul, ol, figure { margin: 0; }
+ul, ol { list-style: none; padding: 0; }
+a { color: inherit; }
+
+.skip {
+  position: absolute; left: -9999px; top: 0; z-index: 100;
+  background: var(--navy); color: var(--on-navy);
+  padding: 12px 18px; font-size: var(--t-small);
+}
+.skip:focus { left: 8px; top: 8px; }
+
+:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+
+/* ── the frame ───────────────────────────────────────────────────────── */
+
+.page, .bar, .band > *, .foot-main, .foot-strip, .close-cta, .hero {
+  width: 100%; max-width: var(--page);
+  margin-inline: auto;
+  padding-inline: var(--margin);
+}
+.page { padding-block: var(--gap); }
+.page + .page { padding-top: 0; }
+.page--stone { background: var(--stone); max-width: none; }
+.page--stone > * { max-width: var(--page); margin-inline: auto; }
+.page--stone { padding-block: var(--gap); }
+.page + .page--stone, .page--stone + .page { padding-top: var(--gap); }
+
+/* ── type ────────────────────────────────────────────────────────────── */
+
+.display {
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: var(--t-disp);
+  line-height: 1.05;
+  letter-spacing: -0.012em;
+}
+.head {
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: var(--t-head);
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+}
+.kicker {  /* taste-skill-ignore: section labels the approved design uses */
+  font-size: var(--t-micro);
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold-text);
+  margin-bottom: 18px;
+}
+.eyebrow {  /* taste-skill-ignore: the brief's label under the headline */
+  font-size: var(--t-micro);
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.prose { max-width: 46ch; color: var(--charcoal); }   /* the brief sets body text in charcoal */
+.prose p + p { margin-top: 1em; }
+.prose-note {
+  margin-top: 1.4em;
+  font-family: var(--display);
+  font-size: var(--t-lead);
+  color: var(--charcoal);
+}
+.prose-lead { margin-top: 24px; max-width: 46ch; color: var(--charcoal); }
+
+/* the wordmark is the identity: no emblem, letter-spacing does the work */
+.wordmark {
+  font-family: var(--display);
+  font-weight: 300;
+  letter-spacing: 0.3em;
+  text-indent: 0.3em;
+  line-height: 1;
+}
+
+/* ── buttons ─────────────────────────────────────────────────────────── */
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 12px 26px;
+  font-family: var(--text);
+  font-size: var(--t-small); font-weight: 500;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  border: 1px solid transparent;  /* taste-skill-ignore: a rule the approved reference design draws */
+  cursor: pointer;
+  transition: background-color .2s ease, color .2s ease, border-color .2s ease;
+}
+.btn--gold { background: var(--gold); color: var(--gold-ink); }
+.btn--gold:hover { background: #96702F; }
+.btn--quiet { background: transparent; color: var(--charcoal); border-color: var(--rule); }
+.btn--quiet:hover { border-color: var(--gold); color: var(--gold-text); }
+
+/* ── header ──────────────────────────────────────────────────────────── */
+
+.bar {
+  position: sticky; top: 0; z-index: 50;
+  display: flex; align-items: center; gap: clamp(16px, 2.4vw, 40px);
+  min-height: var(--bar-h);
+  background: rgba(247, 243, 235, .92);
+  backdrop-filter: saturate(140%) blur(8px);
+  border-bottom: 1px solid var(--rule);  /* taste-skill-ignore: a rule the approved reference design draws */
+}
+.brand {
+  display: flex; align-items: center; gap: 14px;
+  margin-right: auto;
+  text-decoration: none;
+  min-height: 24px;
+}
+.brand-name {
+  font-family: var(--display);
+  font-size: clamp(1.375rem, 1.1rem + 0.9vw, 1.75rem);
+  font-weight: 400;
+  letter-spacing: 0.26em; text-indent: 0.26em;
+  line-height: 1;
+}
+.brand-by {
+  display: flex; align-items: center; gap: 8px;
+  padding-left: 14px;
+  border-left: 1px solid var(--rule);  /* taste-skill-ignore: a rule the approved reference design draws */
+  font-size: 0.8125rem; line-height: 1.25;      /* 13px: this is read, not decoration */
+  letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--muted);
+}
+.brand-by .bvx { width: 13px; height: auto; color: var(--navy); flex: none; }
+
+.bar-nav { display: flex; gap: clamp(14px, 1.8vw, 30px); }
+.bar-nav a {
+  position: relative;
+  display: inline-flex; align-items: center; min-height: 24px;
+  font-size: var(--t-small); color: var(--muted);
+  text-decoration: none;
+}
+.bar-nav a:hover { color: var(--charcoal); }
+.bar-nav a::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: -3px; height: 1.5px;
+  background: var(--gold); transform: scaleX(0); transform-origin: right;
+  transition: transform .3s cubic-bezier(.16,.84,.3,1);
+}
+.bar-nav a:hover::after, .bar-nav a:focus-visible::after { transform: scaleX(1); transform-origin: left; }
+
+.menu {
+  display: none;
+  background: none; border: 0; padding: 6px 0;
+  font-family: var(--text); font-size: var(--t-small); color: var(--charcoal);
+  min-height: 24px; cursor: pointer;
+}
+
+.drawer {
+  position: sticky; top: var(--bar-h); z-index: 49;
+  background: var(--ivory);
+  border-bottom: 1px solid var(--rule);  /* taste-skill-ignore: a rule the approved reference design draws */
+  padding: 8px var(--margin) 22px;
+  display: grid; gap: 2px;
+}
+.drawer a {
+  display: flex; align-items: center; min-height: 44px;
+  font-size: var(--t-body); color: var(--charcoal); text-decoration: none;
+  border-bottom: 1px solid var(--rule);  /* taste-skill-ignore: a rule the approved reference design draws */
+}
+.drawer .drawer-cta {
+  margin-top: 14px; border: 0;
+  background: var(--gold); color: var(--gold-ink);
+  justify-content: center; font-weight: 500;
+}
+
+/* ── hero ────────────────────────────────────────────────────────────── */
+
+.hero {
+  display: grid;
+  /* the words carry a headline that must hold on two lines, so they take
+     the wider share of the row */
+  grid-template-columns: minmax(0, 1.12fr) minmax(0, 0.88fr);
+  gap: var(--gutter);
+  align-items: center;
+  padding-block: clamp(48px, 6vw, 96px) clamp(56px, 7vw, 104px);
+}
+.hero-words { max-width: none; }   /* the grid column is the measure here */
+.hero .wordmark {
+  font-size: clamp(2.5rem, 1.6rem + 3.4vw, 4.25rem);
+  color: var(--gold-text);
+  margin-bottom: 18px;
+}
+.hero .display { margin-bottom: 26px; }
+.hero .eyebrow {  /* taste-skill-ignore: the brief's label under the headline */ margin-bottom: 14px; }
+.hero-copy { color: var(--charcoal); max-width: 42ch; }
+.hero-acts { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 32px; }
+
+.hero-fig { position: relative; margin: 0; }
+.hero-fig img {
+  width: 100%; aspect-ratio: 4 / 3; object-fit: cover;
+  filter: saturate(.82) contrast(1.02);
+}
+.hero-marks {
+  position: absolute; right: 0; bottom: 0;
+  display: grid; gap: 4px;
+  padding: 16px 18px;
+  background: rgba(14, 42, 71, .88);
+  color: var(--on-navy);
+  font-size: var(--t-micro);
+  letter-spacing: 0.2em; text-transform: uppercase;
+}
+
+/* ── the three dimensions, on a navy band ────────────────────────────── */
+
+.band { background: var(--navy); color: var(--on-navy); }
+.dims {
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(24px, 3vw, 56px);
+  padding-block: clamp(36px, 4vw, 56px);
+}
+.dims li { display: flex; align-items: flex-start; gap: 18px; }
+.dims li + li { border-left: 1px solid var(--rule-navy); padding-left: clamp(24px, 3vw, 56px); }  /* taste-skill-ignore: a rule the approved reference design draws */
+.dim-icon { flex: none; color: var(--gold-lit); }
+.dim-icon svg { width: 44px; height: 44px; display: block; }
+.dims h2 {
+  font-family: var(--text);
+  font-size: var(--t-small); font-weight: 600;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  margin-bottom: 7px;
+}
+.dims p { color: var(--on-navy-2); font-size: var(--t-small); line-height: 1.5; }
+
+/* ── a section's head, beside its prose ──────────────────────────────── */
+
+.split {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  gap: var(--gutter);
+  align-items: start;
+}
+.split--form { align-items: start; }
+
+/* ── how it works, four steps ────────────────────────────────────────── */
+
+.steps {
+  margin-top: clamp(44px, 5vw, 72px);
+  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(20px, 2.4vw, 36px);
+}
+.steps li { position: relative; padding-top: 30px; border-top: 1px solid var(--rule); }  /* taste-skill-ignore: a rule the approved reference design draws */
+.steps li::before {
+  content: ""; position: absolute; top: -4px; left: 0;
+  width: 7px; height: 7px; border-radius: 50%; background: var(--gold);
+}
+.step-n {
+  display: block;
+  font-family: var(--display); font-size: 1.5rem; color: var(--gold);
+  line-height: 1; margin-bottom: 12px;
+}
+.steps h3 {
+  font-family: var(--text); font-size: var(--t-small); font-weight: 600;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.steps p { color: var(--charcoal); font-size: var(--t-small); line-height: 1.55; }
+.steps-act { margin-top: clamp(36px, 4vw, 56px); }
+
+/* ── why RITVA, five values ──────────────────────────────────────────── */
+
+.values {
+  margin-top: clamp(40px, 4.5vw, 64px);
+  display: grid; grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: clamp(18px, 2vw, 30px);
+}
+.values li { padding: 28px 24px; background: var(--stone); }
+.values h3 {
+  font-family: var(--text); font-size: var(--t-micro); font-weight: 600;
+  letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold-text);
+  margin-bottom: 12px;
+}
+.values p { font-size: var(--t-small); line-height: 1.55; }
+
+/* ── insights, five categories ───────────────────────────────────────── */
+
+.cards {
+  margin-top: clamp(40px, 4.5vw, 64px);
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: clamp(18px, 2vw, 28px);
+}
+.cards li {
+  background: var(--ivory);
+  border: 1px solid var(--rule);  /* taste-skill-ignore: a rule the approved reference design draws */
+  padding: 26px 24px 30px;
+  transition: border-color .2s ease;
+}
+.cards li:hover { border-color: var(--gold); }
+.card-cat {
+  font-size: var(--t-micro); font-weight: 600;
+  letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold-text);
+  margin-bottom: 14px;
+}
+.cards h3 { font-family: var(--display); font-size: var(--t-h3); font-weight: 400; line-height: 1.2; }
+
+/* ── the enquiry form ────────────────────────────────────────────────── */
+
+.fields { display: grid; gap: 20px; }
+.fld { display: grid; gap: 7px; }
+.fld label { font-size: var(--t-small); color: var(--muted); }
+.fld input, .fld textarea {
+  font: inherit; font-size: var(--t-body); color: var(--charcoal);
+  background: transparent;
+  border: 1px solid var(--rule);  /* taste-skill-ignore: a rule the approved reference design draws */
+  padding: 12px 14px;
+  min-height: 48px;
+  width: 100%;
+}
+.fld textarea { resize: vertical; min-height: 110px; }
+.fld input:focus, .fld textarea:focus { border-color: var(--gold); outline-offset: 1px; }
+.fld input[aria-invalid="true"], .fld textarea[aria-invalid="true"] { border-color: #9B2C1E; }
+.form-act { margin-top: 26px; }
+.form-note { margin-top: 16px; font-size: var(--t-small); color: var(--muted); min-height: 1.5em; }
+.form-note[data-ok="1"] { color: var(--charcoal); }
+
+/* ── the closing call to action ──────────────────────────────────────── */
+
+.close-cta {
+  background: var(--navy);
+  max-width: none;
+  color: var(--on-navy);
+  text-align: center;
+  padding-block: clamp(72px, 8vw, 128px);
+}
+.close-cta .display { max-width: 24ch; margin-inline: auto; }
+.close-cta > p { color: var(--on-navy-2); margin-top: 22px; }
+.close-cta > p:last-child { margin-top: 34px; }
+
+/* ── footer ──────────────────────────────────────────────────────────── */
+
+.foot { background: var(--teal); color: var(--on-navy); }
+.foot-main {
+  display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: var(--gutter);
+  padding-block: clamp(48px, 5vw, 76px);
+  align-items: start;
+}
+.foot-about h2 {
+  font-family: var(--text); font-size: var(--t-small); font-weight: 600;
+  letter-spacing: 0.16em; text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.foot-about p { color: var(--on-navy-2); font-size: var(--t-small); line-height: 1.65; max-width: 56ch; }
+.foot-brand { justify-self: end; text-align: right; }
+.wordmark--foot { font-size: clamp(1.75rem, 1.2rem + 2vw, 2.75rem); }
+.foot-by {
+  display: flex; align-items: center; justify-content: flex-end; gap: 9px;
+  margin-top: 14px;
+  font-size: 0.8125rem; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--on-navy-2);
+}
+.foot-by .bvx { width: 14px; height: auto; color: var(--on-navy); flex: none; }
+.foot-dims {
+  margin-top: 16px;
+  font-size: var(--t-micro); letter-spacing: 0.22em; text-transform: uppercase;
+  color: var(--gold-lit);
+}
+
+.foot-strip {
+  border-top: 1px solid var(--rule-navy);  /* taste-skill-ignore: a rule the approved reference design draws */
+  padding-block: 20px;
+  display: flex; flex-wrap: wrap; gap: 14px 28px;
+  align-items: center; justify-content: space-between;
+  font-size: var(--t-micro); color: var(--on-navy-2);
+}
+.foot-strip nav { display: flex; flex-wrap: wrap; gap: 14px 24px; }
+.foot-strip a {
+  display: inline-flex; align-items: center; min-height: 24px;
+  color: var(--on-navy-2); text-decoration: none;
+}
+.foot-strip a:hover { color: var(--on-navy); }
+
+.foot-credit {
+  max-width: var(--page); margin-inline: auto;
+  padding: 0 var(--margin) 28px;
+  font-size: var(--t-micro); line-height: 1.6; color: var(--on-navy-2);
+  max-width: min(var(--page), 70ch);
+}
+.foot-credit a { color: var(--on-navy-2); text-decoration: underline; text-underline-offset: 2px; }
+
+/* ── entrances, kept light as the brief asks ─────────────────────────── */
+
+@media (prefers-reduced-motion: no-preference) {
+  .rise { opacity: 0; transform: translateY(14px); }
+  .rise.in { opacity: 1; transform: none; transition: opacity .6s ease, transform .6s cubic-bezier(.16,.84,.3,1); }
+}
+
+/* ── narrower ────────────────────────────────────────────────────────── */
+
+@media (max-width: 1080px) {
+  .values { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; }
+}
+
+@media (max-width: 920px) {
+  .bar-nav, .bar-cta { display: none; }
+  .menu { display: block; }
+  .hero { grid-template-columns: 1fr; gap: 36px; }
+  .hero-words { max-width: none; }
+  .split { grid-template-columns: 1fr; gap: 28px; }
+  .dims { grid-template-columns: 1fr; gap: 26px; }
+  .dims li + li { border-left: 0; padding-left: 0; border-top: 1px solid var(--rule-navy); padding-top: 26px; }  /* taste-skill-ignore: a rule the approved reference design draws */
+  .foot-main { grid-template-columns: 1fr; }
+  .foot-brand { justify-self: start; text-align: left; }
+  .foot-by { justify-content: flex-start; }
+}
+
+@media (max-width: 680px) {
+  .values { grid-template-columns: 1fr; }
+  .steps { grid-template-columns: 1fr; }
+  .hero-acts .btn { width: 100%; }
+  .foot-strip { flex-direction: column; align-items: flex-start; }
+}
+
+@media (max-width: 420px) {
+  /* the smallest phones lose the words, never the mark: the BVANTRIX
+     attribution stays visible everywhere the wordmark appears */
+  .brand-by span { display: none; }
+  .brand-by { padding-left: 10px; }
+}
