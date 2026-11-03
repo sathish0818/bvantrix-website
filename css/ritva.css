@@ -541,7 +541,7 @@ a { color: inherit; }
 @media (max-width: 920px) {
   .bar-nav, .bar-cta { display: none; }
   .menu { display: block; }
-  .hero { grid-template-columns: 1fr; gap: 36px; }
+  .hero { gap: 0; }   /* the inner's own padding sets the distance to the picture */
   .hero-words { max-width: none; }
   .split { grid-template-columns: 1fr; gap: 28px; }
   .dims { grid-template-columns: 1fr; gap: 26px; }
@@ -746,17 +746,24 @@ a { color: inherit; }
 }
 
 @media (max-width: 920px) {
-  .hero-media { width: 100%; opacity: .5; }
-  .hero-media::after {
-    background: linear-gradient(180deg, rgba(247,243,235,.86) 0%, rgba(247,243,235,.95) 55%, var(--ivory) 100%);  /* taste-skill-ignore: the scrim over the hero photograph, and the dotted step connector */
+  /* On a phone the photograph stopped being a picture: behind a 95% scrim at
+     half opacity it read as a missing image rather than a backdrop. There is
+     no column to sit beside here, so it becomes a real picture under the
+     words. A scrim is only needed where text sits on top of it, and no text
+     does any more. */
+  .hero { display: flex; flex-direction: column; }
+  .hero-inner { order: 1; grid-template-columns: 1fr; min-height: 0; }
+  .hero-media {
+    order: 2;
+    position: static; z-index: auto;
+    width: 100%; height: clamp(230px, 52vw, 360px);
   }
-  .hero-inner { grid-template-columns: 1fr; min-height: 0; }
+  .hero-media::after { display: none; }
   .hero-words { max-width: none; }
-  .hero-dims {
-    grid-column: 1; grid-auto-flow: column; justify-content: start;
-    gap: 18px; padding-top: 34px;
-  }
-  .hero-dims .rule { display: none; }
+  /* The navy band immediately below names Earth, People and Governance and
+     explains each one. Repeating the three words here left them hanging under
+     the buttons, attached to nothing. */
+  .hero-dims { display: none; }
   .hero-foot { display: none; }
   .track { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 20px; }
   .track li + li::before { display: none; }

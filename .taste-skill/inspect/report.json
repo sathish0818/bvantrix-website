@@ -1,25 +1,26 @@
 {
- "url": "http://127.0.0.1:8777/ritva/index.html",
- "at": "2026-11-03T07:03:14.225Z",
+ "url": "http://127.0.0.1:8777/index.html",
+ "at": "2026-11-03T09:11:43.609Z",
  "allow": [],
  "viewports": [
   {
    "width": 1440,
    "height": 900,
    "load": "load",
-   "screens": 6,
+   "screens": 7,
    "filled": [
-    0.49,
-    0.7,
-    0.54,
-    0.68,
-    0.36,
+    0.3,
+    0.63,
+    0.47,
+    0.71,
+    0.41,
+    1,
     1
    ],
    "motion": {
-    "elements": 11,
+    "elements": 7,
     "css": 0,
-    "transitions": 11,
+    "transitions": 7,
     "scripted": 0,
     "videos": 0,
     "playingVideos": 0
@@ -30,14 +31,14 @@
      "h": 900
     },
     "page": {
-     "height": 5134,
-     "screens": 5.7,
-     "words": 487,
+     "height": 6024,
+     "screens": 6.7,
+     "words": 566,
      "img": 1,
      "video": 0,
      "canvas": 0,
-     "svg": 5,
-     "sections": 8,
+     "svg": 29,
+     "sections": 9,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 0,
@@ -59,8 +60,8 @@
      "words": 1,
      "chars": 5,
      "lines": 1,
-     "size": 68,
-     "vw": 4.7,
+     "size": 88,
+     "vw": 6.1,
      "font": "Cormorant Garamond",
      "weight": 300,
      "tracking": 0.3,
@@ -70,7 +71,7 @@
      "mono": false,
      "align": "left",
      "position": "left",
-     "widthRatio": 0.45,
+     "widthRatio": 0.48,
      "top": 162,
      "tag": "p",
      "kind": "heading"
@@ -99,7 +100,7 @@
       "mono": false,
       "align": "left",
       "position": "left",
-      "widthRatio": 0.09,
+      "widthRatio": 0.08,
       "top": 24,
       "tag": "span",
       "kind": "heading"
@@ -109,8 +110,8 @@
       "words": 1,
       "chars": 5,
       "lines": 1,
-      "size": 68,
-      "vw": 4.7,
+      "size": 88,
+      "vw": 6.1,
       "font": "Cormorant Garamond",
       "weight": 300,
       "tracking": 0.3,
@@ -120,7 +121,7 @@
       "mono": false,
       "align": "left",
       "position": "left",
-      "widthRatio": 0.45,
+      "widthRatio": 0.48,
       "top": 162,
       "tag": "p",
       "kind": "heading"
@@ -141,8 +142,8 @@
       "mono": false,
       "align": "left",
       "position": "left",
-      "widthRatio": 0.45,
-      "top": 248,
+      "widthRatio": 0.46,
+      "top": 262,
       "tag": "h1",
       "kind": "heading"
      },
@@ -163,14 +164,35 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.41,
-      "top": 1002,
+      "top": 1082,
       "tag": "h2",
       "kind": "heading"
      },
      {
-      "text": "Your ESG journey, made simple.",
-      "words": 5,
-      "chars": 30,
+      "text": "From ESG assessment to measurable progress.",
+      "words": 6,
+      "chars": 43,
+      "lines": 3,
+      "size": 56,
+      "vw": 3.9,
+      "font": "Cormorant Garamond",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.33,
+      "top": 1518,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Your ESG journey, on one platform.",
+      "words": 6,
+      "chars": 34,
       "lines": 2,
       "size": 56,
       "vw": 3.9,
@@ -183,16 +205,37 @@
       "mono": false,
       "align": "left",
       "position": "left",
-      "widthRatio": 0.45,
-      "top": 1438,
+      "widthRatio": 0.31,
+      "top": 2208,
       "tag": "h2",
       "kind": "heading"
      },
      {
-      "text": "Make ESG meaningful to your business.",
-      "words": 6,
-      "chars": 37,
+      "text": "Across industries. For a more responsible tomorrow.",
+      "words": 7,
+      "chars": 51,
       "lines": 2,
+      "size": 56,
+      "vw": 3.9,
+      "font": "Cormorant Garamond",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.84,
+      "top": 2884,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Understand what responsible business means today.",
+      "words": 6,
+      "chars": 49,
+      "lines": 3,
       "size": 56,
       "vw": 3.9,
       "font": "Cormorant Garamond",
@@ -205,28 +248,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.41,
-      "top": 2172,
-      "tag": "h2",
-      "kind": "heading"
-     },
-     {
-      "text": "Understand what responsible business means today.",
-      "words": 6,
-      "chars": 49,
-      "lines": 2,
-      "size": 56,
-      "vw": 3.9,
-      "font": "Cormorant Garamond",
-      "weight": 400,
-      "tracking": -0.01,
-      "leading": 1.08,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.45,
-      "top": 2756,
+      "top": 3491,
       "tag": "h2",
       "kind": "heading"
      },
@@ -247,7 +269,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.41,
-      "top": 3496,
+      "top": 4381,
       "tag": "h2",
       "kind": "heading"
      },
@@ -268,7 +290,7 @@
       "align": "center",
       "position": "center",
       "widthRatio": 0.38,
-      "top": 4368,
+      "top": 5255,
       "tag": "h2",
       "kind": "heading"
      },
@@ -288,31 +310,31 @@
       "mono": false,
       "align": "right",
       "position": "right",
-      "widthRatio": 0.2,
-      "top": 4789,
+      "widthRatio": 0.21,
+      "top": 5678,
       "tag": "p",
       "kind": "statement"
      }
     ],
     "headingSummary": {
-     "count": 10,
-     "maxLines": 2,
-     "over2Lines": 0,
+     "count": 11,
+     "maxLines": 3,
+     "over2Lines": 2,
      "statements": 1,
      "centered": 1,
-     "medianWords": 5,
+     "medianWords": 6,
      "mixedFontHeadings": 0
     },
     "type": {
      "families": [
       {
        "family": "Inter",
-       "share": 0.84,
+       "share": 0.85,
        "mono": false
       },
       {
        "family": "Cormorant Garamond",
-       "share": 0.16,
+       "share": 0.15,
        "mono": false
       }
      ],
@@ -322,14 +344,15 @@
       15,
       17,
       21,
+      22,
       24,
       28,
       44,
       48,
       56,
-      68
+      88
      ],
-     "sizeCount": 10,
+     "sizeCount": 11,
      "notLoaded": [],
      "body": {
       "font": "Inter",
@@ -341,8 +364,8 @@
      },
      "measureChars": 71,
      "max": {
-      "size": 68,
-      "vw": 4.7,
+      "size": 88,
+      "vw": 6.1,
       "font": "Cormorant Garamond",
       "text": "RITVA"
      },
@@ -350,30 +373,50 @@
      "monoProseShare": 0,
      "monoFamilies": [],
      "monoSamples": [],
-     "microLabels": 21,
-     "microLabelShare": 0.089,
+     "microLabels": 17,
+     "microLabelShare": 0.083,
      "microSamples": [
       "ESG intelligence platform",
-      "Earth",
-      "People",
-      "Governance",
+      "Connected consequencesBetter decisions",
       "About RITVA",
-      "How it works"
+      "Turn insights into action",
+      "Clear insights.Smarter decisions.",
+      "Built for real business impact"
      ],
-     "upperShare": 0.14,
-     "centerShare": 0.04,
+     "upperShare": 0.11,
+     "centerShare": 0.15,
      "smallText": 0
     },
     "eyebrows": [
      {
-      "text": "Why RITVA",
-      "above": "Make ESG meaningful to your business.",
+      "text": "Turn insights into action",
+      "above": "From ESG assessment to measurable progre",
       "upper": true,
       "tracked": true,
       "mono": false,
       "pill": false,
       "size": 13,
-      "top": 2134
+      "top": 1479
+     },
+     {
+      "text": "Clear insights.Smarter decisions.",
+      "above": "Your ESG journey, on one platform.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 2146
+     },
+     {
+      "text": "Built for real business impact",
+      "above": "Across industries. For a more responsibl",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 2845
      },
      {
       "text": "Contact",
@@ -383,29 +426,29 @@
       "mono": false,
       "pill": false,
       "size": 13,
-      "top": 3457
+      "top": 4342
      }
     ],
     "numbered": [
      {
       "text": "01",
-      "size": 24,
-      "top": 1662
+      "size": 22,
+      "top": 1570
      },
      {
       "text": "02",
-      "size": 24,
-      "top": 1662
+      "size": 22,
+      "top": 1570
      },
      {
       "text": "03",
-      "size": 24,
-      "top": 1662
+      "size": 22,
+      "top": 1570
      },
      {
       "text": "04",
-      "size": 24,
-      "top": 1662
+      "size": 22,
+      "top": 1569
      }
     ],
     "color": {
@@ -419,7 +462,7 @@
      "sectionBgs": [
       {
        "color": "#ede6d9",
-       "top": 1299,
+       "top": 1378,
        "hsl": {
         "h": 39,
         "s": 0.36,
@@ -428,7 +471,7 @@
       },
       {
        "color": "#0e2a47",
-       "top": 4253,
+       "top": 5140,
        "hsl": {
         "h": 211,
         "s": 0.67,
@@ -437,7 +480,7 @@
       },
       {
        "color": "#10322f",
-       "top": 4717,
+       "top": 5606,
        "hsl": {
         "h": 175,
         "s": 0.52,
@@ -448,19 +491,19 @@
      "textColors": [
       {
        "color": "#20242a",
-       "share": 0.61
+       "share": 0.63
       },
       {
        "color": "#aebdcc",
-       "share": 0.21
-      },
-      {
-       "color": "#7e5a20",
-       "share": 0.06
+       "share": 0.18
       },
       {
        "color": "#565e68",
-       "share": 0.04
+       "share": 0.08
+      },
+      {
+       "color": "#7e5a20",
+       "share": 0.05
       },
       {
        "color": "#f2eee6",
@@ -468,21 +511,21 @@
       }
      ],
      "button": {
-      "bg": "#a9813f",
+      "bg": "#c9a86a",
       "hsl": {
-       "h": 37,
-       "s": 0.46,
-       "l": 0.45
+       "h": 39,
+       "s": 0.47,
+       "l": 0.6
       },
-      "fg": "#1b1407"
+      "fg": "#11253d"
      },
      "lowContrast": []
     },
     "buttons": {
-     "count": 8,
-     "inHero": 4,
-     "radius": 0,
-     "height": 50,
+     "count": 6,
+     "inHero": 3,
+     "radius": "pill",
+     "height": 52,
      "withShadow": 0,
      "withGradient": 0,
      "mono": 0,
@@ -490,25 +533,26 @@
      "heroLabels": [
       "Skip to content",
       "Assess your ESG maturity",
-      "Assess your ESG maturity",
-      "Explore how it works"
+      "Assess your ESG maturity"
      ]
     },
     "surfaces": {
-     "shadowStatic": 0,
+     "shadowStatic": 1,
      "shadowOverlay": 0,
-     "shadowSamples": [],
+     "shadowSamples": [
+      "figure.panel → rgb(215, 206, 190) 0px 0px 0px 1px, rgba(32, 36, 42, 0.45) 0px 18px 40px -28px"
+     ],
      "gradients": 0,
      "scrims": 0,
      "gradientSamples": [],
      "gradientText": 0,
-     "hairlines": 6,
+     "hairlines": 5,
      "hairlineSamples": [
-      "header.bar 1320px",
-      "li 304px",
-      "li 304px",
-      "li 304px",
-      "li 304px"
+      "header.bar 1440px",
+      "div.panel-top 700px",
+      "nav.panel-rail 150px",
+      "figcaption#panelCap 700px",
+      "div.foot-strip 1320px"
      ],
      "outlinedBoxes": 5,
      "dashed": 0,
@@ -521,29 +565,17 @@
      "textShadow": 0,
      "cardRows": [
       {
-       "count": 4,
-       "iconTopped": false,
-       "rounded": false,
-       "top": 1631
-      },
-      {
        "count": 5,
        "iconTopped": false,
        "rounded": false,
-       "top": 2357
-      },
-      {
-       "count": 5,
-       "iconTopped": false,
-       "rounded": false,
-       "top": 2941
+       "top": 3762
       }
      ]
     },
     "heroMedia": [
      {
       "type": "img",
-      "ratio": 0.15
+      "ratio": 0.47
      }
     ],
     "nav": {
@@ -563,9 +595,9 @@
      "w": 1440,
      "h": 900
     },
-    "pageH": 5134,
+    "pageH": 6024,
     "margins": {
-     "left": 60,
+     "left": 118,
      "right": 118
     },
     "sections": [
@@ -573,19 +605,19 @@
       "sel": "section#top.hero",
       "tag": "section",
       "top": 76,
-      "height": 598,
-      "words": 42,
+      "height": 678,
+      "words": 46,
       "media": 1,
-      "middle": 252,
+      "middle": 0,
       "heading": {
        "text": "RITVA",
-       "size": 68,
+       "size": 88,
        "tag": "p"
       },
       "left": 118,
-      "right": 118,
+      "right": 0,
       "textLeft": 118,
-      "textRight": 136,
+      "textRight": 118,
       "fullBleed": false,
       "footer": false,
       "hero": true,
@@ -595,20 +627,20 @@
      {
       "sel": "section.band",
       "tag": "section",
-      "top": 674,
+      "top": 754,
       "height": 188,
       "words": 17,
       "media": 0,
-      "middle": 189,
+      "middle": 174,
       "heading": {
        "text": "Earth",
        "size": 15,
        "tag": "h2"
       },
-      "left": 180,
-      "right": 130,
-      "textLeft": 180,
-      "textRight": 130,
+      "left": 118,
+      "right": 184,
+      "textLeft": 212,
+      "textRight": 184,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -618,7 +650,7 @@
      {
       "sel": "section#about.page",
       "tag": "section",
-      "top": 862,
+      "top": 942,
       "height": 436,
       "words": 59,
       "media": 0,
@@ -641,20 +673,43 @@
      {
       "sel": "section#how.page.page--stone",
       "tag": "section",
-      "top": 1299,
-      "height": 734,
-      "words": 104,
+      "top": 1378,
+      "height": 667,
+      "words": 118,
       "media": 0,
-      "middle": 77,
+      "middle": 75,
+      "heading": {
+       "text": "From ESG assessment",
+       "size": 56,
+       "tag": "h2"
+      },
+      "left": 118,
+      "right": 129,
+      "textLeft": 118,
+      "textRight": 129,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#benefits.page",
+      "tag": "section",
+      "top": 2045,
+      "height": 700,
+      "words": 82,
+      "media": 0,
+      "middle": 78,
       "heading": {
        "text": "Your ESG journey,",
        "size": 56,
        "tag": "h2"
       },
-      "left": 60,
-      "right": 107,
-      "textLeft": 60,
-      "textRight": 107,
+      "left": 118,
+      "right": 147,
+      "textLeft": 118,
+      "textRight": 147,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -662,22 +717,22 @@
       "pinned": false
      },
      {
-      "sel": "section#why.page",
+      "sel": "section#industries.page.page--stone",
       "tag": "section",
-      "top": 2033,
-      "height": 584,
-      "words": 43,
+      "top": 2745,
+      "height": 606,
+      "words": 29,
       "media": 0,
-      "middle": 87,
+      "middle": 222,
       "heading": {
-       "text": "Make ESG meaningful",
+       "text": "Across industries.",
        "size": 56,
        "tag": "h2"
       },
       "left": 118,
-      "right": 151,
+      "right": 200,
       "textLeft": 118,
-      "textRight": 151,
+      "textRight": 200,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -685,22 +740,22 @@
       "pinned": false
      },
      {
-      "sel": "section#insights.page.page--stone",
+      "sel": "section#insights.page",
       "tag": "section",
-      "top": 2617,
-      "height": 739,
-      "words": 75,
+      "top": 3351,
+      "height": 890,
+      "words": 72,
       "media": 0,
-      "middle": 0,
+      "middle": 152,
       "heading": {
        "text": "Understand what responsible",
        "size": 56,
        "tag": "h2"
       },
-      "left": 60,
-      "right": 114,
-      "textLeft": 60,
-      "textRight": 114,
+      "left": 118,
+      "right": 218,
+      "textLeft": 118,
+      "textRight": 218,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -708,10 +763,10 @@
       "pinned": false
      },
      {
-      "sel": "section#contact.page",
+      "sel": "section#contact.page.page--stone",
       "tag": "section",
-      "top": 3356,
-      "height": 897,
+      "top": 4241,
+      "height": 899,
       "words": 44,
       "media": 0,
       "middle": 100,
@@ -723,7 +778,7 @@
       "left": 118,
       "right": 118,
       "textLeft": 118,
-      "textRight": 539,
+      "textRight": 535,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -733,8 +788,8 @@
      {
       "sel": "section.close-cta",
       "tag": "section",
-      "top": 4253,
-      "height": 464,
+      "top": 5140,
+      "height": 466,
       "words": 21,
       "media": 0,
       "middle": 0,
@@ -756,11 +811,11 @@
      {
       "sel": "footer.foot",
       "tag": "footer",
-      "top": 4717,
+      "top": 5606,
       "height": 418,
-      "words": 91,
+      "words": 89,
       "media": 0,
-      "middle": 94,
+      "middle": 24,
       "heading": {
        "text": "RITVA",
        "size": 44,
@@ -782,7 +837,7 @@
      {
       "text": "A better way to move the world forward.",
       "size": 48,
-      "top": 248,
+      "top": 262,
       "firstScreen": true
      }
     ],
@@ -790,27 +845,23 @@
     "edges": [
      {
       "x": 118,
-      "n": 10
+      "n": 17
      },
      {
       "x": 763,
-      "n": 5
-     },
-     {
-      "x": 60,
       "n": 4
      }
     ],
-    "leftBlocks": 19,
+    "leftBlocks": 21,
     "bodySize": 17,
     "stage": false,
     "explains": false,
     "slivers": [],
-    "voidShare": 0.13,
+    "voidShare": 0.05,
     "voidBox": {
      "x": 0,
-     "y": 600,
-     "w": 1440,
+     "y": 660,
+     "w": 540,
      "h": 120
     }
    },
@@ -821,20 +872,21 @@
    "width": 768,
    "height": 1024,
    "load": "load",
-   "screens": 7,
+   "screens": 8,
    "filled": [
     0.61,
-    0.61,
-    0.83,
-    0.6,
-    0.38,
+    0.67,
+    0.82,
+    0.57,
+    0.47,
     0.75,
-    0.93
+    1,
+    1
    ],
    "motion": {
-    "elements": 11,
+    "elements": 7,
     "css": 0,
-    "transitions": 11,
+    "transitions": 7,
     "scripted": 0,
     "videos": 0,
     "playingVideos": 0
@@ -845,14 +897,14 @@
      "h": 1024
     },
     "page": {
-     "height": 6330,
-     "screens": 6.2,
-     "words": 476,
+     "height": 7393,
+     "screens": 7.2,
+     "words": 549,
      "img": 1,
      "video": 0,
      "canvas": 0,
-     "svg": 5,
-     "sections": 8,
+     "svg": 29,
+     "sections": 9,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 0,
@@ -874,8 +926,8 @@
      "words": 1,
      "chars": 5,
      "lines": 1,
-     "size": 51.7,
-     "vw": 6.7,
+     "size": 63.9,
+     "vw": 8.3,
      "font": "Cormorant Garamond",
      "weight": 300,
      "tracking": 0.3,
@@ -885,7 +937,7 @@
      "mono": false,
      "align": "left",
      "position": "center",
-     "widthRatio": 0.92,
+     "widthRatio": 0.94,
      "top": 124,
      "tag": "p",
      "kind": "heading"
@@ -903,8 +955,8 @@
       "words": 1,
       "chars": 5,
       "lines": 1,
-      "size": 51.7,
-      "vw": 6.7,
+      "size": 63.9,
+      "vw": 8.3,
       "font": "Cormorant Garamond",
       "weight": 300,
       "tracking": 0.3,
@@ -914,7 +966,7 @@
       "mono": false,
       "align": "left",
       "position": "center",
-      "widthRatio": 0.92,
+      "widthRatio": 0.94,
       "top": 124,
       "tag": "p",
       "kind": "heading"
@@ -936,7 +988,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 194,
+      "top": 200,
       "tag": "h1",
       "kind": "heading"
      },
@@ -957,35 +1009,35 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 1563,
+      "top": 1450,
       "tag": "h2",
       "kind": "heading"
      },
      {
-      "text": "Your ESG journey, made simple.",
-      "words": 5,
-      "chars": 30,
-      "lines": 2,
-      "size": 42.3,
-      "vw": 5.5,
-      "font": "Cormorant Garamond",
-      "weight": 400,
-      "tracking": -0.01,
-      "leading": 1.08,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.92,
-      "top": 2077,
-      "tag": "h2",
-      "kind": "heading"
-     },
-     {
-      "text": "Make ESG meaningful to your business.",
+      "text": "From ESG assessment to measurable progress.",
       "words": 6,
-      "chars": 37,
+      "chars": 43,
+      "lines": 2,
+      "size": 42.3,
+      "vw": 5.5,
+      "font": "Cormorant Garamond",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.84,
+      "top": 1990,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Your ESG journey, on one platform.",
+      "words": 6,
+      "chars": 34,
       "lines": 2,
       "size": 42.3,
       "vw": 5.5,
@@ -999,7 +1051,28 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 2873,
+      "top": 3021,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Across industries. For a more responsible tomorrow.",
+      "words": 7,
+      "chars": 51,
+      "lines": 2,
+      "size": 42.3,
+      "vw": 5.5,
+      "font": "Cormorant Garamond",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.84,
+      "top": 4061,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1020,7 +1093,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 3506,
+      "top": 4627,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1040,8 +1113,8 @@
       "mono": false,
       "align": "left",
       "position": "center",
-      "widthRatio": 0.92,
-      "top": 4485,
+      "widthRatio": 0.84,
+      "top": 5546,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1062,7 +1135,7 @@
       "align": "center",
       "position": "center",
       "widthRatio": 0.59,
-      "top": 5536,
+      "top": 6625,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1082,14 +1155,14 @@
       "mono": false,
       "align": "left",
       "position": "left",
-      "widthRatio": 0.37,
-      "top": 6041,
+      "widthRatio": 0.39,
+      "top": 7133,
       "tag": "p",
       "kind": "statement"
      }
     ],
     "headingSummary": {
-     "count": 9,
+     "count": 10,
      "maxLines": 2,
      "over2Lines": 0,
      "statements": 1,
@@ -1117,12 +1190,12 @@
       17,
       20,
       21,
-      24,
+      22,
       25,
       35,
       39,
       42,
-      52
+      64
      ],
      "sizeCount": 11,
      "notLoaded": [],
@@ -1136,8 +1209,8 @@
      },
      "measureChars": 71,
      "max": {
-      "size": 51.7,
-      "vw": 6.7,
+      "size": 63.9,
+      "vw": 8.3,
       "font": "Cormorant Garamond",
       "text": "RITVA"
      },
@@ -1145,18 +1218,18 @@
      "monoProseShare": 0,
      "monoFamilies": [],
      "monoSamples": [],
-     "microLabels": 21,
-     "microLabelShare": 0.091,
+     "microLabels": 16,
+     "microLabelShare": 0.076,
      "microSamples": [
       "ESG intelligence platform",
-      "Earth",
-      "People",
-      "Governance",
       "About RITVA",
-      "How it works"
+      "Turn insights into action",
+      "Clear insights.Smarter decisions.",
+      "Built for real business impact",
+      "Insights"
      ],
-     "upperShare": 0.14,
-     "centerShare": 0.05,
+     "upperShare": 0.1,
+     "centerShare": 0.15,
      "smallText": 0
     },
     "eyebrows": [
@@ -1168,27 +1241,37 @@
       "mono": false,
       "pill": false,
       "size": 13,
-      "top": 1524
+      "top": 1411
      },
      {
-      "text": "How it works",
-      "above": "Your ESG journey, made simple.",
+      "text": "Turn insights into action",
+      "above": "From ESG assessment to measurable progre",
       "upper": true,
       "tracked": true,
       "mono": false,
       "pill": false,
       "size": 13,
-      "top": 2038
+      "top": 1951
      },
      {
-      "text": "Why RITVA",
-      "above": "Make ESG meaningful to your business.",
+      "text": "Clear insights.Smarter decisions.",
+      "above": "Your ESG journey, on one platform.",
       "upper": true,
       "tracked": true,
       "mono": false,
       "pill": false,
       "size": 13,
-      "top": 2834
+      "top": 2958
+     },
+     {
+      "text": "Built for real business impact",
+      "above": "Across industries. For a more responsibl",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 4023
      },
      {
       "text": "Insights",
@@ -1198,7 +1281,7 @@
       "mono": false,
       "pill": false,
       "size": 13,
-      "top": 3468
+      "top": 4589
      },
      {
       "text": "Contact",
@@ -1208,29 +1291,29 @@
       "mono": false,
       "pill": false,
       "size": 13,
-      "top": 4446
+      "top": 5507
      }
     ],
     "numbered": [
      {
       "text": "01",
-      "size": 24,
-      "top": 2324
+      "size": 22,
+      "top": 2445
      },
      {
       "text": "02",
-      "size": 24,
-      "top": 2324
+      "size": 22,
+      "top": 2445
      },
      {
       "text": "03",
-      "size": 24,
-      "top": 2504
+      "size": 22,
+      "top": 2699
      },
      {
       "text": "04",
-      "size": 24,
-      "top": 2504
+      "size": 22,
+      "top": 2699
      }
     ],
     "color": {
@@ -1244,7 +1327,7 @@
      "sectionBgs": [
       {
        "color": "#0e2a47",
-       "top": 1121,
+       "top": 953,
        "hsl": {
         "h": 211,
         "s": 0.67,
@@ -1253,7 +1336,7 @@
       },
       {
        "color": "#ede6d9",
-       "top": 1974,
+       "top": 1887,
        "hsl": {
         "h": 39,
         "s": 0.36,
@@ -1261,8 +1344,17 @@
        }
       },
       {
+       "color": "#f7f3eb",
+       "top": 3401,
+       "hsl": {
+        "h": 40,
+        "s": 0.43,
+        "l": 0.95
+       }
+      },
+      {
        "color": "#10322f",
-       "top": 5823,
+       "top": 6915,
        "hsl": {
         "h": 175,
         "s": 0.52,
@@ -1273,66 +1365,67 @@
      "textColors": [
       {
        "color": "#20242a",
-       "share": 0.62
+       "share": 0.64
       },
       {
        "color": "#aebdcc",
-       "share": 0.21
+       "share": 0.18
+      },
+      {
+       "color": "#565e68",
+       "share": 0.07
       },
       {
        "color": "#7e5a20",
-       "share": 0.06
+       "share": 0.05
       },
       {
        "color": "#f2eee6",
        "share": 0.03
-      },
-      {
-       "color": "#565e68",
-       "share": 0.03
       }
      ],
      "button": {
-      "bg": "#a9813f",
+      "bg": "#c9a86a",
       "hsl": {
-       "h": 37,
-       "s": 0.46,
-       "l": 0.45
+       "h": 39,
+       "s": 0.47,
+       "l": 0.6
       },
-      "fg": "#1b1407"
+      "fg": "#11253d"
      },
      "lowContrast": []
     },
     "buttons": {
-     "count": 7,
-     "inHero": 3,
-     "radius": 0,
-     "height": 50,
+     "count": 5,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 52,
      "withShadow": 0,
      "withGradient": 0,
      "mono": 0,
      "upper": 0,
      "heroLabels": [
       "Skip to content",
-      "Assess your ESG maturity",
-      "Explore how it works"
+      "Assess your ESG maturity"
      ]
     },
     "surfaces": {
-     "shadowStatic": 0,
+     "shadowStatic": 1,
      "shadowOverlay": 0,
-     "shadowSamples": [],
+     "shadowSamples": [
+      "figure.panel → rgb(215, 206, 190) 0px 0px 0px 1px, rgba(32, 36, 42, 0.45) 0px 18px 40px -28px"
+     ],
      "gradients": 0,
      "scrims": 0,
      "gradientSamples": [],
      "gradientText": 0,
-     "hairlines": 8,
+     "hairlines": 7,
      "hairlineSamples": [
       "header.bar 768px",
       "li 707px",
       "li 707px",
-      "li 337px",
-      "li 337px"
+      "div.panel-top 707px",
+      "nav.panel-rail 707px"
      ],
      "outlinedBoxes": 5,
      "dashed": 0,
@@ -1345,29 +1438,17 @@
      "textShadow": 0,
      "cardRows": [
       {
-       "count": 4,
-       "iconTopped": false,
-       "rounded": false,
-       "top": 2293
-      },
-      {
        "count": 5,
        "iconTopped": false,
        "rounded": false,
-       "top": 3004
-      },
-      {
-       "count": 5,
-       "iconTopped": false,
-       "rounded": false,
-       "top": 3789
+       "top": 4937
       }
      ]
     },
     "heroMedia": [
      {
       "type": "img",
-      "ratio": 0.44
+      "ratio": 0.35
      }
     ],
     "nav": {
@@ -1387,30 +1468,30 @@
      "w": 768,
      "h": 1024
     },
-    "pageH": 6330,
+    "pageH": 7393,
     "margins": {
      "left": 31,
-     "right": 31
+     "right": 61
     },
     "sections": [
      {
       "sel": "section#top.hero",
       "tag": "section",
       "top": 76,
-      "height": 1045,
-      "words": 42,
+      "height": 877,
+      "words": 39,
       "media": 1,
       "middle": 0,
       "heading": {
        "text": "RITVA",
-       "size": 52,
+       "size": 64,
        "tag": "p"
       },
       "left": 31,
-      "right": 31,
+      "right": 225,
       "textLeft": 31,
-      "textRight": 49,
-      "fullBleed": false,
+      "textRight": 225,
+      "fullBleed": true,
       "footer": false,
       "hero": true,
       "continues": true,
@@ -1419,20 +1500,20 @@
      {
       "sel": "section.band",
       "tag": "section",
-      "top": 1121,
-      "height": 339,
+      "top": 953,
+      "height": 394,
       "words": 17,
       "media": 0,
-      "middle": 0,
+      "middle": 22,
       "heading": {
        "text": "Earth",
        "size": 15,
        "tag": "h2"
       },
-      "left": 93,
-      "right": 322,
-      "textLeft": 93,
-      "textRight": 322,
+      "left": 31,
+      "right": 290,
+      "textLeft": 125,
+      "textRight": 290,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1442,8 +1523,8 @@
      {
       "sel": "section#about.page",
       "tag": "section",
-      "top": 1460,
-      "height": 514,
+      "top": 1347,
+      "height": 540,
       "words": 59,
       "media": 0,
       "middle": 0,
@@ -1465,9 +1546,32 @@
      {
       "sel": "section#how.page.page--stone",
       "tag": "section",
-      "top": 1974,
-      "height": 797,
-      "words": 104,
+      "top": 1887,
+      "height": 1007,
+      "words": 118,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "From ESG assessment",
+       "size": 42,
+       "tag": "h2"
+      },
+      "left": 61,
+      "right": 87,
+      "textLeft": 61,
+      "textRight": 87,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#benefits.page",
+      "tag": "section",
+      "top": 2894,
+      "height": 1064,
+      "words": 82,
       "media": 0,
       "middle": 0,
       "heading": {
@@ -1476,9 +1580,9 @@
        "tag": "h2"
       },
       "left": 31,
-      "right": 41,
+      "right": 66,
       "textLeft": 31,
-      "textRight": 41,
+      "textRight": 66,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1486,22 +1590,22 @@
       "pinned": false
      },
      {
-      "sel": "section#why.page",
+      "sel": "section#industries.page.page--stone",
       "tag": "section",
-      "top": 2770,
-      "height": 633,
-      "words": 43,
+      "top": 3959,
+      "height": 566,
+      "words": 29,
       "media": 0,
-      "middle": 81,
+      "middle": 0,
       "heading": {
-       "text": "Make ESG meaningful",
+       "text": "Across industries.",
        "size": 42,
        "tag": "h2"
       },
-      "left": 31,
-      "right": 70,
-      "textLeft": 31,
-      "textRight": 70,
+      "left": 61,
+      "right": 82,
+      "textLeft": 61,
+      "textRight": 82,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1509,11 +1613,11 @@
       "pinned": false
      },
      {
-      "sel": "section#insights.page.page--stone",
+      "sel": "section#insights.page",
       "tag": "section",
-      "top": 3404,
-      "height": 979,
-      "words": 75,
+      "top": 4525,
+      "height": 919,
+      "words": 72,
       "media": 0,
       "middle": 0,
       "heading": {
@@ -1532,10 +1636,10 @@
       "pinned": false
      },
      {
-      "sel": "section#contact.page",
+      "sel": "section#contact.page.page--stone",
       "tag": "section",
-      "top": 4382,
-      "height": 1082,
+      "top": 5443,
+      "height": 1110,
       "words": 44,
       "media": 0,
       "middle": 0,
@@ -1544,10 +1648,10 @@
        "size": 42,
        "tag": "h2"
       },
-      "left": 31,
-      "right": 31,
-      "textLeft": 31,
-      "textRight": 256,
+      "left": 61,
+      "right": 61,
+      "textLeft": 61,
+      "textRight": 225,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1557,8 +1661,8 @@
      {
       "sel": "section.close-cta",
       "tag": "section",
-      "top": 5464,
-      "height": 359,
+      "top": 6553,
+      "height": 361,
       "words": 21,
       "media": 0,
       "middle": 0,
@@ -1580,9 +1684,9 @@
      {
       "sel": "footer.foot",
       "tag": "footer",
-      "top": 5823,
-      "height": 506,
-      "words": 91,
+      "top": 6915,
+      "height": 479,
+      "words": 89,
       "media": 0,
       "middle": 24,
       "heading": {
@@ -1606,7 +1710,7 @@
      {
       "text": "A better way to move the world forward.",
       "size": 39,
-      "top": 194,
+      "top": 200,
       "firstScreen": true
      }
     ],
@@ -1614,10 +1718,14 @@
     "edges": [
      {
       "x": 31,
-      "n": 19
+      "n": 13
+     },
+     {
+      "x": 61,
+      "n": 8
      }
     ],
-    "leftBlocks": 19,
+    "leftBlocks": 21,
     "bodySize": 17,
     "stage": false,
     "explains": false,
@@ -1632,22 +1740,24 @@
    "width": 390,
    "height": 844,
    "load": "load",
-   "screens": 9,
+   "screens": 11,
    "filled": [
-    0.57,
-    0.72,
-    0.87,
-    0.72,
-    0.82,
-    0.61,
-    0.44,
-    0.56,
+    0.51,
+    0.75,
+    0.91,
+    0.97,
+    0.53,
+    0.68,
+    0.49,
+    0.39,
+    1,
+    1,
     1
    ],
    "motion": {
-    "elements": 11,
+    "elements": 7,
     "css": 0,
-    "transitions": 11,
+    "transitions": 7,
     "scripted": 0,
     "videos": 0,
     "playingVideos": 0
@@ -1658,14 +1768,14 @@
      "h": 844
     },
     "page": {
-     "height": 7335,
-     "screens": 8.7,
-     "words": 471,
+     "height": 8865,
+     "screens": 10.5,
+     "words": 544,
      "img": 1,
      "video": 0,
      "canvas": 0,
-     "svg": 5,
-     "sections": 8,
+     "svg": 29,
+     "sections": 9,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 0,
@@ -1677,7 +1787,7 @@
       "container-cranes-at-the-mpet-msc-psa.jpg"
      ],
      "blendText": 0,
-     "sideScrollers": 0,
+     "sideScrollers": 1,
      "brokenImages": [],
      "emoji": [],
      "videosNoPoster": 0
@@ -1687,8 +1797,8 @@
      "words": 1,
      "chars": 5,
      "lines": 1,
-     "size": 40,
-     "vw": 10.3,
+     "size": 44,
+     "vw": 11.3,
      "font": "Cormorant Garamond",
      "weight": 300,
      "tracking": 0.3,
@@ -1698,7 +1808,7 @@
      "mono": false,
      "align": "left",
      "position": "center",
-     "widthRatio": 0.9,
+     "widthRatio": 0.93,
      "top": 124,
      "tag": "p",
      "kind": "heading"
@@ -1727,8 +1837,8 @@
       "mono": false,
       "align": "left",
       "position": "left",
-      "widthRatio": 0.25,
-      "top": 26,
+      "widthRatio": 0.34,
+      "top": 25,
       "tag": "a",
       "kind": "heading"
      },
@@ -1737,8 +1847,8 @@
       "words": 1,
       "chars": 5,
       "lines": 1,
-      "size": 40,
-      "vw": 10.3,
+      "size": 44,
+      "vw": 11.3,
       "font": "Cormorant Garamond",
       "weight": 300,
       "tracking": 0.3,
@@ -1748,7 +1858,7 @@
       "mono": false,
       "align": "left",
       "position": "center",
-      "widthRatio": 0.9,
+      "widthRatio": 0.93,
       "top": 124,
       "tag": "p",
       "kind": "heading"
@@ -1770,7 +1880,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 182,
+      "top": 180,
       "tag": "h1",
       "kind": "heading"
      },
@@ -1791,14 +1901,14 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 1403,
+      "top": 1391,
       "tag": "h2",
       "kind": "heading"
      },
      {
-      "text": "Your ESG journey, made simple.",
-      "words": 5,
-      "chars": 30,
+      "text": "From ESG assessment to measurable progress.",
+      "words": 6,
+      "chars": 43,
       "lines": 2,
       "size": 32,
       "vw": 8.2,
@@ -1811,8 +1921,8 @@
       "mono": false,
       "align": "left",
       "position": "center",
-      "widthRatio": 0.9,
-      "top": 1935,
+      "widthRatio": 0.79,
+      "top": 1949,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1821,8 +1931,8 @@
       "words": 1,
       "chars": 2,
       "lines": 1,
-      "size": 24,
-      "vw": 6.2,
+      "size": 22,
+      "vw": 5.6,
       "font": "Cormorant Garamond",
       "weight": 400,
       "tracking": 0,
@@ -1830,10 +1940,10 @@
       "upper": false,
       "italic": false,
       "mono": false,
-      "align": "left",
+      "align": "center",
       "position": "center",
-      "widthRatio": 0.9,
-      "top": 2184,
+      "widthRatio": 0.05,
+      "top": 2400,
       "tag": "span",
       "kind": "statement"
      },
@@ -1842,8 +1952,8 @@
       "words": 1,
       "chars": 2,
       "lines": 1,
-      "size": 24,
-      "vw": 6.2,
+      "size": 22,
+      "vw": 5.6,
       "font": "Cormorant Garamond",
       "weight": 400,
       "tracking": 0,
@@ -1851,10 +1961,10 @@
       "upper": false,
       "italic": false,
       "mono": false,
-      "align": "left",
+      "align": "center",
       "position": "center",
-      "widthRatio": 0.9,
-      "top": 2363,
+      "widthRatio": 0.05,
+      "top": 2652,
       "tag": "span",
       "kind": "statement"
      },
@@ -1863,8 +1973,8 @@
       "words": 1,
       "chars": 2,
       "lines": 1,
-      "size": 24,
-      "vw": 6.2,
+      "size": 22,
+      "vw": 5.6,
       "font": "Cormorant Garamond",
       "weight": 400,
       "tracking": 0,
@@ -1872,10 +1982,10 @@
       "upper": false,
       "italic": false,
       "mono": false,
-      "align": "left",
+      "align": "center",
       "position": "center",
-      "widthRatio": 0.9,
-      "top": 2543,
+      "widthRatio": 0.05,
+      "top": 2905,
       "tag": "span",
       "kind": "statement"
      },
@@ -1884,8 +1994,8 @@
       "words": 1,
       "chars": 2,
       "lines": 1,
-      "size": 24,
-      "vw": 6.2,
+      "size": 22,
+      "vw": 5.6,
       "font": "Cormorant Garamond",
       "weight": 400,
       "tracking": 0,
@@ -1893,17 +2003,17 @@
       "upper": false,
       "italic": false,
       "mono": false,
-      "align": "left",
+      "align": "center",
       "position": "center",
-      "widthRatio": 0.9,
-      "top": 2722,
+      "widthRatio": 0.05,
+      "top": 3157,
       "tag": "span",
       "kind": "statement"
      },
      {
-      "text": "Make ESG meaningful to your business.",
+      "text": "Your ESG journey, on one platform.",
       "words": 6,
-      "chars": 37,
+      "chars": 34,
       "lines": 2,
       "size": 32,
       "vw": 8.2,
@@ -1917,7 +2027,28 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 3091,
+      "top": 3478,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Across industries. For a more responsible tomorrow.",
+      "words": 7,
+      "chars": 51,
+      "lines": 3,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Cormorant Garamond",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.79,
+      "top": 4650,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1938,7 +2069,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 4093,
+      "top": 5579,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1946,7 +2077,7 @@
       "text": "Every responsible journey starts somewhere.",
       "words": 5,
       "chars": 43,
-      "lines": 2,
+      "lines": 3,
       "size": 32,
       "vw": 8.2,
       "font": "Cormorant Garamond",
@@ -1958,8 +2089,8 @@
       "mono": false,
       "align": "left",
       "position": "center",
-      "widthRatio": 0.9,
-      "top": 5391,
+      "widthRatio": 0.79,
+      "top": 6817,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1980,7 +2111,7 @@
       "align": "center",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 6432,
+      "top": 7947,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1999,19 +2130,19 @@
       "italic": false,
       "mono": false,
       "align": "left",
-      "position": "left",
-      "widthRatio": 0.72,
-      "top": 6997,
+      "position": "center",
+      "widthRatio": 0.76,
+      "top": 8514,
       "tag": "p",
       "kind": "statement"
      }
     ],
     "headingSummary": {
-     "count": 14,
+     "count": 15,
      "maxLines": 3,
-     "over2Lines": 1,
+     "over2Lines": 3,
      "statements": 5,
-     "centered": 1,
+     "centered": 5,
      "medianWords": 5,
      "mixedFontHeadings": 0
     },
@@ -2033,14 +2164,14 @@
       13,
       15,
       16,
+      17,
       18,
       20,
       22,
-      24,
       28,
       32,
       34,
-      40
+      44
      ],
      "sizeCount": 11,
      "notLoaded": [],
@@ -2054,8 +2185,8 @@
      },
      "measureChars": 47,
      "max": {
-      "size": 40,
-      "vw": 10.3,
+      "size": 44,
+      "vw": 11.3,
       "font": "Cormorant Garamond",
       "text": "RITVA"
      },
@@ -2063,18 +2194,18 @@
      "monoProseShare": 0,
      "monoFamilies": [],
      "monoSamples": [],
-     "microLabels": 21,
-     "microLabelShare": 0.091,
+     "microLabels": 16,
+     "microLabelShare": 0.076,
      "microSamples": [
       "ESG intelligence platform",
-      "Earth",
-      "People",
-      "Governance",
       "About RITVA",
-      "How it works"
+      "Turn insights into action",
+      "Clear insights.Smarter decisions.",
+      "Built for real business impact",
+      "Insights"
      ],
-     "upperShare": 0.13,
-     "centerShare": 0.05,
+     "upperShare": 0.09,
+     "centerShare": 0.16,
      "smallText": 0
     },
     "eyebrows": [
@@ -2086,27 +2217,37 @@
       "mono": false,
       "pill": false,
       "size": 13,
-      "top": 1365
+      "top": 1353
      },
      {
-      "text": "How it works",
-      "above": "Your ESG journey, made simple.",
+      "text": "Turn insights into action",
+      "above": "From ESG assessment to measurable progre",
       "upper": true,
       "tracked": true,
       "mono": false,
       "pill": false,
       "size": 13,
-      "top": 1896
+      "top": 1910
      },
      {
-      "text": "Why RITVA",
-      "above": "Make ESG meaningful to your business.",
+      "text": "Clear insights.Smarter decisions.",
+      "above": "Your ESG journey, on one platform.",
       "upper": true,
       "tracked": true,
       "mono": false,
       "pill": false,
       "size": 13,
-      "top": 3053
+      "top": 3416
+     },
+     {
+      "text": "Built for real business impact",
+      "above": "Across industries. For a more responsibl",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 4612
      },
      {
       "text": "Insights",
@@ -2116,7 +2257,7 @@
       "mono": false,
       "pill": false,
       "size": 13,
-      "top": 4054
+      "top": 5540
      },
      {
       "text": "Contact",
@@ -2126,29 +2267,29 @@
       "mono": false,
       "pill": false,
       "size": 13,
-      "top": 5352
+      "top": 6778
      }
     ],
     "numbered": [
      {
       "text": "01",
-      "size": 24,
-      "top": 2184
+      "size": 22,
+      "top": 2400
      },
      {
       "text": "02",
-      "size": 24,
-      "top": 2363
+      "size": 22,
+      "top": 2652
      },
      {
       "text": "03",
-      "size": 24,
-      "top": 2543
+      "size": 22,
+      "top": 2905
      },
      {
       "text": "04",
-      "size": 24,
-      "top": 2722
+      "size": 22,
+      "top": 3157
      }
     ],
     "color": {
@@ -2162,7 +2303,7 @@
      "sectionBgs": [
       {
        "color": "#0e2a47",
-       "top": 917,
+       "top": 883,
        "hsl": {
         "h": 211,
         "s": 0.67,
@@ -2171,7 +2312,7 @@
       },
       {
        "color": "#ede6d9",
-       "top": 1832,
+       "top": 1846,
        "hsl": {
         "h": 39,
         "s": 0.36,
@@ -2179,8 +2320,17 @@
        }
       },
       {
+       "color": "#f7f3eb",
+       "top": 3928,
+       "hsl": {
+        "h": 40,
+        "s": 0.43,
+        "l": 0.95
+       }
+      },
+      {
        "color": "#10322f",
-       "top": 6733,
+       "top": 8249,
        "hsl": {
         "h": 175,
         "s": 0.52,
@@ -2191,66 +2341,67 @@
      "textColors": [
       {
        "color": "#20242a",
-       "share": 0.63
+       "share": 0.64
       },
       {
        "color": "#aebdcc",
-       "share": 0.21
+       "share": 0.18
+      },
+      {
+       "color": "#565e68",
+       "share": 0.07
       },
       {
        "color": "#7e5a20",
-       "share": 0.06
+       "share": 0.05
       },
       {
        "color": "#f2eee6",
-       "share": 0.04
-      },
-      {
-       "color": "#1b1407",
        "share": 0.03
       }
      ],
      "button": {
-      "bg": "#a9813f",
+      "bg": "#c9a86a",
       "hsl": {
-       "h": 37,
-       "s": 0.46,
-       "l": 0.45
+       "h": 39,
+       "s": 0.47,
+       "l": 0.6
       },
-      "fg": "#1b1407"
+      "fg": "#11253d"
      },
      "lowContrast": []
     },
     "buttons": {
-     "count": 7,
-     "inHero": 3,
-     "radius": 0,
-     "height": 50,
+     "count": 5,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 52,
      "withShadow": 0,
      "withGradient": 0,
      "mono": 0,
      "upper": 0,
      "heroLabels": [
       "Skip to content",
-      "Assess your ESG maturity",
-      "Explore how it works"
+      "Assess your ESG maturity"
      ]
     },
     "surfaces": {
-     "shadowStatic": 0,
+     "shadowStatic": 1,
      "shadowOverlay": 0,
-     "shadowSamples": [],
+     "shadowSamples": [
+      "figure.panel → rgb(215, 206, 190) 0px 0px 0px 1px, rgba(32, 36, 42, 0.45) 0px 18px 40px -28px"
+     ],
      "gradients": 0,
      "scrims": 0,
      "gradientSamples": [],
      "gradientText": 0,
-     "hairlines": 8,
+     "hairlines": 7,
      "hairlineSamples": [
       "header.bar 390px",
       "li 350px",
       "li 350px",
-      "li 350px",
-      "li 350px"
+      "div.panel-top 350px",
+      "nav.panel-rail 350px"
      ],
      "outlinedBoxes": 5,
      "dashed": 0,
@@ -2263,29 +2414,17 @@
      "textShadow": 0,
      "cardRows": [
       {
-       "count": 4,
-       "iconTopped": false,
-       "rounded": false,
-       "top": 2153
-      },
-      {
        "count": 5,
        "iconTopped": false,
        "rounded": false,
-       "top": 3201
-      },
-      {
-       "count": 5,
-       "iconTopped": false,
-       "rounded": false,
-       "top": 4434
+       "top": 5946
       }
      ]
     },
     "heroMedia": [
      {
       "type": "img",
-      "ratio": 0.26
+      "ratio": 0.23
      }
     ],
     "nav": {
@@ -2305,30 +2444,30 @@
      "w": 390,
      "h": 844
     },
-    "pageH": 7335,
+    "pageH": 8865,
     "margins": {
      "left": 20,
-     "right": 20
+     "right": 22
     },
     "sections": [
      {
       "sel": "section#top.hero",
       "tag": "section",
       "top": 76,
-      "height": 841,
-      "words": 42,
+      "height": 807,
+      "words": 39,
       "media": 1,
       "middle": 0,
       "heading": {
        "text": "RITVA",
-       "size": 40,
+       "size": 44,
        "tag": "p"
       },
       "left": 20,
-      "right": 20,
+      "right": 53,
       "textLeft": 20,
-      "textRight": 38,
-      "fullBleed": false,
+      "textRight": 53,
+      "fullBleed": true,
       "footer": false,
       "hero": true,
       "continues": true,
@@ -2337,20 +2476,20 @@
      {
       "sel": "section.band",
       "tag": "section",
-      "top": 917,
-      "height": 384,
+      "top": 883,
+      "height": 406,
       "words": 17,
       "media": 0,
-      "middle": 0,
+      "middle": 22,
       "heading": {
        "text": "Earth",
        "size": 15,
        "tag": "h2"
       },
-      "left": 82,
-      "right": 23,
-      "textLeft": 82,
-      "textRight": 23,
+      "left": 20,
+      "right": 22,
+      "textLeft": 114,
+      "textRight": 22,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -2360,8 +2499,8 @@
      {
       "sel": "section#about.page",
       "tag": "section",
-      "top": 1301,
-      "height": 531,
+      "top": 1289,
+      "height": 557,
       "words": 59,
       "media": 0,
       "middle": 0,
@@ -2383,20 +2522,43 @@
      {
       "sel": "section#how.page.page--stone",
       "tag": "section",
-      "top": 1832,
-      "height": 1157,
-      "words": 104,
+      "top": 1846,
+      "height": 1506,
+      "words": 118,
       "media": 0,
       "middle": 0,
+      "heading": {
+       "text": "From ESG assessment",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 40,
+      "right": 42,
+      "textLeft": 40,
+      "textRight": 42,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#benefits.page",
+      "tag": "section",
+      "top": 3352,
+      "height": 1195,
+      "words": 82,
+      "media": 0,
+      "middle": 50,
       "heading": {
        "text": "Your ESG journey,",
        "size": 32,
        "tag": "h2"
       },
       "left": 20,
-      "right": 32,
+      "right": 0,
       "textLeft": 20,
-      "textRight": 32,
+      "textRight": -97,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -2404,22 +2566,22 @@
       "pinned": false
      },
      {
-      "sel": "section#why.page",
+      "sel": "section#industries.page.page--stone",
       "tag": "section",
-      "top": 2989,
-      "height": 1001,
-      "words": 43,
+      "top": 4548,
+      "height": 928,
+      "words": 29,
       "media": 0,
       "middle": 0,
       "heading": {
-       "text": "Make ESG meaningful",
+       "text": "Across industries.",
        "size": 32,
        "tag": "h2"
       },
-      "left": 20,
-      "right": 44,
-      "textLeft": 20,
-      "textRight": 44,
+      "left": 40,
+      "right": 56,
+      "textLeft": 40,
+      "textRight": 56,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -2427,11 +2589,11 @@
       "pinned": false
      },
      {
-      "sel": "section#insights.page.page--stone",
+      "sel": "section#insights.page",
       "tag": "section",
-      "top": 3990,
-      "height": 1298,
-      "words": 75,
+      "top": 5476,
+      "height": 1238,
+      "words": 72,
       "media": 0,
       "middle": 0,
       "heading": {
@@ -2450,10 +2612,10 @@
       "pinned": false
      },
      {
-      "sel": "section#contact.page",
+      "sel": "section#contact.page.page--stone",
       "tag": "section",
-      "top": 5288,
-      "height": 1073,
+      "top": 6714,
+      "height": 1161,
       "words": 44,
       "media": 0,
       "middle": 0,
@@ -2462,10 +2624,10 @@
        "size": 32,
        "tag": "h2"
       },
-      "left": 20,
-      "right": 20,
-      "textLeft": 20,
-      "textRight": 43,
+      "left": 40,
+      "right": 40,
+      "textLeft": 40,
+      "textRight": 53,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -2475,8 +2637,8 @@
      {
       "sel": "section.close-cta",
       "tag": "section",
-      "top": 6360,
-      "height": 373,
+      "top": 7875,
+      "height": 375,
       "words": 21,
       "media": 0,
       "middle": 0,
@@ -2498,9 +2660,9 @@
      {
       "sel": "footer.foot",
       "tag": "footer",
-      "top": 6733,
-      "height": 602,
-      "words": 91,
+      "top": 8249,
+      "height": 615,
+      "words": 89,
       "media": 0,
       "middle": 0,
       "heading": {
@@ -2524,7 +2686,7 @@
      {
       "text": "A better way to move the world forward.",
       "size": 34,
-      "top": 182,
+      "top": 180,
       "firstScreen": true
      }
     ],
@@ -2532,10 +2694,14 @@
     "edges": [
      {
       "x": 20,
-      "n": 19
+      "n": 13
+     },
+     {
+      "x": 40,
+      "n": 8
      }
     ],
-    "leftBlocks": 19,
+    "leftBlocks": 21,
     "bodySize": 16,
     "stage": false,
     "explains": false,
@@ -2550,9 +2716,16 @@
  "findings": [
   {
    "level": "FAIL",
+   "id": "headline-lines",
+   "width": 1440,
+   "message": "2 headline(s) wrap past two lines at 1440px: \"From ESG assessment to measurable progress.\" → 3 lines (6 words, 56px); \"Understand what responsible business means today\" → 3 lines (6 words, 56px)",
+   "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 36px or less."
+  },
+  {
+   "level": "FAIL",
    "id": "eyebrow",
    "width": 1440,
-   "message": "2 eyebrow/kicker label(s) above headings: \"Why RITVA\" above \"Make ESG meaningful to your business.\"; \"Contact\" above \"Every responsible journey starts somewhe\"",
+   "message": "4 eyebrow/kicker label(s) above headings: \"Turn insights into action\" above \"From ESG assessment to measurable progre\"; \"Clear insights.Smarter decisions.\" above \"Your ESG journey, on one platform.\"; \"Built for real business impact\" above \"Across industries. For a more responsibl\"; \"Contact\" above \"Every responsible journey starts somewhe\"",
    "fix": "Delete them. If the label carried real information, fold it into the headline or the supporting sentence.",
    "alsoAt": [
     768,
@@ -2574,8 +2747,19 @@
    "level": "FAIL",
    "id": "micro-label",
    "width": 1440,
-   "message": "21 tiny uppercase letter-spaced labels (e.g. \"ESG intelligence platform\", \"Earth\", \"People\", \"Governance\").",
+   "message": "17 tiny uppercase letter-spaced labels (e.g. \"ESG intelligence platform\", \"Connected consequencesBetter decisions\", \"About RITVA\", \"Turn insights into action\").",
    "fix": "Use sentence-case text at a readable size, or delete the label.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "shadow",
+   "width": 1440,
+   "message": "1 box-shadow(s) on elements at rest: figure.panel → rgb(215, 206, 190) 0px 0px 0px 1px, rgba(32, 36, 42, 0.45) 0px 18px 40px -28px",
+   "fix": "Remove. Separate surfaces with a tone step or space. Shadows are for things that really float (menus, dialogs, sticky bars).",
    "alsoAt": [
     768,
     390
@@ -2585,7 +2769,7 @@
    "level": "FAIL",
    "id": "hairline",
    "width": 1440,
-   "message": "6 thin rule(s)/divider line(s): header.bar 1320px | li 304px | li 304px | li 304px",
+   "message": "5 thin rule(s)/divider line(s): header.bar 1440px | div.panel-top 700px | nav.panel-rail 150px | figcaption#panelCap 700px",
    "fix": "Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields.",
    "alsoAt": [
     768,
@@ -2598,17 +2782,6 @@
    "width": 1440,
    "message": "5 boxes drawn with a 1px outline.",
    "fix": "Define a surface by its fill (one tone step from the page) or leave the content unboxed.",
-   "alsoAt": [
-    768,
-    390
-   ]
-  },
-  {
-   "level": "WARN",
-   "id": "card-rows",
-   "width": 1440,
-   "message": "3 rows of identical boxed cards.",
-   "fix": "Vary the composition; not every section is a card grid.",
    "alsoAt": [
     768,
     390
@@ -2629,7 +2802,7 @@
    "level": "WARN",
    "id": "size-count",
    "width": 1440,
-   "message": "10 different font sizes (13, 15, 17, 21, 24, 28, 44, 48, 56, 68).",
+   "message": "11 different font sizes (13, 15, 17, 21, 22, 24, 28, 44, 48, 56, 88).",
    "fix": "A page needs about five: display, heading, lead, body, small.",
    "alsoAt": [
     768,
@@ -2658,25 +2831,32 @@
    "fix": "Load the dealt face (the link on the sheet) and put it first in font-family. A build that falls back to a default face lands on the default look."
   },
   {
-   "level": "WARN",
-   "id": "off-centre",
+   "level": "FAIL",
+   "id": "still-page",
    "width": 1440,
-   "message": "The margins differ: 60px on the left, 118px on the right, at 1440px.",
-   "fix": "Put the navigation and the content on one pair of margins; check for padding on one side only, a scrollbar gutter, or a header on another inset than the page."
+   "message": "Only 7 element(s) moved while the page loaded and scrolled.",
+   "fix": "Build the motion layer (SKILL.md step 9, references/motion.md): the signature move, an entrance for the parts of every section, feedback on every control, and one moving picture. Transform and opacity only, with a reduced-motion fallback."
   },
   {
    "level": "WARN",
-   "id": "still-page",
-   "width": 1440,
-   "message": "Little motion: 11 element(s) moved while the page loaded and scrolled.",
-   "fix": "Give every section an entrance for its parts (not one fade of the whole block) and add one moving picture: a looping clip or a slow move on a photograph."
+   "id": "off-centre",
+   "width": 768,
+   "message": "The margins differ: 31px on the left, 61px on the right, at 768px.",
+   "fix": "Put the navigation and the content on one pair of margins; check for padding on one side only, a scrollbar gutter, or a header on another inset than the page."
   },
   {
    "level": "FAIL",
    "id": "headline-lines",
    "width": 390,
-   "message": "1 headline(s) wrap past two lines at 390px: \"Understand what responsible business means today\" → 3 lines (6 words, 32px)",
+   "message": "3 headline(s) wrap past two lines at 390px: \"Across industries. For a more responsible tomorr\" → 3 lines (7 words, 32px); \"Understand what responsible business means today\" → 3 lines (6 words, 32px); \"Every responsible journey starts somewhere.\" → 3 lines (5 words, 32px)",
    "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 24px or less."
+  },
+  {
+   "level": "WARN",
+   "id": "side-scroll",
+   "width": 390,
+   "message": "1 row(s) scroll sideways with content past their edge.",
+   "fix": "Jurors and most visitors read a row cut at the edge as clipped, not as scrollable. Wrap it onto more lines, or end it inside the grid."
   }
  ],
  "images": [
