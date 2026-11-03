@@ -22,7 +22,19 @@
   --field-2:     var(--teal);
   --field-ink:   var(--on-navy);
   --field-ink-2: var(--on-navy-2);
-  --axis:        38%;
+  --axis:        24%;   /* the rail holds six short labels, not a column of prose */
+}
+
+/* The engine wraps its parts in .sheet. The old site's stylesheet defined that
+   class and left with it, so the container had no max-width, no margins and no
+   side padding: the rail sat hard against the left edge of the window and the
+   38% column swelled to 754px on a wide screen. This is the same frame every
+   other section of the site uses. */
+.assess .sheet {
+  width: 100%;
+  max-width: var(--page);
+  margin-inline: auto;
+  padding-inline: var(--margin);
 }
 
 /* ==========================================================================
