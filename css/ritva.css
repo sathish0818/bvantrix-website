@@ -189,14 +189,20 @@ a { color: inherit; }
   line-height: 1;
 }
 .brand-by {
-  display: flex; align-items: center; gap: 8px;
+  display: flex; align-items: center; gap: 12px;
   padding-left: 14px;
   border-left: 1px solid var(--rule);  /* taste-skill-ignore: a rule the approved reference design draws */
   font-size: 0.8125rem; line-height: 1.25;      /* 13px: this is read, not decoration */
   letter-spacing: 0.06em; text-transform: uppercase;
   color: var(--muted);
 }
-.brand-by .bvx { width: 13px; height: auto; color: var(--navy); flex: none; }
+.brand-by .bvx {
+  /* sized by height so it stands level with the two lines of the label
+     rather than sitting in them as a speck: it was 13px wide, 0.6 the
+     height of the RITVA wordmark beside it */
+  height: 32px; width: auto;
+  color: var(--navy); flex: none;
+}
 
 .bar-nav { display: flex; gap: clamp(14px, 1.8vw, 30px); }
 .bar-nav a {
@@ -417,12 +423,12 @@ a { color: inherit; }
 .foot-brand { justify-self: end; text-align: right; }
 .wordmark--foot { font-size: clamp(1.75rem, 1.2rem + 2vw, 2.75rem); }
 .foot-by {
-  display: flex; align-items: center; justify-content: flex-end; gap: 9px;
-  margin-top: 14px;
+  display: flex; align-items: center; justify-content: flex-end; gap: 12px;
+  margin-top: 16px;
   font-size: 0.8125rem; letter-spacing: 0.12em; text-transform: uppercase;
   color: var(--on-navy-2);
 }
-.foot-by .bvx { width: 14px; height: auto; color: var(--on-navy); flex: none; }
+.foot-by .bvx { height: 26px; width: auto; color: var(--on-navy); flex: none; }
 .foot-dims {
   margin-top: 16px;
   font-size: var(--t-micro); letter-spacing: 0.22em; text-transform: uppercase;
@@ -485,9 +491,15 @@ a { color: inherit; }
   .foot-strip { flex-direction: column; align-items: flex-start; }
 }
 
+@media (max-width: 560px) {
+  /* the wordmark shrinks here, so the mark follows it and keeps the same
+     ratio it holds on a desktop */
+  .brand-by .bvx { height: 26px; }
+}
+
 @media (max-width: 420px) {
   /* the smallest phones lose the words, never the mark: the BVANTRIX
      attribution stays visible everywhere the wordmark appears */
   .brand-by span { display: none; }
-  .brand-by { padding-left: 10px; }
+  .brand-by { padding-left: 12px; }
 }
