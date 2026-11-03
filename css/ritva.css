@@ -141,7 +141,10 @@ a { color: inherit; }
   font-family: var(--display);
   font-weight: 300;
   letter-spacing: 0.3em;
-  text-indent: 0.3em;
+  /* letter-spacing adds its space AFTER the last letter, so it is the right
+     edge that needs correcting, not the left. A text-indent here pushed the
+     whole word 26px off the margin every other line in the hero sits on. */
+  margin-right: -0.3em;
   line-height: 1;
 }
 
@@ -186,7 +189,7 @@ a { color: inherit; }
   font-family: var(--display);
   font-size: clamp(1.375rem, 1.1rem + 0.9vw, 1.75rem);
   font-weight: 400;
-  letter-spacing: 0.26em; text-indent: 0.26em;
+  letter-spacing: 0.26em; margin-right: -0.26em;
   line-height: 1;
 }
 .brand-by {
@@ -270,13 +273,13 @@ a { color: inherit; }
 .hero-words { grid-column: 1; max-width: 42ch; }
 .hero .wordmark {
   font-size: clamp(2.75rem, 1.4rem + 5.4vw, 5.5rem);
-  color: var(--gold); margin-bottom: 10px;
+  color: var(--gold); margin-bottom: 12px;
 }
 .hero .display { margin-bottom: 0; }
-.hero .hero-words .rule { margin: 26px 0 18px; }
-.hero .eyebrow { margin-bottom: 16px; }  /* taste-skill-ignore: the approved reference design uses this */
-.hero-copy { color: var(--charcoal); }
-.hero-acts { display: flex; flex-wrap: wrap; align-items: center; gap: 18px 26px; margin-top: 34px; }
+.hero .hero-words .rule { margin: 28px 0 20px; }
+.hero .eyebrow { margin-bottom: 20px; }  /* taste-skill-ignore: the approved reference design uses this */
+.hero-copy { color: var(--charcoal); max-width: 44ch; }
+.hero-acts { display: flex; flex-wrap: wrap; align-items: center; gap: 18px 26px; margin-top: 36px; }
 
 /* the dimensions, standing at the top right of the picture */
 .hero-dims {
@@ -627,7 +630,7 @@ a { color: inherit; }
 }
 .panel-brand {
   font-family: var(--display); font-size: 1.0625rem;
-  letter-spacing: 0.24em; text-indent: 0.24em;
+  letter-spacing: 0.24em; margin-right: -0.24em;
 }
 .panel-dot { width: 20px; height: 20px; border-radius: 50%; background: var(--stone); }
 .panel-body { display: grid; grid-template-columns: 150px minmax(0, 1fr); }
