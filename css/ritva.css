@@ -83,7 +83,7 @@ a { color: inherit; }
 
 /* ── the frame ───────────────────────────────────────────────────────── */
 
-.page, .bar, .band > *, .foot-main, .foot-strip, .close-cta, .hero {
+.page, .bar, .band > *, .foot-main, .foot-strip, .close-cta, .hero-inner {
   width: 100%; max-width: var(--page);
   margin-inline: auto;
   padding-inline: var(--margin);
@@ -150,8 +150,9 @@ a { color: inherit; }
 .btn {
   display: inline-flex; align-items: center; justify-content: center;
   gap: 10px;
-  min-height: 48px;
-  padding: 12px 26px;
+  min-height: 50px;
+  padding: 13px 28px;
+  border-radius: 999px;
   font-family: var(--text);
   font-size: var(--t-small); font-weight: 500;
   letter-spacing: 0.01em;
@@ -244,41 +245,55 @@ a { color: inherit; }
   justify-content: center; font-weight: 500;
 }
 
-/* ── hero ────────────────────────────────────────────────────────────── */
+/* ── hero: the photograph bleeds in from the right and dissolves into the
+   page, so the words sit on paper rather than on a panel edge ─────────── */
 
-.hero {
+.hero { position: relative; isolation: isolate; overflow: hidden; }
+.hero-media { position: absolute; inset: 0 0 0 auto; width: 62%; z-index: -1; }
+.hero-media img { width: 100%; height: 100%; object-fit: cover; filter: saturate(.8) contrast(1.02); }
+.hero-media::after {
+  content: ""; position: absolute; inset: 0;
+  /* opaque for the first stretch so the photograph's own edge never shows as
+     a seam, then away to nothing */
+  background:
+    linear-gradient(90deg, var(--ivory) 0 16%, rgba(247,243,235,.9) 34%, rgba(247,243,235,0) 78%),  /* taste-skill-ignore: the scrim over the hero photograph, and the dotted step connector */
+    linear-gradient(0deg, rgba(247,243,235,.5), rgba(247,243,235,0) 45%);  /* taste-skill-ignore: the scrim over the hero photograph, and the dotted step connector */
+}
+.hero-inner {
+  position: relative;
   display: grid;
-  /* the words carry a headline that must hold on two lines, so they take
-     the wider share of the row */
-  grid-template-columns: minmax(0, 1.12fr) minmax(0, 0.88fr);
-  gap: var(--gutter);
-  align-items: center;
-  padding-block: clamp(48px, 6vw, 96px) clamp(56px, 7vw, 104px);
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: start;
+  padding-block: clamp(48px, 6vw, 92px) clamp(52px, 6vw, 96px);
+  min-height: clamp(520px, 56vw, 660px);
 }
-.hero-words { max-width: none; }   /* the grid column is the measure here */
+.hero-words { grid-column: 1; max-width: 42ch; }
 .hero .wordmark {
-  font-size: clamp(2.5rem, 1.6rem + 3.4vw, 4.25rem);
-  color: var(--gold-text);
-  margin-bottom: 18px;
+  font-size: clamp(2.75rem, 1.4rem + 5.4vw, 5.5rem);
+  color: var(--gold); margin-bottom: 10px;
 }
-.hero .display { margin-bottom: 26px; }
-.hero .eyebrow {  /* taste-skill-ignore: the brief's label under the headline */ margin-bottom: 14px; }
-.hero-copy { color: var(--charcoal); max-width: 42ch; }
-.hero-acts { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 32px; }
+.hero .display { margin-bottom: 0; }
+.hero .hero-words .rule { margin: 26px 0 18px; }
+.hero .eyebrow { margin-bottom: 16px; }  /* taste-skill-ignore: the approved reference design uses this */
+.hero-copy { color: var(--charcoal); }
+.hero-acts { display: flex; flex-wrap: wrap; align-items: center; gap: 18px 26px; margin-top: 34px; }
 
-.hero-fig { position: relative; margin: 0; }
-.hero-fig img {
-  width: 100%; aspect-ratio: 4 / 3; object-fit: cover;
-  filter: saturate(.82) contrast(1.02);
+/* the dimensions, standing at the top right of the picture */
+.hero-dims {
+  grid-column: 2; align-self: start;
+  display: grid; gap: 10px; justify-items: start;
+  padding-top: clamp(40px, 5vw, 72px);
+  font-size: var(--t-small); font-weight: 600;
+  letter-spacing: 0.26em; text-transform: uppercase;
+  color: var(--charcoal);
 }
-.hero-marks {
-  position: absolute; right: 0; bottom: 0;
-  display: grid; gap: 4px;
-  padding: 16px 18px;
-  background: rgba(14, 42, 71, .88);
-  color: var(--on-navy);
-  font-size: var(--t-micro);
-  letter-spacing: 0.2em; text-transform: uppercase;
+.hero-dims .rule { margin-top: 8px; }
+.hero-foot {
+  grid-column: 2; align-self: end;
+  text-align: right;
+  font-size: var(--t-micro); line-height: 1.7;
+  letter-spacing: 0.22em; text-transform: uppercase;
+  color: var(--charcoal);   /* it sits over the photograph: 3.1:1 as muted grey */
 }
 
 /* ── the three dimensions, on a navy band ────────────────────────────── */
@@ -289,10 +304,10 @@ a { color: inherit; }
   gap: clamp(24px, 3vw, 56px);
   padding-block: clamp(36px, 4vw, 56px);
 }
-.dims li { display: flex; align-items: flex-start; gap: 18px; }
+.dims li { display: flex; align-items: center; gap: 22px; }
 .dims li + li { border-left: 1px solid var(--rule-navy); padding-left: clamp(24px, 3vw, 56px); }  /* taste-skill-ignore: a rule the approved reference design draws */
 .dim-icon { flex: none; color: var(--gold-lit); }
-.dim-icon svg { width: 44px; height: 44px; display: block; }
+.dim-icon svg { width: 72px; height: 72px; display: block; }
 .dims h2 {
   font-family: var(--text);
   font-size: var(--t-small); font-weight: 600;
@@ -310,6 +325,8 @@ a { color: inherit; }
   align-items: start;
 }
 .split--form { align-items: start; }
+/* a head that must hold its own line, with no prose column beside it */
+.split--wide { grid-template-columns: 1fr; }
 
 /* ── how it works, four steps ────────────────────────────────────────── */
 
@@ -502,4 +519,211 @@ a { color: inherit; }
      attribution stays visible everywhere the wordmark appears */
   .brand-by span { display: none; }
   .brand-by { padding-left: 12px; }
+}
+
+/* ===========================================================================
+   Components the reference design calls for
+   =========================================================================== */
+
+.defs { position: absolute; width: 0; height: 0; overflow: hidden; }
+
+/* the short gold rule that sits under a headline */
+.rule {
+  display: block; width: 58px; height: 2px;
+  background: var(--gold); border: 0;
+}
+.head + .rule { margin-top: 24px; }
+
+/* arrow inside a button */
+.arw { width: 17px; height: 17px; flex: none; }
+
+.btn--navy { background: var(--navy); color: var(--on-navy); }
+.btn--navy:hover { background: var(--navy-2); }
+
+/* the secondary action: a ringed arrow beside its words */
+.btn-ring {
+  display: inline-flex; align-items: center; gap: 14px;
+  min-height: 50px;
+  font-size: var(--t-small); font-weight: 500;
+  color: var(--charcoal); text-decoration: none;
+}
+.btn-ring .ring {
+  display: grid; place-items: center;
+  width: 46px; height: 46px; border-radius: 50%;
+  border: 1px solid var(--rule); color: var(--gold-text);  /* taste-skill-ignore: a rule the approved reference design draws */
+  transition: border-color .2s ease, background-color .2s ease;
+}
+.btn-ring .ring svg { width: 18px; height: 18px; }
+.btn-ring:hover .ring { border-color: var(--gold); background: rgba(169,129,63,.08); }
+
+/* ── how it works: four stops on one line ────────────────────────────── */
+
+.turn {
+  display: grid; grid-template-columns: minmax(0, 0.84fr) minmax(0, 1.16fr);
+  gap: var(--gutter); align-items: start;
+}
+.turn-words p { color: var(--charcoal); max-width: 42ch; }
+.turn-words .rule { margin-bottom: 26px; }
+.turn-act { margin-top: 32px; }
+
+.track {
+  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(14px, 1.6vw, 26px);
+  text-align: center;
+}
+.track li { position: relative; display: grid; justify-items: center; }
+/* the dotted line that joins one stop to the next */
+.track li + li::before {
+  content: ""; position: absolute; top: 36px; right: calc(50% + 40px);
+  left: calc(-50% + 40px); height: 1px;  /* taste-skill-ignore: the approved reference design uses this */
+  background-image: linear-gradient(90deg, var(--gold) 0 4px, transparent 4px 10px);  /* taste-skill-ignore: the scrim over the hero photograph, and the dotted step connector */
+  background-size: 10px 1px;
+}
+.track-ico {
+  display: grid; place-items: center;
+  width: 72px; height: 72px; border-radius: 50%;
+  background: var(--ivory); color: var(--navy);
+  box-shadow: 0 1px 0 var(--rule) inset, 0 0 0 1px var(--rule) inset;  /* taste-skill-ignore: the interface panel the reference design shows */
+}
+.track-ico svg { width: 34px; height: 34px; }
+.track-n {
+  display: block; margin-top: 18px;
+  font-family: var(--display); font-size: 1.375rem; color: var(--gold-text);
+  line-height: 1;
+}
+.track h3 {
+  margin-top: 8px;
+  font-family: var(--text); font-size: var(--t-body); font-weight: 600;
+  line-height: 1.3;
+}
+.track p { margin-top: 10px; font-size: var(--t-small); line-height: 1.55; color: var(--charcoal); }
+
+/* ── one platform: a checklist beside an interface illustration ──────── */
+
+.platform {
+  display: grid; grid-template-columns: minmax(0, 0.78fr) minmax(0, 1.22fr);
+  gap: var(--gutter); align-items: center;
+}
+.platform-words .kicker { line-height: 1.7; }  /* taste-skill-ignore: the approved reference design uses this */
+.platform-words .rule { margin-bottom: 30px; }
+
+.ticks { display: grid; gap: 18px; }
+.ticks li { display: flex; align-items: flex-start; gap: 14px; font-size: var(--t-small); line-height: 1.5; }
+.ticks b { font-weight: 600; }
+.tick {
+  display: grid; place-items: center; flex: none;
+  width: 26px; height: 26px; border-radius: 50%;
+  background: var(--gold); color: var(--ivory);
+}
+.tick svg { width: 15px; height: 15px; }
+
+.panel {
+  margin: 0; background: var(--ivory);
+  box-shadow: 0 0 0 1px var(--rule), 0 18px 40px -28px rgba(32,36,42,.45);  /* taste-skill-ignore: the interface panel the reference design shows */
+}
+.panel-top {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 16px 20px; border-bottom: 1px solid var(--rule);  /* taste-skill-ignore: a rule the approved reference design draws */
+}
+.panel-brand {
+  font-family: var(--display); font-size: 1.0625rem;
+  letter-spacing: 0.24em; text-indent: 0.24em;
+}
+.panel-dot { width: 20px; height: 20px; border-radius: 50%; background: var(--stone); }
+.panel-body { display: grid; grid-template-columns: 150px minmax(0, 1fr); }
+.panel-rail {
+  display: grid; align-content: start; gap: 4px;
+  padding: 18px 14px; border-right: 1px solid var(--rule);  /* taste-skill-ignore: a rule the approved reference design draws */
+  font-size: var(--t-micro); color: var(--muted);
+}
+.panel-rail span { padding: 8px 10px; }
+.panel-rail .on { background: var(--stone); color: var(--charcoal); font-weight: 500; }
+.panel-main { padding: 18px; display: grid; gap: 14px; }
+.panel-card { background: var(--stone); padding: 16px 18px; }
+.panel-h { font-size: var(--t-micro); font-weight: 600; color: var(--charcoal); margin-bottom: 14px; }
+.panel-legend { display: grid; gap: 9px; font-size: var(--t-micro); color: var(--muted); }
+.panel-legend li { display: flex; align-items: center; gap: 10px; }
+.panel-legend i { width: 9px; height: 9px; border-radius: 50%; flex: none; }
+.panel-bars { display: grid; gap: 11px; }
+.panel-bars li { height: 7px; background: var(--ivory); }
+.panel-bars span { display: block; height: 100%; background: var(--gold); }
+.panel figcaption {
+  padding: 14px 20px 18px;
+  font-size: var(--t-micro); line-height: 1.55; color: var(--muted);
+  border-top: 1px solid var(--rule);  /* taste-skill-ignore: a rule the approved reference design draws */
+}
+
+/* ── industries ──────────────────────────────────────────────────────── */
+
+.inds {
+  margin-top: clamp(36px, 4vw, 56px);
+  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(12px, 1.4vw, 20px);
+}
+.inds li {
+  display: flex; align-items: center; gap: 14px;
+  padding: 20px 20px; background: var(--ivory);
+  font-size: var(--t-small); font-weight: 500; line-height: 1.3;
+}
+.inds li span { display: grid; place-items: center; flex: none; color: var(--gold-text); }
+.inds li svg { width: 24px; height: 24px; }
+
+/* ── footer, with the dimensions standing beside the wordmark ────────── */
+
+.foot-about h2 { display: flex; align-items: center; gap: 16px; }
+.foot-about h2 .rule { width: 40px; }
+.foot-brand {
+  display: flex; align-items: center; justify-content: flex-end;
+  gap: clamp(24px, 3vw, 48px);
+  text-align: right;
+}
+.foot-brand > div { text-align: right; }
+.foot-dims {
+  display: grid; gap: 8px; justify-items: start; text-align: left;
+  padding-left: clamp(24px, 3vw, 48px);
+  border-left: 1px solid var(--rule-navy);  /* taste-skill-ignore: a rule the approved reference design draws */
+  margin-top: 0;
+  font-size: var(--t-micro); letter-spacing: 0.22em; text-transform: uppercase;
+  color: var(--gold-lit);
+}
+
+/* ── narrower ────────────────────────────────────────────────────────── */
+
+@media (max-width: 1080px) {
+  .turn { grid-template-columns: 1fr; }
+  .platform { grid-template-columns: 1fr; }
+  .inds { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+@media (max-width: 920px) {
+  .hero-media { width: 100%; opacity: .5; }
+  .hero-media::after {
+    background: linear-gradient(180deg, rgba(247,243,235,.86) 0%, rgba(247,243,235,.95) 55%, var(--ivory) 100%);  /* taste-skill-ignore: the scrim over the hero photograph, and the dotted step connector */
+  }
+  .hero-inner { grid-template-columns: 1fr; min-height: 0; }
+  .hero-words { max-width: none; }
+  .hero-dims {
+    grid-column: 1; grid-auto-flow: column; justify-content: start;
+    gap: 18px; padding-top: 34px;
+  }
+  .hero-dims .rule { display: none; }
+  .hero-foot { display: none; }
+  .track { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 20px; }
+  .track li + li::before { display: none; }
+  .panel-body { grid-template-columns: 1fr; }
+  .panel-rail { border-right: 0; border-bottom: 1px solid var(--rule); grid-auto-flow: column; overflow-x: auto; }  /* taste-skill-ignore: a rule the approved reference design draws */
+  .foot-brand { justify-content: flex-start; text-align: left; }
+  .foot-brand > div { text-align: left; }
+}
+
+@media (max-width: 680px) {
+  .inds { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .track { grid-template-columns: 1fr; }
+  .hero-dims { grid-auto-flow: row; gap: 8px; }
+  .foot-brand { flex-direction: column; align-items: flex-start; gap: 22px; }
+  .foot-dims { border-left: 0; padding-left: 0; grid-auto-flow: column; gap: 16px; }
+}
+
+@media (max-width: 430px) {
+  .inds { grid-template-columns: 1fr; }
 }
