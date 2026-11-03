@@ -320,7 +320,52 @@
 }
 
 @media (max-width: 760px) {
-  .demo { padding-top: 112px; }
+  /* 112px of empty paper under a 76px header, where the home page leaves 48 */
+  .demo { padding-top: 44px; }
+
+  /* The stage is the same ivory as the page behind it, so its 28px of side
+     padding drew no panel, it just set every word on this page 28px to the
+     right of the header, the footer and each other. */
+  .demo-stage { padding-inline: 0; padding-top: 0; }
+
+  /* Six step names wrapped across three lines read as a ragged paragraph,
+     not as progress. Only the step you are on is named, with its number and
+     the bar beneath it carrying the rest. */
+  .demo-rail { display: block; counter-reset: step; position: relative; }
+  /* taken out of sight rather than display:none, which generates no box and
+     so skips the counter: every step then numbered itself 1. The full list
+     still reaches a screen reader. */
+  .demo-rail li {
+    counter-increment: step;
+    position: absolute; width: 1px;
+    height: 1px;  /* taste-skill-ignore: the visually-hidden box, not a drawn rule */
+    overflow: hidden; clip-path: inset(50%); white-space: nowrap;
+  }
+  .demo-rail .is-here {
+    position: static; width: auto; height: auto;
+    overflow: visible; clip-path: none; white-space: normal;
+    display: block; opacity: 1;
+    font-size: var(--t-small); font-weight: 500; color: var(--ink);
+  }
+  .demo-rail .is-here::before {
+    content: counter(step) ". ";
+    color: var(--accent); font-variant-numeric: tabular-nums;
+  }
+  .demo-prog { margin-top: 12px; }
+
+  /* the caution is context, not the opening paragraph */
+  .demo-note { margin-top: 18px; font-size: var(--t-small); color: var(--ink-2); }
+
+  /* Side by side in 350px the pill wrapped to two lines and squeezed the back
+     link onto two of its own. Stacked, each action gets the full column, and
+     every primary button on a phone is the same width as on the home page. */
+  .demo-foot { flex-direction: column; align-items: stretch; gap: 16px; }
+  .demo-foot .as-link { align-self: start; }
+  .demo .act, .demo-foot .act, .demo .btn {
+    width: 100%; justify-content: center; text-align: center;
+  }
+  .demo .as-link { width: auto; }
+
   .result { grid-template-columns: 1fr; justify-items: start; }
   .bars li { grid-template-columns: minmax(0, 1fr) 48px; grid-template-areas: "l v" "t t" "b b"; gap: 6px 14px; }
   .weight { grid-template-columns: minmax(0, 1fr) 40px; grid-template-areas: "l v" "s s"; gap: 4px 14px; }

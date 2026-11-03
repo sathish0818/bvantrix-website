@@ -121,7 +121,13 @@ a { color: inherit; }
 /* A stone page is full bleed, so its children carry the column. They were
    given the max-width and the auto margins but not the side padding, which
    set their text 68px to the left of every other section on the page. */
-.page--stone { background: var(--stone); max-width: none; padding-block: var(--gap); }
+/* Its children carry the column, so the stone page must not also carry the
+   frame's side padding: the two stacked, and every stone section's text sat
+   one margin further in than every ivory one, zig-zagging down the page. */
+.page--stone {
+  background: var(--stone); max-width: none;
+  padding-block: var(--gap); padding-inline: 0;
+}
 .page--stone > * {
   max-width: var(--page);
   margin-inline: auto;
@@ -266,9 +272,12 @@ a { color: inherit; }
 
 .menu {
   display: none;
-  background: none; border: 0; padding: 6px 0;
+  background: none; border: 0;
+  /* the only control in the header on a phone, so it gets a full 44px target
+     without moving the word off the margin */
+  padding: 11px 6px; margin-right: -6px;
   font-family: var(--text); font-size: var(--t-small); color: var(--charcoal);
-  min-height: 24px; cursor: pointer;
+  min-height: 44px; cursor: pointer;
 }
 
 .drawer {
@@ -554,7 +563,9 @@ a { color: inherit; }
 @media (max-width: 680px) {
   .values { grid-template-columns: 1fr; }
   .steps { grid-template-columns: 1fr; }
-  .hero-acts .btn { width: 100%; }
+  /* every primary action on a phone fills the column: the enquiry button sat
+     at its own text width under five full-width fields */
+  .hero-acts .btn, .form-act .btn, .turn-act .btn { width: 100%; }
   .foot-strip { flex-direction: column; align-items: flex-start; }
 }
 
@@ -659,6 +670,11 @@ a { color: inherit; }
 
 .ticks { display: grid; gap: 18px; }
 .ticks li { display: flex; align-items: flex-start; gap: 14px; font-size: var(--t-small); line-height: 1.5; }
+/* The bold label and the sentence after it are one run of text. Left loose in
+   the flex row they became two items, so every line after the first started
+   under the sentence rather than under the label, and each row broke at a
+   different place. */
+.ticks .tick-t { min-width: 0; }
 .ticks b { font-weight: 600; }
 .tick {
   display: grid; place-items: center; flex: none;
@@ -782,7 +798,13 @@ a { color: inherit; }
   .track { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 20px; }
   .track li + li::before { display: none; }
   .panel-body { grid-template-columns: 1fr; }
-  .panel-rail { border-right: 0; border-bottom: 1px solid var(--rule); grid-auto-flow: column; overflow-x: auto; }  /* taste-skill-ignore: a rule the approved reference design draws */
+  /* the strip scrolls sideways, so its last tab fades out rather than being
+     sliced off mid-word at the edge of the screen */
+  .panel-rail {
+    border-right: 0; border-bottom: 1px solid var(--rule);  /* taste-skill-ignore: a rule the approved reference design draws */
+    grid-auto-flow: column; overflow-x: auto;
+    mask-image: linear-gradient(90deg, #000 calc(100% - 32px), transparent);  /* taste-skill-ignore: a mask that fades a scrolling strip, not a decorative fill */
+  }
   .foot-brand { justify-content: flex-start; text-align: left; }
   .foot-brand > div { text-align: left; }
 }
@@ -797,6 +819,43 @@ a { color: inherit; }
 
 @media (max-width: 430px) {
   .inds { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 680px) {
+  /* Stacked into a single column, a centred step sat as an island in a page
+     that is left-aligned from the header to the footer. The icon moves beside
+     its words so the whole list starts on the same edge as everything else. */
+  .track { text-align: left; }
+  .track li { justify-items: start; grid-template-columns: 56px minmax(0, 1fr); column-gap: 20px; }
+  .track-ico { width: 56px; height: 56px; grid-row: 1 / span 3; }
+  .track-ico svg { width: 26px; height: 26px; }
+  .track-n, .track li h3, .track li p { grid-column: 2; }
+  .track-n { margin-top: 0; }
+}
+
+
+/* ── one vertical rhythm on a phone ──────────────────────────────────────
+   Stacked into a single column, blocks that read as the same thing on a
+   desktop were arriving at six different distances: a rule sat 20, 24, 26 or
+   30px above its copy, a section's grid began 36 or 40px below its heading,
+   and the closing band was padded wider than the sections above it. The
+   steps below are the same four numbers everywhere: 24 under a rule, 32 to a
+   grid, 48 inside the navy strip, and the page's own gap at the close.
+   ------------------------------------------------------------------------ */
+
+@media (max-width: 920px) {
+  .hero .hero-words .rule,
+  .turn-words .rule,
+  .platform-words .rule { margin-bottom: 24px; }
+
+  .inds  { margin-top: 32px; gap: 14px; }
+  .cards { margin-top: 32px; }
+
+  /* the strip was padded tighter than anything around it */
+  .dims { padding-block: 48px; }
+
+  /* and the closing band wider */
+  .close-cta { padding-block: var(--gap); }
 }
 
 /* ===========================================================================
