@@ -777,3 +777,71 @@ a { color: inherit; }
 @media (max-width: 430px) {
   .inds { grid-template-columns: 1fr; }
 }
+
+/* ===========================================================================
+   Interaction
+
+   One easing and two durations for the whole site. The brief asks for
+   lightweight transitions and no unnecessary animation, so nothing here
+   moves more than three pixels, everything is transform or colour (which
+   the compositor can do without touching layout), and all of it stops for
+   a reader who has asked their system for reduced motion.
+   =========================================================================== */
+
+:root {
+  --ease:  cubic-bezier(.16, .84, .3, 1);
+  --quick: .18s;
+  --soft:  .3s;
+}
+
+/* an arrow leans the way it points */
+.btn .arw, .btn-ring .arw { transition: transform var(--quick) var(--ease); }
+.btn:hover .arw, .btn:focus-visible .arw,
+.btn-ring:hover .arw, .btn-ring:focus-visible .arw { transform: translateX(3px); }
+
+/* the mark lifts a hair when you reach for the wordmark */
+.brand .bvx { transition: transform var(--quick) var(--ease); }
+.brand:hover .bvx, .brand:focus-visible .bvx { transform: translateY(-1px); }
+
+/* an insight card rises off the page; its edge was already picking up the gold */
+.cards li { transition: border-color var(--quick) ease, transform var(--soft) var(--ease); }
+.cards li:hover { transform: translateY(-3px); }
+
+/* an industry tile does the same, and its mark takes the accent */
+.inds li { transition: transform var(--soft) var(--ease); }
+.inds li:hover { transform: translateY(-2px); }
+.inds li span { transition: color var(--quick) ease; }
+.inds li:hover span { color: var(--gold); }
+
+/* a step on the track picks up the accent as you pass it */
+.track-ico { transition: box-shadow var(--quick) ease, transform var(--soft) var(--ease); }
+.track li:hover .track-ico {
+  transform: translateY(-2px);
+  box-shadow: 0 0 0 1px var(--gold) inset;  /* taste-skill-ignore: the ring the reference design draws */
+}
+
+/* the dimension marks brighten on the navy band */
+.dim-icon { transition: color var(--soft) ease, transform var(--soft) var(--ease); }
+.dims li:hover .dim-icon { color: var(--on-navy); transform: translateY(-2px); }
+
+/* a tick answers the row it belongs to */
+.ticks li { transition: color var(--quick) ease; }
+.tick { transition: transform var(--soft) var(--ease); }
+.ticks li:hover .tick { transform: scale(1.08); }
+
+/* a field says it has your attention */
+.fld label { transition: color var(--quick) ease; }
+.fld:focus-within label { color: var(--gold-text); }
+
+/* footer links warm rather than jump */
+.foot-strip a, .foot-credit a { transition: color var(--quick) ease; }
+
+/* ── and none of it for a reader who has asked for stillness ──────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

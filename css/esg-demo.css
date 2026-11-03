@@ -159,7 +159,8 @@
   padding: 10px 15px;
   transition: background .16s ease, color .16s ease;
 }
-.chip:hover { background: var(--field); color: var(--field-ink); }
+.chip { transition: background-color var(--quick) ease, color var(--quick) ease, transform var(--soft) var(--ease); }
+.chip:hover { background: var(--field); color: var(--field-ink); transform: translateY(-1px); }
 .chip.is-on { background: var(--accent); color: var(--accent-ink); }
 
 .carried {
@@ -197,7 +198,10 @@
 }
 .opt input { position: absolute; opacity: 0; pointer-events: none; }
 .opt-dot { display: none; }
-.opt:hover { background: var(--field); color: var(--field-ink); padding-left: 22px; }
+/* it used to add 8px of left padding on hover, which slid the words out from
+   under the pointer. The row moves as a whole instead, and the text stays put. */
+.opt { transition: background-color var(--quick) ease, color var(--quick) ease, transform var(--soft) var(--ease); }
+.opt:hover { background: var(--field); color: var(--field-ink); transform: translateX(4px); }
 .opt:has(input:checked), .opt.is-on { background: var(--accent); color: var(--accent-ink); }
 .opt:has(input:focus-visible) { outline: 2px solid var(--accent); outline-offset: 2px; }
 .opt--unknown, .unsure { font-style: italic; }
@@ -334,11 +338,13 @@
   text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 1px;
   transition: color .18s ease;
 }
-.as-link:hover { color: var(--accent); }
+.as-link { transition: color var(--quick) ease; }
+.as-link:hover { color: var(--gold-text); }
 
 /* the primary action in the tool is the field blue; amber stays an accent */
 .demo-page .btn, .demo-page .act { background: var(--field); color: var(--field-ink); }
-.demo-page .btn:hover, .demo-page .act:hover { background: #16375B; }
+/* (the old .demo-page hover colour lived here; the page is .assess now and
+   its buttons take the site's champagne) */
 .demo-page .chip.is-on { background: var(--field); color: var(--field-ink); }
 .demo-page .opt:has(input:checked), .demo-page .opt.is-on { background: var(--field); color: var(--field-ink); }
 
